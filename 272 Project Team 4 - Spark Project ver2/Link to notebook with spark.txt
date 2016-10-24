@@ -1,0 +1,3 @@
+
+Link to notebook:
+https://console.ng.bluemix.net/data/notebooks/1f6bd532-2bc4-4a52-90e2-28a83827e947/view?access_token=5127d992f1e9bcdd5dee7fdf1e209631b9e43f34371f36725b25051325992539
