@@ -64,3 +64,7 @@ User Story #2
 As a user, I should be able to rate a particular coach, based on my experience, after attending a particular course, so that it I can provide my true feedback, which might help others while making a decision to join the course.
 User Story #3
 As a user, I should be able to register on platform as a ‘Trainer/Coach’ so that I can start helping homeless people by coaching them for a particular skill.
+User Story #4
+As a NGO, I should be able to contact the trainer/coach registered on the site based on the demands for a course.
+User Story #5
+As an Admin, I should be able to verify the users who apply to become a trainer/coach.
