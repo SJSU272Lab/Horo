@@ -1,0 +1,52 @@
+List of features for Horo Platform  -  
+
+1 ) Search for a course  - by name , by instructor, by place / location, by popularity / reviews
+2 ) Show a list of categories for course  - viz. business, math, data science etc.
+3 ) User login 
+	 User  can be 
+	1) a homeless person 
+	2) a personal trainer
+	3) a NGO 
+
+4) Sign up for new user 
+5) Show  a list of courses in a particular category
+6) Show the list of sub categories for a particular category
+7) For each course listed on the platform store following list of information  - 
+	a. Course name 
+	b. Course short description
+	c. Course long description
+	d. Course Star Ratings 
+	e. Course Raters count
+	f.  Course Instructor name
+	g. Course Pre requisites
+	h. Course Start date
+	i.  Course Eng date
+	j. Course weekly load / hours requirements
+	k. Course Curriculam
+	l. Course Video link
+	m. Course length
+	n. Course language
+	o. Course reviews by users  - text comments
+	p. Course Conducted at - place  (face to face training)
+	q. Course time
+	r.  Course Completion Certificate Offered By - Institute / person / NGO etc. 
+
+8) Show Course Level - viz. Beginner / expert / Intermediate
+9) Show instructor profile
+
+10) For each instructor registerd on our platform , store following information - 
+	a. Instructor name
+	b. Instructor position / designation - if he is working with a company
+	c. Instructor Social media profile links - facebook / twitter / linkedIn 
+	d. Instructors photo
+ 
+11)  Show NGO profile 
+12)  For every NGO maintain following information - 
+	a. NGO name
+	b. NGO address
+	c. NGO Speciality
+	d. NGO contact number 
+	e. NGO email id 
+	f.  NGO video link 
+	g. NGO website link
+	h. NGO social media links 
