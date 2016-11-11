@@ -1,0 +1,31 @@
+User Management Strategy - 
+
+1. A new user can be created simply with 3 attributes. 
+    a. First name
+    b. Last name
+    c. Passowrd
+
+2. Email ID, Phone Number, SSN and other attributes can be configured after account creation. 
+
+3. All Uer accounts will be created by either a NGO representative or a homeless person himself/ herself. 
+   
+4. If a user forgets his account credentials, he can go to a NGO and recover his account. 
+   Note - He must be enrolled at a course which is conducted by the NGO. 
+   
+5. Every NGO needs to sign up on the platform. 
+   Following listed attributes are compulsory for a NGO to register - 
+   a. NGO Name
+   b. NGO Address - city , zipcode , state , address line 1 and 2
+   c. NGO Contact Number
+   d. NGO Email ID
+   e. NGO Website
+
+6. Coaches can register on the platform using their google email id.
+   For each coach, following information must be stored - 
+   a. Coach Name
+   b. Coach Expertise - skills
+   c. Coach Address - Address line 1 and 2, city, state, zipcode
+   d. User reviews
+   e. User Ratings 
+   f. No of students taught
+   
