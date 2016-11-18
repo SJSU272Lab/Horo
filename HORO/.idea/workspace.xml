@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2fde9718-8d8e-4144-85a9-0580403df858" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.jshintrc" afterPath="$PROJECT_DIR$/HORO/.jshintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.project" afterPath="$PROJECT_DIR$/HORO/.project" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.settings/.jsdtscope" afterPath="$PROJECT_DIR$/HORO/.settings/.jsdtscope" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.settings/com.eclipsesource.jshint.ui.prefs" afterPath="$PROJECT_DIR$/HORO/.settings/com.eclipsesource.jshint.ui.prefs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.settings/org.eclipse.wst.jsdt.core.prefs" afterPath="$PROJECT_DIR$/HORO/.settings/org.eclipse.wst.jsdt.core.prefs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.settings/org.eclipse.wst.jsdt.ui.superType.container" afterPath="$PROJECT_DIR$/HORO/.settings/org.eclipse.wst.jsdt.ui.superType.container" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.settings/org.eclipse.wst.jsdt.ui.superType.name" afterPath="$PROJECT_DIR$/HORO/.settings/org.eclipse.wst.jsdt.ui.superType.name" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.sublime-project" afterPath="$PROJECT_DIR$/HORO/.sublime-project" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/.tern-project" afterPath="$PROJECT_DIR$/HORO/.tern-project" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/README.md" afterPath="$PROJECT_DIR$/HORO/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/app.js" afterPath="$PROJECT_DIR$/HORO/app.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/.bin/express" afterPath="$PROJECT_DIR$/HORO/node_modules/.bin/express" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/LICENSE.md" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/LICENSE.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/angular-csp.css" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/angular-csp.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/angular.js" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/angular.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/angular.min.js" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/angular.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/angular.min.js.gzip" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/angular.min.js.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/bower.json" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/angular/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/angular/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/Jakefile" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/Jakefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/ejs.js" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/ejs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/ejs.min.js" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/ejs.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/lib/ejs.js" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/lib/ejs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/lib/utils.js" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/lib/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/ejs.js" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/ejs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/backslash.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/backslash.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/backslash.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/backslash.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/comments.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/comments.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/comments.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/comments.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/consecutive-tags.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/consecutive-tags.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/consecutive-tags.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/consecutive-tags.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/double-quote.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/double-quote.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/double-quote.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/double-quote.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/error.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/error.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/error.out" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/error.out" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/fail.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/fail.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/hello-world.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/hello-world.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include-abspath.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include-abspath.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include-root.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include-root.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include-simple.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include-simple.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include-simple.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include-simple.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include.css.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include.css.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include.css.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include.css.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_cache.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_cache.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_cache.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_cache.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor.css.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor.css.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor.css.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor.css.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor_cache.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor_cache.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor_cache.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor_cache.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp_child.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/include_preprocessor_line_slurp_child.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/includes/bom.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/includes/bom.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/includes/menu-item.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/includes/menu-item.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/includes/menu/item.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/includes/menu/item.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/literal.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/literal.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/literal.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/literal.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/menu.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/menu.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/menu.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/menu.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/menu_preprocessor.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/menu_preprocessor.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/menu_preprocessor.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/menu_preprocessor.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/menu_var.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/menu_var.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/messed.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/messed.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/messed.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/messed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/newlines.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/newlines.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/newlines.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/newlines.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/newlines.mixed.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/newlines.mixed.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/newlines.mixed.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/newlines.mixed.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/no.newlines.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/no.newlines.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/no.newlines.error.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/no.newlines.error.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/no.newlines.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/no.newlines.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/no.semicolons.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/no.semicolons.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/no.semicolons.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/no.semicolons.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/para.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/para.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/pet.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/pet.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/rmWhitespace.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/rmWhitespace.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/rmWhitespace.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/rmWhitespace.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/single-quote.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/single-quote.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/single-quote.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/single-quote.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/space-and-tab-slurp.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/space-and-tab-slurp.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/space-and-tab-slurp.html" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/space-and-tab-slurp.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/strict.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/strict.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/style.css" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/user-no-with.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/user-no-with.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/user.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/user.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/fixtures/with-context.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/fixtures/with-context.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/mocha.opts" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/mocha.opts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/tmp/include.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/tmp/include.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/tmp/include_preprocessor.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/tmp/include_preprocessor.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/ejs/test/tmp/renderFile.ejs" afterPath="$PROJECT_DIR$/HORO/node_modules/ejs/test/tmp/renderFile.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/bin/express" afterPath="$PROJECT_DIR$/HORO/node_modules/express/bin/express" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/application.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/application.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/express.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/express.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/middleware.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/middleware.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/request.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/request.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/response.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/response.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/router/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/router/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/router/route.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/router/route.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/utils.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/lib/view.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/lib/view.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/buffer-crc32/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/buffer-crc32/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/buffer-crc32/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/buffer-crc32/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/buffer-crc32/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/buffer-crc32/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/buffer-crc32/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/buffer-crc32/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/buffer-crc32/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/buffer-crc32/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/buffer-crc32/tests/crc.test.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/buffer-crc32/tests/crc.test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/lib/commander.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/lib/commander.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/commander/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/commander/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/cache.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/cache.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/connect.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/connect.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/basicAuth.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/basicAuth.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/bodyParser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/compress.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/compress.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/cookieParser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/cookieParser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/cookieSession.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/cookieSession.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/csrf.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/csrf.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/directory.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/directory.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/errorHandler.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/errorHandler.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/favicon.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/favicon.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/json.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/json.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/limit.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/limit.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/logger.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/logger.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/methodOverride.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/multipart.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/multipart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/query.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/query.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/responseTime.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/responseTime.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/session.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/session.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/session/cookie.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/session/cookie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/session/memory.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/session/memory.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/session/session.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/session/session.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/session/store.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/session/store.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/static.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/static.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/staticCache.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/staticCache.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/timeout.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/timeout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/urlencoded.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/urlencoded.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/middleware/vhost.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/middleware/vhost.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/patch.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/patch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/proto.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/proto.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/directory.html" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/directory.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/error.html" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/error.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/favicon.ico" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/favicon.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_add.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_add.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_attach.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_attach.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_code.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_code.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_copy.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_copy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_delete.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_delete.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_edit.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_edit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_error.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_error.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_excel.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_excel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_find.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_find.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_gear.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_gear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_go.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_go.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_green.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_green.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_key.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_key.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_lightning.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_lightning.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_link.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_link.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_paintbrush.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_paintbrush.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_paste.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_paste.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_red.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_red.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_refresh.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_refresh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_save.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_save.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_acrobat.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_acrobat.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_actionscript.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_actionscript.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_add.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_add.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_c.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_c.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_camera.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_camera.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_cd.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_cd.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_code.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_code.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_code_red.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_code_red.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_coldfusion.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_coldfusion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_compressed.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_compressed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_copy.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_copy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_cplusplus.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_cplusplus.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_csharp.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_csharp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_cup.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_cup.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_database.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_database.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_delete.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_delete.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_dvd.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_dvd.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_edit.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_edit.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_error.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_error.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_excel.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_excel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_find.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_find.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_flash.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_flash.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_freehand.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_freehand.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_gear.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_gear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_get.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_get.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_go.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_go.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_h.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_h.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_horizontal.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_horizontal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_key.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_key.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_lightning.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_lightning.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_link.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_link.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_magnify.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_magnify.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_medal.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_medal.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_office.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_office.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_paint.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_paint.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_paintbrush.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_paintbrush.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_paste.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_paste.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_php.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_php.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_picture.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_picture.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_powerpoint.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_powerpoint.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_put.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_put.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_ruby.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_ruby.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_stack.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_stack.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_star.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_star.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_swoosh.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_swoosh.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_text.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_text.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_text_width.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_text_width.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_tux.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_tux.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_vector.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_vector.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_visualstudio.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_visualstudio.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_width.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_width.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_word.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_word.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_world.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_world.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_wrench.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_wrench.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_white_zip.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_white_zip.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_word.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_word.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/icons/page_world.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/icons/page_world.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/public/style.css" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/public/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/lib/utils.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/lib/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/component.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/component.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/bytes/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/test/mocha.opts" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/test/mocha.opts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/test/parse.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/test/parse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/cookie/test/serialize.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/cookie/test/serialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/benchmark/bench-multipart-parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/benchmark/bench-multipart-parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/example/json.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/example/json.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/example/post.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/example/post.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/example/upload.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/example/upload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/file.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/file.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/incoming_form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/json_parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/json_parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/multipart_parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/multipart_parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/octet_parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/octet_parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/lib/querystring_parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/lib/querystring_parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/common.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/common.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/beta-sticker-1.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/beta-sticker-1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/binaryfile.tar.gz" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/binaryfile.tar.gz" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/blank.gif" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/blank.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/funkyfilename.txt" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/funkyfilename.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/menu_separator.png" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/menu_separator.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/plain.txt" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/file/plain.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/http/special-chars-in-filename/info.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/http/special-chars-in-filename/info.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/encoding.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/encoding.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/misc.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/misc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/no-filename.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/no-filename.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/preamble.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/preamble.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/special-chars-in-filename.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/special-chars-in-filename.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/workarounds.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/js/workarounds.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/multipart.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/fixture/multipart.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-fixtures.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-fixtures.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-json.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-json.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-octet-stream.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/integration/test-octet-stream.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/common.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/common.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/integration/test-multipart-parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/integration/test-multipart-parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-file.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-file.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-incoming-form.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-incoming-form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-multipart-parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-multipart-parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/simple/test-querystring-parser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/system/test-multi-video-upload.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/legacy/system/test-multi-video-upload.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/run.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/run.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/standalone/test-connection-aborted.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/standalone/test-connection-aborted.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/standalone/test-content-transfer-encoding.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/standalone/test-content-transfer-encoding.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/standalone/test-issue-46.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/standalone/test-issue-46.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/tools/base64.html" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/tools/base64.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/unit/test-file.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/unit/test-file.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/test/unit/test-incoming-form.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/test/unit/test-incoming-form.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/formidable/tool/record.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/formidable/tool/record.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/pause/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/pause/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/pause/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/pause/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/pause/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/pause/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/pause/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/pause/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/pause/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/pause/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/pause/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/pause/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/qs/.gitmodules" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/qs/.gitmodules" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/qs/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/qs/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/qs/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/qs/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/qs/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/qs/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/qs/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/lib/send.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/lib/send.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/lib/utils.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/lib/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/mime.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/mime.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/test.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/types/mime.types" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/types/mime.types" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/types/node.types" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/node_modules/mime/types/node.types" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/node_modules/send/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/node_modules/send/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/connect/test.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/connect/test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie-signature/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie-signature/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie-signature/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie-signature/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie-signature/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie-signature/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie-signature/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie-signature/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie-signature/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie-signature/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie-signature/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie-signature/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/test/mocha.opts" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/test/mocha.opts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/test/parse.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/test/parse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/cookie/test/serialize.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/cookie/test/serialize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/.jshintrc" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/.jshintrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/bower.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/bower.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/browser.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/browser.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/component.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/component.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/debug.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/debug.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node_modules/ms/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node_modules/ms/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node_modules/ms/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node_modules/ms/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node_modules/ms/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node_modules/ms/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node_modules/ms/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node_modules/ms/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node_modules/ms/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node_modules/ms/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/node_modules/ms/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/debug/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/fresh/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/fresh/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/fresh/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/fresh/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/fresh/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/fresh/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/fresh/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/fresh/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/fresh/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/methods/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/methods/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/methods/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/methods/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/.travis.yml" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/.travis.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/README.markdown" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/README.markdown" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/examples/pow.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/examples/pow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/chmod.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/chmod.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/clobber.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/clobber.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/mkdirp.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/mkdirp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/perm.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/perm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/perm_sync.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/perm_sync.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/race.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/race.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/rel.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/rel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/return.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/return.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/return_sync.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/return_sync.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/root.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/root.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/sync.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/sync.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/umask.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/umask.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/mkdirp/test/umask_sync.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/mkdirp/test/umask_sync.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/range-parser/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/range-parser/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/range-parser/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/range-parser/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/range-parser/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/range-parser/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/range-parser/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/range-parser/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/range-parser/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/range-parser/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/range-parser/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/range-parser/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/.npmignore" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/.npmignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/History.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/History.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/Makefile" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/Makefile" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/Readme.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/Readme.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/index.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/lib/send.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/lib/send.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/lib/utils.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/lib/utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/LICENSE" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/README.md" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/mime.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/mime.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/test.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/types/mime.types" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/types/mime.types" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/node_modules/mime/types/node.types" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/node_modules/mime/types/node.types" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/node_modules/send/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/node_modules/send/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/package.json" afterPath="$PROJECT_DIR$/HORO/node_modules/express/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/node_modules/express/test.js" afterPath="$PROJECT_DIR$/HORO/node_modules/express/test.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/package.json" afterPath="$PROJECT_DIR$/HORO/package.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/public/angularJS/calculator.js" afterPath="$PROJECT_DIR$/HORO/public/angularJS/calculator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/HORO/public/stylesheets/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/routes/calculator.js" afterPath="$PROJECT_DIR$/HORO/routes/calculator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/routes/index.js" afterPath="$PROJECT_DIR$/HORO/routes/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/views/calculator.ejs" afterPath="$PROJECT_DIR$/HORO/views/calculator.ejs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Calculator/views/index.ejs" afterPath="$PROJECT_DIR$/HORO/views/index.ejs" />
+    </list>
+    <ignored path="HORO.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="HORO" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/public/angularJS/calculator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculator.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HORO/views/calculator.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="calculator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/routes/calculator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#43#156#0" expanded="false" />
+                <element signature="e#199#533#0" expanded="false" />
+                <element signature="e#579#916#0" expanded="false" />
+                <element signature="e#966#1306#0" expanded="false" />
+                <element signature="e#1350#1684#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/HORO/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fde9718-8d8e-4144-85a9-0580403df858" name="Default" comment="" />
+      <created>1479501155988</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1479501155988</updated>
+      <workItem from="1479501157510" duration="253000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="253000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21522693" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22047244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#43#156#0" expanded="false" />
+            <element signature="e#199#533#0" expanded="false" />
+            <element signature="e#579#916#0" expanded="false" />
+            <element signature="e#966#1306#0" expanded="false" />
+            <element signature="e#1350#1684#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/angularJS/calculator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/calculator.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

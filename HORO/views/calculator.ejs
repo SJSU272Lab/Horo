@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="angularJS/calculator.js"></script>
+
+<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<body ng-app="calculator" ng-controller="calculator">
+
+
+<div class="Row"><h1>Calculator!!</h1></div>
+</br>
+<div class="Row">
+<div class="col-md-12">
+	<div class="col-md-4">
+	Number One : 
+	<input type="text" name="NumberOne" ng-model="numberOne" autofocus>
+	
+	</br>
+
+	Number Two :
+	<input type="text" name="NumberTwo" ng-model="numberTwo" >
+	</div>
+	</br>
+</div>
+</div>
+<div class="Row">
+	<div class="col-md-12">
+	<button type="button" ng-click="clickedProcessor('add')"  class=" col-md-2">add</button>
+	<button type="button" ng-click="clickedProcessor('subtract')" class=" col-md-2">subtract</button>
+	</div>
+	<br>
+	<div class="col-md-12">
+	<button type="button" ng-click="clickedProcessor('multiply')" class=" col-md-2">multiply</button>
+	<button type="button" ng-click="clickedProcessor('divide')" class=" col-md-2">divide</button>
+	</div>
+</div>
+</br></br>
+
+<div class="col-md-12">
+<button type="button" ng-click="clear()" class="col-md-2">Clear</button>
+</div>
+
+<div class="col-md-12">
+Result: {{result}}
+</div>
+<br>
+
+<div class="col-md-2">
+Message : <b class="text-error">{{message}}</b>
+</div>
+</body>
+</html>
