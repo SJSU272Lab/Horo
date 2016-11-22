@@ -6,7 +6,9 @@ var express = require('express')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path')  
-  , calculator = require('./routes/calculator');
+  , calculator = require('./routes/calculator')
+  , home = require('./routes/home');
+
   
 var app = express();
 
@@ -43,7 +45,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', calculator.getCalculator);
+app.get('/', home.redirectToHome);
 
 app.get('/calculator',calculator.getCalculator);
 app.post('/getAddition',calculator.getAddition);
