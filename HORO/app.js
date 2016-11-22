@@ -13,6 +13,8 @@ var express = require('express')
     ,courseDetail =  require('./routes/course-detail')
     ,contact = require('./routes/contact');
 
+var index = require('./routes/index');
+
   
 var app = express();
 
@@ -49,16 +51,21 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+//GET
 app.get('/', home.redirectToHome);
 app.get('/Gallery',gallery.redirectToGallery);
 app.get('/course',course.redirectToCourse);
 app.get('/courseDetail',courseDetail.redirectToCoursedetail);
 app.get('/contact',contact.redirectToContact);
+app.get('/Index', index.index);
 
+//POST
 app.post('/getAddition',calculator.getAddition);
 app.post('/getSubtraction',calculator.getSubtraction);
 app.post('/getMultiplication',calculator.getMultiplication);
 app.post('/getDivision',calculator.getDivision);
+app.post('/Register', index.Register);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

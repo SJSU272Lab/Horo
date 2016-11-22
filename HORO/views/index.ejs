@@ -32,10 +32,13 @@
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
+	<script src="../public/angularJS/index.js">  </script>
 	<![endif]-->
 
 </head>
-<body>
+<body ng-app="index">
 
 <!--START SCROLL TOP BUTTON -->
 <a class="scrollToTop" href="#">
@@ -66,11 +69,11 @@
 							<div class="mu-header-top-right">
 								<nav>
 									<ul class="mu-top-social-nav">
-										<li><a href="#"><span class="fa fa-facebook"></span></a></li>
-										<li><a href="#"><span class="fa fa-twitter"></span></a></li>
-										<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+										<li><a href="#signup" role="button" data-toggle="modal">Sign Up</a></li>
+										<li><a href="#login" role="button" data-toggle="modal">Log In</a></li>
+										<!--<li><a href="#"><span class="fa fa-google-plus"></span></a></li>
 										<li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-										<li><a href="#"><span class="fa fa-youtube"></span></a></li>
+										<li><a href="#"><span class="fa fa-youtube"></span></a></li>-->
 									</ul>
 								</nav>
 							</div>
@@ -80,6 +83,76 @@
 			</div>
 		</div>
 	</div>
+
+
+	<div id="login"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content" style="width:500px">
+				<div class="modal-header" >
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+					<h3 id="myModalLabel">Log In</h3>
+				</div>
+				<div class="modal-body" ng-controller="airbnb">
+					<form >
+						<input type="email" ng-model="inputUsername" required name="email" id="email" placeholder="Email Address" class="form form-control" style=" height:40px"><br>
+						<input type="password" type="password" required ng-model="inputPassword" name="password" id="password" placeholder="Password" class="form form-control" style="height:40px"><br>
+						<input style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" ng-click="signin()" type="submit" value="Log in" class="form form-control">
+					</form >
+					<br>
+					<b><a stlye="float:rightx">Forgot Password ?</a><b>
+							<div class="modal-footer row">
+
+								<br>
+								<div class="alert alert-danger" ng-hide="invalid_login">
+									<strong>Invalid Email address or Password</strong>
+								</div>
+							</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="signup"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-controller="index">
+		<div class="modal-dialog">
+			<div class="modal-content" style="width:500px">
+				<div class="modal-header" >
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+					<h3 id="myModalLabel">Sign Up </h3>
+				</div>
+				<div class="modal-body" ng-controller="register">
+					<form >
+						<input type="text" placeholder="First Name" required ng-model="first_name" name="first_name" id="first_name" class="form form-control" style=" height:40px"><br>
+						<input type="text" placeholder="Last Name" required ng-model="last_name" name="last_name" id="last_name" class="form form-control" style=" height:40px"><br>
+						<input type="text" placeholder="Gender" required ng-model="gender" name="email" id="gender" class="form form-control" style=" height:40px"><br>
+						<input type="text" placeholder="City" required ng-model="city" name="email" id="city" class="form form-control" style=" height:40px"><br>
+						<input type="password" placeholder="Password" required ng-model="inputPassword" name="password" id="password" class="form form-control" style="height:40px"><br>
+						<label>Birthday</label>
+						<input type="date" ng-model="dob" name="dob" id="dob" required placeholder="Date of Birth" class="form form-control" style="height:40px"><br>
+						<p>By signing up, I agree to Airbnb's Terms of Service, Nondiscrimination Policy, Payments Terms of Service,
+							Privacy Policy, Guest Refund Policy, and Host Guarantee Terms.</p>
+						<input ng-click="register()" style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" type="submit" value="Sign up" class="form form-control">
+						<br>
+					</form>
+					<div class="modal-footer row">
+
+						<a href="#myModal" data-dismiss="modal" aria-hidden="true" role="button" data-toggle="modal">Already have an Airbnb account?</a>
+
+						<div class="alert alert-danger" ng-hide="invalid_register">
+							<strong>Passwards do not match</strong>
+						</div>
+						<div class="alert alert-success" ng-hide="valid_register">
+							<strong>Account Has Been Created Please Proceed To LOGIN!</strong>
+						</div>
+						<div class="alert alert-danger" ng-hide="already_exists">
+							<strong>This user already exists!</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 </header>
 <!-- End header  -->
 <!-- Start menu -->
