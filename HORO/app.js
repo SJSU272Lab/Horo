@@ -7,7 +7,11 @@ var express = require('express')
   , http = require('http')
   , path = require('path')  
   , calculator = require('./routes/calculator')
-  , home = require('./routes/home');
+  , home = require('./routes/home')
+  , gallery = require('./routes/gallery')
+  , course =  require('./routes/caurse')
+    ,courseDetail =  require('./routes/course-detail')
+    ,contact = require('./routes/contact');
 
   
 var app = express();
@@ -46,8 +50,11 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', home.redirectToHome);
+app.get('/Gallery',gallery.redirectToGallery);
+app.get('/course',course.redirectToCourse);
+app.get('/courseDetail',courseDetail.redirectToCoursedetail);
+app.get('/contact',contact.redirectToContact);
 
-app.get('/calculator',calculator.getCalculator);
 app.post('/getAddition',calculator.getAddition);
 app.post('/getSubtraction',calculator.getSubtraction);
 app.post('/getMultiplication',calculator.getMultiplication);
