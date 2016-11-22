@@ -1,0 +1,54 @@
+#Database Design V1.0
+
+1. USER_MASTER TABLE -
+     USER_ID - Auto Generated/Increment PRIMARY KEY - INTEGER - { unique ID for each user }
+     USERNAME - Unique / NOT NULL - VARCHAR(100) - { login username for each user }
+     ACCOUNT_TYPE - INTEGER - { signify the type of account viz. NGO / Trainer / Student }
+     ACCOUNT_CREATED - DATE - { date of account creation }
+     
+2. ACCOUNT_TYPE  TABLE - 
+     ACC_TID - Auto Generated / Increament - INTEGER - { Unique account type ID }
+     ACC_TNAME - VARCHAR(40) - { type of account }
+     ACC_TDESC - VARCHAR(100) - { account type description }
+
+3. USER_PROFILE TABLE - 
+    USER_FID - FOREIGN KEY UNIQUE - INTEGER - { this is unique ID from USER_MASTER }
+    USER_FIRSTNAME - VARCHAR(60) - { user's first name }
+    USER_LASTNAME - VARCHAR(60) - { user's last name }
+    USER_GENDER - VARCHAR(10) - { user's gender - male / female / I chose not to disclose }
+    USER_BIRTHDATE - DATE - { user's birth date }
+    USER_PHOTO - VARCHAR(80) - { user's photo - image url }
+    USER_CITY - VARCHAR(100) - { user's city of living }
+    
+4. NGO_MASTER TABLE - 
+    NGO_ID - Auto Increment  PRIMARY KEY - INTEGER - { unique id for the NGO }
+    NGO_NAME - UNIQUE NOT NULL - VARCHAR(100) - { NGO name }
+    NGO_DESCRIPTION - VARCHAR(100) - { NGO description }
+    NGO_WEBSITE - VARCHAR(100) - { website of the NGO }
+    NGO_CONTACTNO - NUMBER - { NGO contact number }
+    NGO_CITY - VARCHAR(40) - { NGO City }
+    NGO_ADDRESSLINE1 - VARCHAR(100) - { address line 1 }
+    NGO_ADDRESSLINE2 - VARCHAR(100) - { address line 2 }
+    NGO_ZIPCODE - NUMBER - { NGO zipcode }
+     
+5. COURSE_MASTER TABLE - 
+   COURSE_ID - Auto Increament  PRIMARY KEY - INTEGER - { unique id for a course }
+   COURSE_NAME - VARCHAR(100) - { name of the course }
+   COURSE_CATEGORY - FOREIGN KEY - INTEGER - { cateogy id of the course  FOREIGN KEY from CATEGORY_MASTER } 
+
+6. CATEGORY_MASTER TABLE - 
+   CATEGORY_ID - Auto Increment PRIMARY KEY - INTEGER - { uniqu id for category }
+   CATEGORY_NAME - VARCHAR(100) - { description for the category }
+
+7. SUBCATEGORY TABLE - 
+   SUBCAT_ID - Auto Increment PRIMARY KEY - INTEGER - { subcategory ID }
+   SUBCAT_NAME - VARCHAR(100) - { description / title of sub category }
+   MAINCATEGORY_ID - FOREIGN KEY - INTEGER - { main category for this sub category  FOREIGN KEY from 
+
+  
+
+
+   
+   
+    
+    
