@@ -8,6 +8,8 @@
   "dependencies": {
     "angular": "^1.5.8",
     "ejs": "*",
-    "express": "3.2.6"
+    "express": "3.2.6",
+    "mysql": "^2.12.0",
+    "stackjs": "^0.1.0"
   }
 }
