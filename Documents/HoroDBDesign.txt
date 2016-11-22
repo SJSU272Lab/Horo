@@ -43,7 +43,38 @@
 7. SUBCATEGORY TABLE - 
    SUBCAT_ID - Auto Increment PRIMARY KEY - INTEGER - { subcategory ID }
    SUBCAT_NAME - VARCHAR(100) - { description / title of sub category }
-   MAINCATEGORY_ID - FOREIGN KEY - INTEGER - { main category for this sub category  FOREIGN KEY from 
+   MAINCATEGORY_ID - FOREIGN KEY - INTEGER - { main category for this sub category  FOREIGN KEY from CATEGORY_MASTER }
+   
+8. COURSE_DETAILS TABLE - 
+   COURSE_ID - FOREIGN KEY - INTEGER - { course_id from COURSE_MASTER }
+   COURSE_INSTID - FOREIGN KEY - INTEGER - { this is a id of instructor FOREIGN KEY frou USER_MASTER }
+   COURSE_STARTDATE - DATE - { this is start date for the course }
+   COURSE_ENDDATE - DATE - { this is the end date for the course }
+   COURSE_DURATION - INTEGER - { this is the total duration of the course }
+   COURSE_LANGUAGE - VARCHAR(40) - { this is the language in  which the course will be taught }
+   COURSE_LECTURES - INTEGER - { number of lectures in the total course }
+   COURSE_RATING - INTEGER - { overall rating for the course }
+        
+9. SESSIONS TABLE - 
+   COURSE_ID - INTEGER - { id of the course to which this session belongs }
+   SESSION_ID - Auto increment / Unique PRIMARY KEY - { unique id for this session }
+   SESSION_TITILE - VARCHAR(100) - { title of this session }
+   SESSION_DURATION - INTEGER - { total duration of the session }
+   SESSION_DATE - DATE - { date of the session }
+   SESSION_LOCATION - VARCHAR(100) - { location where the session will be conducted }
+   SESSION_DETAILS - TEXT - { description about the contents of the lecture }
+   SESSION_VIDEO - VARCHAR(100) - { video url to the video for the session }
+
+10. COURSE_PROGRESS TABLE   
+   COURSE_ID - INTEGER - { course_id of the course FOREIGN KEY from COURSE_MASTER table }
+   USER_ID - INTEGER - { user_id from USER_MASTER FOREIGN KEY from USER_ID }
+   PROGRESS - INTEGER - { % progress of the user for the course }
+
+
+
+
+   
+
 
   
 
