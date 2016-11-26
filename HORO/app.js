@@ -64,7 +64,9 @@ app.post('/getAddition',calculator.getAddition);
 app.post('/getSubtraction',calculator.getSubtraction);
 app.post('/getMultiplication',calculator.getMultiplication);
 app.post('/getDivision',calculator.getDivision);
-app.post('/Register', index.Register);
+
+
+app.post('/signupForVolunteerAndAttendee',index.signupForVolunteerAndAttendee);
 
 
 http.createServer(app).listen(app.get('port'), function(){

@@ -1,0 +1,28 @@
+{"level":"info","message":"Query:: INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')","timestamp":"2016-11-26T04:17:14.599Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')---","timestamp":"2016-11-26T04:17:14.604Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (username, account_type, account_date, password) VALUES ('undefined','volunteer','Fri Nov 25 2016 20:17:14 GMT-0800 (Pacific Standard Time)','$2a$10$prpm9shLl0MigbUHFEvl0e3J43VlYQwggaCXfj.r5jZ5GIT5Iyaq6')","timestamp":"2016-11-26T04:17:14.603Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-26T04:17:14.858Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')","timestamp":"2016-11-26T04:18:57.196Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')---","timestamp":"2016-11-26T04:18:57.200Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (username, account_type, account_date, password) VALUES ('undefined','volunteer','Fri Nov 25 2016 20:18:57 GMT-0800 (Pacific Standard Time)','$2a$10$83ZuHEiEBqpz48EuXBLREOaNezy1dT0JM1XZIdIZY/z5PUNpLoegO')","timestamp":"2016-11-26T04:18:57.200Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-26T04:18:57.317Z"}
+{"level":"info","message":"Invalid Sign up for: Gaurang","timestamp":"2016-11-26T04:18:57.318Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-26T04:18:57.321Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')","timestamp":"2016-11-26T04:23:32.382Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')---","timestamp":"2016-11-26T04:23:32.386Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (username, account_type, account_date, password) VALUES ('undefined','volunteer','Fri Nov 25 2016 20:23:32 GMT-0800 (Pacific Standard Time)','$2a$10$icxnDApPH9ywX2XUW6klduo1eiWug.h5wVvLmu8K6qfggk73mXWJq')","timestamp":"2016-11-26T04:23:32.386Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-26T04:23:32.505Z"}
+{"level":"info","message":"Invalid Sign up for: Gaurang","timestamp":"2016-11-26T04:23:32.506Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-26T04:23:32.511Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')","timestamp":"2016-11-26T04:23:52.087Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')---","timestamp":"2016-11-26T04:23:52.091Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (username, account_type, account_date, password) VALUES ('undefined','volunteer','Fri Nov 25 2016 20:23:52 GMT-0800 (Pacific Standard Time)','$2a$10$PDbEos2y2LULPLcIyhc2Y.L4v0Vin53Cu4seeoL5LMGTyS4OGKGBC')","timestamp":"2016-11-26T04:23:52.091Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-26T04:23:52.204Z"}
+{"level":"info","message":"Invalid Sign up for: Gaurang","timestamp":"2016-11-26T04:23:52.205Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-26T04:23:52.209Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')","timestamp":"2016-11-26T04:25:49.291Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('Gaurang','Mhatre','male','1990-02-01T08:00:00.000Z','volunteer')---","timestamp":"2016-11-26T04:25:49.295Z"}
+{"level":"info","message":"Query:: INSERT INTO user_profile (username, account_type, account_date, password) VALUES ('undefined','volunteer','Fri Nov 25 2016 20:25:49 GMT-0800 (Pacific Standard Time)','$2a$10$t2ArCT5uJekHI3kSP1IyDe0DCJHrJOLK67PZYbifIGitceP.PnAzm')","timestamp":"2016-11-26T04:25:49.295Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-26T04:25:49.404Z"}
+{"level":"info","message":"Invalid Sign up for: Gaurang","timestamp":"2016-11-26T04:25:49.404Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-26T04:25:49.408Z"}

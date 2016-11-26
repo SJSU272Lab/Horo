@@ -28,7 +28,6 @@
 
 
 
-	<script src="/angularJS/index.js">  </script>
 
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -42,7 +41,7 @@
 	<![endif]-->
 
 </head>
-<body ng-app="index">
+<body ng-app="indexPage">
 
 <!--START SCROLL TOP BUTTON -->
 <a class="scrollToTop" href="#">
@@ -96,14 +95,14 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
 					<h3 id="myModalLabel">Log In</h3>
 				</div>
-				<div class="modal-body" ng-controller="airbnb">
+				<div class="modal-body" ng-controller="signin">
 					<form >
 						<input type="email" ng-model="inputUsername" required name="email" id="email" placeholder="Email Address" class="form form-control" style=" height:40px"><br>
 						<input type="password" type="password" required ng-model="inputPassword" name="password" id="password" placeholder="Password" class="form form-control" style="height:40px"><br>
 						<input style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" ng-click="signin()" type="submit" value="Log in" class="form form-control">
 					</form >
 					<br>
-					<b><a stlye="float:rightx">Forgot Password ?</a><b>
+					<b><a stlye="float:rightx">Forgot Password ?</a></b>
 							<div class="modal-footer row">
 
 								<br>
@@ -115,24 +114,32 @@
 			</div>
 		</div>
 	</div>
-	<div id="signup"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" ng-controller="index">
+	<div id="signup"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content" style="width:500px">
 				<div class="modal-header" >
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
 					<h3 id="myModalLabel">Sign Up </h3>
 				</div>
-				<div class="modal-body" ng-controller="register">
+				<div class="modal-body" ng-controller="signup">
 					<form >
 						<input type="text" placeholder="First Name" required ng-model="first_name" name="first_name" id="first_name" class="form form-control" style=" height:40px"><br>
 						<input type="text" placeholder="Last Name" required ng-model="last_name" name="last_name" id="last_name" class="form form-control" style=" height:40px"><br>
+						<input type="text" placeholder="UserName" required ng-model="username" name="username" id="username" class="form form-control" style=" height:40px"><br>
 						<input type="text" placeholder="Gender" required ng-model="gender" name="email" id="gender" class="form form-control" style=" height:40px"><br>
 						<input type="text" placeholder="City" required ng-model="city" name="email" id="city" class="form form-control" style=" height:40px"><br>
 						<input type="password" placeholder="Password" required ng-model="inputPassword" name="password" id="password" class="form form-control" style="height:40px"><br>
 						<label>Birthday</label>
 						<input type="date" ng-model="dob" name="dob" id="dob" required placeholder="Date of Birth" class="form form-control" style="height:40px"><br>
-						<p>By signing up, I agree to Airbnb's Terms of Service, Nondiscrimination Policy, Payments Terms of Service,
-							Privacy Policy, Guest Refund Policy, and Host Guarantee Terms.</p>
+
+						<!-- For Buy or Auction -->
+						<div class="form-group">
+							<label class="control-label" for="txtPerformanceType" ng-click="RadioButtonRoleClick()">Role &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+							<input type="radio" name="rdoCriteria" value="1" ng-model="Attendee" checked /> Attendee &nbsp;&nbsp;
+							<input type="radio" name="rdoCriteria" value="0" ng-model="Attendee"> Voleeteer
+						</div>
+						<p>By signing up, I agree to HORO's Terms of Service, Nondiscrimination Policy,
+							Privacy Policy,Host Guarantee Terms.</p>
 						<input ng-click="register()" style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" type="submit" value="Sign up" class="form form-control">
 						<br>
 					</form>
@@ -931,6 +938,20 @@
 
 <!-- Custom js -->
 <script src="stylesheets/assets/js/custom.js"></script>
+
+
+
+<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="/index.js">  </script>
+<script src="/signin/signin.js"></script>
+<script src="/signup/signup.js"></script>
+
+
 
 </body>
 </html>
