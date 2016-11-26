@@ -62,21 +62,63 @@ Sign up to learn, coach or contribute now !
 
 ##Our Teachers
 
-1. Philip Moz - Electrician Coach
-
+1. Philip Moz - Electrician Coach - 
 With over 2 decades of experience in working with big organizations like GE, GMC etc Philip is here to teach you 
 the fundamental skills required to be a electrician. 
 
-2. Dayna McKenzie - Baking Coach
-
+2. Dayna McKenzie - Baking Coach -
 After running her own business for over a decade, Dayna is here to coach you about her best skill, baking. 
 
-3. John Harmon - Plumbing Coach
-
+3. John Harmon - Plumbing Coach -
 John runs his own service business in the plumbing industry. And he does it best. 
 
-4. Michael Wolfhard - Painting
-
+4. Michael Wolfhard - Painting Coach - 
 Michael's work has been recognized internationally for various reasons. He is here to teach you why and how. 
 
+##Courses
+
+1. Plumbing Course
+
+###Brief Intro
+This course is designed for anyone who wants to learn about modern-day plumbing. Plumbers are responsible for installing safe and efficient plumbing systems, which reduces the spread of diseases and improves sanitation. Learners who are interested in knowing how plumbing systems work and the advancements made in the trade will also benefit from the information provided in the course. 
+
+###Instructor
+John Harmon
+
+###Start Date
+1 Dec 2017
+
+###Contents - 
+
+Module 1: The Plumbing Profession
+
+Module 2: Plumbing Safety
+
+Module 3: Hazard Communication
+
+Module 4: Basic Tool Safety and Working Environment
+
+Module 5: Plumbing Tools
+
+Module 6: Plumbing Math
+
+Module 7: Plumbing Drawings
+
+Module 8: Diploma in Plumbing First Assessment
+
+Module 9: Plastic Pipes and Fittings
+
+Module 10: Copper Pipes and Fittings
+
+Module 11: Cast-Iron Pipes and Fittings
+
+Module 12: Carbon Steel Pipes and Fittings
+
+Module 13: Corrugated Stainless Steel Tubing (CSST)
+
+Module 14: Fixtures and Faucets
+
+Module 15: Drain, Waste, Vent (DWV) Systems
+
+Module 16: Water Distribution Systems
 
