@@ -31,18 +31,18 @@ exports.signupForVolunteerAndAttendee = function(req,res)
 
     var hash = bcrypt.hashSync(inputPassword);
 
-    var query = "INSERT INTO user_profile (user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('" + first_name + "','" + last_name + "','" + gender + "','" + dob + "','" + role + "')";
+    var query = "INSERT INTO user_profile (username, user_firstname, user_lastname, user_gender, user_birthdate, user_city) VALUES ('"+userName+"','" + first_name + "','" + last_name + "','" + gender + "','" + dob + "','" + city + "')";
     console.log("Query:: " + query);
     logger.log('info', "Query:: " + query);
 
 
-    var query2 = "INSERT INTO user_profile (username, account_type, account_date, password) VALUES ('" + userName + "','" + role + "','" + new Date() + "','" + hash + "')";
+    var query2 = "INSERT INTO user_master (username, account_type, account_date, password) VALUES ('" + userName + "','" + role + "','" + new Date() + "','" + hash + "')";
     console.log("Query:: " + query2);
     logger.log('info', "Query:: " + query2);
 
 
 
-    mysql.storeData(query, function(err, result){
+    mysql.storeData(query2, function(err, result){
         //render on success
         if(err){
             console.log('Invalid SingUp!');
@@ -51,7 +51,7 @@ exports.signupForVolunteerAndAttendee = function(req,res)
         }
         //render or error
         else{
-            mysql.storeData(query2, function(err, result) {
+            mysql.storeData(query, function(err, result) {
                 //render on success
                 if (err) {
                     console.log('Invalid SingUp!');

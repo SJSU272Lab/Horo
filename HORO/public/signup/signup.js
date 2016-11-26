@@ -21,7 +21,7 @@ indexPage.controller('signup', function($scope, $http,$state) {
             data: {
                 first_name: $scope.first_name,
                 last_name:$scope.last_name,
-                userName:$scope.userName,
+                userName:$scope.username,
                 gender:$scope.gender,
                 city:$scope.city,
                 inputPassword:$scope.inputPassword,

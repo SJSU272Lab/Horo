@@ -248,13 +248,13 @@ DROP TABLE IF EXISTS `user_master`;
 CREATE TABLE `user_master` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(45) NOT NULL,
-  `account_type` int(11) DEFAULT NULL,
-  `account_date` varchar(50) DEFAULT NULL,
+  `account_type` varchar(50) DEFAULT NULL,
+  `account_date` varchar(100) DEFAULT NULL,
   `password` varchar(500) NOT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_id_UNIQUE` (`user_id`),
   UNIQUE KEY `username_UNIQUE` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -263,6 +263,7 @@ CREATE TABLE `user_master` (
 
 LOCK TABLES `user_master` WRITE;
 /*!40000 ALTER TABLE `user_master` DISABLE KEYS */;
+INSERT INTO `user_master` VALUES (1,'gaurangmhatre','attendee','Fri Nov 25 2016 21:38:46 GMT-0800 (Pacific Standard Time)','$2a$10$SQkJELAYFwMhRKmiBXmsxe933a0Q.kI4zqObU0jTdGKwaWdNIaHCi');
 /*!40000 ALTER TABLE `user_master` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -292,6 +293,7 @@ CREATE TABLE `user_profile` (
 
 LOCK TABLES `user_profile` WRITE;
 /*!40000 ALTER TABLE `user_profile` DISABLE KEYS */;
+INSERT INTO `user_profile` VALUES ('gaurangmhatre','Gaurang','Mhatre','male','1990-01-01T08:00:00.000Z',NULL,'San jose');
 /*!40000 ALTER TABLE `user_profile` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -304,4 +306,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-25 21:07:35
+-- Dump completed on 2016-11-25 22:23:07
