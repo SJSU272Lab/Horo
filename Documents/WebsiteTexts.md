@@ -33,3 +33,31 @@ Our platform tries to achieve this by connecting three types of people -
 2. Experts 
 
 3. NGOs
+
+Sign up to learn, coach or contribute now ! 
+
+##Participant counts
+
+1. Courses - fetch from table { create 10 }
+
+2. Students - fetch from table { Get 15 of our friends signed up for our courses } 
+
+3. Coaches - Fetch from table { keep 5 atleast }
+
+4. Locations - Fetch from table { select distinct }
+
+##Our Features
+
+1. Skill Focused Courses
+
+2. Industry Expert Coaches
+
+3. Professional Certificate
+
+4. Video Recorded Lessons / Learn from Home
+
+5. Job Search Help
+
+6. In person trainings
+
+
