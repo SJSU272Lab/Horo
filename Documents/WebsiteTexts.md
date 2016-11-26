@@ -60,4 +60,23 @@ Sign up to learn, coach or contribute now !
 
 6. In person trainings
 
+##Our Teachers
+
+1. Philip Moz - Electrician Coach
+
+With over 2 decades of experience in working with big organizations like GE, GMC etc Philip is here to teach you 
+the fundamental skills required to be a electrician. 
+
+2. Dayna McKenzie - Baking Coach
+
+After running her own business for over a decade, Dayna is here to coach you about her best skill, baking. 
+
+3. John Harmon - Plumbing Coach
+
+John runs his own service business in the plumbing industry. And he does it best. 
+
+4. Michael Wolfhard - Painting
+
+Michael's work has been recognized internationally for various reasons. He is here to teach you why and how. 
+
 
