@@ -97,8 +97,8 @@
 				</div>
 				<div class="modal-body" ng-controller="signin">
 					<form >
-						<input type="email" ng-model="inputUsername" required name="email" id="email" placeholder="Email Address" class="form form-control" style=" height:40px"><br>
-						<input type="password" type="password" required ng-model="inputPassword" name="password" id="password" placeholder="Password" class="form form-control" style="height:40px"><br>
+						<input type="username" ng-model="username" required name="username" id="username" placeholder="User Name" class="form form-control" style=" height:40px"><br>
+						<input type="password" type="password" required ng-model="password" name="password" id="password" placeholder="Password" class="form form-control" style="height:40px"><br>
 						<input style="height:40px;background-color:rgb(255,100,100);color:white;font-weight:bold" ng-click="signin()" type="submit" value="Log in" class="form form-control">
 					</form >
 					<br>
@@ -107,7 +107,7 @@
 
 								<br>
 								<div class="alert alert-danger" ng-hide="invalid_login">
-									<strong>Invalid Email address or Password</strong>
+									<strong>Invalid username or Password</strong>
 								</div>
 							</div>
 				</div>

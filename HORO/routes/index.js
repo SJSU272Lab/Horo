@@ -47,7 +47,7 @@ exports.signupForVolunteerAndAttendee = function(req,res)
         if(err){
             console.log('Invalid SingUp!');
             logger.log('info', "Invalid Sign up for: "+ first_name);
-            res.send("false");
+            res.send({"statusCode" : 401});
         }
         //render or error
         else{
@@ -56,16 +56,71 @@ exports.signupForVolunteerAndAttendee = function(req,res)
                 if (err) {
                     console.log('Invalid SingUp!');
                     logger.log('info', "Invalid Sign up for: " + first_name);
-                    res.send("false");
+                    res.send({"statusCode" : 401});
                 } else {
                     console.log('Valid SignUp!');
                     logger.log('info', "Valid Sign up for: " + first_name);
-                    res.send("true");
+                    res.send({"statusCode" : 200});
 
                 }
             });
         }
     });
+
+
+};
+
+exports.signinForVolunteerAndAttendee= function(req,res)
+{
+
+    console.log("Inside signin on nodejs.");
+
+    var username = req.param("username");
+    var password = req.param("password");
+
+
+    if(username != '') {
+        var checkLoginQuery = "select username,password from user_master where username = '" + username + "';";
+        logger.log('info', 'select username,password from user_master where EmailId = '+username);
+        console.log("Query:: " + checkLoginQuery);
+
+        mysql.fetchData(function(err,results) {
+            if(err) {
+                throw err;
+                logger.log('error','Error of user :'+username+ ' Error: '+err);
+            }
+            else {
+                if(results.length >0) {
+                    if (bcrypt.compareSync(password, results[0].password)) {
+
+                        console.log("Successful Login");
+                        logger.log('info', 'Successful Login for = ' + username + ' userId: ' + results[0].username);
+                        console.log("username :  " + results[0].username);
+                        req.session.username = username;
+
+                        logger.log('info', "Session Initialized with username : " + req.session.username);
+                        console.log("Session Initialized with username : " + req.session.username);
+
+                        json_responses = {"statusCode": 200};
+                        res.send(json_responses);
+                    }
+
+                    else {
+                        logger.log('error', "Invalid password for username Id: " + username);
+                        console.log("Invalid Login");
+                        json_responses = {"statusCode": 401};
+                        res.send(json_responses);
+                    }
+                }
+                else{
+                    logger.log('error', "Invalid Login for username Id: "+username +' user is not registered.');
+                    json_responses = {"statusCode": 401};
+                    console.log(json_responses);
+                    res.send(json_responses);
+                }
+            }
+        }, checkLoginQuery);
+    }
 
 
 };

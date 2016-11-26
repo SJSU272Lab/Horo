@@ -8,11 +8,15 @@ indexPage.controller('signin', function($scope, $http,$state) {
 
     console.log("Inside signin");
 
-    $scope.register = function()
+    $scope.signin = function()
     {
-        $http({
+       $http({
             method : "POST",
-            url : '/Register'
+            url : '/signinForVolunteerAndAttendee',
+            data: {
+                username: $scope.username,
+                password:$scope.password
+            }
         }).success(function(data) {
 
             if (data.statusCode == 200) {
