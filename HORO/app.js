@@ -15,6 +15,9 @@ var express = require('express')
     ,contact = require('./routes/contact');
 
 var index = require('./routes/index');
+var profile = require('./routes/profile');
+var editprofile = require('./routes/EditProfile');
+var account = require('./routes/Account');
 
 var app = express();
 
@@ -70,6 +73,9 @@ app.get('/course',course.redirectToCourse);
 app.get('/courseDetail',courseDetail.redirectToCoursedetail);
 app.get('/contact',contact.redirectToContact);
 app.get('/Index', index.index);
+app.get('/Profile',profile.land);
+app.get('/EditProfile',editprofile.land);
+app.get('/Account',account.land);
 
 //POST
 app.post('/getAddition',calculator.getAddition);
