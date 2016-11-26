@@ -77,7 +77,7 @@ Michael's work has been recognized internationally for various reasons. He is he
 
 ##Courses
 
-1. Plumbing Course
+##_**Plumbing Course**_
 
 ###Brief Intro
 This course is designed for anyone who wants to learn about modern-day plumbing. Plumbers are responsible for installing safe and efficient plumbing systems, which reduces the spread of diseases and improves sanitation. Learners who are interested in knowing how plumbing systems work and the advancements made in the trade will also benefit from the information provided in the course. 
@@ -121,4 +121,101 @@ Module 14: Fixtures and Faucets
 Module 15: Drain, Waste, Vent (DWV) Systems
 
 Module 16: Water Distribution Systems
+
+
+##_**Electrician Course**_
+
+###Brief Intro
+Learners who want to gain a practical knowledge and understanding of the electrical trade would also benefit from the concepts explained in this course.
+
+###Instructor
+Philip Moz
+
+###Start Date
+1 Dec 2017
+
+###Contents - 
+
+Module 1: Introduction to the Electrical Trade
+
+Module 2: Electrical Safety
+
+Module 3: Electrical Circuits
+
+Module 4: Electrical Theory
+
+Module 5: Diploma in Electrical Studies - First Assessment
+
+Module 6: Device Boxes
+
+Module 7: Hand Bending Conduits
+
+Module 8: Raceways and Fittings
+
+Module 9: Conductors and Cables
+
+Module 10: Diploma in Electrical Studies - Second Assessment
+
+Module 11: Basic Electrical Drawings
+
+Module 12: Electrical Test Equipment
+
+##_**Baking Course**_
+
+###Brief Intro
+This course covers everything from artisan bread baking and cake decorating to menu planning and budget management. No matter your pastry career path, this revolutionary online pastry certificate program provides you with the tools you’ll need to be successful.
+
+###Instructor
+Dayna McKenzie
+
+###Start Date
+1 Dec 2017
+
+###Contents -
+
+Module 1 : Pastry and Baking Concepts and Foundations
+
+Module 2 : Patisserie
+
+Module 3 : Culinary Careers from Entry Level to Management
+
+Module 4 : Confiserie and Frozen Desserts
+
+Module 5 : Food and Beverage Cost Control
+
+##_**Painting Course**_
+
+###Brief Intro
+This painting course is about what can be achieved with acrylic painting when you apply my 7 painting principles to your painting.
+
+###Instructor
+Michael Wolfhard
+
+###Start Date
+1 Dec 2017
+
+###Contents -
+
+Module 1 : Introduction & overview of the course	
+
+Module 2 : Choosing a coloured ground & Reference photo 
+
+Module 3 : Painting the Darkest Darks 
+
+Module 4 : Introducing white 
+
+Module 5 : Introducing Colour
+
+Module 6 : Introducing Red 
+
+Module 7 : Adding form to the Cherry 
+
+Module 8 : Finishing touches
+
+Module 9 : Adding Green 
+
+Module 10 : Finishing touches 
+
+Module 11 : Course review - Steps of the painting
+
 
