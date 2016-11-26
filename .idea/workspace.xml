@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HORO/public/signin/signin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HORO/public/signin/signin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HORO/public/signup/signup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HORO/public/signup/signup.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/big/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/fancybox_buttons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/fancybox_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/fancybox_loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/fancybox_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/fancybox_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/fancybox_sprite@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/assets/img/gallery/small/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCore.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreDefault.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreDjango.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreEclipse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreEmacs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreFadeToGrey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreMDUltra.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreMidnight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shCoreRDark.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeDefault.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeDjango.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeEclipse.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeEmacs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeFadeToGrey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeMDUltra.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeMidnight.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HORO/public/stylesheets/syntax-highlighter/styles/shThemeRDark.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/HORO/public/angularJS/index.js" afterPath="$PROJECT_DIR$/HORO/public/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/app.js" afterPath="$PROJECT_DIR$/HORO/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/package.json" afterPath="$PROJECT_DIR$/HORO/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/index.js" afterPath="$PROJECT_DIR$/HORO/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" afterPath="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/views/index.ejs" afterPath="$PROJECT_DIR$/HORO/views/index.ejs" />
-    </list>
+    <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="" />
     <ignored path="Fall16-Team4.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -440,12 +387,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480015677017</updated>
       <workItem from="1480015678331" duration="992000" />
-      <workItem from="1480118705766" duration="9582000" />
+      <workItem from="1480118705766" duration="10460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10574000" />
+    <option name="totallyTimeSpent" value="11452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
