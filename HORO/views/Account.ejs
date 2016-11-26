@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+
+    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+    <link rel='stylesheet' href='/stylesheets/test.css' />
+
+    <!-- Loading the AngularJS file from /public/angularJS folder -->
+
+
+    <script src="/account.js">  </script>
+
+<!--<div ui-view="header"></div>
+<div ui-view="content"></div>-->
+
+    <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="dns-prefetch" href="https://maps.googleapis.com/">
+    <link rel="dns-prefetch" href="https://maps.gstatic.com/">
+    <link rel="dns-prefetch" href="https://mts0.googleapis.com/">
+    <link rel="dns-prefetch" href="https://mts1.googleapis.com/">
+
+    <link rel="shortcut icon" href="http://makent.trioangle.com/images/logos/favicon.ico">
+
+    <!--[if IE]><![endif]-->
+    <meta charset="utf-8">
+
+    <!--[if IE 8]>
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common_ie8.css">
+
+    <![endif]-->
+    <!--[if !(IE 8)]><!-->
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/home.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/themes.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/pcss?css=css/dynamic.css">
+
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">
+
+    <![endif]-->
+
+     <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/payout_preferences.css">
+
+
+
+
+
+
+
+    <style type="text/css">
+        .ui-selecting { background: #FECA40; }
+        .ui-selected { background: #F39814; color: white; }
+    </style>
+
+    <title>Account </title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+    <meta name="description" content="Account">
+    <meta name="keywords" content="">
+
+
+    <meta name="twitter:widgets:csp" content="on">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="search" type="application/opensearchdescription+xml" href="#" title="">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="theme-color" content="#f5f5f5">
+
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/common.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/util.js">
+    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/controls.js">
+    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/places_impl.js">
+    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/stats.js">
+    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fmakent.trioangle.com%2Fusers%2Fpayout_preferences%2F10005&amp;4sAIzaSyBXyRBiyRcEzHDJ8iU00zECMUP4cXBIm6A&amp;callback=_xdc_._hoty9i&amp;token=62420"></script>
+</head>
+
+<body class="ng-scope" ng-app="account">
+<div id="header" class="makent-header new ">
+    <header class="header--sm show-sm" aria-hidden="true" role="banner">
+        <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
+            <i class="icon icon-reorder icon-rausch"></i>
+            <span class="screen-reader-only">
+      Makent
+    </span>
+        </a>
+        <div class="title--sm text-center">
+            <button class="btn btn-block search-btn--sm search-modal-trigger">
+                <i class="icon icon-search icon-gray"></i>
+                <span class="search-placeholder--sm">
+              Where to?
+            </span>
+            </button>
+        </div>
+
+        <div class="action--sm"></div>
+        <nav role="navigation" class="nav--sm"><div class="nav-mask--sm"></div>
+            <div class="nav-content--sm panel text-white">
+                <div class="nav-header ">
+                    <div class="nav-profile clearfix">
+                        <div class="user-item pull-left">
+                            <a href="http://makent.trioangle.com/users/show/10005" class="link-reset user-profile-link">
+                                <div class="media-photo media-round user-profile-image" style="background:rgba(0, 0, 0, 0) url(https://lh5.googleusercontent.com/--KQiCnO7b2k/AAAAAAAAAAI/AAAAAAAAEEY/kepVuvUEH9I/photo.jpg?sz=50) no-repeat scroll 0 0 / cover">
+                                </div>
+                                Jay
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="nav-menu-wrapper">
+                    <div class="va-container va-container-v va-container-h">
+                        <div class="va-middle nav-menu panel-body">
+                            <ul class="menu-group list-unstyled row-space-3">
+                                <li>
+                                    <a rel="nofollow" class="link-reset menu-item" href="http://makent.trioangle.com">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="link-reset menu-item" href="#">
+                                        Download the App
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="link-reset menu-item" href="http://makent.trioangle.com/rooms/new">
+                                        Become a Host
+                                    </a>
+                                </li>
+                                <li class="items-logged-out">
+                                    <a rel="nofollow" class="link-reset menu-item signup_popup_head" href="http://makent.trioangle.com/signup_login" data-signup-modal="">
+                                        Sign Up
+                                    </a>
+                                </li>
+                                <li class="items-logged-out">
+                                    <a rel="nofollow" class="link-reset menu-item login_popup_head" href="http://makent.trioangle.com/login" data-login-modal="">
+                                        Log In
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="link-reset menu-item" href="#">
+                                        Discover
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/rooms/new">
+                                        Become a Host
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/inbox">
+                                        Inbox
+                                        <i class="alert-count unread-count--sm fade text-center">
+                                            0
+                                        </i>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/rooms">
+                                        Your Listings
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/trips/current">
+                                        Your Trips
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="search-modal-trigger link-reset menu-item" data-prevent-default="" rel="nofollow" href="http://makent.trioangle.com/s">
+                                        Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a rel="nofollow" class="link-reset menu-item" href="#">
+                                        How it Works
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="menu-group list-unstyled row-space-3">
+                                <li>
+                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/help">
+                                        Help
+                                    </a>
+                                </li>
+                                <!--<li>
+                                  <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/invite">
+                                    Invite Friends
+                                  </a>
+                                </li>-->
+                                <li class="">
+                                    <a class="link-reset menu-item logout" rel="nofollow" href="http://makent.trioangle.com/logout">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="search-modal-container">
+            <div class="modal hide" role="dialog" id="search-modal--sm" aria-hidden="false" tabindex="-1">
+                <div class="modal-table">
+                    <div class="modal-cell">
+                        <div class="modal-content">
+                            <div class="panel-header modal-header">
+                                <a href="#" class="modal-close" data-behavior="modal-close">
+                                    <span class="screen-reader-only">Close</span>
+                                    <span class="aria-hidden"></span>
+                                </a>
+                                Search
+                            </div>
+                            <div class="panel-body">
+                                <div class="modal-search-wrapper--sm">
+                                    <input type="hidden" name="source" value="mob">
+                                    <div class="row">
+                                        <div class="searchbar__location-error hide" style="left:22px; top:2%;">Please set location</div>
+                                        <div class="col-sm-12">
+                                            <label for="header-location--sm">
+                                                <span class="screen-reader-only">Where to?</span>
+                                                <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-location--sm" class="input-large" value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row row-condensed">
+                                        <div class="col-sm-6">
+                                            <label class="checkin">
+                                                <span class="screen-reader-only">Check In</span>
+                                                <input type="text" autocomplete="off" name="checkin" id="modal_checkin" class="checkin input-large ui-datepicker-target hasDatepicker" placeholder="Check In" value="">
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <label class="checkout">
+                                                <span class="screen-reader-only">Check Out</span>
+                                                <input type="text" autocomplete="off" name="checkout" id="modal_checkout" class="checkout input-large ui-datepicker-target hasDatepicker" placeholder="Check Out" value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row space-2 space-top-1">
+                                        <div class="col-sm-12">
+                                            <label for="header-search-guests" class="screen-reader-only">
+                                                Number of guests
+                                            </label>
+                                            <div class="select select-block select-large">
+                                                <select id="modal_guests" name="guests--sm">
+                                                    <option value="1">1 guest</option>
+                                                    <option value="2">2 guests</option>
+                                                    <option value="3">3 guests</option>
+                                                    <option value="4">4 guests</option>
+                                                    <option value="5">5 guests</option>
+                                                    <option value="6">6 guests</option>
+                                                    <option value="7">7 guests</option>
+                                                    <option value="8">8 guests</option>
+                                                    <option value="9">9 guests</option>
+                                                    <option value="10">10 guests</option>
+                                                    <option value="11">11 guests</option>
+                                                    <option value="12">12 guests</option>
+                                                    <option value="13">13 guests</option>
+                                                    <option value="14">14 guests</option>
+                                                    <option value="15">15 guests</option>
+                                                    <option value="16">16 guests</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel room-type-filter--sm row-space-top-1">
+                                        <div class="panel-body">
+                                            <div class="row text-center">
+                                                <input type="checkbox" id="room-type-1--sm" name="room_types[]" value="1">
+                                                <label class="col-sm-4 modal-filter needsclick" for="room-type-1--sm">
+                                                    <i class="icon icon-entire-place icon-size-2 needsclick"></i>
+                                                    <br>Entire home/apt
+                                                </label>
+                                                <input type="checkbox" id="room-type-2--sm" name="room_types[]" value="2">
+                                                <label class="col-sm-4 modal-filter needsclick" for="room-type-2--sm">
+                                                    <i class="icon icon-private-room icon-size-2 needsclick"></i>
+                                                    <br>Private room
+                                                </label>
+                                                <input type="checkbox" id="room-type-3--sm" name="room_types[]" value="3">
+                                                <label class="col-sm-4 modal-filter needsclick" for="room-type-3--sm">
+                                                    <i class="icon icon-shared-room icon-size-2 needsclick"></i>
+                                                    <br>Shared room
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-space-top-2">
+                                        <div class="col-sm-12">
+                                            <button type="submit" id="search-form--sm-btn" class="btn btn-primary btn-large btn-block">
+                                                <i class="icon icon-search"></i>
+                                                Find a place
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <header class="regular-header clearfix hide-sm" id="old-header" role="banner">
+
+        <a aria-label="Homepage" href="http://makent.trioangle.com" class="header-belo pull-left " style="background:rgba(0, 0, 0, 0) url(http://makent.trioangle.com/images/logos/logo.png) no-repeat scroll 0 0;">
+    <span class="screen-reader-only">
+      Makent
+    </span>
+        </a>
+
+        <!--     <a aria-label="Homepage"  href="http://makent.trioangle.com" class="login-logo header-belo pull-left " >
+           <span class="screen-reader-only">
+             Makent
+           </span>
+         </a>
+         -->
+        <!-- hide-sm -->
+        <div class="pull-left search-input-home">
+            <ul class="nav pull-left  list-unstyled search-form-container" id="search-form-header">
+                <li id="header-search" class="search-bar-wrapper pull-left medium-right-margin">
+                    <form action="http://makent.trioangle.com/s" class="search-form ng-pristine ng-valid">
+                        <div class="search-bar">
+                            <i class="icon icon-search icon-gray h4"></i>
+                            <label class="screen-reader-only" for="header-search-form">Where to?</label>
+                            <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-search-form" class="location" value="">
+                        </div>
+                        <div id="header-search-settings" class="panel search-settings header-menu">
+                            <div class="panel-body clearfix basic-settings">
+                                <div class="setting checkin">
+                                    <label for="header-search-checkin" class="field-label">
+                                        <strong>Check In</strong>
+                                    </label>
+                                    <input type="text" autocomplete="off" id="header-search-checkin" data-field-name="check_in_dates" name="checkin" class="checkin ui-datepicker-target hasDatepicker" placeholder="dd-mm-yyyy"></div>
+
+                                <div class="setting checkout">
+                                    <label for="header-search-checkout" class="field-label">
+                                        <strong>Check Out</strong>
+                                    </label>
+                                    <input type="text" autocomplete="off" id="header-search-checkout" data-field-name="check_out_dates" class="checkout ui-datepicker-target hasDatepicker" name="checkout" placeholder="dd-mm-yyyy"></div>
+
+                                <div class="setting guests">
+                                    <label for="header-search-guests" class="field-label">
+                                        <strong>Guests</strong>
+                                    </label>
+                                    <div class="select select-block">
+                                        <select id="header-search-guests" data-field-name="number_of_guests" name="guests">
+                                            <option value="1"> 1 </option>
+                                            <option value="2"> 2 </option>
+                                            <option value="3"> 3 </option>
+                                            <option value="4"> 4 </option>
+                                            <option value="5"> 5 </option>
+                                            <option value="6"> 6 </option>
+                                            <option value="7"> 7 </option>
+                                            <option value="8"> 8 </option>
+                                            <option value="9"> 9 </option>
+                                            <option value="10"> 10 </option>
+                                            <option value="11"> 11 </option>
+                                            <option value="12"> 12 </option>
+                                            <option value="13"> 13 </option>
+                                            <option value="14"> 14 </option>
+                                            <option value="15"> 15 </option>
+                                            <option value="16"> 16+  </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-header menu-header normal-line-height">
+                                <small>
+                                    <strong>Room type</strong>
+                                </small>
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="row-space-4">
+                                    <label class="checkbox menu-item" for="header_room_type_1">
+                                        <input type="checkbox" id="header_room_type_1" name="room_types[]" value="1">
+                                        <i class="icon icon-entire-place horizontal-margin-medium"></i>
+                                        <span>Entire home/apt</span>
+                                    </label>
+                                    <label class="checkbox menu-item" for="header_room_type_2">
+                                        <input type="checkbox" id="header_room_type_2" name="room_types[]" value="2">
+                                        <i class="icon icon-private-room horizontal-margin-medium"></i>
+                                        <span>Private room</span>
+                                    </label>
+                                    <label class="checkbox menu-item" for="header_room_type_3">
+                                        <input type="checkbox" id="header_room_type_3" name="room_types[]" value="3">
+                                        <i class="icon icon-shared-room horizontal-margin-medium"></i>
+                                        <span>Shared room</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">
+                                    <i class="icon icon-search"></i>
+                                    <span>Find a place</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+
+                <li class="dropdown-trigger pull-left large-right-margin hide-sm hide" data-behavior="recently-viewed__container">
+                    <a class="no-crawl link-reset" href="http://makent.trioangle.com/login?_ga=1.237472128.1006317855.1436675116#" data-href="/history#docked-filters" data-behavior="recently-viewed__trigger">
+      <span class="show-lg recently-viewed__label">
+        Recently Viewed
+      </span>
+                        <span class="hide-lg recently-viewed__label">
+        <i class="icon icon-recently-viewed icon-gray h4"></i>
+      </span>
+                        <i class="icon icon-caret-down icon-light-gray h5"></i>
+                    </a>
+                    <div class="tooltip tooltip-top-left dropdown-menu recently-viewed__dropdown" data-behavior="recently-viewed__dropdown">
+                    </div>
+                </li>
+                <!-- show-md -->
+                <!--<li class="browse-container dropdown-trigger pull-left">
+                  <a class="link-reset header-browse-trigger" href="#" data-prevent-default="" id="header-browse-trigger">
+              Browse
+               <i class="icon icon-caret-down icon-light-gray h5"></i>
+            </a>
+            <ul class="tooltip tooltip-top-left dropdown-menu list-unstyled">
+              <li>
+                <a href="http://makent.trioangle.com/wishlists/popular" class="link-reset menu-item header-browse-popular">
+                  Popular
+                </a>
+              </li>
+              <li>
+                <a href="http://makent.trioangle.com/locations" class="hide link-reset menu-item header-browse-neighborhoods">
+                  Neighborhoods
+                </a>
+              </li>
+            </ul>
+
+                </li>-->
+            </ul>
+        </div>
+        <div class="pull-right" ng-controller="editaccountprofile">
+            <ul class="nav pull-left help-menu list-unstyled">
+
+                <!-- <li id="header-help-menu" class="help-menu-container pull-left large-right-margin hide-md dropdown-trigger">
+                  <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
+                    Help
+                    <i class="icon icon-caret-down icon-light-gray h5"></i>
+                  </a>
+                  <div class="tooltip tooltip-top-right dropdown-menu help-dropdown">
+                    <ul class="list-layout">
+                <li class="search-bar--help hide">
+                  <form action="http://makent.trioangle.com/help/search" class="search-form--help menu-item">
+                    <div class="input-addon">
+                      <input type="text" placeholder="Search the help center" autocomplete="off" name="q" class="input-stem">
+                      <input type="hidden" name="search_from" value="hdr">
+                      <i class="btn btn-primary icon icon-search input-suffix form-submit--help"></i>
+                    </div>
+                  </form>
+                </li>
+                <li class="visit-helpcenter-cta hide">
+                  <a href="http://makent.trioangle.com/help" class="help-center-link menu-item">
+                    Visit the Help Center »
+                  </a>
+                </li>
+                <li class="loading"></li>
+                <li class="all_faqs hide">
+                  <a href="http://makent.trioangle.com/help" class="link-reset menu-item">
+                    See all FAQs
+                  </a>
+                </li>
+              </ul>
+                  </div>
+                </li> -->
+                <li class="list-your-space pull-left">
+                    <a id="list-your-space" class="become" href="http://makent.trioangle.com/rooms/new" style="border-left:none !important;">
+        <span id="list-your-space" class="btn btn-special list-your-space-btn">
+          Become a Host
+          </span>
+                    </a>
+                    <div class="panel  drop-down-menu-host js-become-a-host-dropdown hide">
+                        <div class="link-reset panel-body hover-item hide js-become-a-host-lys" href="/become-a-host?from_nav=1&amp;link=2">
+                            <div class="hover-item__content">
+                                List Your Space
+                            </div>
+                        </div>
+                        <div class="link-reset js-become-a-host-tooltip panel-body hover-item" href="/rooms/new?from_nav=1&amp;link=3">
+                            <div class="tooltip-content">You could earn €595 sharing your home in Amsterdam in a week. Become a host.</div>
+                        </div>
+                        <div class="link-reset panel-body hover-item js-become-a-host-why-host hide" href="/host?from_nav=1">
+                            <div class="hover-item__content">
+                                How Hosting Works
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--   <li id="header-help-menu" class="help-menu-container pull-left dropdown-trigger">
+           <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
+             Help
+           </a>
+         </li>
+         -->
+            </ul>
+            <!-- Live Demo Refresh -->
+            <!--<ul class="nav pull-left demo-home list-unstyled medium-left-margin search-form-container" style="color:#ff5a5f;">
+              <li id="sign_up" class="pull-left medium-left-margin">
+               Demo will refresh at every 3 hours.
+              </li>
+            </ul>-->
+
+
+
+            <ul class="nav pull-left list-unstyled">
+                <li class="pull-left dropdown-trigger">
+                    <a class="link-reset trip-drop" href="http://makent.trioangle.com/trips/current">
+                        <span class="trip-pos"> Trips</span>
+                        <i class="trips-icon">
+                            <i class="alert-count fade">0</i>
+                        </i>
+                    </a>
+                    <div class="panel drop-down-menu-trip hide js-become-a-host-dropdown">
+                        <div class="trip-width">
+                            <div class="panel-header no-border section-header-home"><strong><span>Trips</span></strong><a href="http://makent.trioangle.com/trips/current" class="link-reset view-trips pull-right"><strong><span>View Trips</span></strong></a></div>
+                            <div class="pull-left" style="width:100%;padding:15px 20px;">
+                                <div class="pull-left" style="padding:15px 20px 0px;">
+                                    <strong>No upcoming trips</strong>
+                                    <p>continue searching in paris</p>
+                                </div>
+                                <div class="pull-right suitcase-icon">
+                                    <i class="icon icon-suitcase"></i>
+                                </div>
+                            </div>
+                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Wishlist</span></strong><a href="http://makent.trioangle.com/wishlists/my" class="link-reset view-trips pull-right"><strong><span>View Wishlists</span></strong></a></div>
+                            <div class="pull-left" style="width:100%;padding:15px 20px;">
+                                <div class="pull-left" style="padding:15px 20px 0px;">
+                                    <strong>No wish list created</strong>
+                                    <p>create a wish list</p>
+                                </div>
+                                <div class="pull-right suitcase-icon">
+                                    <i class="icon icon-heart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="inbox-item" class="inbox-item pull-left dropdown-trigger js-inbox-comp">
+                    <a href="http://makent.trioangle.com/inbox" rel="nofollow" class="no-crawl link-reset inbox-icon">
+                        <span class="msg-icon1">Messages</span>
+                        <i class="msg-icon">
+                            <i class="alert-count text-center fade">0</i>
+
+                            <!-- <span class="text-hide hide">
+                         Inbox
+                       </span>-->
+                        </i>
+                    </a>
+                    <div class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown
+                notifications-dropdown hide">
+                    </div>
+                    <div class="panel drop-down-menu-msg hide js-become-a-host-dropdown">
+                        <div class="trip-width">
+                            <div class="panel-header no-border section-header-home"><strong><span>Messages</span></strong><a href="http://makent.trioangle.com/inbox" class="link-reset view-trips pull-right"><strong><span>View Inbox</span></strong></a></div>
+
+                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Notifications</span></strong><a href="http://makent.trioangle.com/dashboard" class="link-reset view-trips pull-right"><strong><span>View Dashboard</span></strong></a></div>
+                            <div class="pull-left" style="width:100%;padding:15px 20px;">
+
+                                <p style="margin:0px;padding-top:10px !important;"> There are 3 notifications waiting for you in your <a style="color:#333;text-decoration:underline;" href="http://makent.trioangle.com/dashboard"> dashboard </a>.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="header-help-menu" class="help-menu-container pull-left dropdown-trigger">
+                    <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
+                        <span class="help-pos">Help</span>
+                        <i class="help-icon"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+            <ul class="nav pull-left list-unstyled" role="navigation">
+                <li class="user-item pull-left medium-right-margin dropdown-trigger">
+                    <a class="link-reset header-avatar-trigger" id="header-avatar-trigger" href="http://makent.trioangle.com/login">
+            <span class="value_name">
+        Jay
+      </span>
+                        <div class="media-photo media-round user-profile-image" style="background: rgba(0, 0, 0, 0) url(https://lh5.googleusercontent.com/--KQiCnO7b2k/AAAAAAAAAAI/AAAAAAAAEEY/kepVuvUEH9I/photo.jpg?sz=50) no-repeat scroll 0 0 / cover"></div>
+                        <!--<i class="icon icon-caret-down icon-light-gray h5"></i>-->
+                    </a>
+                    <ul class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown drop-down-menu-login">
+                        <li>
+                            <a href="#" ng-click="Profile()" rel="nofollow" class="no-crawl link-reset menu-item item-dashboard">
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="listings">
+                            <a href="http://makent.trioangle.com/rooms" rel="nofollow" class="no-crawl link-reset menu-item item-listing">
+          <span class="plural">
+            Your Listings
+          </span>
+                            </a>
+                        </li>
+                        <li class="reservations" style="display: none;">
+                            <a href="http://makent.trioangle.com/my_reservations" rel="nofollow" class="no-crawl link-reset menu-item item-reservation">
+                                Your Reservations
+                            </a>
+                        </li>
+                        <li style="display: none;">
+                            <a href="http://makent.trioangle.com/trips/current" rel="nofollow" class="no-crawl link-reset menu-item item-trips">
+                                Your Trips
+                            </a>
+                        </li>
+                        <li class="groups hide">
+                            <a href="http://makent.trioangle.com/groups" rel="nofollow" class="no-crawl link-reset menu-item item-groups">
+                                Groups
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://makent.trioangle.com/invite" class="no-crawl link-reset menu-item item-invite-friends">
+                                Travel Credit
+                                <span class="label label-pink label-new">
+          </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" ng-click="EditProfile()" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
+                                Edit Profile
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://makent.trioangle.com/account" rel="nofollow" class="no-crawl link-reset menu-item item-account">
+                                Account
+                            </a>
+                        </li>
+                        <li class="business-travel hide">
+                            <a href="http://makent.trioangle.com/business" rel="nofollow" class="no-crawl link-reset menu-item item-business-travel">
+                                Business Travel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://makent.trioangle.com/logout" rel="nofollow" class="no-crawl link-reset menu-item header-logout">
+                                Log Out
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
+
+<div class="flash-container">
+</div>
+<div class="login-close">
+    <div class="login_popup">
+        <div class="page-container-responsive page-container-auth margintop">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-center">
+                    <div class="panel top-home bor-none">
+                        <!-- <div class="login-close">
+                       <img src="images/close.png">
+                     </div>-->
+                        <div class="panel-body pad-25 bor-none">
+                            <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block btn-large row-space-1 btn-facebook font-normal pad-top" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+  <span class="icon-container">
+    <i class="icon icon-facebook"></i>
+  </span>
+                                <span class="text-container">
+    Log in with Facebook
+  </span>
+                            </a>
+
+
+                            <a href="http://makent.trioangle.com/googleLogin" class="btn icon-btn btn-block btn-large row-space-1 btn-google font-normal pad-top">
+  <span class="icon-container">
+    <i class="icon icon-google-plus"></i>
+  </span>
+                                <span class="text-container">
+    Log in with Google
+  </span>
+                            </a>
+
+
+                            <div class="signup-or-separator">
+                                <span class="h6 signup-or-separator--text">or</span>
+                                <hr>
+                            </div>
+
+                            <form method="POST" action="http://makent.trioangle.com/authenticate" accept-charset="UTF-8" class="signup-form login-form ng-pristine ng-valid" data-action="Signin" novalidate="true"><input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+
+                                <input id="from" name="from" type="hidden" value="email_login">
+
+                                <div class="control-group row-space-1">
+
+
+                                    <input class="decorative-input inspectletIgnore" placeholder="Email address" id="signin_email" name="email" type="email" value="">
+
+                                </div>
+                                <div class="control-group row-space-2">
+
+
+                                    <input class="decorative-input inspectletIgnore" placeholder="Password" id="signin_password" data-hook="signin_password" name="password" type="password" value="">
+
+                                </div>
+
+                                <div class="clearfix row-space-2">
+                                    <label for="remember_me2" class="checkbox remember-me">
+                                        <input id="remember_me2" class="remember_me" name="remember_me" type="checkbox" value="1">
+                                        Remember me
+                                    </label>
+                                    <a href="http://makent.trioangle.com/forgot_password" class="forgot-password forgot-password-popup  pull-right">Forgot password?</a>
+                                </div>
+
+                                <input class="btn btn-primary btn-block btn-large pad-top" id="user-login-btn" type="submit" value="Log In">
+
+                            </form>
+                        </div>
+                        <div class="panel-body">
+                            Don’t have an account?
+                            <a href="http://makent.trioangle.com/signup_login" class="link-to-signup-in-login login-btn signup_popup_head">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-close">
+    <div class="signup_popup">
+        <div class="page-container-responsive page-container-auth margintop">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-center">
+                    <div class="panel top-home bor-none">
+                        <!--<div class="login-close">
+                        <img src="images/close.png">
+                      </div>-->
+                        <div class="alert alert-with-icon alert-error alert-header panel-header hidden-element notice" id="notice">
+                            <i class="icon alert-icon icon-alert-alt"></i>
+
+                        </div>
+                        <div class="panel-padding panel-body pad-25 ">
+
+                            <div class="social-buttons">
+
+
+                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook pad-23" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+  <span class="icon-container">
+    <i class="icon icon-facebook"></i>
+  </span>
+                                    <span class="text-container">
+    Sign up with Facebook
+  </span>
+                                </a>
+
+
+                                <a href="http://makent.trioangle.com/googleLogin" class="btn icon-btn btn-block row-space-1 btn-large btn-google pad-23">
+  <span class="icon-container">
+    <i class="icon icon-google-plus"></i>
+  </span>
+                                    <span class="text-container">
+    Sign up with Google
+  </span>
+                                </a>
+                            </div>
+
+                            <div class="text-center social-links hide">
+                                Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
+                            </div>
+
+                            <div class="signup-or-separator">
+                                <span class="h6 signup-or-separator--text">or</span>
+                                <hr>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="" class="create-using-email btn-block  row-space-2 btn btn-primary btn-block btn-large large icon-btn pad-23 signup_popup_head2" id="create_using_email_button">
+                                    <i class="icon icon-envelope"></i>
+                                    Sign up with Email
+                                </a>    </div>
+
+                            <div id="tos_outside" class="row-space-top-3">
+                                <small class="small-font">
+                                    By signing up, I agree to Makent's <a href="http://makent.trioangle.com/terms_of_service" data-popup="true">Terms of Service</a>, <a href="http://makent.trioangle.com/privacy_policy" data-popup="true">Privacy Policy</a>, <a href="http://makent.trioangle.com/guest_refund" data-popup="true">Guest Refund Policy</a>, and <a href="http://makent.trioangle.com/host_guarantee" data-popup="true">Host Guarantee Terms</a>.
+                                </small>
+
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            Already an Makent member?
+                            <a href="http://makent.trioangle.com/login" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
+                                Log In
+                            </a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-close">
+    <div class="signup_popup2">
+        <div class="page-container-responsive page-container-auth margintop">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-center">
+                    <div class="panel top-home bor-none">
+                        <!--  <div class="login-close">
+                           <img src="images/close.png">
+                         </div>-->
+                        <div class="alert alert-with-icon alert-error alert-header panel-header hidden-element notice" id="notice">
+                            <i class="icon alert-icon icon-alert-alt"></i>
+
+                        </div>
+                        <div class="panel-padding panel-body pad-25">
+
+                            <div class="social-buttons hide">
+
+
+                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+  <span class="icon-container">
+    <i class="icon icon-facebook"></i>
+  </span>
+                                    <span class="text-container">
+    Sign up with Facebook
+  </span>
+                                </a>
+
+
+                                <a href="http://makent.trioangle.com/googleLogin" class="btn icon-btn btn-block row-space-1 btn-large btn-google">
+  <span class="icon-container">
+    <i class="icon icon-google-plus"></i>
+  </span>
+                                    <span class="text-container">
+    Sign up with Google
+  </span>
+                                </a>
+                            </div>
+
+                            <div class="text-center social-links">
+                                Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
+                            </div>
+
+                            <div class="signup-or-separator">
+                                <span class="h6 signup-or-separator--text">or</span>
+                                <hr>
+                            </div>
+
+                            <div class="text-center">
+                                <a href="http://makent.trioangle.com/signup_login?sm=2" class="create-using-email btn-block  row-space-2  icon-btn hide" id="create_using_email_button">
+                                    <i class="icon icon-envelope"></i>
+                                    Sign up with Email
+                                </a>    </div>
+
+                            <form method="POST" action="http://makent.trioangle.com/create" accept-charset="UTF-8" class="signup-form ng-pristine ng-valid" data-action="Signup" id="user_new" novalidate="true"><input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+
+                                <div class="signup-form-fields">
+
+                                    <input id="from" name="from" type="hidden" value="email_signup">
+
+                                    <div class="control-group row-space-1" id="inputFirst">
+
+
+                                        <input class="decorative-input name-icon" placeholder="First name" name="first_name" type="text" value="">
+
+                                    </div>
+
+                                    <div class="control-group row-space-1" id="inputLast">
+
+
+                                        <input class="decorative-input inspectletIgnore name-icon" placeholder="Last name" name="last_name" type="text" value="">
+
+                                    </div>
+
+                                    <div class="control-group row-space-1" id="inputEmail">
+
+
+                                        <input class="decorative-input inspectletIgnore name-mail name-icon" placeholder="Email address" name="email" type="email" value="">
+
+                                    </div>
+
+                                    <div class="control-group row-space-1" id="inputPassword">
+
+
+                                        <input class="decorative-input inspectletIgnore name-pwd name-icon" placeholder="Password" id="user_password" data-hook="user_password" name="password" type="password" value="">
+
+                                        <div data-hook="password-strength" class="password-strength hide"></div>
+                                    </div>
+
+
+                                    <div class="control-group row-space-top-3 row-space-1">
+                                        <strong>Birthday</strong>
+                                        <strong data-behavior="tooltip" aria-label="To sign up, you must be 18 or older. Other people won’t see your birthday.">
+                                            <!--<i class="icon icon-question"></i>-->
+                                        </strong>
+                                    </div>
+
+                                    <div class="control-group row-space-1" id="inputBirthday"></div>
+
+
+                                    <div class="control-group row-space-2">
+
+                                        <div class="select month">
+                                            <select class="" id="user_birthday_month" name="birthday_month"><option value="" selected="selected">Month</option><option value="1">January</option><option value="2">February</option><option value="3">March</option><option value="4">April</option><option value="5">May</option><option value="6">June</option><option value="7">July</option><option value="8">August</option><option value="9">September</option><option value="10">October</option><option value="11">November</option><option value="12">December</option></select>
+                                        </div>
+
+                                        <div class="select day month">
+                                            <select class="" id="user_birthday_day" name="birthday_day"><option value="" selected="selected">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+                                        </div>
+
+                                        <div class="select month">
+                                            <select class="" id="user_birthday_year" name="birthday_year"><option value="" selected="selected">Year</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option><option value="1904">1904</option><option value="1903">1903</option><option value="1902">1902</option><option value="1901">1901</option><option value="1900">1900</option><option value="1899">1899</option><option value="1898">1898</option><option value="1897">1897</option><option value="1896">1896</option></select>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <label class="pull-left checkbox" style="float:left;">
+
+                                    <input name="user_profile_info[receive_promotional_email]" type="hidden" value="0">
+
+                                    <input id="user_profile_info_receive_promotional_email" checked="checked" name="user_profile_info[receive_promotional_email]" type="checkbox" value="1">
+
+                                     </label> -->
+                                    <!-- <label for="user_profile_info_receive_promotional_email" class="checkbox">
+                                     I’d like to receive coupons and inspiration
+                                    </label> -->
+
+                                    <div id="tos_outside" class="row-space-top-3 chk-box">
+                                        <small>
+                                            By signing up, I agree to Makent's <a href="http://makent.trioangle.com/terms_of_service" data-popup="true">Terms of Service</a>, <a href="http://makent.trioangle.com/privacy_policy" data-popup="true">Privacy Policy</a>, <a href="http://makent.trioangle.com/guest_refund" data-popup="true">Guest Refund Policy</a>, and <a href="http://makent.trioangle.com/host_guarantee" data-popup="true">Host Guarantee Terms</a>.
+                                        </small>
+
+                                    </div>
+                                    <input class="btn btn-primary btn-block btn-large pad-top" type="submit" value="Sign up">
+
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="panel-body font-small">
+                            Already an Makent member?
+                            <a href="http://makent.trioangle.com/login" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
+                                Log In
+                            </a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-close">
+    <div class="forgot-passward">
+        <div class="page-container-responsive page-container-auth">
+            <div class="row">
+                <div class="col-md-6 col-lg-5 col-center">
+                    <div class="panel top-home">
+
+                        <form method="POST" action="http://makent.trioangle.com/forgot_password" accept-charset="UTF-8" class="ng-pristine ng-valid"><input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+                            <div id="forgot_password_container">
+                                <h3 class="panel-header panel-header-gray">
+                                    Reset Password
+                                </h3>
+                                <div class="panel-padding panel-body">
+                                    <p>Enter the email address associated with your account, and we'll email you a link to reset your password.</p>
+                                    <div id="inputEmail" class="textInput text-input-container">
+                                        <input placeholder="Email" id="forgot_email" class="decorative-input inspectletIgnore" name="email" type="email" value="">
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-primary" type="submit">
+                                        Send Reset Link
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<main id="site-content" role="main" ng-controller="editaccountprofile" class="ng-scope"> <!--ng-controller="payout_preferences"-->
+    <div class="subnav hide-print">
+        <div class="page-container-responsive">
+            <ul class="subnav-list">
+
+
+                <li>
+                    <a href="#" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#" ng-click="Account()" aria-selected="true" class="subnav-item">Courses</a>
+                </li>
+                <li>
+                    <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Profile</a>
+                </li>
+                <li>
+                    <a href="#" aria-selected="false" class="subnav-item">Interests</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="page-container-responsive row-space-top-4 row-space-4">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="sidenav-list">
+
+
+
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/notifications" aria-selected="false" class="hide sidenav-item">Notifications</a>
+                    </li>
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/payment_methods" aria-selected="false" class="hide sidenav-item">Payment Methods</a>
+                    </li>
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/payout_preferences/10005" aria-selected="true" class="sidenav-item">Payout Preferences</a>
+                    </li>
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/transaction_history" aria-selected="false" class="sidenav-item">Transaction History</a>
+                    </li>
+
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/privacy" aria-selected="false" class="hide sidenav-item">Privacy</a>
+                    </li>
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/security" aria-selected="false" class="sidenav-item">Security</a>
+                    </li>
+
+                    <li>
+                        <a href="http://makent.trioangle.com/users/settings" aria-selected="false" class="hide sidenav-item">Settings</a>
+                    </li>
+
+                </ul><!-- <div class="space-top-4 space-4">
+  <a href="http://makent.trioangle.com/invite?r=5" class="btn btn-block">Invite Friends</a>
+</div> -->
+            </div>
+            <div class="col-md-9">
+                <div class="" id="payout_setup">
+                    <div class="panel row-space-4">
+                        <div class="panel-header">
+                            Payout Methods
+                        </div>
+                        <div class="panel-body" id="payout_intro">
+                            <p>
+                                When you receive a payment for a reservation, we call that payment to you a “payout”. Our secure payment system supports several payout methods, which can be setup and edited here. Your available payout options and currencies differ by country..
+                            </p>
+                            <table class="table table-striped" id="payout_methods">
+                                <tfoot>
+                                <tr id="add_payout_method_section">
+                                    <td colspan="4">
+                                        <a id="add-payout-method-button" class="btn btn-primary" href="javascript:void(0);" role="button" data-toggle="modal">
+                                            Add Payout Method
+                                        </a>
+                                        <span class="text-muted">
+                  &nbsp;
+                  Direct Deposit, PayPal, etc...
+                </span>
+                                    </td>
+                                </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div style="display:none;" class="add_payout_section" id="payout_new_select"></div>
+                    <div style="display:none;" class="add_payout_section" id="payout_edit"></div>
+                </div>
+                <div id="taxes"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal hide" id="payout_popup1" aria-hidden="false" style="" tabindex="-1"><div class="modal-table"><div class="modal-cell"><div id="modal-add-payout-set-address" class="modal-content">
+                <div class="panel-header">
+                    <a data-behavior="modal-close" class="panel-close" href="javascript:void(0);"></a>
+                    Add Payout Method
+                </div>
+                <div class="flash-container" id="popup1_flash-container"> </div>
+                <form class="modal-add-payout-pref ng-pristine ng-valid" method="post" id="address">
+                    <input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+                    <div class="panel-body">
+                        <div>
+                            <label for="payout_info_payout_address1">Address <span style="color:red">*</span></label>
+                            <input type="text" autocomplete="billing address-line1" id="payout_info_payout_address1" name="address1">
+                        </div>
+                        <div>
+                            <label for="payout_info_payout_address2">Address 2 / Zone</label>
+                            <input type="text" autocomplete="billing address-line2" id="payout_info_payout_address2" name="address2">
+                        </div>
+                        <div>
+                            <label for="payout_info_payout_city">City <span style="color:red">*</span></label>
+                            <input type="text" autocomplete="billing address-level2" id="payout_info_payout_city" name="city">
+                        </div>
+                        <div>
+                            <label for="payout_info_payout_state">State / Province</label>
+                            <input type="text" autocomplete="billing address-level1" id="payout_info_payout_state" name="state">
+                        </div>
+                        <div>
+                            <label for="payout_info_payout_zip">Postal Code <span style="color:red">*</span></label>
+                            <input type="text" autocomplete="billing postal-code" id="payout_info_payout_zip" name="postal_code">
+                        </div>
+                        <div>
+                            <label for="payout_info_payout_country">Country <span style="color:red">*</span></label>
+                            <div class="select">
+                                <select autocomplete="billing country" id="payout_info_payout_country" name="country_dropdown"><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, the Democratic Republic of the</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'Ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and Mcdonald Islands</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran, Islamic Republic of</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KP">Korea, Democratic People's Republic of</option><option value="KR">Korea, Republic of</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao People's Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libyan Arab Jamahiriya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia, the Former Yugoslav Republic of</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States of</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territory, Occupied</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia and Montenegro</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="TW">Taiwan, Province of China</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania, United Republic of</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US" selected="selected">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, U.s.</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <input type="submit" value="Next" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal hide" id="payout_popup2" aria-hidden="false" style="" tabindex="-1"><div class="modal-table"><div class="modal-cell"><div id="modal-add-payout-set-address" class="modal-content">
+                <div class="panel-header">
+                    <a data-behavior="modal-close" class="panel-close" href="javascript:void(0);"></a>
+                    Add Payout Method
+                </div>
+                <div class="flash-container" id="popup2_flash-container"> </div>
+                <form class="modal-add-payout-pref ng-pristine ng-valid" id="country_options" accept-charset="UTF-8">
+                    <input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+
+                    <input type="hidden" id="payout_info_payout2_address1" value="" name="address1">
+                    <input type="hidden" id="payout_info_payout2_address2" value="" name="address2">
+                    <input type="hidden" id="payout_info_payout2_city" value="" name="city">
+                    <input type="hidden" id="payout_info_payout2_country" value="" name="country">
+                    <input type="hidden" id="payout_info_payout2_state" value="" name="state">
+                    <input type="hidden" id="payout_info_payout2_zip" value="" name="postal_code">
+
+                    <div class="panel-body">
+                        <div>
+                            <p>Payouts for reservations are released to you the day after your guest checks in, and it takes some additional time for the money to arrive depending on your payout method.</p>
+                            <p>We can send money to people with these payout methods. Which do you prefer?</p>
+                        </div>
+                        <table id="payout_method_descriptions" class="table table-striped">
+                            <thead><tr>
+                                <th></th>
+                                <th>Payout method</th>
+                                <th>Processing time</th>
+                                <th>Additional fees</th>
+                                <th>Currency</th>
+                                <th>Details</th>
+                            </tr></thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="radio" value="PayPal" name="payout_method" id="payout2_method">
+                                </td>
+                                <td class="type"><label for="payout_method">PayPal</label></td>
+                                <td>3-5 business days</td>
+                                <td>None</td>
+                                <td>EUR</td>
+                                <td>Business day processing only; weekends and banking holidays may cause delays</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="panel-footer">
+                        <input type="submit" value="Next" id="select-payout-method-submit" class="btn btn-primary">
+                    </div>
+                </form>
+
+            </div></div></div></div>
+
+<div class="modal hide" id="payout_popup3" aria-hidden="false" style="" tabindex="-1"><div class="modal-table"><div class="modal-cell"><div id="modal-add-payout-set-address" class="modal-content">
+                <div class="panel-header">
+                    <a data-behavior="modal-close" class="panel-close" href="javascript:void(0);"></a>
+                    Add Payout Method
+                </div>
+                <div class="flash-container hide" id="popup3_flash-container"><div class="alert alert-error alert-error alert-header"><a class="close alert-close" href="javascript:void(0);"></a><i class="icon alert-icon icon-alert-alt"></i>Enter Email ID</div>  </div>
+
+                <form method="post" id="payout_paypal" action="http://makent.trioangle.com/users/payout_preferences/10005" accept-charset="UTF-8" class="ng-pristine ng-valid">
+                    <input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+
+                    <input type="hidden" id="payout_info_payout3_address1" value="" name="address1">
+                    <input type="hidden" id="payout_info_payout3_address2" value="" name="address2">
+                    <input type="hidden" id="payout_info_payout3_city" value="" name="city">
+                    <input type="hidden" id="payout_info_payout3_country" value="" name="country">
+                    <input type="hidden" id="payout_info_payout3_state" value="" name="state">
+                    <input type="hidden" id="payout_info_payout3_zip" value="" name="postal_code">
+                    <input type="hidden" id="payout3_method" value="" name="payout_method">
+
+                    <div class="panel-body">
+
+                        PayPal Email ID
+                        <input type="text" name="paypal_email" id="paypal_email">
+                    </div>
+
+                    <div class="panel-footer">
+                        <input type="submit" value="Submit" id="modal-paypal-submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100%; background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)">
+    <footer class="page-container-responsive ng-scope" ng-controller="footer">
+        <div class="row row-condensed">
+
+            <div class="col-md-3 col-md-offset-1">
+                <div class="language-curr-picker clearfix">
+                    <div class="select select-large select-block row-space-2">
+                        <label id="language-selector-label" class="screen-reader-only">
+                            Choose language
+                        </label>
+                        <select class="language-selector" aria-labelledby="language-selector-label" id="language_footer" name="language"><option value="id">Bahasa Indonesia</option><option value="ms">Bahasa Melayu</option><option value="ca">Català</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="en" selected="selected">English</option><option value="es">Español</option><option value="el">Eλληνικά</option><option value="fr">Français</option><option value="it">Italiano</option><option value="hu">Magyar</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="pt">Português</option><option value="fi">Suomi</option><option value="tr">Türkçe</option><option value="ru">Русский</option><option value="th">ภาษาไทย</option><option value="zh">中文 (简体)</option></select>
+                    </div>
+
+
+                    <div class="select select-large select-block row-space-2">
+                        <label id="currency-selector-label" class="screen-reader-only">Choose currency</label>
+                        <select class="currency-selector" aria-labelledby="currency-selector-label" id="currency_footer" name="currency"><option value="USD" selected="selected">USD</option><option value="GBP">GBP</option><option value="EUR">EUR</option><option value="AUD">AUD</option><option value="SGD">SGD</option><option value="SEK">SEK</option><option value="DKK">DKK</option><option value="MXN">MXN</option><option value="BRL">BRL</option><option value="MYR">MYR</option><option value="PHP">PHP</option><option value="CHF">CHF</option><option value="INR">INR</option><option value="ARS">ARS</option><option value="CAD">CAD</option><option value="CNY">CNY</option><option value="CZK">CZK</option><option value="HKD">HKD</option><option value="HUF">HUF</option><option value="IDR">IDR</option><option value="ILS">ILS</option><option value="JPY">JPY</option><option value="KRW">KRW</option><option value="NOK">NOK</option><option value="NZD">NZD</option><option value="PLN">PLN</option><option value="RUB">RUB</option><option value="THB">THB</option><option value="TRY">TRY</option><option value="TWD">TWD</option><option value="VND">VND</option><option value="ZAR">ZAR</option></select>
+                    </div>
+
+                    <div class="cx-number"></div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-md-offset-1 hide-sm">
+                <h2 class="h5">Company</h2>
+                <ul class="list-layout">
+                    <li><a href="http://makent.trioangle.com/terms_of_service" class="link-contrast">Terms of Service</a></li>
+                    <li><a href="http://makent.trioangle.com/privacy_policy" class="link-contrast">Privacy Policy</a></li>
+                    <li><a href="http://makent.trioangle.com/host_guarantee" class="link-contrast">Host Guarantee</a></li>
+                    <li><a href="http://makent.trioangle.com/guest_refund" class="link-contrast">Guest Refund</a></li>
+                    <li><a href="http://makent.trioangle.com/copyright_policy" class="link-contrast">Copyright Policy</a></li>
+                    <li><a href="http://makent.trioangle.com/consent_disagree" class="link-contrast">Consent Disagree</a></li>
+                    <li><a href="http://makent.trioangle.com/about_us" class="link-contrast">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 hide-sm">
+                <h2 class="h5">Discover</h2>
+                <ul class="list-layout">
+                    <li><a href="http://makent.trioangle.com/invite" class="link-contrast">Travel Credit</a></li>
+                    <li><a href="http://makent.trioangle.com/trust_safety" class="link-contrast">Trust &amp; Safety</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2 hide-sm">
+                <h2 class="h5">Hosting</h2>
+                <ul class="list-layout">
+                    <li><a href="http://makent.trioangle.com/why_host" class="link-contrast">Why Host</a></li>
+                    <li><a href="http://makent.trioangle.com/hospitality" class="link-contrast">Hospitality</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-sm-12 space-4 space-top-4 show-sm">
+            <ul class="list-layout list-inline text-center h5">
+                <li><a href="http://makent.trioangle.com/terms_of_service" class="link-contrast">Terms of Service</a></li>
+                <li><a href="http://makent.trioangle.com/privacy_policy" class="link-contrast">Privacy Policy</a></li>
+                <li><a href="http://makent.trioangle.com/host_guarantee" class="link-contrast">Host Guarantee</a></li>
+                <li><a href="http://makent.trioangle.com/guest_refund" class="link-contrast">Guest Refund</a></li>
+                <li><a href="http://makent.trioangle.com/copyright_policy" class="link-contrast">Copyright Policy</a></li>
+                <li><a href="http://makent.trioangle.com/consent_disagree" class="link-contrast">Consent Disagree</a></li>
+                <li><a href="http://makent.trioangle.com/about_us" class="link-contrast">About Us</a></li>
+            </ul>
+        </div>
+
+        <hr class="footer-divider space-top-8 space-4 hide-sm">
+
+        <div class="text-center">
+            <h2 class="h5 space-4 hide-sm">Join Us On</h2>
+            <ul class="list-layout list-inline">
+                <link itemprop="url" href="">
+                <meta itemprop="logo" content="">
+                <li>
+                    <a href="https://facebook.com/TrioangleTechnologies" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Facebook</span>
+                        <i class="icon footer-icon icon-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/109660062973212147808" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Google_plus</span>
+                        <i class="icon footer-icon icon-google-plus"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/trioangle" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Twitter</span>
+                        <i class="icon footer-icon icon-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/trioangle-technologies-667a47120" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Linkedin</span>
+                        <i class="icon footer-icon icon-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://in.pinterest.com/trioangle1/" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Pinterest</span>
+                        <i class="icon footer-icon icon-pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UC2EWcEd5dpvGmBh-H4TQ0wg" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Youtube</span>
+                        <i class="icon footer-icon icon-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/trioangletech" class="link-contrast footer-icon-container" target="_blank">
+                        <span class="screen-reader-only">Instagram</span>
+                        <i class="icon footer-icon icon-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <div class="space-top-2 text-muted">
+                © Makent, Inc.
+            </div>
+        </div>
+    </footer>
+</div>
+<div id="gmap-preload" class="hide"></div>
+
+<div class="ipad-interstitial-wrapper"><span data-reactid=".1"></span></div>
+
+<div id="fb-root"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXyRBiyRcEzHDJ8iU00zECMUP4cXBIm6A&amp;sensor=false&amp;libraries=places"></script>
+
+<script src="http://makent.trioangle.com/js/jquery-1.11.3.js"></script>
+
+<script src="http://makent.trioangle.com/js/jquery-ui.js"></script>
+
+<script src="http://makent.trioangle.com/js/i18n/datepicker-en.js"></script>
+
+<script src="http://makent.trioangle.com/js/bootstrap.min.js"></script>
+
+
+<script src="http://makent.trioangle.com/js/angular.js"></script>
+
+<script src="http://makent.trioangle.com/js/angular-sanitize.js"></script>
+
+
+<script src="http://makent.trioangle.com/js/responsiveslides.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.login_popup_head').click(function(e){
+            e.preventDefault();
+            $("body").addClass("pos-fix");
+            $(".login_popup").show();
+            $(".signup_popup").hide();
+            $(".signup_popup2").hide();
+        });
+        $('.login-close').click(function(event){
+            $("body").removeClass("pos-fix");
+            $(".login_popup").hide();
+        });
+        $('.top-home').click(function(event){
+            event.stopPropagation();
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.forgot-password-popup').click(function(e){
+            e.preventDefault();
+            $("body").addClass("pos-fix");
+            $(".login_popup").hide();
+            $(".forgot-passward").show();
+        });
+        $('.login-close').click(function(event){
+            $("body").removeClass("pos-fix");
+            $(".forgot-passward").hide();
+        });
+        $('.top-home').click(function(event){
+            event.stopPropagation();
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.signup_popup_head').click(function(e){
+            e.preventDefault();
+            $("body").addClass("pos-fix");
+            $(".signup_popup").show();
+            $(".login_popup").hide();
+        });
+        $('.login-close').click(function(){
+            $("body").removeClass("pos-fix");
+            $(".signup_popup").hide();
+        });
+        $('.top-home').click(function(event){
+            event.stopPropagation();
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.signup_popup_head2').click(function(e){
+            e.preventDefault();
+            $("body").addClass("pos-fix");
+            $(".signup_popup2").show();
+            $(".signup_popup").hide();
+        });
+        $('.login-close').click(function(){
+            $("body").removeClass("pos-fix");
+            $(".signup_popup2").hide();
+        });
+        $('.top-home').click(function(event){
+            event.stopPropagation();
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('ul.menu-group li a').click(function()
+        {
+            $('.nav--sm').css('visibility','hidden');
+        });
+    });
+</script>
+<script>
+    var app = angular.module('App', ['ngSanitize']);
+    var APP_URL = "http:\/\/makent.trioangle.com";
+    var USER_ID = 10005
+    $.datepicker.setDefaults($.datepicker.regional[ "en" ])
+</script>
+
+<script src="http://makent.trioangle.com/js/common.js"></script><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+<!-- ver. 87c23752f8dfbd60bf83837d2c8b2dcd0ec660a9 -->
+<div class="tooltip tooltip-bottom-middle" role="tooltip" aria-hidden="true">
+    <p class="panel-body">To sign up, you must be 18 or older. Other people won’t see your birthday.</p>
+</div>
+
+<div class="pac-container pac-logo" style="display: none;"></div><div class="pac-container pac-logo" style="display: none;">
+</div>
+
+</body>
+
+</html>

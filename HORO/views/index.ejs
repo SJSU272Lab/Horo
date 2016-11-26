@@ -168,8 +168,8 @@
 <!-- End header  -->
 <!-- Start menu -->
 <section id="mu-menu">
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default" role="navigation" ng-app="indexPage">
+		<div class="container"  ng-controller="viewProfile">
 			<div class="navbar-header">
 				<!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -203,7 +203,7 @@
 						</ul>
 					</li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="404.html">404 Page</a></li>
+					<li><a href="#" ng-click="Profile()">Profile</a></li>
 					<li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
 				</ul>
 			</div><!--/.nav-collapse -->

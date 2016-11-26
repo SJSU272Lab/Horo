@@ -25,7 +25,7 @@ indexPage.config(function($stateProvider, $urlRouterProvider) {
 
         })
         .state('signup', {
-            url:'/signin',
+            url:'/signup',
             signup: '/signup/signup.html',
             controller: 'signup',
             params : { listings : null}
@@ -33,5 +33,23 @@ indexPage.config(function($stateProvider, $urlRouterProvider) {
         })
 
 });
+
+
+indexPage.controller('viewProfile', function($scope, $http,$state) {
+
+    console.log("Inside viewProfile");
+
+
+
+    $scope.Profile = function()
+    {
+        window.location.assign("/Profile");
+    }
+
+});
+
+
+
+
 
 
