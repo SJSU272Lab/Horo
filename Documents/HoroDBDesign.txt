@@ -70,6 +70,11 @@
    USER_ID - INTEGER - { user_id from USER_MASTER FOREIGN KEY from USER_ID }
    PROGRESS - INTEGER - { % progress of the user for the course }
 
+11. COURSE_LOCATION TABLE
+   COURSE_ID - FOREIGN KEY - INTEGER - { course_id from COURSE_MASTER }
+   NGO_ID - Auto Increment  PRIMARY KEY - INTEGER - { unique id for the NGO }
+   COURSE_LOCATION - VARCHAR(200) - { location of the course as arranged by the NGO}
+   
 
 
 
