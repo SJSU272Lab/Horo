@@ -17,7 +17,7 @@ var express = require('express')
 var index = require('./routes/index');
 var profile = require('./routes/profile');
 var editprofile = require('./routes/EditProfile');
-var account = require('./routes/Account');
+var courseadd = require('./routes/Account');
 
 var app = express();
 
@@ -68,14 +68,14 @@ if ('development' == app.get('env')) {
 
 //GET
 app.get('/', home.redirectToHome);
-app.get('/Gallery',gallery.redirectToGallery);
-app.get('/course',course.redirectToCourse);
-app.get('/courseDetail',courseDetail.redirectToCoursedetail);
-app.get('/contact',contact.redirectToContact);
-app.get('/Index', index.index);
-app.get('/Profile',profile.land);
+ app.get('/Gallery',gallery.redirectToGallery);
+ //app.get('/course',course.redirectToCourse);
+ app.get('/courseDetail',courseDetail.redirectToCoursedetail);
+ app.get('/contact',contact.redirectToContact);
+ app.get('/Index', index.index);
+ app.get('/Profile',profile.land);
 app.get('/EditProfile',editprofile.land);
-app.get('/Account',account.land);
+app.get('/Account',courseadd.land);
 
 //POST
 app.post('/getAddition',calculator.getAddition);
@@ -86,6 +86,11 @@ app.post('/getDivision',calculator.getDivision);
 
 app.post('/signupForVolunteerAndAttendee',index.signupForVolunteerAndAttendee);
 app.post('/signinForVolunteerAndAttendee',index.signinForVolunteerAndAttendee);
+
+app.post('/getCourseCategory',courseadd.getCourseCategory);
+app.post('/getAllCourseList',courseadd.getAllCourseList);
+app.post('/setSessionDetails',courseadd.setSessionDetails);
+app.post('/setCourseDetails',courseadd.setCourseDetails);
 
 
 

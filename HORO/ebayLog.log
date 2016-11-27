@@ -129,3 +129,76 @@
 {"level":"info","message":"Successful Login for = gaurangmhatre userId: gaurangmhatre","timestamp":"2016-11-26T07:23:31.966Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-11-26T07:23:31.973Z"}
 {"level":"info","message":"Session Initialized with username : gaurangmhatre","timestamp":"2016-11-26T07:23:31.968Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = a@gmail.com","timestamp":"2016-11-27T06:24:15.744Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'a@gmail.com';","timestamp":"2016-11-27T06:24:15.746Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = a@gmail.com","timestamp":"2016-11-27T06:24:17.082Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'a@gmail.com';","timestamp":"2016-11-27T06:24:17.083Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:18.037Z"}
+{"level":"error","message":"Invalid Login for username Id: a@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:18.039Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:18.064Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:18.098Z"}
+{"level":"error","message":"Invalid Login for username Id: a@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:18.099Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:18.100Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurang@gmail.com","timestamp":"2016-11-27T06:24:21.477Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurang@gmail.com';","timestamp":"2016-11-27T06:24:21.478Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:21.551Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurang@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:21.552Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:21.556Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurang@gmail.com","timestamp":"2016-11-27T06:24:24.158Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurang@gmail.com';","timestamp":"2016-11-27T06:24:24.159Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:24.269Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurang@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:24.270Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:24.271Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurang@gmail.com","timestamp":"2016-11-27T06:24:25.278Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurang@gmail.com';","timestamp":"2016-11-27T06:24:25.279Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:25.390Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurang@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:25.390Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:25.391Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre@gmail.com","timestamp":"2016-11-27T06:24:33.861Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre@gmail.com';","timestamp":"2016-11-27T06:24:33.861Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:33.943Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurangmhatre@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:33.943Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:33.944Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre@gmail.com","timestamp":"2016-11-27T06:24:35.281Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre@gmail.com';","timestamp":"2016-11-27T06:24:35.282Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:35.343Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurangmhatre@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:35.346Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:35.348Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre@gmail.com","timestamp":"2016-11-27T06:24:36.465Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre@gmail.com';","timestamp":"2016-11-27T06:24:36.466Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre@gmail.com","timestamp":"2016-11-27T06:24:36.496Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre@gmail.com';","timestamp":"2016-11-27T06:24:36.496Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:36.551Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurangmhatre@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:36.551Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:36.552Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:36.553Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurangmhatre@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:36.553Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:36.553Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre@gmail.com","timestamp":"2016-11-27T06:24:36.933Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre@gmail.com';","timestamp":"2016-11-27T06:24:36.938Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre@gmail.com","timestamp":"2016-11-27T06:24:36.953Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre@gmail.com';","timestamp":"2016-11-27T06:24:36.954Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:37.032Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurangmhatre@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:37.032Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:37.033Z"}
+{"level":"error","message":"Invalid Login for username Id: gaurangmhatre@gmail.com user is not registered.","timestamp":"2016-11-27T06:24:37.035Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-27T06:24:37.035Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:24:37.037Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre","timestamp":"2016-11-27T06:25:38.846Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre';","timestamp":"2016-11-27T06:25:38.848Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-11-27T06:25:39.598Z"}
+{"level":"info","message":"Successful Login for = gaurangmhatre userId: gaurangmhatre","timestamp":"2016-11-27T06:25:40.031Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:25:40.058Z"}
+{"level":"info","message":"Session Initialized with username : gaurangmhatre","timestamp":"2016-11-27T06:25:40.032Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre","timestamp":"2016-11-27T06:25:40.267Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre';","timestamp":"2016-11-27T06:25:40.268Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-11-27T06:25:40.283Z"}
+{"level":"info","message":"Successful Login for = gaurangmhatre userId: gaurangmhatre","timestamp":"2016-11-27T06:25:40.555Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:25:40.561Z"}
+{"level":"info","message":"Session Initialized with username : gaurangmhatre","timestamp":"2016-11-27T06:25:40.558Z"}
+{"level":"info","message":"select username,password from user_master where EmailId = gaurangmhatre","timestamp":"2016-11-27T06:25:41.397Z"}
+{"level":"info","message":"SQL Query::select username,password from user_master where username = 'gaurangmhatre';","timestamp":"2016-11-27T06:25:41.398Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-11-27T06:25:41.432Z"}
+{"level":"info","message":"Successful Login for = gaurangmhatre userId: gaurangmhatre","timestamp":"2016-11-27T06:25:41.676Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:25:41.679Z"}
+{"level":"info","message":"Session Initialized with username : gaurangmhatre","timestamp":"2016-11-27T06:25:41.678Z"}

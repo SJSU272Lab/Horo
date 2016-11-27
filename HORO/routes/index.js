@@ -80,8 +80,8 @@ exports.signinForVolunteerAndAttendee= function(req,res)
 
 
     if(username != '') {
-        var checkLoginQuery = "select username,password from user_master where username = '" + username + "';";
-        logger.log('info', 'select username,password from user_master where EmailId = '+username);
+        var checkLoginQuery = "select user_id,username,password from user_master where username = '" + username + "';";
+        logger.log('info', 'select user_id,username,password from user_master where EmailId = '+username);
         console.log("Query:: " + checkLoginQuery);
 
         mysql.fetchData(function(err,results) {
@@ -97,6 +97,7 @@ exports.signinForVolunteerAndAttendee= function(req,res)
                         logger.log('info', 'Successful Login for = ' + username + ' userId: ' + results[0].username);
                         console.log("username :  " + results[0].username);
                         req.session.username = username;
+                        req.session.user_id = user_id;
 
                         logger.log('info', "Session Initialized with username : " + req.session.username);
                         console.log("Session Initialized with username : " + req.session.username);
