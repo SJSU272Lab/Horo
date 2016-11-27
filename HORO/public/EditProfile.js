@@ -29,7 +29,12 @@ editprofile.controller('edituserprofile', function($scope, $http,$state) {
         }).success(function(data) {
 
             if (data.statusCode == 200) {
-                console.log("Success");
+
+                $scope.first_name = data.Result[0].user_firstname;
+                $scope.last_name = data.Result[0].user_lastname;
+                //$scope.gender = data.Result[0].user_gender;
+                $scope.city = data.Result[0].user_city;
+
             } else {
                 console.log("Failure");
             }
