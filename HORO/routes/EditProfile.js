@@ -18,7 +18,15 @@ var fs 			= require('fs');
 var express = require('express');
 //var mongoose = require('mongoose');
 //var Schema = mongoose.Schema;
-
+var mysql = require('mysql');
+var connection=mysql.createConnection({
+    host     : '127.0.0.1',
+    user     : 'root',
+    password : 'root',
+    database : 'horodb',
+    port	 : 3306
+});
+connection.connect();
 
 
 exports.land = function(req, res) {
@@ -41,8 +49,9 @@ exports.land = function(req, res) {
 exports.edit_profile = function(req, res)
 {
     console.log("IN EDIT PROFILE FUNCTION");
-
-    MongoClient.connect(mongoURL, function (err, db) {
+    response={"statusCode" : 200};
+    res.send(response);
+    /*MongoClient.connect(mongoURL, function (err, db) {
         if (err) {
             console.log('Unable to connect to the mongoDB server. Error:', err);
         } else {
@@ -93,7 +102,7 @@ exports.edit_profile = function(req, res)
                     response={"statusCode" : 200};
                     res.send(response);
 
-                    /*var msg_payload = {
+                    /!*var msg_payload = {
                         "saltRounds"			: saltRounds,
                         "myPlaintextPassword"	: req.param("inputPassword"),
                         "salt"					: bcrypt.genSaltSync(saltRounds),
@@ -122,10 +131,28 @@ exports.edit_profile = function(req, res)
                             response={"statusCode" : 200, "Result"	:	results};
                             res.send(response);
                         }
-                    });*/
+                    });*!/
                     //done(null, result);
                 }
             });
         }
+    });*/
+
+    first_name = req.param("first_name");
+    last_name = req.param("last_name");
+    city = req.param("city");
+    gender = req.param("gender");
+
+   // var row = { username: req.session.username, user: itemId };
+    connection.query("UPDATE user_profile SET user_firstname = '" +first_name+ "', user_lastname = '"+ last_name+"',user_gender= '"+gender+ "', user_city = '" +city+"'  WHERE username = 'j' ", function(err,res)
+    {
+        if(err) throw err;
+
+        console.log('Last insert ID:', res.insertId);
+
+
     });
+    json_responses = {"statusCode" : 200};
+    res.send(json_responses)
+
 }

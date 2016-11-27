@@ -14,7 +14,18 @@ var fs 			= require('fs');
 
 //var mongodb = require('mongodb');
 //var MongoClient = mongodb.MongoClient;
+var mysql = require('mysql');
 
+var pool = require("./mysqlConnector");
+
+var connection=mysql.createConnection({
+    host     : '127.0.0.1',
+    user     : 'root',
+    password : 'root',
+    database : 'horodb',
+    port	 : 3306
+});
+connection.connect();
 
 
 exports.land = function(req, res) {
@@ -136,6 +147,35 @@ exports.view_profile = function(req,res)
             });
         }
     });*/
+
+
+
+        var query = "select * from user_profile where username = 'j'";
+        console.log(query);
+        connection.query(query, function(err, rows)
+        {
+            if(err)
+            {
+               // logger.log('error', err);
+                throw err;
+            }
+            else
+            {
+                if(rows.length > 0)
+                {
+                    //var products=JSON.stringify(rows);
+                    response={"statusCode" : 200, "Result"	:	rows, "handle"	:	req.session.username};
+                    res.send(response);
+                }
+                else
+                {
+                    json_responses = {"statusCode" : 401};
+                    res.send(json_responses)
+                }
+            }
+            //				console.log(rows);
+        });
+        connection.end();
 
 }
 
