@@ -82,7 +82,8 @@ app.post('/getAddition',calculator.getAddition);
 app.post('/getSubtraction',calculator.getSubtraction);
 app.post('/getMultiplication',calculator.getMultiplication);
 app.post('/getDivision',calculator.getDivision);
-
+app.post('/view_profile', profile.view_profile);
+app.post('/edit_profile', editprofile.edit_profile);
 
 app.post('/signupForVolunteerAndAttendee',index.signupForVolunteerAndAttendee);
 app.post('/signinForVolunteerAndAttendee',index.signinForVolunteerAndAttendee);

@@ -95,7 +95,7 @@
 
 
 <body class="ng-scope" ng-app="EditUserProfile">
-<div id="header" class="makent-header new ">
+<div id="header" class="makent-header new " ng-controller="edituserprofile" ng-init="Init()">
     <header class="header--sm show-sm" aria-hidden="true" role="banner">
         <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
             <i class="icon icon-reorder icon-rausch"></i>
@@ -1069,7 +1069,7 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_first_name">
+                                    <label class="text-right col-sm-3" for="user_first_name" >
                                         First Name
                                     </label>
                                     <div class="col-sm-9">
