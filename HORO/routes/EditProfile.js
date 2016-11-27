@@ -1,32 +1,18 @@
 var ejs 		= require("ejs");
-//var mysql		= require('./mysql');
-//var bid 		= require('./bid');
-//var bcrypt 		= require('bcrypt-nodejs');
-//var mongo 		= require("./mongo");
-//var ObjectId 	= require('mongodb').ObjectID;
-//var mq_client 	= require('../rpc/client');
-//var winston 	= require('winston');
 var fs 			= require('fs');
-//var passport 	= require("passport");
-//var logDir		= 'log';
-//var env 		= process.env.NODE_ENV || 'development';
-//var mongoURL 	= "mongodb://localhost:27017/AirbnbDatabaseMongoDB";
 
-//var mongodb = require('mongodb');
-//var MongoClient = mongodb.MongoClient;
+
+/*var logger = new (winston.Logger)({
+    transports: [
+        new (winston.transports.Console)(),
+        new (winston.transports.File)({ filename: 'ebayLog.log' })
+    ]
+});*/
+
 
 var express = require('express');
-//var mongoose = require('mongoose');
-//var Schema = mongoose.Schema;
-var mysql = require('mysql');
-var connection=mysql.createConnection({
-    host     : '127.0.0.1',
-    user     : 'root',
-    password : 'root',
-    database : 'horodb',
-    port	 : 3306
-});
-connection.connect();
+
+var mysql = require("./mysqlConnector");
 
 
 exports.land = function(req, res) {
@@ -143,16 +129,22 @@ exports.edit_profile = function(req, res)
     city = req.param("city");
     gender = req.param("gender");
 
-   // var row = { username: req.session.username, user: itemId };
-    connection.query("UPDATE user_profile SET user_firstname = '" +first_name+ "', user_lastname = '"+ last_name+"',user_gender= '"+gender+ "', user_city = '" +city+"'  WHERE username = 'j' ", function(err,res)
-    {
-        if(err) throw err;
+    var query = "UPDATE user_profile SET user_firstname = '" +first_name+ "', user_lastname = '"+ last_name+"',user_gender= '"+gender+ "', user_city = '" +city+"'  WHERE username = 'j' ";
 
-        console.log('Last insert ID:', res.insertId);
+    mysql.storeData(query, function(err, result){
+        //render on success
+        if(err){
+            console.log('Invalid SingUp!');
+            //logger.log('info', "Invalid Sign up for: "+ first_name);
+            res.send({"statusCode" : 401});
+        }
+        //render or error
+        else{
 
+            console.log('Valid SignUp!');
+            //logger.log('info', "Valid Sign up for: " + first_name);
+            res.send({"statusCode" : 200});
 
+            }
     });
-    json_responses = {"statusCode" : 200};
-    res.send(json_responses)
-
 }

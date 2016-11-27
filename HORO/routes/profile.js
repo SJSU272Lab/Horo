@@ -14,18 +14,10 @@ var fs 			= require('fs');
 
 //var mongodb = require('mongodb');
 //var MongoClient = mongodb.MongoClient;
-var mysql = require('mysql');
+var mysql = require("./mysqlConnector");
 
 var pool = require("./mysqlConnector");
 
-var connection=mysql.createConnection({
-    host     : '127.0.0.1',
-    user     : 'root',
-    password : 'root',
-    database : 'horodb',
-    port	 : 3306
-});
-connection.connect();
 
 
 exports.land = function(req, res) {
@@ -149,7 +141,7 @@ exports.view_profile = function(req,res)
     });*/
 
 
-
+/*    connection.connect();
         var query = "select * from user_profile where username = 'j'";
         console.log(query);
         connection.query(query, function(err, rows)
@@ -175,7 +167,28 @@ exports.view_profile = function(req,res)
             }
             //				console.log(rows);
         });
-        connection.end();
+        connection.end();*/
+
+    var checkLoginQuery = "select * from user_profile where username = 'j';";
+    mysql.fetchData(function(err,results) {
+        if(err) {
+            throw err;
+            logger.log('error','Error of user :'+username+ ' Error: '+err);
+        }
+        else {
+            if(results.length >0) {
+
+                response={"statusCode" : 200, "Result"	:	results};
+                res.send(response);
+            }
+            else{
+                //logger.log('error', "Invalid Login for username Id: "+username +' user is not registered.');
+                json_responses = {"statusCode": 401};
+                console.log(json_responses);
+                res.send(json_responses);
+            }
+        }
+    }, checkLoginQuery);
 
 }
 
