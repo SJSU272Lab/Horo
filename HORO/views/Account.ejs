@@ -997,7 +997,7 @@
         </div>
     </div>
 </div>
-<main id="site-content" role="main" ng-controller="courseAdd" class="ng-scope"> <!--ng-controller="payout_preferences"-->
+<main id="site-content" role="main"  class="ng-scope"> <!--ng-controller="payout_preferences"-->
     <div class="subnav hide-print">
         <div class="page-container-responsive">
             <ul class="subnav-list">
@@ -1021,7 +1021,7 @@
         </div>
     </div>
 
-    <div class="page-container-responsive row-space-top-4 row-space-4">
+    <div class="page-container-responsive row-space-top-4 row-space-4" ng-controller="courseAdd">
         <div class="row">
             <div class="col-md-3">
                 <ul class="sidenav-list">
@@ -1074,172 +1074,99 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_first_name">
-                                        First Name
+                                    <label class="text-right col-sm-3" for="course_name">
+                                        Course Name
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <input id="user_first_name" size="30" class="focus" name="first_name" type="text" value="Jay" ng-model="first_name">
+                                        <input id="course_name" size="30" class="focus" name="first_name" type="text" value="Jay" ng-model="courseName">
                                         <span class="text-danger"></span>
+                                        <div class="text-muted row-space-top-1">This is where you give title to the course.</div>
                                     </div>
                                 </div>
 
                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_last_name">
-                                        Last Name
+                                    <label class="text-right col-sm-3" for="course_name">
+                                        Course Type
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <input id="user_last_name" size="30" class="focus" name="last_name" type="text" value="Nirgudkar" ng-model="last_name">
-                                        <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">This is only shared once you have a confirmed booking with another Makent user.</div>
-                                    </div>
-                                </div>
+                                        <!-- Product Type -->
+                                        <div class="form-group">
 
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_gender">
-                                        I Am <i class="icon icon-lock icon-ebisu" data-behavior="tooltip" aria-label="Private"></i>
-                                    </label>
-                                    <div class="col-sm-9">
 
-                                        <div class="select">
-                                            <select id="user_gender" class="focus" name="gender" ng-model="gender">
-                                                <option selected="selected" value="">Gender</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>
-                                                <option value="Other">Other</option>
+                                            <select id="courseCategory" class="form-control" required>
+                                                <option value="">--- Select---</option>
+                                                <option data-ng-repeat="courseCategory in courseCategories" value="{{courseCategory.category_id}}">{{courseCategory.category_name}}</option>
                                             </select>
+
                                         </div>
+
                                         <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">We use this data for analysis and never share it with other users.</div>
+                                        <div class="text-muted row-space-top-1">This will help tag your course.</div>
                                     </div>
                                 </div>
 
                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_birthdate">
-                                        Birth Date <i class="icon icon-lock icon-ebisu" data-behavior="tooltip" aria-label="Private"></i>
+                                    <label class="text-right col-sm-3" for="course_start_date">
+                                        Course start date
                                     </label>
+
                                     <div class="col-sm-9">
-
-                                        <div class="select">
-                                            <select id="user_birthday_month" class="focus" name="birthday_month">
-                                                <option value="">Month</option>
-                                                <option value="1">January</option>
-                                                <option value="2">February</option>
-                                                <option value="3">March</option>
-                                                <option value="4">April</option>
-                                                <option value="5">May</option>
-                                                <option value="6">June</option>
-                                                <option value="7">July</option>
-                                                <option value="8">August</option>
-                                                <option value="9">September</option>
-                                                <option value="10">October</option>
-                                                <option value="11">November</option>
-                                                <option value="12">December</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="select">
-                                            <select id="user_birthday_day" class="focus" name="birthday_day">
-                                                <option value="">Day</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
-                                        </div>
-
-                                        <div class="select">
-                                            <select id="user_birthday_year" class="focus" name="birthday_year"><option value="">Year</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option><option value="1904">1904</option><option value="1903">1903</option><option value="1902">1902</option><option value="1901">1901</option><option value="1900">1900</option><option value="1899">1899</option><option value="1898">1898</option><option value="1897">1897</option><option value="1896">1896</option></select>
-                                        </div>
-                                        <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">The magical day you were dropped from the sky by a stork. We use this data for analysis and never share it with other users.</div>
-                                    </div>
-                                </div>
-
-                                <!--<div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_email">
-                                        Email Address <i class="icon icon-lock icon-ebisu" data-behavior="tooltip" aria-label="Private"></i>
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="user_email" size="30" class="focus" name="email" type="text" value="jnirgudkar1@gmail.com">
-                                        <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">We won’t share your private email address with other Makent users.</div>
-                                    </div>
-                                </div>-->
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_live">
-                                        Where You Live
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="user_live" placeholder="e.g. Paris, FR / Brooklyn, NY / Chicago, IL" size="30" class="focus" name="live" type="text" value="" ng-model="city">
-
+                                        <input class="form-control" type="date" ng-model="courseStartDate">
                                     </div>
                                 </div>
 
                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_about">
-                                        Describe Yourself
+                                    <label class="text-right col-sm-3" for="course_start_date">
+                                        Course end date
+                                    </label>
+
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="date" ng-model="courseEndDate">
+                                    </div>
+                                </div>
+
+                                <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_language">
+                                        Course language
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <textarea id="user_about" cols="40" rows="5" class="focus" name="about" ng-model="description"></textarea>
-
-                                        <div class="text-muted row-space-top-1">Makent is built on relationships. Help other people get to know you.<br><br>Tell them about the things you like: What are 5 things you can’t live without? Share your favorite travel destinations, books, movies, shows, music, food.<br><br>Tell them what it’s like to have you as a guest or host: What’s your style of traveling? Of Makent hosting?<br><br>Tell them about you: Do you have a life motto?</div>
+                                        <input id="course_language" size="30" class="focus" name="course_language" type="text" value="" ng-model="courseLanguage">
+                                        <span class="text-danger"></span>
                                     </div>
                                 </div>
+
+                                <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_name">
+                                        Course lectures
+                                    </label>
+                                    <div class="col-sm-9">
+
+                                        <input id="course_lectures" size="30" class="focus" name="course_lectures" type="text" value="" ng-model="courselectures">
+                                        <span class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_name">
+                                        Course Details
+                                    </label>
+                                    <div class="col-sm-9">
+                                        <textarea id="course_Details" cols="40" rows="5" class="focus" name="course_Details" ng-model="courseDetails"></textarea>
+
+                                        <span class="text-danger"></span>
+                                        <div class="text-muted row-space-top-1">Give more details about the course.</div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
 
 
-                        <div class="panel row-space-4">
-                            <div class="panel-header">
-                                Optional
-                            </div>
-                            <div class="panel-body">
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_profile_info_university">
-                                        School
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="user_profile_info_university" size="30" class="focus" name="school" type="text" value="">
-
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_profile_info_employer">
-                                        Work
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="user_profile_info_employer" size="30" placeholder="e.g. Airbnb / Apple / Taco Stand" class="focus" name="work" type="text" value="">
-
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="user_time_zone">
-                                        Time Zone
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <div class="select">
-                                            <select id="user_time_zone" class="focus" name="timezone"><option value="Pacific/Kwajalein">(GMT-11:00) International Date Line West</option><option value="Pacific/Midway">(GMT-11:00) Midway Island</option><option value="Pacific/Samoa">(GMT-11:00) Samoa</option><option value="Pacific/Honolulu">(GMT-10:00) Pacific/Honolulu</option><option value="US/Alaska">(GMT-09:00) Alaska</option><option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US &amp; Canada)</option><option value="America/Tijuana">(GMT-08:00) Tijuana</option><option value="America/Denver">(GMT-07:00) America/Denver</option><option value="America/Phoenix">(GMT-07:00) America/Phoenix</option><option value="US/Arizona">(GMT-07:00) Arizona</option><option value="America/Chihuahua">(GMT-07:00) Chihuahua</option><option value="America/Mazatlan">(GMT-07:00) Mazatlan</option><option value="US/Mountain">(GMT-07:00) Mountain Time (US &amp; Canada)</option><option value="America/Chicago">(GMT-06:00) America/Chicago</option><option value="America/Mexico_City">(GMT-06:00) Mexico City</option><option value="America/Managua">(GMT-06:00) Central America</option><option value="US/Central">(GMT-06:00) Central Time (US &amp; Canada)</option><option value="America/Monterrey">(GMT-06:00) Monterrey</option><option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option><option value="America/Nassau">(GMT-05:00) America/Nassau</option><option value="America/New_York">(GMT-05:00) America/New_York</option><option value="America/Port-au-Prince">(GMT-05:00) America/Port-au-Prince</option><option value="America/Toronto">(GMT-05:00) America/Toronto</option><option value="America/Bogota">(GMT-05:00) Quito</option><option value="US/Eastern">(GMT-05:00) Eastern Time (US &amp; Canada)</option><option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option><option value="America/Lima">(GMT-05:00) Lima</option><option value="America/Caracas">(GMT-04:30) Caracas</option><option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option><option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires</option><option value="America/La_Paz">(GMT-04:00) La Paz</option><option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option><option value="America/Cordoba">(GMT-03:00) America/Cordoba</option><option value="America/Fortaleza">(GMT-03:00) America/Fortaleza</option><option value="America/Montevideo">(GMT-03:00) America/Montevideo</option><option value="America/Santiago">(GMT-03:00) Santiago</option><option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option><option value="America/Godthab">(GMT-03:00) Greenland</option><option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option><option value="Atlantic/Azores">(GMT-01:00) Azores</option><option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option><option value="Africa/Casablanca">(GMT+00:00) Casablanca</option><option value="Atlantic/Canary">(GMT+00:00) Atlantic/Canary</option><option value="Atlantic/Reykjavik">(GMT+00:00) Atlantic/Reykjavik</option><option value="Etc/Greenwich">(GMT+00:00) Dublin</option><option value="Europe/London">(GMT+00:00) London</option><option value="Europe/Dublin">(GMT+00:00) Europe/Dublin</option><option value="Europe/Lisbon">(GMT+00:00) Lisbon</option><option value="Africa/Monrovia">(GMT+00:00) Monrovia</option><option value="UTC" selected="selected">(GMT+00:00) UTC</option><option value="Europe/Amsterdam">(GMT+01:00) Europe/Amsterdam</option><option value="Europe/Belgrade">(GMT+01:00) Europe/Belgrade</option><option value="Europe/Berlin">(GMT+01:00) Europe/Berlin</option><option value="Europe/Bratislava">(GMT+01:00) Europe/Bratislava</option><option value="Europe/Brussels">(GMT+01:00) Europe/Brussels</option><option value="Europe/Budapest">(GMT+01:00) Europe/Budapest</option><option value="Europe/Copenhagen">(GMT+01:00) Europe/Copenhagen</option><option value="Europe/Ljubljana">(GMT+01:00) Ljubljana</option><option value="Europe/Madrid">(GMT+01:00) Madrid</option><option value="Europe/Monaco">(GMT+01:00) Europe/Monaco</option><option value="Europe/Oslo">(GMT+01:00) Europe/Oslo</option><option value="Europe/Paris">(GMT+01:00) Paris</option><option value="Europe/Podgorica">(GMT+01:00) Europe/Podgorica</option><option value="Europe/Prague">(GMT+01:00) Prague</option><option value="Europe/Rome">(GMT+01:00) Rome</option><option value="Europe/Stockholm">(GMT+01:00) Stockholm</option><option value="Europe/Tirane">(GMT+01:00) Europe/Tirane</option><option value="Europe/Vienna">(GMT+01:00) Vienna</option><option value="Europe/Warsaw">(GMT+01:00) Warsaw</option><option value="Europe/Zagreb">(GMT+01:00) Zagreb</option><option value="Europe/Zurich">(GMT+01:00) Europe/Zurich</option><option value="Europe/Sarajevo">(GMT+01:00) Sarajevo</option><option value="Europe/Skopje">(GMT+01:00) Skopje</option><option value="Africa/Lagos">(GMT+01:00) West Central Africa</option><option value="Asia/Beirut">(GMT+02:00) Asia/Beirut</option><option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option><option value="Asia/Nicosia">(GMT+02:00) Asia/Nicosia</option><option value="Europe/Athens">(GMT+02:00) Europe/Athens</option><option value="Europe/Bucharest">(GMT+02:00) Bucharest</option><option value="Africa/Cairo">(GMT+02:00) Cairo</option><option value="Europe/Helsinki">(GMT+02:00) Kyiv</option><option value="Europe/Istanbul">(GMT+02:00) Istanbul</option><option value="Europe/Riga">(GMT+02:00) Riga</option><option value="Europe/Sofia">(GMT+02:00) Sofia</option><option value="Africa/Harare">(GMT+02:00) Harare</option><option value="Africa/Johannesburg">(GMT+02:00) Pretoria</option><option value="Europe/Tallinn">(GMT+02:00) Tallinn</option><option value="Europe/Vilnius">(GMT+02:00) Vilnius</option><option value="Asia/Baghdad">(GMT+03:00) Baghdad</option><option value="Europe/Minsk">(GMT+03:00) Minsk</option><option value="Europe/Moscow">(GMT+03:00) St. Petersburg</option><option value="Asia/Kuwait">(GMT+03:00) Kuwait</option><option value="Africa/Nairobi">(GMT+03:00) Nairobi</option><option value="Asia/Riyadh">(GMT+03:00) Riyadh</option><option value="Europe/Volgograd">(GMT+03:00) Volgograd</option><option value="Asia/Tehran">(GMT+03:30) Tehran</option><option value="Asia/Muscat">(GMT+04:00) Muscat</option><option value="Asia/Dubai">(GMT+04:00) Asia/Dubai</option><option value="Asia/Tbilisi">(GMT+04:00) Tbilisi</option><option value="Asia/Baku">(GMT+04:00) Baku</option><option value="Asia/Yerevan">(GMT+04:00) Yerevan</option><option value="Asia/Kabul">(GMT+04:30) Kabul</option><option value="Asia/Yekaterinburg">(GMT+05:00) Ekaterinburg</option><option value="Indian/Maldives">(GMT+05:00) Indian/Maldives</option><option value="Asia/Karachi">(GMT+05:00) Karachi</option><option value="Asia/Tashkent">(GMT+05:00) Tashkent</option><option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenepura</option><option value="Asia/Colombo">(GMT+05:30) Asia/Colombo</option><option value="Asia/Kolkata">(GMT+05:30) Kolkata</option><option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option><option value="Asia/Almaty">(GMT+06:00) Almaty</option><option value="Asia/Dhaka">(GMT+06:00) Dhaka</option><option value="Asia/Novosibirsk">(GMT+06:00) Novosibirsk</option><option value="Asia/Urumqi">(GMT+06:00) Urumqi</option><option value="Asia/Rangoon">(GMT+06:30) Rangoon</option><option value="Asia/Bangkok">(GMT+07:00) Hanoi</option><option value="Asia/Jakarta">(GMT+07:00) Jakarta</option><option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option><option value="Asia/Chongqing">(GMT+08:00) Chongqing</option><option value="Asia/Hong_Kong">(GMT+08:00) Hong Kong</option><option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur</option><option value="Asia/Macau">(GMT+08:00) Asia/Macau</option><option value="Asia/Makassar">(GMT+08:00) Asia/Makassar</option><option value="Asia/Shanghai">(GMT+08:00) Asia/Shanghai</option><option value="Asia/Taipei">(GMT+08:00) Taipei</option><option value="Asia/Irkutsk">(GMT+08:00) Irkutsk</option><option value="Australia/Perth">(GMT+08:00) Perth</option><option value="Asia/Singapore">(GMT+08:00) Singapore</option><option value="Asia/Ulan_Bator">(GMT+08:00) Ulaan Bataar</option><option value="Asia/Seoul">(GMT+09:00) Seoul</option><option value="Asia/Tokyo">(GMT+09:00) Tokyo</option><option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option><option value="Australia/Adelaide">(GMT+09:30) Adelaide</option><option value="Australia/Darwin">(GMT+09:30) Darwin</option><option value="Australia/Brisbane">(GMT+10:00) Brisbane</option><option value="Australia/Hobart">(GMT+10:00) Hobart</option><option value="Australia/Melbourne">(GMT+10:00) Melbourne</option><option value="Australia/Sydney">(GMT+10:00) Sydney</option><option value="Australia/Canberra">(GMT+10:00) Canberra</option><option value="Pacific/Guam">(GMT+10:00) Guam</option><option value="Asia/Magadan">(GMT+11:00) New Caledonia</option><option value="Pacific/Port_Moresby">(GMT+10:00) Port Moresby</option><option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option><option value="Pacific/Auckland">(GMT+12:00) Wellington</option><option value="Pacific/Fiji">(GMT+12:00) Marshall Is.</option><option value="Asia/Kamchatka">(GMT+12:00) Kamchatka</option><option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option></select>
-                                        </div>
-
-                                        <div class="text-muted row-space-top-1">Your home time zone.</div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-large" ng-click="UpdateProfile()">
+                        <button type="submit" class="btn btn-primary btn-large" ng-click="uploadCourse()">
                             Save
                         </button>
 
@@ -1519,6 +1446,7 @@
 
 
 <script src="http://makent.trioangle.com/js/angular.js"></script>
+<script src="host/courseAdd.js"></script>
 
 <script src="http://makent.trioangle.com/js/angular-sanitize.js"></script>
 

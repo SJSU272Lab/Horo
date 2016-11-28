@@ -15,7 +15,7 @@ function getConnection(){
             connectionLimit : 500, // The maximum number of connections to create at once. https://github.com/mysqljs/mysql
             host     : 'localhost',
             user     : 'root',
-            password : 'root',
+            password : 'toor',
             database : 'horodb',
             port	 : 3306
         });
@@ -58,7 +58,7 @@ function fetchDataWithoutPool(callback,sqlQuery){
         host     : 'localhost',
         user     : 'root',
         password : 'toor',
-        database : 'ebay',
+        database : 'horodb',
         port	 : 3306
     });
     connection.connect();

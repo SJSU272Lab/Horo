@@ -205,3 +205,104 @@
 {"level":"info","message":"select user_id,username,password from user_master where EmailId = a@gmail.com","timestamp":"2016-11-28T07:36:09.506Z"}
 {"level":"info","message":"SQL Query::select user_id,username,password from user_master where username = 'a@gmail.com';","timestamp":"2016-11-28T07:36:09.507Z"}
 {"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-28T07:36:34.836Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:00:30.650Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:00:30.654Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:00:53.501Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:00:53.505Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:03:04.936Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:03:04.938Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:04:29.780Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:04:29.784Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:04:30.043Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:04:30.070Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:04:30.073Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:04:47.877Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:04:47.877Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:04:47.890Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:04:47.891Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:04:47.892Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:07:03.012Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:07:03.013Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:07:03.028Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:07:03.029Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:07:03.030Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:07:29.512Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:07:29.512Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:07:29.523Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:07:29.524Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:07:29.525Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:14:36.609Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:14:36.612Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:14:36.679Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:14:36.682Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:14:36.683Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:15:55.407Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:15:55.408Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:15:55.414Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:15:55.415Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:15:55.416Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:32:18.041Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:32:18.042Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:32:18.047Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:32:18.048Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:32:18.049Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:32:29.635Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:32:29.635Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:32:29.646Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:32:29.647Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:32:29.647Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:33:19.564Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:33:19.565Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:33:19.579Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:33:19.579Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:33:19.580Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:34:58.591Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:34:58.592Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:34:58.616Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:34:58.617Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:34:58.617Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:35:44.666Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:35:44.667Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:35:44.733Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:35:44.736Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:35:44.736Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:37:15.994Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:37:15.994Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:37:16.037Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:37:16.038Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:37:16.039Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:39:33.434Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:39:33.434Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:39:33.440Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:39:33.441Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:39:33.443Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:47:19.107Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:47:19.108Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:47:19.116Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:47:19.117Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:47:19.117Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:51:32.493Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:51:32.494Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:51:32.504Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:51:32.505Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:51:32.507Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:53:05.747Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:53:05.748Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:53:05.792Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:53:05.793Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:53:05.794Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T09:59:03.735Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T09:59:03.735Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T09:59:03.750Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T09:59:03.753Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T09:59:03.755Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T10:18:41.162Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T10:18:41.162Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T10:18:41.166Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T10:18:41.167Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T10:18:41.167Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'Wiring';","timestamp":"2016-11-28T10:20:10.594Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('Wiring,1);---","timestamp":"2016-11-28T10:20:10.594Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-28T10:20:10.623Z"}
+{"level":"info","message":"Invalid insertion in course type for: Wiring","timestamp":"2016-11-28T10:20:10.623Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-28T10:20:10.624Z"}
