@@ -69,7 +69,7 @@ if ('development' == app.get('env')) {
 //GET
 app.get('/', home.redirectToHome);
  app.get('/Gallery',gallery.redirectToGallery);
- //app.get('/course',course.redirectToCourse);
+ app.get('/course',course.redirectToCourse);
  app.get('/courseDetail',courseDetail.redirectToCoursedetail);
  app.get('/contact',contact.redirectToContact);
  app.get('/Index', index.index);

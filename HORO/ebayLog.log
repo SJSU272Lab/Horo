@@ -202,3 +202,6 @@
 {"level":"info","message":"Successful Login for = gaurangmhatre userId: gaurangmhatre","timestamp":"2016-11-27T06:25:41.676Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-11-27T06:25:41.679Z"}
 {"level":"info","message":"Session Initialized with username : gaurangmhatre","timestamp":"2016-11-27T06:25:41.678Z"}
+{"level":"info","message":"select user_id,username,password from user_master where EmailId = a@gmail.com","timestamp":"2016-11-28T07:36:09.506Z"}
+{"level":"info","message":"SQL Query::select user_id,username,password from user_master where username = 'a@gmail.com';","timestamp":"2016-11-28T07:36:09.507Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-28T07:36:34.836Z"}
