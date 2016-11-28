@@ -121,7 +121,9 @@ exports.setCourseDetails = function(req,res){
     var courseLectures = req.param("courseLectures");
     var courseDetails = req.param("courseDetails");
 
-    var insertCourseNameQuery = "INSERT INTO course_master (`course_name`, `course_category`) VALUES ('"+courseName+","+courseCategory+");";
+    req.session.user_id = 1;//set user session
+
+    var insertCourseNameQuery = "INSERT INTO course_master (`course_name`, `course_category`) VALUES ('"+courseName+"',"+parseInt(courseCategory)+");";
     console.log("Query:: " + insertCourseNameQuery);
 
     var getCourseId = "select course_id from course_master where course_name = '" + courseName + "';";
@@ -147,7 +149,7 @@ exports.setCourseDetails = function(req,res){
                 }
                 else {
                     if(results.length >0) {
-                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_duration`,`course_language`,`course_lectures`,`course_details`)VALUES('"+result[0]+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
+                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_duration`,`course_language`,`course_lectures`,`course_details`)VALUES('"+results[0].course_id+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
 
                         mysql.storeData(insertCourseDetailsQuery, function(err, result) {
                             if(err) {
@@ -155,7 +157,7 @@ exports.setCourseDetails = function(req,res){
                                 logger.log('error','Error of inserting course: '+err);
                             }
                             else{
-                                console.log('Valid SignUp!');
+                                console.log('Valid insert!');
                                 logger.log('info', "Valid insertion in course type for: " + courseName);
                                 res.send({"statusCode" : 200});
                             }
