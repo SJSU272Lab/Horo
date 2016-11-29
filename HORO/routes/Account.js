@@ -18,7 +18,23 @@ exports.land = function(req, res) {
         // render on success
         if (!err) {
             res.end(result);
-            console.log("successfully rendered the signin module");
+            console.log("successfully rendered the courseAdd module.");
+        }
+        // render or error
+        else {
+            res.end('An error occurred');
+            console.log(err);
+        }
+    });
+};
+
+exports.sessionland = function(req, res) {
+
+    ejs.renderFile('./views/sessionAdd.ejs', function(err, result) {
+        // render on success
+        if (!err) {
+            res.end(result);
+            console.log("successfully rendered the sessionAdd module.");
         }
         // render or error
         else {
@@ -58,8 +74,12 @@ exports.getCourseCategory = function(req,res){
 }
 
 exports.getAllCourseList = function(req,res){
-    var courseNameQuery = "SELECT course_id,course_name,course_category FROM course_master;";
-    logger.log('info', 'SELECT course_id,course_name,course_category FROM course_master;');
+    console.log(req.session.user_id);
+
+    req.session.user_id = 1;
+
+    var courseNameQuery = "select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";";
+    logger.log('info', "select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";");
     console.log("Query:: " + courseNameQuery);
 
     mysql.fetchData(function(err,results) {
@@ -121,7 +141,9 @@ exports.setCourseDetails = function(req,res){
     var courseLectures = req.param("courseLectures");
     var courseDetails = req.param("courseDetails");
 
-    var insertCourseNameQuery = "INSERT INTO course_master (`course_name`, `course_category`) VALUES ('"+courseName+","+courseCategory+");";
+    req.session.user_id = 1;//set user session
+
+    var insertCourseNameQuery = "INSERT INTO course_master (`course_name`, `course_category`) VALUES ('"+courseName+"',"+parseInt(courseCategory)+");";
     console.log("Query:: " + insertCourseNameQuery);
 
     var getCourseId = "select course_id from course_master where course_name = '" + courseName + "';";
@@ -147,7 +169,7 @@ exports.setCourseDetails = function(req,res){
                 }
                 else {
                     if(results.length >0) {
-                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_duration`,`course_language`,`course_lectures`,`course_details`)VALUES('"+result[0]+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
+                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_lectures`,`course_language`,`course_details`)VALUES('"+results[0].course_id+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
 
                         mysql.storeData(insertCourseDetailsQuery, function(err, result) {
                             if(err) {
@@ -155,7 +177,7 @@ exports.setCourseDetails = function(req,res){
                                 logger.log('error','Error of inserting course: '+err);
                             }
                             else{
-                                console.log('Valid SignUp!');
+                                console.log('Valid insert!');
                                 logger.log('info', "Valid insertion in course type for: " + courseName);
                                 res.send({"statusCode" : 200});
                             }

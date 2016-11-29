@@ -22,8 +22,8 @@
 
     <script src="/account.js">  </script>
 
-<!--<div ui-view="header"></div>
-<div ui-view="content"></div>-->
+    <!--<div ui-view="header"></div>
+    <div ui-view="content"></div>-->
 
     <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -57,7 +57,7 @@
 
     <![endif]-->
 
-     <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/payout_preferences.css">
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/payout_preferences.css">
 
 
 
@@ -1004,16 +1004,16 @@
 
 
                 <li>
-                    <a href="#/Profile" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="#/Profile"  aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
                 <li>
-                    <a href="#/Account" ng-click="Account()" aria-selected="true" class="subnav-item">Add Courses</a>
+                    <a href="#/Account"  aria-selected="false" class="subnav-item">Add Courses</a>
                 </li>
                 <li>
-                    <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Add Session</a>
+                    <a href="#/sessionland"  aria-selected="true" class="subnav-item">Add Session</a>
                 </li>
                 <li>
-                    <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Course History</a>
+                    <a href="#" aria-selected="false" class="subnav-item">Course History</a>
                 </li>
 
 
@@ -1022,7 +1022,7 @@
         </div>
     </div>
 
-    <div class="page-container-responsive row-space-top-4 row-space-4" ng-controller="courseAdd">
+    <div class="page-container-responsive row-space-top-4 row-space-4" ng-controller="sessionAdd">
         <div class="row">
             <div class="col-md-3">
                 <ul class="sidenav-list">
@@ -1071,103 +1071,96 @@
 
                         <div class="panel row-space-4">
                             <div class="panel-header">
-                                Required -----
+                                Required
                             </div>
                             <div class="panel-body">
+
+                                <!-- Text input-->
+
                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_name">
-                                        Course Name
+                                    <label class="text-right col-sm-3" for="course_title">
+                                        Session Title
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <input id="course_name" size="30" class="focus" name="first_name" type="text"  ng-model="courseName">
+                                        <input id="course_language" size="30" class="focus" name="course_title" type="text" value="" ng-model="sessionTitle">
                                         <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">This is where you give title to the course.</div>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                 <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_start_date">
+                                        Session Date
+                                    </label>
+
+                                    <div class="col-sm-9">
+                                        <input class="form-control" type="date" ng-model="sessionDate">
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_Duration">
+                                        Duration
+                                    </label>
+                                    <div class="col-sm-9">
+
+                                        <input id="course_duration" size="30" class="focus" name="course_title" type="text" value="" ng-model="sessionDuration">
+                                        <span class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_Location">
+                                        Location
+                                    </label>
+                                    <div class="col-sm-9">
+
+                                        <input id="course_Location" size="30" class="focus" name="course_Location" type="text" value="" ng-model="sessionLocation">
+                                        <span class="text-danger"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+
+                                <div class="row row-condensed space-4">
+                                    <label class="text-right col-sm-3" for="course_Details">
+                                        Details
+                                    </label>
+                                    <div class="col-sm-9">
+
+                                        <input id="course_Details" size="30" class="focus" name="course_Details" type="text" value="" ng-model="sessionDetails">
+                                        <span class="text-danger"></span>
                                     </div>
                                 </div>
 
                                 <div class="row row-condensed space-4">
                                     <label class="text-right col-sm-3" for="course_name">
-                                        Course Type
+                                        Select Course Name
                                     </label>
                                     <div class="col-sm-9">
 
-                                        <!-- Product Type -->
                                         <div class="form-group">
 
 
-                                            <select id="courseCategory" class="form-control" required>
+                                            <select id="courseName" class="form-control" required>
                                                 <option value="">--- Select---</option>
-                                                <option data-ng-repeat="courseCategory in courseCategories" value="{{courseCategory.category_id}}">{{courseCategory.category_name}}</option>
+                                                <option data-ng-repeat="course in allCourse" value="{{course.course_Id}}">{{course.course_name}}</option>
                                             </select>
 
                                         </div>
-
-                                        <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">This will help tag your course.</div>
                                     </div>
                                 </div>
 
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_start_date">
-                                        Course start date
-                                    </label>
-
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="date" ng-model="courseStartDate">
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_start_date">
-                                        Course end date
-                                    </label>
-
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="date" ng-model="courseEndDate">
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_language">
-                                        Course language
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="course_language" size="30" class="focus" name="course_language" type="text" value="" ng-model="courseLanguage">
-                                        <span class="text-danger"></span>
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_name">
-                                        Course lectures
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="course_lectures" size="30" class="focus" name="course_lectures" type="text" value="" ng-model="courselectures">
-                                        <span class="text-danger"></span>
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_name">
-                                        Course Details
-                                    </label>
-                                    <div class="col-sm-9">
-                                        <textarea id="course_Details" cols="40" rows="5" class="focus" name="course_Details" ng-model="courseDetails"></textarea>
-
-                                        <span class="text-danger"></span>
-                                        <div class="text-muted row-space-top-1">Give more details about the course.</div>
-                                    </div>
-                                </div>
 
 
                             </div>
                         </div>
 
 
-                        <button class="btn btn-primary btn-large" ng-click="uploadCourse()">
+                        <button class="btn btn-primary btn-large" ng-click="uploadSession()">
                             Save
                         </button>
 
@@ -1447,7 +1440,7 @@
 
 
 <script src="http://makent.trioangle.com/js/angular.js"></script>
-<script src="host/courseAdd.js"></script>
+<script src="host/sessionAdd.js"></script>
 
 <script src="http://makent.trioangle.com/js/angular-sanitize.js"></script>
 

@@ -58,7 +58,7 @@ function fetchDataWithoutPool(callback,sqlQuery){
         host     : 'localhost',
         user     : 'root',
         password : 'toor',
-        database : 'ebay',
+        database : 'horodb',
         port	 : 3306
     });
     connection.connect();
