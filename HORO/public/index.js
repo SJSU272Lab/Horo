@@ -32,6 +32,7 @@ indexPage.config(function($stateProvider, $urlRouterProvider) {
 
         })
 
+
 });
 
 
@@ -40,11 +41,11 @@ indexPage.controller('viewProfile', function($scope, $http,$state) {
     console.log("Inside viewProfile");
 
 
-
     $scope.Profile = function()
     {
         window.location.assign("/Profile");
     }
+
 
 });
 

@@ -193,6 +193,33 @@ exports.view_profile = function(req,res)
 }
 
 
+exports.get_course_details = function(req,res)
+{
+    console.log("In GET_COURSE_DETAILS");
+
+    var checkLoginQuery = "SELECT * FROM horodb.course_details, horodb.course_master where course_details.course_detailsid = course_master.course_id ";
+    mysql.fetchData(function(err,results) {
+        if(err) {
+            throw err;
+            logger.log('error','Error of user :'+username+ ' Error: '+err);
+        }
+        else {
+            if(results.length >0) {
+
+                response={"statusCode" : 200, "Result"	:	results};
+                res.send(response);
+            }
+            else{
+                //logger.log('error', "Invalid Login for username Id: "+username +' user is not registered.');
+                json_responses = {"statusCode": 401};
+                console.log(json_responses);
+                res.send(json_responses);
+            }
+        }
+    }, checkLoginQuery);
+}
+
+
 
 exports.change_password = function(req, res)
 {

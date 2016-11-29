@@ -47,4 +47,25 @@ profile.controller('userprofile', function($scope, $http,$state) {
         window.location.assign("/EditProfile");
     }
 
+    $scope.GetCourse = function () {
+
+        $http({
+            method: "POST",
+            url: '/get_course_details',
+        }).success(function (data) {
+
+            if (data.statusCode === 200) {
+                console.log("Success");
+                $scope.fname = data.Result[0].user_firstname;
+                $scope.lname = data.Result[0].user_lastname;
+                $scope.username = data.Result[0].username;
+
+
+            } else {
+                console.log("Failure");
+            }
+
+        });
+    }
+
 });

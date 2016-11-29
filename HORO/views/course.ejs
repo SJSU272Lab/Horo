@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Varsity | Course</title>
 
+    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script src="/Course.js">  </script>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="stylesheets/assets/img/favicon.ico" type="image/x-icon">
 
@@ -32,14 +45,16 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+
     <![endif]-->
 
 </head>
-<body>
+<body ng-app="course"  ng-controller="CourseDetails" ng-init="GetCourse()">
 <!--START SCROLL TOP BUTTON -->
-<a class="scrollToTop" href="#">
+<!--<a class="scrollToTop" href="#">
     <i class="fa fa-angle-up"></i>
-</a>
+</a>-->
 <!-- END SCROLL TOP BUTTON -->
 
 <!-- Start header  -->
@@ -159,7 +174,7 @@
     </div>
 </section>
 <!-- End breadcrumb -->
-<section id="mu-course-content">
+<section id="mu-course-content" ng-init="GetCourse()">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -167,28 +182,29 @@
                     <div class="row">
                         <div class="col-md-9">
                             <!-- start course content container -->
-                            <div class="mu-course-container">
+                            <div class="mu-course-container" >
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-6">
-                                        <div class="mu-latest-course-single">
+                                    <div class="col-md-6 col-sm-6"  ng-repeat="vals in course_details">
+                                        <div class="mu-latest-course-single" ng-click="getCourseDetails(vals)">
                                             <figure class="mu-latest-course-img">
                                                 <a href="#"><img src="stylesheets/assets/img/courses/1.jpg" alt="img"></a>
                                                 <figcaption class="mu-latest-course-imgcaption">
-                                                    <a href="#">Drawing</a>
-                                                    <span><i class="fa fa-clock-o"></i>90Days</span>
+                                                    <a href="#">{{vals.category_name}}</a>
+                                                    <span><i class="fa fa-clock-o"></i>{{vals.course_duration}}</span>
                                                 </figcaption>
                                             </figure>
                                             <div class="mu-latest-course-single-content">
-                                                <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
+                                                <h4><a href="#">{{vals.course_name}}</a></h4>
+                                                <p>{{vals.course_details}}</p>
                                                 <div class="mu-latest-course-single-contbottom">
-                                                    <a class="mu-course-details" href="#">Details</a>
+                                                    <!--<a class="mu-course-details" href="#">Details</a>-->
+                                                    <a class="mu-course-details" href="#">{{vals.course_language}}</a>
                                                     <span class="mu-course-price" href="#">$165.00</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6">
+                                    <!--<div class="col-md-6 col-sm-6">
                                         <div class="mu-latest-course-single">
                                             <figure class="mu-latest-course-img">
                                                 <a href="#"><img src="stylesheets/assets/img/courses/2.jpg" alt="img"></a>
@@ -282,7 +298,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                             <!-- end course content container -->
@@ -317,12 +333,12 @@
                                 <div class="mu-single-sidebar">
                                     <h3>Categories</h3>
                                     <ul class="mu-sidebar-catg">
-                                        <li><a href="#">Web Design</a></li>
-                                        <li><a href="">Web Development</a></li>
-                                        <li><a href="">Math</a></li>
-                                        <li><a href="">Physics</a></li>
-                                        <li><a href="">Camestry</a></li>
-                                        <li><a href="">English</a></li>
+                                        <li><a href="#">Electrician</a></li>
+                                        <li><a href="">Decoration</a></li>
+                                        <li><a href="">Baking</a></li>
+                                        <li><a href="">Drawing</a></li>
+                                        <li><a href="">Engineering</a></li>
+                                        <!--<li><a href="">English</a></li>-->
                                     </ul>
                                 </div>
                                 <!-- end single sidebar -->

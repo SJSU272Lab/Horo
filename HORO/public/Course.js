@@ -1,0 +1,122 @@
+var course = angular.module('course', ['ui.router']);
+-course.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+    $stateProvider.state('course', {
+        url : '/course',
+        views: {
+            'header': {
+                templateUrl : 'templates/profileHeader.html',
+            },
+            'content': {
+                templateUrl : 'templates/Account.html',
+
+            },
+        }
+    })
+    $urlRouterProvider.otherwise('/');
+});
+
+
+
+course.controller('CourseDetails', function($scope, $http,$state) {
+
+
+    $scope.categories = "";
+    var selectedCourse;
+
+    $scope.GetCourse = function()
+    {
+        $http({
+            method: "POST",
+            url: '/get_course_details',
+        }).success(function (data) {
+            if (data.statusCode === 200) {
+                console.log("Success");
+
+                /*for(var i = 0; i< data.Result.length; i++)
+                {
+                    $scope.categories += data.Result[i].category_name;
+                }*/
+
+                $scope.course_details = data.Result;
+
+
+            } else {
+
+                console.log("Failure");
+            }
+
+        });
+
+
+    }
+
+    $scope.getCourseDetails = function(vals)
+    {
+        console.log(vals);
+        selectedCourse = vals;
+
+
+        $http({
+            method: "POST",
+            url: '/get_course_page',
+            data : {
+                'vals' : vals
+            }
+        }).success(function (data) {
+            if (data.statusCode === 200) {
+                console.log("Success");
+
+                /*for(var i = 0; i< data.Result.length; i++)
+                 {
+                 $scope.categories += data.Result[i].category_name;
+                 }*/
+
+                $scope.course_details = data.Result;
+                window.location.assign("/courseDetail");
+
+            } else {
+
+                console.log("Failure");
+            }
+
+        });
+
+
+    }
+
+
+    $scope.courseDetailPage = function () {
+
+        console.log($scope);
+
+        $http({
+            method: "POST",
+            url: '/viewCoursePage',
+
+        }).success(function (data) {
+            if (data.statusCode === 200) {
+                console.log("Success");
+
+                /*for(var i = 0; i< data.Result.length; i++)
+                 {
+                 $scope.categories += data.Result[i].category_name;
+                 }*/
+
+                $scope.course_details = data.Result;
+
+                $scope.course_title = data.Course.course_name;
+                $scope.description = data.Course.course_detals;
+
+                $scope.sessions = data.Sessions;
+                //window.location.assign("/courseDetail");
+
+            } else {
+
+                console.log("Failure");
+            }
+
+        });
+    }
+
+});

@@ -20,7 +20,8 @@
 
     <!-- Main style sheet -->
     <link href="stylesheets/assets/css/style.css" rel="stylesheet">
-
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -34,8 +35,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="/Course.js">  </script>
 </head>
-<body>
+<body ng-app="course" ng-controller="CourseDetails" ng-init="courseDetailPage()">
 <a class="scrollToTop" href="#">
     <i class="fa fa-angle-up"></i>
 </a>
@@ -177,8 +179,8 @@
                                                     <span><i class="fa fa-clock-o"></i>90Days</span>
                                                 </figcaption>
                                             </figure>
-                                            <div class="mu-latest-course-single-content">
-                                                <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+                                            <div class="mu-latest-course-single-content" >
+                                                <h2><a href="#">{{course_title}}</a></h2>
                                                 <h4>Course Information</h4>
                                                 <ul>
                                                     <li> <span>Course Price</span> <span>$250</span></li>
@@ -196,24 +198,26 @@
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ea consequatur doloremque deleniti error ullam, accusamus vel est alias, sit. Similique voluptas aliquid, excepturi accusamus, sequi ducimus incidunt mollitia non.</p>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi saepe possimus doloribus quod quibusdam officia suscipit qui illum nemo itaque, porro ipsam tempore enim error eius quia, culpa. Reprehenderit consequuntur voluptatem dolorum magni natus inventore molestias veritatis eos aspernatur repudiandae.</p>
                                                 <h4>Course Outline</h4>
-                                                <div class="table-responsive">
+                                                <div class="table-responsive" ng-repeat="vals in sessions">
                                                     <table class="table">
                                                         <thead>
                                                         <tr>
                                                             <th> Title </th>
-                                                            <th> Course Time </th>
-                                                            <th> Spent Time </th>
-                                                            <th> Status </th>
+                                                            <th> Course Date </th>
+                                                            <th> Session Details</th>
+                                                            <th> Session Duration</th>
+                                                            <th> Session Location </th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td> 1. Topic 1 </td>
-                                                            <td> 15:30 </td>
-                                                            <td> 13:80 </td>
-                                                            <td> Successful </td>
+                                                            <td> {{vals.session_title}}</td>
+                                                            <td> {{vals.session_date}}</td>
+                                                            <td> {{vals.session_details}}</td>
+                                                            <td> {{vals.session_duration}}</td>
+                                                            <td> {{vals.session_location}}</td>
                                                         </tr>
-                                                        <tr>
+                                                       <!-- <tr>
                                                             <td> 2. Topic 2 </td>
                                                             <td> 15:30 </td>
                                                             <td> 13:80 </td>
@@ -242,7 +246,7 @@
                                                             <td> 15:30 </td>
                                                             <td> 13:80 </td>
                                                             <td> - </td>
-                                                        </tr>
+                                                        </tr>-->
                                                         </tbody>
                                                     </table>
                                                 </div>
