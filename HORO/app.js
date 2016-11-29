@@ -76,6 +76,8 @@ app.get('/', home.redirectToHome);
  app.get('/Profile',profile.land);
 app.get('/EditProfile',editprofile.land);
 app.get('/Account',courseadd.land);
+app.get('/sessionland',courseadd.sessionland);
+
 
 //POST
 app.post('/getAddition',calculator.getAddition);

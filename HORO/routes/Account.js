@@ -18,7 +18,23 @@ exports.land = function(req, res) {
         // render on success
         if (!err) {
             res.end(result);
-            console.log("successfully rendered the signin module");
+            console.log("successfully rendered the courseAdd module.");
+        }
+        // render or error
+        else {
+            res.end('An error occurred');
+            console.log(err);
+        }
+    });
+};
+
+exports.sessionland = function(req, res) {
+
+    ejs.renderFile('./views/sessionAdd.ejs', function(err, result) {
+        // render on success
+        if (!err) {
+            res.end(result);
+            console.log("successfully rendered the sessionAdd module.");
         }
         // render or error
         else {
@@ -58,8 +74,12 @@ exports.getCourseCategory = function(req,res){
 }
 
 exports.getAllCourseList = function(req,res){
-    var courseNameQuery = "SELECT course_id,course_name,course_category FROM course_master;";
-    logger.log('info', 'SELECT course_id,course_name,course_category FROM course_master;');
+    console.log(req.session.user_id);
+
+    req.session.user_id = 1;
+
+    var courseNameQuery = "select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";";
+    logger.log('info', "select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";");
     console.log("Query:: " + courseNameQuery);
 
     mysql.fetchData(function(err,results) {
