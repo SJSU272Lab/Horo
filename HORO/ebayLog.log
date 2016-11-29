@@ -414,3 +414,116 @@
 {"level":"info","message":"Error in getting results","timestamp":"2016-11-28T11:30:33.935Z"}
 {"level":"info","message":"Invalid insertion in course type for: x","timestamp":"2016-11-28T11:30:33.935Z"}
 {"level":"info","message":"Store Connection Closed","timestamp":"2016-11-28T11:30:33.936Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T21:32:55.985Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T21:32:55.988Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T21:32:56.177Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T21:32:56.205Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T21:32:56.209Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-28T21:34:05.886Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-28T21:34:05.898Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T21:34:05.899Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-28T21:34:21.325Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-28T21:34:21.349Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T21:34:21.350Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T21:37:06.244Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T21:37:06.244Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T21:37:06.294Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T21:37:06.299Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T21:37:06.300Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-28T21:41:40.173Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-28T21:41:40.175Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-28T21:41:40.361Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-28T21:41:40.389Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-28T21:41:40.392Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-29T04:09:13.142Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-29T04:09:14.652Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:09:14.661Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-29T04:09:20.681Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-29T04:09:20.681Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-29T04:09:20.728Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T04:09:20.730Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:09:20.731Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'b';","timestamp":"2016-11-29T04:09:49.475Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('b',1);---","timestamp":"2016-11-29T04:09:49.476Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:09:49.540Z"}
+{"level":"info","message":"Invalid insertion in course type for: b","timestamp":"2016-11-29T04:09:49.540Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:09:49.558Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-29T04:10:17.380Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-29T04:10:17.380Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-29T04:10:17.385Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T04:10:17.386Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:10:17.387Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'a';","timestamp":"2016-11-29T04:11:16.676Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('a',1);---","timestamp":"2016-11-29T04:11:16.677Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:11:16.747Z"}
+{"level":"info","message":"Invalid insertion in course type for: a","timestamp":"2016-11-29T04:13:23.827Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:13:23.829Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-29T04:14:27.960Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-29T04:14:27.962Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-29T04:14:28.234Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T04:14:28.241Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:14:28.244Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'b';","timestamp":"2016-11-29T04:14:58.183Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('b',1);---","timestamp":"2016-11-29T04:14:58.183Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:14:58.257Z"}
+{"level":"info","message":"Invalid insertion in course type for: b","timestamp":"2016-11-29T04:14:58.258Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:14:58.259Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-29T04:15:20.645Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-29T04:15:20.646Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-29T04:15:20.878Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T04:15:20.882Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:15:20.885Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-29T04:17:09.907Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-29T04:17:09.908Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-29T04:17:09.919Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T04:17:09.920Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:17:09.921Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-29T04:17:23.579Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-29T04:17:23.579Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-29T04:17:23.584Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T04:17:23.586Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:17:23.586Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:17:40.107Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('v',2);---","timestamp":"2016-11-29T04:17:40.107Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:17:40.119Z"}
+{"level":"info","message":"Invalid insertion in course type for: v","timestamp":"2016-11-29T04:17:40.119Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:17:40.120Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:18:24.089Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('v',2);---","timestamp":"2016-11-29T04:19:08.194Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:19:13.633Z"}
+{"level":"info","message":"Invalid insertion in course type for: v","timestamp":"2016-11-29T04:19:16.675Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:19:21.741Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:19:44.870Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('v',2);---","timestamp":"2016-11-29T04:19:56.229Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:20:13.326Z"}
+{"level":"info","message":"Invalid insertion in course type for: v","timestamp":"2016-11-29T04:24:13.764Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:24:13.768Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:24:25.968Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('v',2);---","timestamp":"2016-11-29T04:24:29.000Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-11-29T04:24:29.230Z"}
+{"level":"info","message":"Valid insertion in course type for: v","timestamp":"2016-11-29T04:24:39.252Z"}
+{"level":"info","message":"SQL Query::select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:24:48.287Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:24:48.294Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-11-29T04:24:48.332Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_duration`,`course_language`,`course_lectures`,`course_details`)VALUES('12','1','2016-01-01','2016-01-01',10,'askhd','sakjdhakjd');---","timestamp":"2016-11-29T04:25:03.459Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:25:03.462Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-11-29T04:25:03.480Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:26:04.764Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('v',2);---","timestamp":"2016-11-29T04:26:04.770Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-11-29T04:26:05.001Z"}
+{"level":"info","message":"Valid insertion in course type for: v","timestamp":"2016-11-29T04:26:05.002Z"}
+{"level":"info","message":"SQL Query::select course_id from course_master where course_name = 'v';","timestamp":"2016-11-29T04:26:05.002Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:26:05.006Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-29T04:26:05.014Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'z';","timestamp":"2016-11-29T04:30:41.165Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('z',3);---","timestamp":"2016-11-29T04:30:41.167Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-11-29T04:30:41.362Z"}
+{"level":"info","message":"Valid insertion in course type for: z","timestamp":"2016-11-29T04:30:41.363Z"}
+{"level":"info","message":"SQL Query::select course_id from course_master where course_name = 'z';","timestamp":"2016-11-29T04:30:41.363Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:30:41.368Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-11-29T04:30:41.431Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_lectures`,`course_language`,`course_details`)VALUES('14','1','2016-01-01','2016-01-01',10,'ashgdgdsj','asjhdajhdajhdakjhsd');---","timestamp":"2016-11-29T04:30:41.453Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T04:30:41.454Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-11-29T04:30:41.526Z"}
+{"level":"info","message":"Valid insertion in course type for: z","timestamp":"2016-11-29T04:30:41.527Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-29T04:30:41.531Z"}

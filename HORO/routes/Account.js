@@ -149,7 +149,7 @@ exports.setCourseDetails = function(req,res){
                 }
                 else {
                     if(results.length >0) {
-                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_duration`,`course_language`,`course_lectures`,`course_details`)VALUES('"+results[0].course_id+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
+                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_lectures`,`course_language`,`course_details`)VALUES('"+results[0].course_id+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
 
                         mysql.storeData(insertCourseDetailsQuery, function(err, result) {
                             if(err) {
