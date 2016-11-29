@@ -1,30 +1,13 @@
 //change this code
 
-var profile = angular.module('UserProfile', ['ui.router']);
-profile.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
-    $stateProvider.state('UserProfile', {
-        url : '/Profile',
-        views: {
-            'header': {
-                templateUrl : 'templates/profileHeader.html',
-            },
-            'content': {
-                templateUrl : 'templates/profileContent.html',
+var AttendeeProfile = angular.module('AttendeeProfile', ['ui.router']);
 
-            },
-        }
-    })
-    $urlRouterProvider.otherwise('/');
-});
-
-
-profile.controller('userprofile', function($scope, $http,$state) {
+AttendeeProfile.controller('AttendeeProfile', function($scope, $http,$state) {
 
 
     $http({
         method: "POST",
-        url: '/view_profile',
+        url: '/Get_profile',
     }).success(function (data) {
 
         if (data.statusCode === 200) {
