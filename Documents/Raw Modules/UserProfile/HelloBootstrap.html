@@ -298,7 +298,99 @@
 
             </div></div></div>
 
+    <!-- create session -->
+    <div class="container">
+        <form class="form-horizontal">
+            <fieldset>
 
+                <!-- Form Name -->
+                <legend>Add New Session </legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Title</label>
+                    <div class="col-md-4">
+                        <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="enter title">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Date</label>
+                    <div class="col-md-4">
+                        <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="enter date">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Duration</label>
+                    <div class="col-md-4">
+                        <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="enter duration (min)">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Location</label>
+                    <div class="col-md-4">
+                        <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="enter session location">
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Details</label>
+                    <div class="col-md-4">
+                        <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="enter session details">
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class='col-sm-6'>
+                            <div class="form-group">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function () {
+                                $('#datetimepicker1').datetimepicker();
+                            });
+                        </script>
+                    </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectbasic">Select Course</label>
+                    <div class="col-md-4">
+                        <select name="selectbasic" class="form-control" id="selectbasic">
+                            <option value="1">Plumbing</option>
+                            <option value="2">Electrician</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Button (Double) -->
+                <div class="form-group">
+
+                    <div class="col-md-10" align="center">
+                        <button name="button1id" class="btn btn-success" id="button1id">Add Session</button>
+                        <button name="button2id" class="btn btn-danger" id="button2id">Cancel</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  <!-- addding jquery via google CDN -->
 <script src="js/bootstrap.min.js"></script>  <!-- addding basic bootstrap javascript -->
