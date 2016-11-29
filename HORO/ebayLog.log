@@ -659,3 +659,9 @@
 {"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-29T06:08:15.491Z"}
 {"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-29T06:08:15.492Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T06:08:15.493Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-29T07:02:13.239Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-29T07:02:13.416Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T07:02:13.453Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-29T07:27:46.428Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-29T07:27:46.599Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T07:27:46.625Z"}

@@ -18,6 +18,7 @@ var index = require('./routes/index');
 var profile = require('./routes/profile');
 var editprofile = require('./routes/EditProfile');
 var courseadd = require('./routes/Account');
+var attendee = require('./routes/AttendeeProfile');
 
 var app = express();
 
@@ -77,6 +78,7 @@ app.get('/', home.redirectToHome);
 app.get('/EditProfile',editprofile.land);
 app.get('/Account',courseadd.land);
 app.get('/sessionland',courseadd.sessionland);
+app.get('/attendeeProfile',attendee.land)
 
 
 //POST
