@@ -79,17 +79,12 @@ app.get('/', home.redirectToHome);
 app.get('/EditProfile',editprofile.land);
 app.get('/Account',courseadd.land);
 app.get('/sessionland',courseadd.sessionland);
-app.get('/attendeeProfile',attendee.land)
+app.get('/attendeeProfile',attendee.land);
+app.get('/attendeeCourseStatus',attendee.attendeeCourseStatus);
 
 
 
 //POST
-app.post('/getAddition',calculator.getAddition);
-app.post('/getSubtraction',calculator.getSubtraction);
-app.post('/getMultiplication',calculator.getMultiplication);
-app.post('/getDivision',calculator.getDivision);
-app.post('/view_profile', profile.view_profile);
-app.post('/edit_profile', editprofile.edit_profile);
 app.post('/get_course_details', index.get_course_details);
 
 
@@ -103,6 +98,8 @@ app.post('/setCourseDetails',courseadd.setCourseDetails);
 app.post('/get_course_details', course1.get_course_details);
 app.post('/get_course_page', course1.get_course_page);
 app.post('/viewCoursePage', course1.viewCoursePage);
+
+app.post('/getCourseStatus',attendee.getCourseStatus);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

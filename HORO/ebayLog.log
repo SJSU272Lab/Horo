@@ -69,3 +69,126 @@
 {"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-29T18:52:21.752Z"}
 {"level":"info","message":"DB Results:","timestamp":"2016-11-29T18:52:27.118Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-11-29T18:52:53.408Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-30T17:51:04.454Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-30T17:51:04.456Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-30T17:52:00.437Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-30T17:52:00.439Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-30T17:52:00.639Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-30T17:52:00.665Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:00.667Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-30T17:52:17.286Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:52:17.393Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:17.395Z"}
+{"level":"info","message":"select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 1;","timestamp":"2016-11-30T17:52:30.234Z"}
+{"level":"info","message":"SQL Query::select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 1;","timestamp":"2016-11-30T17:52:30.234Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T17:52:30.460Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-30T17:52:30.464Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:30.488Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T17:52:49.289Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T17:52:49.296Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T17:52:49.503Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:49.505Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T17:52:49.517Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:49.519Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:52:54.267Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:52:54.341Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:54.345Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:52:55.953Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:52:55.961Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:55.961Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:52:57.195Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:52:57.204Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:52:57.205Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:53:00.398Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:53:00.406Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:53:00.407Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:53:03.881Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:53:03.896Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:53:03.897Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:53:46.685Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:53:46.693Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:53:46.694Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '2'","timestamp":"2016-11-30T17:53:54.787Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:53:54.804Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:53:54.805Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T17:54:49.468Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T17:54:49.496Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T17:54:49.498Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:02:54.844Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:02:54.990Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:02:55.026Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:02:55.050Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:02:55.053Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:02:55.055Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T18:02:57.073Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:02:57.082Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:02:57.084Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:03:20.617Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:03:20.805Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:03:20.831Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:03:20.889Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:03:20.895Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:03:20.908Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T18:03:22.411Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:03:22.421Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:03:22.422Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '2'","timestamp":"2016-11-30T18:04:03.597Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:04:03.615Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:04:03.618Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:04:21.405Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:04:21.407Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:04:21.418Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:04:21.422Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:04:21.431Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:04:21.434Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T18:04:25.758Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:04:25.763Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:04:25.765Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:04:59.438Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:04:59.657Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:04:59.732Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:04:59.740Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:04:59.743Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:04:59.747Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T18:05:34.973Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:07:56.271Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:07:56.430Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:07:56.490Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:07:56.536Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:07:56.539Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:07:56.542Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '1'","timestamp":"2016-11-30T18:07:58.276Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:07:58.282Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:07:58.283Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '2'","timestamp":"2016-11-30T18:09:38.092Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:09:38.097Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:09:38.103Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '2'","timestamp":"2016-11-30T18:09:39.219Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:09:39.242Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:09:39.244Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '2'","timestamp":"2016-11-30T18:10:08.950Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:10:08.974Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:10:08.976Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:13:00.073Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-11-30T18:13:00.250Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:13:00.297Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:13:00.343Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T18:13:00.382Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:13:00.385Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '12'","timestamp":"2016-11-30T18:13:06.290Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:13:06.296Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:13:06.299Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '12'","timestamp":"2016-11-30T18:13:12.288Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T18:13:12.298Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:13:12.299Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM horodb.session where course_id = '14'","timestamp":"2016-11-30T18:13:20.424Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-11-30T18:13:20.449Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T18:13:20.453Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'j';","timestamp":"2016-11-30T19:42:06.578Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-11-30T19:42:06.583Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T19:42:06.585Z"}
+{"level":"info","message":"---SQL Query :: select * from horodb.course_progress as cp join horodb.course_details cd on cp.course_id = cd.course_Id  where user_id = 2;---","timestamp":"2016-11-30T20:29:58.099Z"}
+{"level":"info","message":"---SQL Query :: select * from horodb.course_progress as cp join horodb.course_details cd on cp.course_id = cd.course_Id  where user_id = 2;---","timestamp":"2016-11-30T20:31:44.212Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-11-30T20:31:44.376Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-30T20:31:44.381Z"}
+{"level":"info","message":"Valid data for: 2","timestamp":"2016-11-30T20:31:44.377Z"}

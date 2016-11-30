@@ -6,6 +6,7 @@ var ejs 		= require("ejs");
 //var ObjectId 	= require('mongodb').ObjectID;
 //var mq_client 	= require('../rpc/client');
 //var winston 	= require('winston');
+var winston = require('winston');
 var fs 			= require('fs');
 //var passport 	= require("passport");
 //var logDir		= 'log';
@@ -18,6 +19,13 @@ var mysql = require("./mysqlConnector");
 
 var pool = require("./mysqlConnector");
 
+
+var logger = new (winston.Logger)({
+    transports: [
+        new (winston.transports.Console)(),
+        new (winston.transports.File)({ filename: 'ebayLog.log' })
+    ]
+});
 
 
 exports.land = function(req, res) {
@@ -35,6 +43,24 @@ exports.land = function(req, res) {
         }
     });
 };
+
+exports.attendeeCourseStatus = function(req, res) {
+    console.log("********************************here ********************************");
+    ejs.renderFile('./views/AttendeeCourseStatus.ejs', function(err, result) {
+        // render on success
+        if (!err) {
+            res.end(result);
+            console.log("successfully rendered the attendee profile module");
+        }
+        // render or error
+        else {
+            res.end('An error occurred');
+            console.log(err);
+        }
+    });
+};
+
+
 
 
 exports.view_profile = function(req,res)
@@ -70,4 +96,29 @@ exports.view_profile = function(req,res)
 exports.change_password = function(req, res)
 {
     console.log("IN CHANGE PASSWORD");
+}
+
+
+
+
+exports.getCourseStatus = function(req,res){
+
+    req.session.user_id = 2 //change after login
+
+    var query = ' select * from horodb.course_progress as cp join horodb.course_details cd on cp.course_id = cd.course_Id  where user_id = '+req.session.user_id+';';
+
+
+    mysql.storeData(query, function(err, result) {
+        //render on success
+        if (err) {
+            console.log('Invalid data!');
+            logger.log('info', "Invalid data up for: " + req.session.user_id);
+            res.send({"statusCode" : 401});
+        } else {
+            console.log('Valid data!');
+            logger.log('info', "Valid data for: " + req.session.user_id);
+            res.send({"statusCode" : 200,  "result" : result});
+
+        }
+    });
 }

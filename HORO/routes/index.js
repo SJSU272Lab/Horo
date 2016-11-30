@@ -125,31 +125,6 @@ exports.signinForVolunteerAndAttendee= function(req,res)
 
 
 
-    exports.get_course_details = function(req,res)
-    {
-        console.log("In GET_COURSE_DETAILS");
-
-        var checkLoginQuery = "SELECT * FROM horodb.course_details, horodb.course_master where course_details.course_detailsid = course_master.course_id ";
-        mysql.fetchData(function(err,results) {
-            if(err) {
-                throw err;
-                logger.log('error','Error of user :'+username+ ' Error: '+err);
-            }
-            else {
-                if(results.length >0) {
-
-                    response={"statusCode" : 200, "Result"	:	results};
-                    res.send(response);
-                }
-                else{
-                    //logger.log('error', "Invalid Login for username Id: "+username +' user is not registered.');
-                    json_responses = {"statusCode": 401};
-                    console.log(json_responses);
-                    res.send(json_responses);
-                }
-            }
-        }, checkLoginQuery);
-    }
 
 
 };
@@ -159,7 +134,7 @@ exports.get_course_details = function(req,res)
 {
     console.log("In GET_COURSE_DETAILS");
 
-    var checkLoginQuery = "SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_detailsid = course_master.course_id and category_master.category_id = course_master.course_category ";
+    var checkLoginQuery = "SELECT * FROM horodb.course_details, horodb.course_master, horodb.category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;
