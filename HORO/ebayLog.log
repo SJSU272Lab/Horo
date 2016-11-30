@@ -222,3 +222,17 @@
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T20:57:42.044Z"}
 {"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-11-30T20:57:42.046Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T20:57:42.047Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-30T22:31:52.895Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-30T22:31:52.897Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-30T22:31:53.070Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-30T22:31:53.100Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T22:31:53.103Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-11-30T22:38:28.268Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-11-30T22:38:28.268Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-11-30T22:38:28.287Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-11-30T22:38:28.289Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-11-30T22:38:28.291Z"}
+{"level":"info","message":"---SQL Query ::SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where user_city in (select  ngo_city  from ngo_master where ngo_id = 1);---","timestamp":"2016-11-30T23:00:46.196Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-11-30T23:00:46.404Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-11-30T23:00:46.410Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-11-30T23:00:46.405Z"}

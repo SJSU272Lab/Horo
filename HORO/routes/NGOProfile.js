@@ -43,7 +43,6 @@ exports.NGOProfile = function(req, res) {
         }
     });
 };
-
 exports.NGOCoursesInArea = function(req, res) {
     console.log("********************************here ********************************");
     ejs.renderFile('./views/NGOCoursesInArea.ejs', function(err, result) {
@@ -59,7 +58,6 @@ exports.NGOCoursesInArea = function(req, res) {
         }
     });
 };
-
 exports.NGOAttendeesInArea = function(req, res) {
     console.log("********************************here ********************************");
     ejs.renderFile('./views/NGOAttendeesInArea.ejs', function(err, result) {
@@ -78,12 +76,12 @@ exports.NGOAttendeesInArea = function(req, res) {
 
 
 
-exports.view_profile = function(req,res)
+exports.NGOview_profile = function(req,res)
 {
     console.log("IN VIEW PROFILE FUNCTION");
 
 
-    var checkLoginQuery = "select * from user_profile where username = 'j';";
+    var checkLoginQuery = "SELECT * FROM horodb.ngo_master where ngo_id=1;";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;
@@ -106,19 +104,9 @@ exports.view_profile = function(req,res)
 
 }
 
+exports.getAllCoursesInArea= function(req,res){
 
-
-exports.change_password = function(req, res)
-{
-    console.log("IN CHANGE PASSWORD");
-}
-
-
-
-
-exports.getCourseStatus = function(req,res){
-
-    req.session.user_id = 2 //change after login
+    req.session.NGO_id = 1 //change after login
 
     var query = ' select * from horodb.course_progress as cp join horodb.course_details cd on cp.course_id = cd.course_Id  where user_id = '+req.session.user_id+';';
 
@@ -136,4 +124,80 @@ exports.getCourseStatus = function(req,res){
 
         }
     });
+}
+
+exports.getAllAttendeesInArea= function(req,res){
+
+    req.session.ngo_id = 1 //change after login () for NGO[]
+
+    var query = 'SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where user_city in (select  ngo_city  from ngo_master where ngo_id = '+req.session.ngo_id+');';
+
+    mysql.storeData(query, function(err, result) {
+        //render on success
+        if (err) {
+            console.log('Invalid data!');
+            logger.log('info', "Invalid data up for: " + req.session.ngo_id);
+            res.send({"statusCode" : 401});
+        } else {
+            console.log('Valid data!');
+            logger.log('info', "Valid data for: " + req.session.ngo_id);
+            res.send({"statusCode" : 200,  "result" : result});
+
+        }
+    });
+}
+
+exports.setCourseToAttendee=function(req,res){
+    var course_id =req.param("course_id");
+    var user_id  =req.param("user_id");
+    var progress =req.param("progress"); //0
+
+    var RegisterAttendeeToCourse= "INSERT INTO `horodb`.`course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
+    console.log("Query:: " + RegisterAttendeeToCourse);
+
+
+
+    mysql.storeData(RegisterAttendeeToCourse, function(err, result) {
+        //render on success
+        if (err) {
+            console.log('Invalid reg!');
+            logger.log('info', "Invalid insertion in reg type for: " + course_id);
+            res.send({"statusCode" : 401});
+        } else {
+            console.log('Valid reg!');
+            logger.log('info', "Valid insertion in course type for: " + course_id);
+
+
+            mysql.fetchData(function(err,results) {
+                if(err) {
+                    throw err;
+                    logger.log('error','Error of getting course_id Error: '+err);
+                }
+                else {
+                    if(results.length >0) {
+                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_lectures`,`course_language`,`course_details`)VALUES('"+results[0].course_id+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
+
+                        mysql.storeData(insertCourseDetailsQuery, function(err, result) {
+                            if(err) {
+                                throw err;
+                                logger.log('error','Error of inserting course: '+err);
+                            }
+                            else{
+                                console.log('Valid insert!');
+                                logger.log('info', "Valid insertion in course type for: " + courseName);
+                                res.send({"statusCode" : 200});
+                            }
+                        });
+                    }
+                    else{
+                        logger.log('error', "Error of getting course_id Error: "+err);
+                        json_responses = {"statusCode": 401};
+                        console.log(json_responses);
+                        res.send(json_responses);
+                    }
+                }
+            }, getCourseId);
+        }
+    });
+
 }

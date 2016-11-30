@@ -86,6 +86,10 @@ app.get('/NGOProfile',NGOProfile.NGOProfile);
 app.get('/NGOCoursesInArea',NGOProfile.NGOCoursesInArea);
 app.get('/NGOAttendeesInArea',NGOProfile.NGOAttendeesInArea);
 
+app.post('/NGOview_profile',NGOProfile.NGOview_profile);
+app.post('/getAllCoursesInArea',NGOProfile.getAllCoursesInArea);
+app.post('/getAllAttendeesInArea',NGOProfile.getAllAttendeesInArea);
+app.post('/setCourseToAttendee',NGOProfile.setCourseToAttendee);
 
 
 //POST
@@ -104,6 +108,10 @@ app.post('/get_course_page', course1.get_course_page);
 app.post('/viewCoursePage', course1.viewCoursePage);
 
 app.post('/getCourseStatus',attendee.getCourseStatus);
+
+
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
