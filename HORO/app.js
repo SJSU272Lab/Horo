@@ -20,7 +20,7 @@ var editprofile = require('./routes/EditProfile');
 var courseadd = require('./routes/Account');
 var attendee = require('./routes/AttendeeProfile');
 var course1 = require('./routes/Course');
-
+var NGOProfile = require('./routes/NGOProfile');
 var app = express();
 
 //configure the sessions with our application
@@ -81,6 +81,10 @@ app.get('/Account',courseadd.land);
 app.get('/sessionland',courseadd.sessionland);
 app.get('/attendeeProfile',attendee.land);
 app.get('/attendeeCourseStatus',attendee.attendeeCourseStatus);
+
+app.get('/NGOProfile',NGOProfile.NGOProfile);
+app.get('/NGOCoursesInArea',NGOProfile.NGOCoursesInArea);
+app.get('/NGOAttendeesInArea',NGOProfile.NGOAttendeesInArea);
 
 
 
