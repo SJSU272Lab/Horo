@@ -108,18 +108,18 @@ exports.getAllCoursesInArea= function(req,res){
 
     req.session.NGO_id = 1 //change after login
 
-    var query = ' select * from horodb.course_progress as cp join horodb.course_details cd on cp.course_id = cd.course_Id  where user_id = '+req.session.user_id+';';
+    var query = 'select s.course_id, cm.course_name from session as s join course_master as cm on s.course_id = cm.course_id where s.session_location in (select  ngo_city  from ngo_master where ngo_id = '+req.session.ngo_id+') group by course_id;';
 
 
     mysql.storeData(query, function(err, result) {
         //render on success
         if (err) {
             console.log('Invalid data!');
-            logger.log('info', "Invalid data up for: " + req.session.user_id);
+            logger.log('info', "Invalid data up for: " + req.session.NGO_id);
             res.send({"statusCode" : 401});
         } else {
             console.log('Valid data!');
-            logger.log('info', "Valid data for: " + req.session.user_id);
+            logger.log('info', "Valid data for: " + req.session.NGO_id);
             res.send({"statusCode" : 200,  "result" : result});
 
         }
@@ -130,7 +130,7 @@ exports.getAllAttendeesInArea= function(req,res){
 
     req.session.ngo_id = 1 //change after login () for NGO[]
 
-    var query = 'SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where user_city in (select  ngo_city  from ngo_master where ngo_id = '+req.session.ngo_id+');';
+    var query = "SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = "+req.session.ngo_id+");";
 
     mysql.storeData(query, function(err, result) {
         //render on success
