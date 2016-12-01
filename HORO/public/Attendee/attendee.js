@@ -7,7 +7,7 @@ AttendeeProfile.controller('AttendeeProfile', function($scope, $http,$state) {
 
     $http({
         method: "POST",
-        url: '/Get_profile',
+        url: '/view_profile_for_attendee',
     }).success(function (data) {
 
         if (data.statusCode === 200) {
@@ -15,6 +15,9 @@ AttendeeProfile.controller('AttendeeProfile', function($scope, $http,$state) {
             $scope.fname = data.Result[0].user_firstname;
             $scope.lname = data.Result[0].user_lastname;
             $scope.username = data.Result[0].username;
+            $scope.city = data.Result[0].user_city;
+            $scope.birthdate = data.Result[0].user_birthdate;
+            $scope.gender = data.Result[0].user_gender;
 
 
         } else {

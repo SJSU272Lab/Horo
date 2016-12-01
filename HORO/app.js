@@ -75,14 +75,14 @@ app.get('/', home.redirectToHome);
  app.get('/courseDetail',courseDetail.redirectToCoursedetail);
  app.get('/contact',contact.redirectToContact);
  app.get('/Index', index.index);
- app.get('/Profile',profile.land);
+ app.get('/Profile',profile.land); //DONE
 app.get('/EditProfile',editprofile.land);
 app.get('/Account',courseadd.land);
 app.get('/sessionland',courseadd.sessionland);
-app.get('/attendeeProfile',attendee.land);
+app.get('/attendeeProfile',attendee.land); // DONE
 app.get('/attendeeCourseStatus',attendee.attendeeCourseStatus);
 
-app.get('/NGOProfile',NGOProfile.NGOProfile);
+app.get('/NGOProfile',NGOProfile.NGOProfile); //DO
 app.get('/NGOCoursesInArea',NGOProfile.NGOCoursesInArea);
 app.get('/NGOAttendeesInArea',NGOProfile.NGOAttendeesInArea);
 
@@ -90,10 +90,13 @@ app.post('/NGOview_profile',NGOProfile.NGOview_profile);
 app.post('/getAllCoursesInArea',NGOProfile.getAllCoursesInArea);
 app.post('/getAllAttendeesInArea',NGOProfile.getAllAttendeesInArea);
 app.post('/setCourseToAttendee',NGOProfile.setCourseToAttendee);
-
+app.post('/subscribeSubject', course1.subscribeSubject);
 
 //POST
 app.post('/get_course_details', index.get_course_details);
+
+app.post('/view_profile', profile.view_profile);
+app.post('/view_profile_for_attendee', attendee.view_profile);
 
 
 app.post('/signupForVolunteerAndAttendee',index.signupForVolunteerAndAttendee);

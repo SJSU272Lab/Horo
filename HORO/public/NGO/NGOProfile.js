@@ -15,9 +15,13 @@ NGO.controller('NGOProfile', function($scope, $http,$state) {
 
         if (data.statusCode === 200) {
             console.log("Success");
-           /* $scope.fname = data.Result[0].user_firstname;
-            $scope.lname = data.Result[0].user_lastname;
-            $scope.username = data.Result[0].username;
+           /* $scope.ngo_name = data.Result[0].ngo_name;
+            $scope.ngo_description = data.Result[0].ngo_description;
+            $scope.ngo_website = data.Result[0].ngo_website;
+            $scope.ngo_contactno = data.Result[0].ngo_contactno;
+            $scope.ngo_city = data.Result[0].ngo_city;
+            $scope.ngo_addressline1 = data.Result[0].ngo_addressline1;
+
 */
 
         } else {

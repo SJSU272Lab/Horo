@@ -30,6 +30,9 @@ profile.controller('userprofile', function($scope, $http,$state) {
             $scope.fname = data.Result[0].user_firstname;
             $scope.lname = data.Result[0].user_lastname;
             $scope.username = data.Result[0].username;
+            $scope.city = data.Result[0].user_city;
+            $scope.birthdate = data.Result[0].user_birthdate;
+            $scope.gender = data.Result[0].user_gender;
 
 
         } else {
@@ -59,6 +62,7 @@ profile.controller('userprofile', function($scope, $http,$state) {
                 $scope.fname = data.Result[0].user_firstname;
                 $scope.lname = data.Result[0].user_lastname;
                 $scope.username = data.Result[0].username;
+
 
 
             } else {

@@ -104,7 +104,7 @@ course.controller('CourseDetails', function($scope, $http,$state) {
                  }*/
 
                 $scope.course_details = data.Result;
-
+                $scope.course_id = data.Course.course_id;
                 $scope.course_title = data.Course.course_name;
                 $scope.description = data.Course.course_detals;
 
@@ -117,6 +117,36 @@ course.controller('CourseDetails', function($scope, $http,$state) {
             }
 
         });
+    }
+
+
+    $scope.Subscribe = function ()
+    {
+        console.log("In SUBSCRIBE");
+        console.log($scope.course_id);
+
+        $http({
+            method: "POST",
+            url: '/subscribeSubject',
+            data: {
+                "course_id" : $scope.course_id,
+                "progress" : 0
+            }
+        }).success(function (data) {
+
+            if (data.statusCode === 200) {
+                console.log("Success");
+                /* $scope.fname = data.Result[0].user_firstname;
+                 $scope.lname = data.Result[0].user_lastname;
+                 $scope.username = data.Result[0].username;
+                 */
+
+            } else {
+                console.log("Failure");
+            }
+
+        });
+
     }
 
 });

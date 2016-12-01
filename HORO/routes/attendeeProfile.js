@@ -68,7 +68,7 @@ exports.view_profile = function(req,res)
     console.log("IN VIEW PROFILE FUNCTION");
 
 
-    var checkLoginQuery = "select * from user_profile where username = 'j';";
+    var checkLoginQuery = "select * from user_profile where username = '" + req.session.username + "';";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;

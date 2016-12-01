@@ -148,9 +148,9 @@ exports.getAllAttendeesInArea= function(req,res){
 }
 
 exports.setCourseToAttendee=function(req,res){
-    var course_id =req.param("course_id");
-    var user_id  =req.param("user_id");
-    var progress =req.param("progress"); //0
+    var course_id = req.param("course_id");
+    var user_id  = req.param("user_id");
+    var progress = req.param("progress"); //0
 
     var searchAttendeeToCourse=  "select count(*) as count from horodb.course_progress where course_id = "+course_id+" and user_id= "+user_id+";";
     console.log("Query:: "+searchAttendeeToCourse);

@@ -81,3 +81,30 @@ exports.viewCoursePage = function(req,res)
     response={"statusCode" : 200, "Sessions"	:   req.session.selectedCourseSessions, "Course"    :   req.session.selectedCourse};
     res.send(response);
 }
+
+
+
+exports.subscribeSubject=function(req,res){
+    var course_id = req.param("course_id");
+    var user_id  = req.session.user_id;
+    var progress = req.param("progress"); //0
+
+    var RegisterAttendeeToCourse= "INSERT INTO `horodb`.`course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
+    console.log("Query:: " + RegisterAttendeeToCourse);
+
+
+
+    mysql.storeData(RegisterAttendeeToCourse, function(err, result) {
+        //render on success
+        if (err) {
+            console.log('Invalid reg!');
+            logger.log('info', "Invalid insertion in reg type for: " + course_id);
+            res.send({"statusCode" : 401});
+        } else {
+            console.log('Valid reg!');
+            logger.log('info', "Valid insertion in course type for: " + course_id);
+
+        }
+    });
+
+}

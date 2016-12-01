@@ -97,7 +97,7 @@ exports.signinForVolunteerAndAttendee= function(req,res)
                         logger.log('info', 'Successful Login for = ' + username + ' userId: ' + results[0].username);
                         console.log("username :  " + results[0].username);
                         req.session.username = username;
-                        req.session.user_id = user_id;
+                        req.session.user_id = results[0].user_id;
 
                         logger.log('info', "Session Initialized with username : " + req.session.username);
                         console.log("Session Initialized with username : " + req.session.username);

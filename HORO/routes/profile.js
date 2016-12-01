@@ -169,7 +169,7 @@ exports.view_profile = function(req,res)
         });
         connection.end();*/
 
-    var checkLoginQuery = "select * from user_profile where username = 'j';";
+    var checkLoginQuery = "select * from user_profile where username = '" +req.session.username+ "';";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;
