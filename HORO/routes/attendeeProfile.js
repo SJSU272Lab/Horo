@@ -105,7 +105,7 @@ exports.getCourseStatus = function(req,res){
 
     req.session.user_id = 2 //change after login
 
-    var query = ' select * from horodb.course_progress as cp join horodb.course_details cd on cp.course_id = cd.course_Id  where user_id = '+req.session.user_id+';';
+    var query = 'select * from horodb.course_progress as cp join horodb.course_details cd  on cp.course_id = cd.course_Id  join horodb.course_master cm on cd .course_Id = cm.course_Id where user_id = '+req.session.user_id+';';
 
 
     mysql.storeData(query, function(err, result) {

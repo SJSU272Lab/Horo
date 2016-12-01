@@ -12,7 +12,7 @@ AttendeeProfile.controller('attendeeCourseStatus', function($scope, $http,$state
 
         if (data.statusCode === 200) {
             console.log("Success"+ data);
-
+            $scope.courseList = data.result;
 
         } else {
             console.log("Failure");
