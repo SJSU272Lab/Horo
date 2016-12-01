@@ -16,7 +16,7 @@ NGO.controller('NGOAttendeePeopleList', function($scope, $http,$state,$filter) {
 
         if (data.statusCode === 200) {
             console.log("Success");
-
+            $scope.attendeeListParent =data.result;
             $scope.attendeeList = data.result;
             /* $scope.fname = data.Result[0].user_firstname;
              $scope.lname = data.Result[0].user_lastname;
@@ -93,4 +93,19 @@ NGO.controller('NGOAttendeePeopleList', function($scope, $http,$state,$filter) {
         });
     }
 
+    $scope.filterData = function(){
+
+        if($scope.username==''){
+
+            $scope.attendeeList = $scope.attendeeListParent;
+        }
+        else {
+            var SelectedattendeeList= $filter('filter')($scope.attendeeListParent, function (d) {
+
+                return $scope.username === d.username;
+            });
+            console.log("SelectedAllBillList" + SelectedattendeeList);
+            $scope.attendeeList = SelectedattendeeList;
+        }
+    }
 });

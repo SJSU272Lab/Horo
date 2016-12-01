@@ -735,3 +735,35 @@
 {"level":"info","message":"Valid data for: 2","timestamp":"2016-12-01T05:11:33.206Z"}
 {"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T05:11:33.206Z"}
 {"level":"info","message":"Invalid data up for: 2","timestamp":"2016-12-01T05:11:33.206Z"}
+{"level":"info","message":"---SQL Query ::SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = 1);---","timestamp":"2016-12-01T06:00:25.880Z"}
+{"level":"info","message":"---SQL Query ::select s.course_id, cm.course_name from session as s join course_master as cm on s.course_id = cm.course_id where s.session_location in (select  ngo_city  from ngo_master where ngo_id = undefined) group by course_id;---","timestamp":"2016-12-01T06:00:25.882Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-12-01T06:00:25.914Z"}
+{"level":"info","message":"Invalid data up for: 1","timestamp":"2016-12-01T06:00:25.914Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:00:25.916Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object],[object Object]","timestamp":"2016-12-01T06:00:25.919Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:00:25.922Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:00:25.920Z"}
+{"level":"info","message":"---SQL Query ::SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = 1);---","timestamp":"2016-12-01T06:00:59.665Z"}
+{"level":"info","message":"---SQL Query ::select s.course_id, cm.course_name from session as s join course_master as cm on s.course_id = cm.course_id where s.session_location in (select  ngo_city  from ngo_master where ngo_id = 1) group by course_id;---","timestamp":"2016-12-01T06:00:59.883Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object],[object Object]","timestamp":"2016-12-01T06:00:59.945Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:00:59.949Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:00:59.945Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-01T06:00:59.953Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:00:59.954Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:00:59.957Z"}
+{"level":"info","message":"---SQL Query ::SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = 1);---","timestamp":"2016-12-01T06:04:47.532Z"}
+{"level":"info","message":"---SQL Query ::select s.course_id, cm.course_name from session as s join course_master as cm on s.course_id = cm.course_id where s.session_location in (select  ngo_city  from ngo_master where ngo_id = 1) group by course_id;---","timestamp":"2016-12-01T06:04:47.722Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object],[object Object]","timestamp":"2016-12-01T06:04:47.757Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:04:47.762Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:04:47.757Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-01T06:04:47.802Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:04:47.803Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:04:47.805Z"}
+{"level":"info","message":"---SQL Query ::SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = 1);---","timestamp":"2016-12-01T06:05:24.237Z"}
+{"level":"info","message":"---SQL Query ::select s.course_id, cm.course_name from session as s join course_master as cm on s.course_id = cm.course_id where s.session_location in (select  ngo_city  from ngo_master where ngo_id = 1) group by course_id;---","timestamp":"2016-12-01T06:05:24.239Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object],[object Object]","timestamp":"2016-12-01T06:05:24.246Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:05:24.247Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:05:24.248Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-01T06:05:24.407Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-01T06:05:24.408Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-01T06:05:24.408Z"}

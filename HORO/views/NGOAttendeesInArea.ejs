@@ -1053,8 +1053,8 @@
                                             <div class="toolbar-right">
                                                 <div class="form-inline" role="form">
 
-                                                    <a class="btn btn-primary filter-dates" onclick="location.href = '/broker/order/view?dateStart='+$('#dateStart').val()+'&dateStop='+$('#dateStop').val(); ">Filter Dates</a>
-                                                    <input class="form-control table-search" type="text" placeholder="Search">
+                                                    <a class="btn btn-primary filter-dates" ng-click="filterData()">Filter username</a>
+                                                    <input class="form-control table-search" type="text" placeholder="Search on username" ng-model="username">
 
                                                 </div>
 
