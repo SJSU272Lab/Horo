@@ -1096,10 +1096,7 @@
                                                             <div class="th-inner sortable">Register</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
-                                                        <th style="">
-                                                            <div class="th-inner ">Options</div>
-                                                            <div class="fht-cell"></div>
-                                                        </th>
+
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -1109,12 +1106,13 @@
                                                         <td class="text-left" style="">{{user.user_lastname}}</td>
                                                         <td class="text-left" style="">{{user.username}}</td>
                                                         <td class="text-left" style="">{{user.user_city}}</td>
-                                                        <td class="text-left" style="">Dropdown will come here</td>
-                                                        <td class="text-left" style="">Submit button will come here.</td>
-
-                                                        <td style="">
-                                                            <a class="btn btn-primary" href="/broker/order/clone/1" data-toggle="tooltip" data-placement="top" title="Clone Order"><i class="fa fa-fw fa-files-o"></i></a> <a class="btn btn-primary" href="/broker/order/detail/1" data-toggle="tooltip" data-placement="top" title="View Order Detail"><i class="fa fa-fw fa-eye"></i></a> <a id="BTN_ORDER_CANCEL1" class="btn btn-primary" href="/broker/order/cancel/request/1" data-toggle="tooltip" data-placement="top" title="Cancel Order" style="display: none;"><i class="fa fa-fw fa-ban"></i></a><script>if ('Completed' !== 'Active' && 'Completed' !== 'Staged' && 'Completed' !== 'Funds Needed' ) { $('#BTN_ORDER_CANCEL1').hide();  } else { $('#BTN_ORDER_CANCEL1').show();  } </script>
+                                                        <td class="text-left" style="">
+                                                            <select id="course" class="form-control input-md"  ng-model="selectedcourse_id">
+                                                                <option ng-repeat="course in coursesInArea">{{course.course_name}}</option>
+                                                            </select>
                                                         </td>
+                                                        <td class="" style=""><button class="btn btn-success input-md" ng-click="register(user)" >Register </button></td>
+
                                                     </tr>
 
                                                     </tbody>

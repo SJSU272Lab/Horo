@@ -152,52 +152,44 @@ exports.setCourseToAttendee=function(req,res){
     var user_id  =req.param("user_id");
     var progress =req.param("progress"); //0
 
+    var searchAttendeeToCourse=  "select count(*) as count from horodb.course_progress where course_id = "+course_id+" and user_id= "+user_id+";";
+    console.log("Query:: "+searchAttendeeToCourse);
+
     var RegisterAttendeeToCourse= "INSERT INTO `horodb`.`course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
     console.log("Query:: " + RegisterAttendeeToCourse);
 
-
-
-    mysql.storeData(RegisterAttendeeToCourse, function(err, result) {
+    mysql.storeData(searchAttendeeToCourse, function(err, result) {
         //render on success
         if (err) {
-            console.log('Invalid reg!');
-            logger.log('info', "Invalid insertion in reg type for: " + course_id);
+            console.log('Invalid data!');
+            logger.log('info', "Invalid data up for: " + user_id);
             res.send({"statusCode" : 401});
         } else {
-            console.log('Valid reg!');
-            logger.log('info', "Valid insertion in course type for: " + course_id);
+            console.log('Valid data!');
+            logger.log('info', "Valid data for: " + user_id);
 
-
-            mysql.fetchData(function(err,results) {
-                if(err) {
-                    throw err;
-                    logger.log('error','Error of getting course_id Error: '+err);
-                }
-                else {
-                    if(results.length >0) {
-                        var insertCourseDetailsQuery = "INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_lectures`,`course_language`,`course_details`)VALUES('"+results[0].course_id+"','"+req.session.user_id+"','"+courseStartDate+"','"+courseEndDate+"',"+10+",'"+courseLanguage+"','"+courseDetails+"');";
-
-                        mysql.storeData(insertCourseDetailsQuery, function(err, result) {
-                            if(err) {
-                                throw err;
-                                logger.log('error','Error of inserting course: '+err);
-                            }
-                            else{
-                                console.log('Valid insert!');
-                                logger.log('info', "Valid insertion in course type for: " + courseName);
-                                res.send({"statusCode" : 200});
-                            }
-                        });
+            var count = result[0].count;
+            if(count<1) {
+                mysql.storeData(RegisterAttendeeToCourse, function (err, result) {
+                    //render on success
+                    if (err) {
+                        console.log('Invalid reg!');
+                        logger.log('info', "Invalid insertion in reg type for: " + course_id);
+                        res.send({"statusCode": 401});
+                    } else {
+                        console.log('Valid reg!');
+                        logger.log('info', "Valid insertion in course type for: " + course_id);
                     }
-                    else{
-                        logger.log('error', "Error of getting course_id Error: "+err);
-                        json_responses = {"statusCode": 401};
-                        console.log(json_responses);
-                        res.send(json_responses);
-                    }
-                }
-            }, getCourseId);
+                });
+            }
+            else{
+                console.log('Invalid data!');
+                logger.log('info', "Invalid data up for: " + user_id);
+                res.send({"statusCode" : 501, "ElementExists":true});
+            }
         }
     });
+
+
 
 }

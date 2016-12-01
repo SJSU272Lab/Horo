@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/ebayLog.log" afterPath="$PROJECT_DIR$/HORO/ebayLog.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js" afterPath="$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/NGOProfile.js" afterPath="$PROJECT_DIR$/HORO/routes/NGOProfile.js" />
@@ -26,23 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NGOAttendeesInArea.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="1118" column="0" selection-start-line="1118" selection-start-column="0" selection-end-line="1118" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGOAttendeePeopleList.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NGOAttendeePeopleList.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+            <state relative-caret-position="362">
+              <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
               <folding>
                 <element signature="e#45#89#0" expanded="false" />
+                <element signature="e#203#273#0" expanded="false" />
+                <element signature="e#299#686#0" expanded="false" />
+                <element signature="e#339#626#0" expanded="false" />
+                <element signature="e#437#615#0" expanded="false" />
+                <element signature="e#632#679#0" expanded="false" />
+                <element signature="e#933#1111#0" expanded="false" />
+                <element signature="e#1128#1175#0" expanded="false" />
+                <element signature="e#2066#2256#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -51,18 +50,14 @@
       <file leaf-file-name="NGOProfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HORO/routes/NGOProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="110" column="246" selection-start-line="110" selection-start-column="246" selection-end-line="110" selection-end-column="246" />
+            <state relative-caret-position="517">
+              <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
               <folding>
                 <element signature="e#28#62#0" expanded="false" />
                 <element signature="e#364#402#0" expanded="false" />
                 <element signature="e#549#584#0" expanded="false" />
                 <element signature="e#744#882#0" expanded="false" />
                 <element signature="e#762#880#0" expanded="false" />
-                <element signature="e#927#1382#0" expanded="false" />
-                <element signature="e#1086#1378#0" expanded="false" />
-                <element signature="e#1135#1248#0" expanded="false" />
-                <element signature="e#1289#1372#0" expanded="false" />
                 <element signature="e#1430#1890#0" expanded="false" />
                 <element signature="e#1595#1886#0" expanded="false" />
                 <element signature="e#1644#1756#0" expanded="false" />
@@ -77,16 +72,42 @@
                 <element signature="e#2764#3213#0" expanded="false" />
                 <element signature="e#2800#2919#0" expanded="false" />
                 <element signature="e#2936#3203#0" expanded="false" />
-                <element signature="e#4939#7346#0" expanded="false" />
-                <element signature="e#5763#7310#0" expanded="false" />
-                <element signature="e#5789#5921#0" expanded="false" />
-                <element signature="e#5943#7296#0" expanded="false" />
-                <element signature="e#5987#6978#0" expanded="false" />
-                <element signature="e#6434#6954#0" expanded="false" />
-                <element signature="e#6472#6633#0" expanded="false" />
-                <element signature="e#6666#6928#0" expanded="false" />
-                <element signature="e#7003#7278#0" expanded="false" />
+                <element signature="e#3688#3863#0" expanded="false" />
+                <element signature="e#3869#4058#0" expanded="false" />
+                <element signature="e#4465#4888#0" expanded="false" />
+                <element signature="e#4512#4687#0" expanded="false" />
+                <element signature="e#4693#4882#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/public/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGOAttendeesInArea.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="1435" column="14" selection-start-line="1435" selection-start-column="14" selection-end-line="1435" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,9 +160,10 @@
         <option value="$PROJECT_DIR$/HORO/views/Profile.ejs" />
         <option value="$PROJECT_DIR$/HORO/views/NGOProfile.ejs" />
         <option value="$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs" />
+        <option value="$PROJECT_DIR$/HORO/ebayLog.log" />
         <option value="$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs" />
-        <option value="$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js" />
         <option value="$PROJECT_DIR$/HORO/routes/NGOProfile.js" />
+        <option value="$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js" />
       </list>
     </option>
   </component>
@@ -185,6 +207,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -232,13 +255,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,23 +390,23 @@
       <workItem from="1480415888726" duration="142000" />
       <workItem from="1480445018819" duration="558000" />
       <workItem from="1480528203488" duration="920000" />
-      <workItem from="1480529152326" duration="19798000" />
+      <workItem from="1480529152326" duration="29010000" />
+      <workItem from="1480567129925" duration="2013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77632000" />
+    <option name="totallyTimeSpent" value="88857000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21130952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21056548" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20915033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19771242" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19738989" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -373,6 +417,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20915033" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -464,58 +509,14 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/HORO/routes/NGOProfile.js</url>
           <line>151</line>
-          <properties />
           <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HORO/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="103" column="53" selection-start-line="103" selection-start-column="43" selection-end-line="103" selection-end-column="53" />
-          <folding>
-            <element signature="e#147#285#0" expanded="false" />
-            <element signature="e#165#283#0" expanded="false" />
-            <element signature="e#323#371#0" expanded="false" />
-            <element signature="e#1548#1716#0" expanded="false" />
-            <element signature="e#3878#4161#0" expanded="false" />
-            <element signature="e#4200#4485#0" expanded="false" />
-            <element signature="e#4592#5530#0" expanded="false" />
-            <element signature="e#4912#5509#0" expanded="false" />
-            <element signature="e#4930#5040#0" expanded="false" />
-            <element signature="e#5054#5503#0" expanded="false" />
-            <element signature="e#5090#5209#0" expanded="false" />
-            <element signature="e#5226#5493#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -556,13 +557,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/signup/signup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -608,18 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/views/sessionAdd.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17187">
           <caret line="1011" column="20" selection-start-line="1011" selection-start-column="20" selection-end-line="1011" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -641,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="66" column="42" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -649,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -657,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
           <caret line="251" column="10" selection-start-line="251" selection-start-column="10" selection-end-line="251" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -665,36 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="74">
           <caret line="477" column="0" selection-start-line="477" selection-start-column="0" selection-end-line="478" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="99" column="24" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="43" />
-          <folding>
-            <element signature="e#147#285#0" expanded="false" />
-            <element signature="e#165#283#0" expanded="false" />
-            <element signature="e#323#371#0" expanded="false" />
-            <element signature="e#1548#1716#0" expanded="false" />
-            <element signature="e#3878#4161#0" expanded="false" />
-            <element signature="e#4200#4485#0" expanded="false" />
-            <element signature="e#4592#5530#0" expanded="false" />
-            <element signature="e#4912#5509#0" expanded="false" />
-            <element signature="e#4930#5040#0" expanded="false" />
-            <element signature="e#5054#5503#0" expanded="false" />
-            <element signature="e#5090#5209#0" expanded="false" />
-            <element signature="e#5226#5493#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="106" column="83" selection-start-line="106" selection-start-column="83" selection-end-line="106" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -710,7 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -718,7 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,32 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="127" column="50" selection-start-line="127" selection-start-column="50" selection-end-line="127" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/attendeeProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#62#0" expanded="false" />
-            <element signature="e#364#402#0" expanded="false" />
-            <element signature="e#549#584#0" expanded="false" />
-            <element signature="e#744#882#0" expanded="false" />
-            <element signature="e#762#880#0" expanded="false" />
-            <element signature="e#1085#1382#0" expanded="false" />
-            <element signature="e#1134#1252#0" expanded="false" />
-            <element signature="e#1293#1376#0" expanded="false" />
-            <element signature="e#1608#1905#0" expanded="false" />
-            <element signature="e#1657#1775#0" expanded="false" />
-            <element signature="e#1816#1899#0" expanded="false" />
-            <element signature="e#2125#2722#0" expanded="false" />
-            <element signature="e#2143#2253#0" expanded="false" />
-            <element signature="e#2267#2716#0" expanded="false" />
-            <element signature="e#2303#2422#0" expanded="false" />
-            <element signature="e#2439#2706#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,7 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +713,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/Host/courseAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/Host/sessionAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/Account.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="27" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1554" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="226" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="226" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/mysqlConnector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOCourseList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/Profile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="1255" column="7" selection-start-line="1255" selection-start-column="7" selection-end-line="1255" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/NGOProfile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="1318" column="7" selection-start-line="1318" selection-start-column="7" selection-end-line="1318" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/ebayLog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/ebayLog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="1243" column="7" selection-start-line="1243" selection-start-column="7" selection-end-line="1243" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19893">
+          <caret line="112" column="16" selection-start-line="112" selection-start-column="16" selection-end-line="112" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -798,13 +818,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="24" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="24" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/attendeeProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/Account.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="230">
           <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="195" selection-end-column="0" />
           <folding>
             <element signature="e#138#276#0" expanded="false" />
@@ -848,7 +874,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/Host/courseAdd.js">
+    <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#147#285#0" expanded="false" />
+            <element signature="e#165#283#0" expanded="false" />
+            <element signature="e#323#371#0" expanded="false" />
+            <element signature="e#1548#1716#0" expanded="false" />
+            <element signature="e#3878#4161#0" expanded="false" />
+            <element signature="e#4200#4485#0" expanded="false" />
+            <element signature="e#4592#5530#0" expanded="false" />
+            <element signature="e#4912#5509#0" expanded="false" />
+            <element signature="e#4930#5040#0" expanded="false" />
+            <element signature="e#5054#5503#0" expanded="false" />
+            <element signature="e#5090#5209#0" expanded="false" />
+            <element signature="e#5226#5493#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/signup/signup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="28" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -856,135 +917,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/Host/sessionAdd.js">
+    <entry file="file://$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/Account.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="27" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="1554" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="226" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="226" selection-end-column="1" />
-          <folding>
-            <element signature="e#28#62#0" expanded="false" />
-            <element signature="e#330#368#0" expanded="false" />
-            <element signature="e#515#550#0" expanded="false" />
-            <element signature="e#711#1155#0" expanded="false" />
-            <element signature="e#864#1151#0" expanded="false" />
-            <element signature="e#913#1021#0" expanded="false" />
-            <element signature="e#1062#1145#0" expanded="false" />
-            <element signature="e#1200#5860#0" expanded="false" />
-            <element signature="e#1206#2759#0" expanded="false" />
-            <element signature="e#2809#4256#0" expanded="false" />
-            <element signature="e#4259#5119#0" expanded="false" />
-            <element signature="e#5241#5838#0" expanded="false" />
-            <element signature="e#5259#5369#0" expanded="false" />
-            <element signature="e#5383#5832#0" expanded="false" />
-            <element signature="e#5419#5538#0" expanded="false" />
-            <element signature="e#5555#5822#0" expanded="false" />
-            <element signature="e#5910#6767#0" expanded="false" />
-            <element signature="e#6149#6746#0" expanded="false" />
-            <element signature="e#6167#6277#0" expanded="false" />
-            <element signature="e#6291#6740#0" expanded="false" />
-            <element signature="e#6327#6446#0" expanded="false" />
-            <element signature="e#6463#6730#0" expanded="false" />
-            <element signature="e#6816#6858#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/mysqlConnector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="368">
+          <caret line="1435" column="14" selection-start-line="1435" selection-start-column="14" selection-end-line="1435" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HORO/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="78" column="41" selection-start-line="78" selection-start-column="41" selection-end-line="78" selection-end-column="41" />
+        <state relative-caret-position="296">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOCourseList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#45#89#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/Profile.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="1255" column="7" selection-start-line="1255" selection-start-column="7" selection-end-line="1255" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/NGOProfile.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="1318" column="7" selection-start-line="1318" selection-start-column="7" selection-end-line="1318" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="1243" column="7" selection-start-line="1243" selection-start-column="7" selection-end-line="1243" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/NGOProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="110" column="246" selection-start-line="110" selection-start-column="246" selection-end-line="110" selection-end-column="246" />
+        <state relative-caret-position="517">
+          <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
           <folding>
             <element signature="e#28#62#0" expanded="false" />
             <element signature="e#364#402#0" expanded="false" />
             <element signature="e#549#584#0" expanded="false" />
             <element signature="e#744#882#0" expanded="false" />
             <element signature="e#762#880#0" expanded="false" />
-            <element signature="e#927#1382#0" expanded="false" />
-            <element signature="e#1086#1378#0" expanded="false" />
-            <element signature="e#1135#1248#0" expanded="false" />
-            <element signature="e#1289#1372#0" expanded="false" />
             <element signature="e#1430#1890#0" expanded="false" />
             <element signature="e#1595#1886#0" expanded="false" />
             <element signature="e#1644#1756#0" expanded="false" />
@@ -999,34 +957,30 @@
             <element signature="e#2764#3213#0" expanded="false" />
             <element signature="e#2800#2919#0" expanded="false" />
             <element signature="e#2936#3203#0" expanded="false" />
-            <element signature="e#4939#7346#0" expanded="false" />
-            <element signature="e#5763#7310#0" expanded="false" />
-            <element signature="e#5789#5921#0" expanded="false" />
-            <element signature="e#5943#7296#0" expanded="false" />
-            <element signature="e#5987#6978#0" expanded="false" />
-            <element signature="e#6434#6954#0" expanded="false" />
-            <element signature="e#6472#6633#0" expanded="false" />
-            <element signature="e#6666#6928#0" expanded="false" />
-            <element signature="e#7003#7278#0" expanded="false" />
+            <element signature="e#3688#3863#0" expanded="false" />
+            <element signature="e#3869#4058#0" expanded="false" />
+            <element signature="e#4465#4888#0" expanded="false" />
+            <element signature="e#4512#4687#0" expanded="false" />
+            <element signature="e#4693#4882#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="362">
+          <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
           <folding>
             <element signature="e#45#89#0" expanded="false" />
+            <element signature="e#203#273#0" expanded="false" />
+            <element signature="e#299#686#0" expanded="false" />
+            <element signature="e#339#626#0" expanded="false" />
+            <element signature="e#437#615#0" expanded="false" />
+            <element signature="e#632#679#0" expanded="false" />
+            <element signature="e#933#1111#0" expanded="false" />
+            <element signature="e#1128#1175#0" expanded="false" />
+            <element signature="e#2066#2256#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="1118" column="0" selection-start-line="1118" selection-start-column="0" selection-end-line="1118" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
