@@ -6,4 +6,4 @@ CDN ( Content Delivery Network) which will make sure that the S3 files are deliv
 
 **_How it works?_**
 
-When someone accesses a file through your S3 bucket, it acts just like a regular file host. When someone accesses a file through CloudFiles though, it requests the file from your S3 bucket (the origin) and caches it at the CDN server closest to the orignial request for all subsequent requests. It's a little more complicated than that, but that's the general idea.
+When someone accesses a file through your S3 bucket, it acts just like a regular file host. When someone accesses a file through CloudFiles though, it requests the file from your S3 bucket (the origin) and caches it at the CDN server closest to the orignial request for all subsequent requests. 
