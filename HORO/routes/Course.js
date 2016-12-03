@@ -78,8 +78,26 @@ exports.get_course_page = function(req,res)
 exports.viewCoursePage = function(req,res)
 {
     console.log("int viewCoursePage");
-    response={"statusCode" : 200, "Sessions"	:   req.session.selectedCourseSessions, "Course"    :   req.session.selectedCourse};
-    res.send(response);
+    var isSubscribed = false;
+
+    var checkLoginQuery = "SELECT * FROM horodb.user_master,course_progress where user_master.user_id = course_progress.user_id and user_master.username = '"+req.session.username+"' and course_progress.course_id = '"+req.session.selectedCourseSessions[0].course_id+"';";
+    mysql.fetchData(function(err,results) {
+        if(err) {
+            throw err;
+            logger.log('error','Error of user :'+username+ ' Error: '+err);
+        }
+        else {
+            if(results.length >0) {
+                isSubscribed = true;
+
+                response={"statusCode" : 200, "Sessions"	:   req.session.selectedCourseSessions, "Course"    :   req.session.selectedCourse, "isSubscribed" : isSubscribed};
+                res.send(response);
+            }
+        }
+    }, checkLoginQuery);
+
+
+
 }
 
 

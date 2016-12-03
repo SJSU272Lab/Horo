@@ -106,8 +106,8 @@
                     <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course <span class="fa fa-angle-down"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="course.html">Course Archive</a></li>
-                            <li><a href="course-detail.html">Course Detail</a></li>
+                            <li><a href="/course">Course Archive</a></li>
+                            <li><a href="/course-detail">Course Detail</a></li>
                         </ul>
                     </li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -188,7 +188,7 @@
                                                         </td>
                                                         <td style="width:100px">
                                                             <div class="container">
-                                                                <a class="btn icon-btn btn-success" href="#" ng-click="Subscribe()"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Subscribe</a>
+                                                                <a class="btn icon-btn btn-success" href="#" ng-click="Subscribe()" ng-disabled="isSubscribed"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle text-success"></span>Subscribe</a>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -201,13 +201,17 @@
                                                     <li> <span>Course Start</span> <span>July 25, 2016</span></li>
                                                 </ul>
                                                 <h4>Description</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
+                                                <p>
+                                                    {{description}}
+                                                </p>
+
+                                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo est itaque vero porro quasi illo ex consequuntur ad animi commodi, ipsam provident voluptas vel adipisci. Minima repellendus vel est, sequi labore quo ipsa voluptatem officiis ex fuga nemo quas. Eligendi inventore ducimus omnis, maxime, alias accusantium similique minus! Labore facilis qui, sunt, ipsam consectetur minus sapiente saepe numquam magnam quidem.</p>
                                                 <blockquote>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat, ipsa. Modi sed quibusdam vel autem fugit, eaque, iste. Excepturi fugit dignissimos suscipit dolor perferendis debitis magni sed, quia ab.</p>
                                                 </blockquote>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ea consequatur doloremque deleniti error ullam, accusamus vel est alias, sit. Similique voluptas aliquid, excepturi accusamus, sequi ducimus incidunt mollitia non.</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi saepe possimus doloribus quod quibusdam officia suscipit qui illum nemo itaque, porro ipsam tempore enim error eius quia, culpa. Reprehenderit consequuntur voluptatem dolorum magni natus inventore molestias veritatis eos aspernatur repudiandae.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi saepe possimus doloribus quod quibusdam officia suscipit qui illum nemo itaque, porro ipsam tempore enim error eius quia, culpa. Reprehenderit consequuntur voluptatem dolorum magni natus inventore molestias veritatis eos aspernatur repudiandae.</p>-->
                                                 <h4>Course Outline</h4>
                                                 <div class="table-responsive" ng-repeat="vals in sessions">
                                                     <table class="table">

@@ -106,9 +106,11 @@ course.controller('CourseDetails', function($scope, $http,$state) {
                 $scope.course_details = data.Result;
                 $scope.course_id = data.Course.course_id;
                 $scope.course_title = data.Course.course_name;
-                $scope.description = data.Course.course_detals;
+                $scope.description = data.Course.course_details;
 
                 $scope.sessions = data.Sessions;
+
+                $scope.isSubscribed = data.isSubscribed;
                 //window.location.assign("/courseDetail");
 
             } else {
