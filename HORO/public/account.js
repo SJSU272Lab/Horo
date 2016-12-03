@@ -13,11 +13,11 @@ var account = angular.module('account', ['ui.router']);
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+    /*$urlRouterProvider.otherwise('/');*/
 });
 
 
-account.controller('editaccountprofile', function($scope, $http,$state) {
+account.controller('editaccountprofile', function($scope, $http) {
 
     $scope.change_password = function()
     {
@@ -44,6 +44,12 @@ account.controller('editaccountprofile', function($scope, $http,$state) {
     $scope.EditProfile = function()
     {
         window.location.assign("/EditProfile");
+    }
+
+
+    $scope.addSessions = function()
+    {
+        window.location.assign("/sessionland")
     }
 
 });

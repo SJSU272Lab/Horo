@@ -13,12 +13,12 @@ var editprofile = angular.module('EditUserProfile', ['ui.router']);
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+
 });
 
 
 
-editprofile.controller('edituserprofile', function($scope, $http,$state) {
+editprofile.controller('edituserprofile', function($scope, $http) {
 
     $scope.Init = function()
     {

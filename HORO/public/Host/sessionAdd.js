@@ -42,4 +42,20 @@ account.controller('sessionAdd', function($scope, $http,$state) {
 
     }
 
+    $scope.Profile = function()
+    {
+        window.location.assign("/Profile");
+    }
+
+    $scope.EditProfile = function()
+    {
+        window.location.assign("/EditProfile");
+    }
+
+
+    $scope.addSessions = function()
+    {
+        window.location.assign("/sessionland")
+    }
+
 });

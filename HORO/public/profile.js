@@ -13,11 +13,11 @@ profile.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+    //$urlRouterProvider.otherwise('/');
 });
 
 
-profile.controller('userprofile', function($scope, $http,$state) {
+profile.controller('userprofile', function($scope, $http) {
 
 
     $http({
@@ -70,6 +70,11 @@ profile.controller('userprofile', function($scope, $http,$state) {
             }
 
         });
+    }
+
+    $scope.addSessions = function()
+    {
+        window.location.assign("/sessionland")
     }
 
 });
