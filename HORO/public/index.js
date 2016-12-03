@@ -24,13 +24,13 @@ indexPage.config(function($stateProvider, $urlRouterProvider) {
             params : { listings : null}
 
         })
-        .state('signup', {
+        /*.state('signup', {
             url:'/signup',
             signup: '/signup/signup.html',
             controller: 'signup',
             params : { listings : null}
 
-        })
+        })*/
 
 
 });

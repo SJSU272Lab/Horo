@@ -2,10 +2,12 @@
  * Created by Gaurang on 25-11-2016.
  */
 
-
 indexPage.controller('signup', function($scope, $http,$state) {
 
     console.log("Inside Signup.");
+    $scope.invalid_register = true;
+    $scope.valid_register = true;
+    $scope.already_exists = true;
 
     $scope.register = function()
     {
@@ -33,8 +35,13 @@ indexPage.controller('signup', function($scope, $http,$state) {
 
             if (data.statusCode == 200) {
                 console.log("Success");
+                $scope.invalid_register = true;
+                $scope.valid_register = false;
+                window.location.assign("/");
+
             } else {
                 console.log("Failure");
+                $scope.invalid_register = false;
             }
 
         });
