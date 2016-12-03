@@ -13,10 +13,10 @@ function getConnection(){
     var connection = mysql.createPool(
         {
             connectionLimit : 500, // The maximum number of connections to create at once. https://github.com/mysqljs/mysql
-            host     : 'localhost',
-            user     : 'root',
-            password : 'toor',
-            database : 'horodb',
+            host     : 'us-cdbr-iron-east-04.cleardb.net',
+            user     : 'bc2df644ce1d75',
+            password : 'd7bb5e83',
+            database : 'ad_8da01fda1e373b6',
             port	 : 3306
         });
     return connection;
@@ -55,10 +55,10 @@ function fetchDataWithoutPool(callback,sqlQuery){
     console.log("\nSQL Query::"+sqlQuery);
 
     var connection=mysql.createConnection({
-        host     : 'localhost',
-        user     : 'root',
-        password : 'toor',
-        database : 'horodb',
+        host     : 'us-cdbr-iron-east-04.cleardb.net',
+        user     : 'bc2df644ce1d75',
+        password : 'd7bb5e83',
+        database : 'ad_8da01fda1e373b6',
         port	 : 3306
     });
     connection.connect();
