@@ -13,7 +13,7 @@ var course = angular.module('course', ['ui.router']);
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+    //$urlRouterProvider.otherwise('/');
 });
 
 
