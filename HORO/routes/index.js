@@ -10,9 +10,12 @@ var logger = new (winston.Logger)({
 });
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('session', { title: "Hello"});
 };
 
+exports.getSessiondata = function(req, res){
+    res.send({"statusCode" : 200, "username": req.session.username });
+};
 
 exports.signupForVolunteerAndAttendee = function(req,res)
 {
@@ -80,8 +83,8 @@ exports.signinForVolunteerAndAttendee= function(req,res)
 
 
     if(username != '') {
-        var checkLoginQuery = "select user_id,username,password from user_master where username = '" + username + "';";
-        logger.log('info', 'select user_id,username,password from user_master where EmailId = '+username);
+        var checkLoginQuery = "select user_id,username,password,account_type from user_master where username = '" + username + "';";
+        logger.log('info', 'select user_id,username,password,account_type from user_master where EmailId = '+username);
         console.log("Query:: " + checkLoginQuery);
 
         mysql.fetchData(function(err,results) {
@@ -102,7 +105,11 @@ exports.signinForVolunteerAndAttendee= function(req,res)
                         logger.log('info', "Session Initialized with username : " + req.session.username);
                         console.log("Session Initialized with username : " + req.session.username);
 
-                        json_responses = {"statusCode": 200};
+                        if(results[0].account_type=='volunteer') {
+                            json_responses = {"statusCode": 200}; 
+                        }else if(results[0].account_type=='attendee'){
+                            json_responses = {"statusCode": 201};
+                        }
                         res.send(json_responses);
                     }
 

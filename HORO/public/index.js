@@ -24,13 +24,13 @@ indexPage.config(function($stateProvider, $urlRouterProvider) {
             params : { listings : null}
 
         })
-        .state('signup', {
+        /*.state('signup', {
             url:'/signup',
             signup: '/signup/signup.html',
             controller: 'signup',
             params : { listings : null}
 
-        })
+        })*/
 
 
 });
@@ -39,7 +39,56 @@ indexPage.config(function($stateProvider, $urlRouterProvider) {
 indexPage.controller('viewProfile', function($scope, $http,$state) {
 
     console.log("Inside viewProfile");
+    $scope.sessionNotConnected = true;
+    $scope.sessionActive = false;
+    $http({
+        method : "POST",
+        url : '/getSessiondata',
+    }).success(function(data) {
 
+        if (data.username != undefined) {
+
+            $scope.sessionUserName = data.username;
+            $scope.sessionNotConnected = false;
+            $scope.sessionActive = true;
+
+        } else {
+            $scope.sessionNotConnected = true;
+            $scope.sessionActive = false;
+        }
+
+    });
+
+    $scope.Profile = function()
+    {
+        window.location.assign("/Profile");
+    }
+
+
+});
+
+indexPage.controller('loginSiginup', function($scope, $http,$state) {
+
+    console.log("Inside viewProfile");
+    $scope.sessionNotConnected = true;
+    $scope.sessionActive = false;
+    $http({
+        method : "POST",
+        url : '/getSessiondata',
+    }).success(function(data) {
+
+        if (data.username != undefined) {
+
+            $scope.sessionUserName = data.username;
+            $scope.sessionNotConnected = false;
+            $scope.sessionActive = true;
+
+        } else {
+            $scope.sessionNotConnected = true;
+            $scope.sessionActive = false;
+        }
+
+    });
 
     $scope.Profile = function()
     {

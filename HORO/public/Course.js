@@ -13,7 +13,7 @@ var course = angular.module('course', ['ui.router']);
             },
         }
     })
-    $urlRouterProvider.otherwise('/');
+    //$urlRouterProvider.otherwise('/');
 });
 
 
@@ -23,7 +23,25 @@ course.controller('CourseDetails', function($scope, $http,$state) {
 
     $scope.categories = "";
     var selectedCourse;
+    $scope.sessionNotConnected = true;
+    $scope.sessionActive = false;
+    $http({
+        method : "POST",
+        url : '/getSessiondata',
+    }).success(function(data) {
 
+        if (data.username != undefined) {
+
+            $scope.sessionUserName = data.username;
+            $scope.sessionNotConnected = false;
+            $scope.sessionActive = true;
+
+        } else {
+            $scope.sessionNotConnected = true;
+            $scope.sessionActive = false;
+        }
+
+    });
     $scope.GetCourse = function()
     {
         $http({
@@ -106,9 +124,11 @@ course.controller('CourseDetails', function($scope, $http,$state) {
                 $scope.course_details = data.Result;
                 $scope.course_id = data.Course.course_id;
                 $scope.course_title = data.Course.course_name;
-                $scope.description = data.Course.course_detals;
+                $scope.description = data.Course.course_details;
 
                 $scope.sessions = data.Sessions;
+
+                $scope.isSubscribed = data.isSubscribed;
                 //window.location.assign("/courseDetail");
 
             } else {

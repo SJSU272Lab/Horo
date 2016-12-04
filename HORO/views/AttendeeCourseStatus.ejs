@@ -8,6 +8,18 @@
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
+
+    <link href="stylesheets/assets/css/font-awesome.css" rel="stylesheet">
+
+    <link href="stylesheets/assets/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/assets/css/slick.css">
+
+    <link id="switcher" href="stylesheets/assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <link href="stylesheets/assets/css/style.css" rel="stylesheet">
+
+
     <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
@@ -23,21 +35,7 @@
     <script src="Attendee/attendeeCourseStatus.js">  </script>
     <!-- <script src="angularjs/profile.js">  </script>-->
 
-    <style>
-        body {
-            padding-top: 50px;
-        }
-        #divTotal{
-            background-color: green;
-        }
-        .affix{
-            right: 0px;
-        }
-        .affix-top{
-            right: 0px;
-            position: fixed;
-        }
-    </style>
+
 
     <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -46,7 +44,7 @@
     <link rel="dns-prefetch" href="https://mts0.googleapis.com/">
     <link rel="dns-prefetch" href="https://mts1.googleapis.com/">
 
-    <link rel="shortcut icon" href="http://makent.trioangle.com/images/logos/favicon.ico">
+
 
     <!--[if IE]><![endif]-->
     <meta charset="utf-8">
@@ -105,12 +103,42 @@
 </head>
 
 <body class="ng-scope" ng-app="AttendeeProfile" ng-controller="attendeeCourseStatus" ng-init="Init()">
+
+
+<section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- LOGO -->
+                <!-- TEXT BASED LOGO -->
+                <a class="navbar-brand" href="/"><i class="fa fa-university"></i><span>HORO</span></a>
+                <!-- IMG BASED LOGO  -->
+                <!-- <a class="navbar-brand" href="index.html"><img src="stylesheets/assets/img/logo.png" alt="logo"></a> -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="course">Course</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</section>
+
+
 <div id="header" class="makent-header new ">
     <header class="header--sm show-sm" aria-hidden="true" role="banner">
         <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
             <i class="icon icon-reorder icon-rausch"></i>
                 <span class="screen-reader-only">
-          Makent
+          HORO
         </span>
         </a>
         <div class="title--sm text-center">
@@ -128,8 +156,8 @@
                 <div class="nav-header ">
                     <div class="nav-profile clearfix">
                         <div class="user-item pull-left">
-                            <a href="http://makent.trioangle.com/users/show/10005" class="link-reset user-profile-link">
-                                <div class="media-photo media-round user-profile-image" style="background:rgba(0, 0, 0, 0) url(https://lh5.googleusercontent.com/--KQiCnO7b2k/AAAAAAAAAAI/AAAAAAAAEEY/kepVuvUEH9I/photo.jpg?sz=50) no-repeat scroll 0 0 / cover">
+                            <a href="" class="link-reset user-profile-link">
+                                <div class="media-photo media-round user-profile-image" style="background:rgba(0, 0, 0, 0) url(https://myspace.com/common/images/user.png?sz=50) no-repeat scroll 0 0 / cover">
                                 </div>
                                 {{fname}}
                             </a>
@@ -142,7 +170,7 @@
                         <div class="va-middle nav-menu panel-body">
                             <ul class="menu-group list-unstyled row-space-3">
                                 <li>
-                                    <a rel="nofollow" class="link-reset menu-item" href="http://makent.trioangle.com">
+                                    <a rel="nofollow" class="link-reset menu-item" href="">
                                         Home
                                     </a>
                                 </li>
@@ -152,17 +180,17 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a rel="nofollow" class="link-reset menu-item" href="http://makent.trioangle.com/rooms/new">
+                                    <a rel="nofollow" class="link-reset menu-item" href="">
                                         Become a Host
                                     </a>
                                 </li>
                                 <li class="items-logged-out">
-                                    <a rel="nofollow" class="link-reset menu-item signup_popup_head" href="http://makent.trioangle.com/signup_login" data-signup-modal="">
+                                    <a rel="nofollow" class="link-reset menu-item signup_popup_head" href="" data-signup-modal="">
                                         Sign Up
                                     </a>
                                 </li>
                                 <li class="items-logged-out">
-                                    <a rel="nofollow" class="link-reset menu-item login_popup_head" href="http://makent.trioangle.com/login" data-login-modal="">
+                                    <a rel="nofollow" class="link-reset menu-item login_popup_head" href="" data-login-modal="">
                                         Log In
                                     </a>
                                 </li>
@@ -172,12 +200,12 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/rooms/new">
+                                    <a class="link-reset menu-item" rel="nofollow" href="">
                                         Become a Host
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/inbox">
+                                    <a class="link-reset menu-item" rel="nofollow" href="">
                                         Inbox
                                         <i class="alert-count unread-count--sm fade text-center">
                                             0
@@ -185,17 +213,17 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/rooms">
+                                    <a class="link-reset menu-item" rel="nofollow" href="">
                                         Your Listings
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/trips/current">
+                                    <a class="link-reset menu-item" rel="nofollow" href="">
                                         Your Trips
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="search-modal-trigger link-reset menu-item" data-prevent-default="" rel="nofollow" href="http://makent.trioangle.com/s">
+                                    <a class="search-modal-trigger link-reset menu-item" data-prevent-default="" rel="nofollow" href="">
                                         Search
                                     </a>
                                 </li>
@@ -208,7 +236,7 @@
 
                             <ul class="menu-group list-unstyled row-space-3">
                                 <li>
-                                    <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/help">
+                                    <a class="link-reset menu-item" rel="nofollow" href="">
                                         Help
                                     </a>
                                 </li>
@@ -218,7 +246,7 @@
                                   </a>
                                 </li>-->
                                 <li class="">
-                                    <a class="link-reset menu-item logout" rel="nofollow" href="http://makent.trioangle.com/logout">
+                                    <a class="link-reset menu-item logout" rel="nofollow" href="">
                                         Log Out
                                     </a>
                                 </li>
@@ -245,12 +273,7 @@
                                     <input type="hidden" name="source" value="mob">
                                     <div class="row">
                                         <div class="searchbar__location-error hide" style="left:22px; top:2%;">Please set location</div>
-                                        <div class="col-sm-12">
-                                            <label for="header-location--sm">
-                                                <span class="screen-reader-only">Where to?</span>
-                                                <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-location--sm" class="input-large" value="">
-                                            </label>
-                                        </div>
+
                                     </div>
                                     <div class="row row-condensed">
                                         <div class="col-sm-6">
@@ -334,9 +357,9 @@
 
     <header class="regular-header clearfix hide-sm" id="old-header" role="banner">
 
-        <a aria-label="Homepage" href="http://makent.trioangle.com" class="header-belo pull-left " style="background:rgba(0, 0, 0, 0) url(http://makent.trioangle.com/images/logos/logo.png) no-repeat scroll 0 0;">
+        <a aria-label="Homepage" href="" class="header-belo pull-left " style="background:rgba(0, 0, 0, 0) url() no-repeat scroll 0 0;">
         <span class="screen-reader-only">
-          Makent
+          HORO
         </span>
         </a>
 
@@ -350,12 +373,8 @@
         <div class="pull-left search-input-home">
             <ul class="nav pull-left  list-unstyled search-form-container" id="search-form-header">
                 <li id="header-search" class="search-bar-wrapper pull-left medium-right-margin">
-                    <form action="http://makent.trioangle.com/s" class="search-form ng-pristine ng-valid">
-                        <div class="search-bar">
-                            <i class="icon icon-search icon-gray h4"></i>
-                            <label class="screen-reader-only" for="header-search-form">Where to?</label>
-                            <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-search-form" class="location" value="">
-                        </div>
+                    <form action="" class="search-form ng-pristine ng-valid">
+
                         <div id="header-search-settings" class="panel search-settings header-menu">
                             <div class="panel-body clearfix basic-settings">
                                 <div class="setting checkin">
@@ -431,7 +450,7 @@
                 </li>
 
                 <li class="dropdown-trigger pull-left large-right-margin hide-sm hide" data-behavior="recently-viewed__container">
-                    <a class="no-crawl link-reset" href="http://makent.trioangle.com/login?_ga=1.237472128.1006317855.1436675116#" data-href="/history#docked-filters" data-behavior="recently-viewed__trigger">
+                    <a class="no-crawl link-reset" href="" data-href="/history#docked-filters" data-behavior="recently-viewed__trigger">
           <span class="show-lg recently-viewed__label">
             Recently Viewed
           </span>
@@ -498,8 +517,8 @@
               </ul>
                   </div>
                 </li> -->
-                <li class="list-your-space pull-left">
-                    <a id="list-your-space" class="become" href="http://makent.trioangle.com/rooms/new" style="border-left:none !important;">
+                <!--<li class="list-your-space pull-left">
+                    <a id="list-your-space" class="become" href="" style="border-left:none !important;">
             <span id="list-your-space" class="btn btn-special list-your-space-btn">
               Become a Host
               </span>
@@ -519,7 +538,7 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li>-->
                 <!--   <li id="header-help-menu" class="help-menu-container pull-left dropdown-trigger">
            <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
              Help
@@ -537,8 +556,8 @@
 
 
             <ul class="nav pull-left list-unstyled">
-                <li class="pull-left dropdown-trigger">
-                    <a class="link-reset trip-drop" href="http://makent.trioangle.com/trips/current">
+                <!--<li class="pull-left dropdown-trigger">
+                    <a class="link-reset trip-drop" href="">
                         <span class="trip-pos"> Trips</span>
                         <i class="trips-icon">
                             <i class="alert-count fade">0</i>
@@ -546,7 +565,7 @@
                     </a>
                     <div class="panel drop-down-menu-trip hide js-become-a-host-dropdown">
                         <div class="trip-width">
-                            <div class="panel-header no-border section-header-home"><strong><span>Trips</span></strong><a href="http://makent.trioangle.com/trips/current" class="link-reset view-trips pull-right"><strong><span>View Trips</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home"><strong><span>Trips</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Trips</span></strong></a></div>
                             <div class="pull-left" style="width:100%;padding:15px 20px;">
                                 <div class="pull-left" style="padding:15px 20px 0px;">
                                     <strong>No upcoming trips</strong>
@@ -556,7 +575,7 @@
                                     <i class="icon icon-suitcase"></i>
                                 </div>
                             </div>
-                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Wishlist</span></strong><a href="http://makent.trioangle.com/wishlists/my" class="link-reset view-trips pull-right"><strong><span>View Wishlists</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Wishlist</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Wishlists</span></strong></a></div>
                             <div class="pull-left" style="width:100%;padding:15px 20px;">
                                 <div class="pull-left" style="padding:15px 20px 0px;">
                                     <strong>No wish list created</strong>
@@ -570,14 +589,14 @@
                     </div>
                 </li>
                 <li id="inbox-item" class="inbox-item pull-left dropdown-trigger js-inbox-comp">
-                    <a href="http://makent.trioangle.com/inbox" rel="nofollow" class="no-crawl link-reset inbox-icon">
+                    <a href="" rel="nofollow" class="no-crawl link-reset inbox-icon">
                         <span class="msg-icon1">Messages</span>
                         <i class="msg-icon">
                             <i class="alert-count text-center fade">0</i>
 
-                            <!-- <span class="text-hide hide">
+                            &lt;!&ndash; <span class="text-hide hide">
                          Inbox
-                       </span>-->
+                       </span>&ndash;&gt;
                         </i>
                     </a>
                     <div class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown
@@ -585,19 +604,19 @@
                     </div>
                     <div class="panel drop-down-menu-msg hide js-become-a-host-dropdown">
                         <div class="trip-width">
-                            <div class="panel-header no-border section-header-home"><strong><span>Messages</span></strong><a href="http://makent.trioangle.com/inbox" class="link-reset view-trips pull-right"><strong><span>View Inbox</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home"><strong><span>Messages</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Inbox</span></strong></a></div>
 
-                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Notifications</span></strong><a href="http://makent.trioangle.com/dashboard" class="link-reset view-trips pull-right"><strong><span>View Dashboard</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Notifications</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Dashboard</span></strong></a></div>
                             <div class="pull-left" style="width:100%;padding:15px 20px;">
 
-                                <p style="margin:0px;padding-top:10px !important;"> There are 3 notifications waiting for you in your <a style="color:#333;text-decoration:underline;" href="http://makent.trioangle.com/dashboard"> dashboard </a>.</p>
+                                <p style="margin:0px;padding-top:10px !important;"> There are 3 notifications waiting for you in your <a style="color:#333;text-decoration:underline;" href=""> dashboard </a>.</p>
 
                             </div>
                         </div>
                     </div>
-                </li>
+                </li>-->
                 <li id="header-help-menu" class="help-menu-container pull-left dropdown-trigger">
-                    <a class="help-toggle link-reset" href="http://makent.trioangle.com/help">
+                    <a class="help-toggle link-reset" href="">
                         <span class="help-pos">Help</span>
                         <i class="help-icon"></i>
                     </a>
@@ -607,43 +626,43 @@
 
             <ul class="nav pull-left list-unstyled" role="navigation">
                 <li class="user-item pull-left medium-right-margin dropdown-trigger">
-                    <a class="link-reset header-avatar-trigger" id="header-avatar-trigger" href="http://makent.trioangle.com/login">
+                    <a class="link-reset header-avatar-trigger" id="header-avatar-trigger" href="">
                             <span class="value_name">
                                 {{fname}}
                               </span>
-                        <div class="media-photo media-round user-profile-image" style="background: rgba(0, 0, 0, 0) url(https://lh5.googleusercontent.com/--KQiCnO7b2k/AAAAAAAAAAI/AAAAAAAAEEY/kepVuvUEH9I/photo.jpg?sz=50) no-repeat scroll 0 0 / cover"></div>
+                        <div class="media-photo media-round user-profile-image" style="background: rgba(0, 0, 0, 0) url(https://myspace.com/common/images/user.png?sz=50) no-repeat scroll 0 0 / cover"></div>
                         <!--<i class="icon icon-caret-down icon-light-gray h5"></i>-->
                     </a>
                     <ul class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown drop-down-menu-login">
                         <li>
-                            <a href="http://makent.trioangle.com/dashboard" rel="nofollow" class="no-crawl link-reset menu-item item-dashboard">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-dashboard">
                                 Dashboard
                             </a>
                         </li>
                         <li class="listings">
-                            <a href="http://makent.trioangle.com/rooms" rel="nofollow" class="no-crawl link-reset menu-item item-listing">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-listing">
               <span class="plural">
                 Your Listings
               </span>
                             </a>
                         </li>
                         <li class="reservations" style="display: none;">
-                            <a href="http://makent.trioangle.com/my_reservations" rel="nofollow" class="no-crawl link-reset menu-item item-reservation">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-reservation">
                                 Your Reservations
                             </a>
                         </li>
                         <li style="display: none;">
-                            <a href="http://makent.trioangle.com/trips/current" rel="nofollow" class="no-crawl link-reset menu-item item-trips">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-trips">
                                 Your Trips
                             </a>
                         </li>
                         <li class="groups hide">
-                            <a href="http://makent.trioangle.com/groups" rel="nofollow" class="no-crawl link-reset menu-item item-groups">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-groups">
                                 Groups
                             </a>
                         </li>
                         <li>
-                            <a href="http://makent.trioangle.com/invite" class="no-crawl link-reset menu-item item-invite-friends">
+                            <a href="" class="no-crawl link-reset menu-item item-invite-friends">
                                 Travel Credit
                                     <span class="label label-pink label-new">
               </span>
@@ -660,12 +679,12 @@
                             </a>
                         </li>
                         <li class="business-travel hide">
-                            <a href="http://makent.trioangle.com/business" rel="nofollow" class="no-crawl link-reset menu-item item-business-travel">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-business-travel">
                                 Business Travel
                             </a>
                         </li>
                         <li>
-                            <a href="http://makent.trioangle.com/logout" rel="nofollow" class="no-crawl link-reset menu-item header-logout">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item header-logout">
                                 Log Out
                             </a>
                         </li>
@@ -688,7 +707,7 @@
                        <img src="images/close.png">
                      </div>-->
                         <div class="panel-body pad-25 bor-none">
-                            <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block btn-large row-space-1 btn-facebook font-normal pad-top" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+                           <!-- <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block btn-large row-space-1 btn-facebook font-normal pad-top" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">-->
       <span class="icon-container">
         <i class="icon icon-facebook"></i>
       </span>
@@ -698,7 +717,7 @@
                             </a>
 
 
-                            <a href="http://makent.trioangle.com/googleLogin" class="btn icon-btn btn-block btn-large row-space-1 btn-google font-normal pad-top">
+                            <a href="" class="btn icon-btn btn-block btn-large row-space-1 btn-google font-normal pad-top">
       <span class="icon-container">
         <i class="icon icon-google-plus"></i>
       </span>
@@ -713,7 +732,7 @@
                                 <hr>
                             </div>
 
-                            <form method="POST" action="http://makent.trioangle.com/authenticate" accept-charset="UTF-8" class="signup-form login-form ng-pristine ng-valid" data-action="Signin" novalidate="true"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
+                            <form method="POST" action="" accept-charset="UTF-8" class="signup-form login-form ng-pristine ng-valid" data-action="Signin" novalidate="true"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
 
                                 <input id="from" name="from" type="hidden" value="email_login">
 
@@ -735,7 +754,7 @@
                                         <input id="remember_me2" class="remember_me" name="remember_me" type="checkbox" value="1">
                                         Remember me
                                     </label>
-                                    <a href="http://makent.trioangle.com/forgot_password" class="forgot-password forgot-password-popup  pull-right">Forgot password?</a>
+                                    <a href="" class="forgot-password forgot-password-popup  pull-right">Forgot password?</a>
                                 </div>
 
                                 <input class="btn btn-primary btn-block btn-large pad-top" id="user-login-btn" type="submit" value="Log In">
@@ -744,7 +763,7 @@
                         </div>
                         <div class="panel-body">
                             Don’t have an account?
-                            <a href="http://makent.trioangle.com/signup_login" class="link-to-signup-in-login login-btn signup_popup_head">
+                            <a href="" class="link-to-signup-in-login login-btn signup_popup_head">
                                 Sign Up
                             </a>
                         </div>
@@ -772,8 +791,8 @@
                             <div class="social-buttons">
 
 
-                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook pad-23" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
-      <span class="icon-container">
+                                <!--<a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook pad-23" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+      <span class="icon-container">-->
         <i class="icon icon-facebook"></i>
       </span>
                                         <span class="text-container">
@@ -782,7 +801,7 @@
                                 </a>
 
 
-                                <a href="http://makent.trioangle.com/googleLogin" class="btn icon-btn btn-block row-space-1 btn-large btn-google pad-23">
+                                <a href="" class="btn icon-btn btn-block row-space-1 btn-large btn-google pad-23">
       <span class="icon-container">
         <i class="icon icon-google-plus"></i>
       </span>
@@ -792,9 +811,9 @@
                                 </a>
                             </div>
 
-                            <div class="text-center social-links hide">
+                            <!--<div class="text-center social-links hide">
                                 Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
-                            </div>
+                            </div>-->
 
                             <div class="signup-or-separator">
                                 <span class="h6 signup-or-separator--text">or</span>
@@ -808,18 +827,22 @@
                                 </a>    </div>
 
                             <div id="tos_outside" class="row-space-top-3">
+<!--
                                 <small class="small-font">
                                     By signing up, I agree to Makent's <a href="http://makent.trioangle.com/terms_of_service" data-popup="true">Terms of Service</a>, <a href="http://makent.trioangle.com/privacy_policy" data-popup="true">Privacy Policy</a>, <a href="http://makent.trioangle.com/guest_refund" data-popup="true">Guest Refund Policy</a>, and <a href="http://makent.trioangle.com/host_guarantee" data-popup="true">Host Guarantee Terms</a>.
                                 </small>
+-->
 
                             </div>
                         </div>
 
+<!--
                         <div class="panel-body">
                             Already an Makent member?
                             <a href="http://makent.trioangle.com/login" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
                                 Log In
                             </a></div>
+-->
 
                     </div>
                 </div>
@@ -845,7 +868,7 @@
                             <div class="social-buttons hide">
 
 
-                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+<!--                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">-->
       <span class="icon-container">
         <i class="icon icon-facebook"></i>
       </span>
@@ -855,7 +878,7 @@
                                 </a>
 
 
-                                <a href="http://makent.trioangle.com/googleLogin" class="btn icon-btn btn-block row-space-1 btn-large btn-google">
+                                <a href="" class="btn icon-btn btn-block row-space-1 btn-large btn-google">
       <span class="icon-container">
         <i class="icon icon-google-plus"></i>
       </span>
@@ -865,22 +888,22 @@
                                 </a>
                             </div>
 
-                            <div class="text-center social-links">
+                            <!--<div class="text-center social-links">
                                 Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
                             </div>
-
+-->
                             <div class="signup-or-separator">
                                 <span class="h6 signup-or-separator--text">or</span>
                                 <hr>
                             </div>
 
                             <div class="text-center">
-                                <a href="http://makent.trioangle.com/signup_login?sm=2" class="create-using-email btn-block  row-space-2  icon-btn hide" id="create_using_email_button">
+                                <a href="" class="create-using-email btn-block  row-space-2  icon-btn hide" id="create_using_email_button">
                                     <i class="icon icon-envelope"></i>
                                     Sign up with Email
                                 </a>    </div>
 
-                            <form method="POST" action="http://makent.trioangle.com/create" accept-charset="UTF-8" class="signup-form ng-pristine ng-valid" data-action="Signup" id="user_new" novalidate="true"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
+                            <form method="POST" action="" accept-charset="UTF-8" class="signup-form ng-pristine ng-valid" data-action="Signup" id="user_new" novalidate="true"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
 
                                 <div class="signup-form-fields">
 
@@ -954,9 +977,11 @@
                                     </label> -->
 
                                     <div id="tos_outside" class="row-space-top-3 chk-box">
+<!--
                                         <small>
                                             By signing up, I agree to Makent's <a href="http://makent.trioangle.com/terms_of_service" data-popup="true">Terms of Service</a>, <a href="http://makent.trioangle.com/privacy_policy" data-popup="true">Privacy Policy</a>, <a href="http://makent.trioangle.com/guest_refund" data-popup="true">Guest Refund Policy</a>, and <a href="http://makent.trioangle.com/host_guarantee" data-popup="true">Host Guarantee Terms</a>.
                                         </small>
+-->
 
                                     </div>
                                     <input class="btn btn-primary btn-block btn-large pad-top" type="submit" value="Sign up">
@@ -966,8 +991,8 @@
                         </div>
 
                         <div class="panel-body font-small">
-                            Already an Makent member?
-                            <a href="http://makent.trioangle.com/login" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
+                            Already an HORO member?
+                            <a href="" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
                                 Log In
                             </a></div>
 
@@ -984,7 +1009,7 @@
                 <div class="col-md-6 col-lg-5 col-center">
                     <div class="panel top-home">
 
-                        <form method="POST" action="http://makent.trioangle.com/forgot_password" accept-charset="UTF-8" class="ng-pristine ng-valid"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
+                        <form method="POST" action="" accept-charset="UTF-8" class="ng-pristine ng-valid"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
                             <div id="forgot_password_container">
                                 <h3 class="panel-header panel-header-gray">
                                     Reset Password
@@ -1016,16 +1041,16 @@
             <ul class="subnav-list">
 
                 <li>
-                    <a href="#/Profile" ng-click="Profile()" aria-selected="true" class="subnav-item">Dashboard</a>
+                    <a href="/AttendeeProfile" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#/Account" ng-click="Account()" aria-selected="false" class="subnav-item">Add Courses</a>
                 </li>
                 <li>
                     <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Add Session</a>
-                </li>
+                </li>-->
                 <li>
-                    <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Course History</a>
+                    <a href="/AttendeeCourseStatus" aria-selected="true" class="subnav-item">Course status</a>
                 </li>
 
 
@@ -1064,61 +1089,11 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="col-md-3">
-                                <div class="thumbnail" style="padding: 0">
-                                    <div style="padding:4px">
-                                        <img alt="300x200" style="width: 100%" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7YDsK4BktbafAPlrHMy6dIoOJTNjz-Ym8uP1lsQW9tQjg_5cm9Q">
-                                    </div>
-                                    <div class="caption">
-                                        <h2>Plumbing</h2>
-                                        <p>This course is all about plumbing.</p>
-                                        <p><i class="icon icon-map-marker"></i> Blackcow, Fremont</p>
-                                    </div>
-                                    <div class="modal-footer" style="text-align: left">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">
-                                                <span class="sr-only">38% Completed</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4"><b>38%</b><br/><small>Completed</small></div>
-                                            <div class="col-md-4"><b>30</b><br/><small>Days Remaining</small></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="col-md-3">
-                                <div class="thumbnail" style="padding: 0">
-                                    <div style="padding:4px">
-                                        <img alt="300x200" style="width: 100%" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSEhMWFhUXGBoXGRgYGBgfHhgXGBcXGBoaGBgYHSggGB0lGxUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0mHyUtLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAGAwQFBwABAgj/xABGEAACAQIEAwUECAQFAQcFAAABAhEAAwQSITEFQVEGEyJhcTKBkaEHFEJSscHR8CNikuEzcoKi8RUkQ1NjstLiFhdEg5P/xAAaAQADAQEBAQAAAAAAAAAAAAAAAQIDBAUG/8QALREAAgIBAwIEBAcBAAAAAAAAAAECEQMEEiExQRMiYfAyUXGBBRQjUpGh0UL/2gAMAwEAAhEDEQA/AEbl9CZLXfPxdeg60onFCElQSAQNSZkjqNxC0/s9lb7Lr3SmOZaQfcCKa4rguIsI5ZfDAOZDIBDDlEjQmuOGqwye1SVlPHNctDduKNPhUdIMnT/mprs1hVX+K48bT7gfwmhXBLLjOGAPMA+4z60WrAPgPhgQCfIfGuL8VyuOPYu5vpoW7CbDOh3A+A/Kn96yoAIOZeh3HpzoaBZQDIM9Dt6inuFxLNoASegr56M0otNHVKNvqQPbDAokOogNMx13nTnv6/GhtjEE/dj4T+tGPaAZrLfy6+n71oIu/Z94A/foa+m/Cs7y4PN1To4s8NshJXBJ11/T/msraiDpzrRGvvr0jE13daAp0i6a01YwaBm2t6Vxc0UisJ19da07aEUAIohmnQPSkLR1peKENm3twAAP7UlZTWCNKc+tc3KKARBgSAf1rL8zty+B1/fvrYMU04jjMisfLT12FAhDDcTcXW7tysDLpzgE7eRNFuFxzugDtmncH+1V5wdtTR3w4aJ8aKAf8Bwym64YCIaJE7MBprvRZbuIAFzACNIAgeR3geXWoTstbV3vzyiOo8ROnwqUu2WXaTMnxc9dTAG/WohNNuK7BJPqKO6/f9dgR5nTfqelMXgEEOdDtpBB8jy6DlFOhbYAACZ2k6sOQOnwmtiydDyM8+fMH+Xkf3OhI074HYnygrrG5nr1PMbVybvOT0EAGT020HTpzp8MP1HOD1ny9N/StthBB2PXTQg8hzgn3k/IoCNL/wAzab6D9NY5nnXYuHqfhofL2eY5bCpD6qu/wOvLl5sI+FZ3C8wPeNFnl6HpSoZCcUxGWxcYE+wR8dNTGhk++nvZi2Ldi2W2AAUcsxAJb4EadTXHaXh5ayFClc7qDvsDLEnaYWPfW2P8FEHJnPuIT9DVxiS2Ea49Y/vWULBj1rKoRNWccRHhPwp+2LLai3EiDofjVD8R7Z8RthouMFnKT4dCdZAWNfjTJPpC4gv/AOU8+YU/JgRXycfwbOlSkvf2PTnnhfKLb4nh8jaKYOwgxPMD8arLtz2gdLxtWwyMFEuZEzrK9Rrv5VPdk+2GIxVt1vs1whhByqAQR7IW2oGhE++or6QeGO6DEGB3TKpGYEsrnQgDYAwP9Yr39PGcMSjlpvp9Tim05XEHsH22xdsgrcn7ykCDqYjmNCPhUxw/6UsUjDvbVq4vMQUb3MCR8QaHMfhQVDhs06eaxGnp0rjE4YEAiD6j5Up6TTz+KC/gvxJruWvgfpN4ddUreS/bJEEEBgZEaFNfkKQ4li8I6q2FdmUnZ1II05A+I/Cqy4XbBcDKB1IjTlz2EkCfMVO4bDN3oI1AB8PeAxvJYIQZiNDp50sGjx4G/Db57diZTlL4giXeJmNDW3BAk6AmPU+XWmNu6ysCASpTadNDoQABGhOkcq4vYi4xLZSCrLOs6GCVHh2huUAe6uoih+hOv70gfnW7p1pJi2n8M/1f/Gl8TiHy20RCoP8AiQ2rEFtG8Oq+z0HlSHQmw/CuTIG2/wA/Sk2zkGEjzzbefs0pexV02mtohUqwcsw/xBAEZhMAMCYG8zuKLBI4VdaXBptbNwjMVLMdxPKNIAG+8+dPLuLPdWh3aqRnLAtBktAMwSfCo0pWh7Wcu9ZBptcxLCI7sEEHW5I36Zabpj3yjOQxl2k3VGpcnp4tIg+XKnYUPWtnTQ/8Ure7N9/Ge5kA5ASSfXYfOor/AKowfcRoRldTBIIO2uwG/wA9alP+qLaUPccQdgDJ+H73rnz5ZR4gejotJjmnPK+BG72QaxL237xYkgiGHw0YelTGC+xHlUZi+02Na1msWYtkhVuMubxHRQuoGp00nUin3Zy5dcW2vCHnUBcvPmvI1ri8SvOc2p8G/wBJ+/QQwN4jH4RJEM1zdVJkW5XUiV1gadaMW46kwQ56aKCSIjSeWoA+NDXDiv1lBcVSG8SNzW5ahtOYBDGeWg8qmuKcNOVr6wVzaiYIL6T6Zp98VqjkkLLxxdeZ56Hc8hGsbHmZNOE4yDPiWTvo3py0kaztQ8bWm0j4bem1I3LZPnA/Pbz/ALnnTJsLk4lP27eaI0On+XX4g705t3Zg5gI5jYbAjTkefTlQKwOwHXUQJHTzGkaH5VjTyLabQRyB3jnv8KKCw67xeenUc1I1Hq3Ty3pzw/FolzMwkAHblOzDqTHrrQKOLXbIObxFViDqCddJ1PIEHqTNc8R7dJaXKtvM41gNosgSTJ13M7eooAsXj3FuHnKMRiEtNqVLHKfP2hBFQV/E4ORkx2FcdO+tg/AtVMdoeL3MSy3LuUmMoKiBlzEiBJPPnrUBiRO9G4ey+T0amDtESLqQf51/WtV5tDMNAzD0J/Wso3BtJvtJbaGBE+zcB5ERlkdRBWh9nBG1FF1PAbLam0xtnrlJifIHwt7qhOK8Cv4dkF1YFyCjAgqwMcxsdRodaiKrg2yS3PcHH0P3WuXXwoAhoYH7oGjE69CD7qtXj/0f2r1vKrkHWQYhj15Qf3pvQl9EvCmwtgOEnE4gAgRrbtbifNva9As0fwg/xbpuNsQsGDzBY6D0pnO3b4KF7adkb2Blj47RMLcAjX7lxfstPuPLoBNMZAivR/HeCrfR1tkjOuV0chkcDaRAKkcmB0gdBVOY/sX3F4reR8hnnqvmGGhHQx5ETuIuxf6KMFhLtzENinChbYgs4Uasc3ikQRC/Olu0q2rV5RaYvb7zLKz4gywAZ0kEkj/LTaz2ZawrXbbW3tQYdxAYEEEMNYI9fMb03uYpjYVwEMQwUjaCYjWZg/GsI4mssp7nT7dkXuuNCXfMcgIuT/GUmTJaTlO/tAKNaUsFSpJQ6qhGg0MHM2+inr5GlcTiyCdE0e2QY5XIGfffUjpFc2cTKkeD2XWI5IxEe1sZ+dbkkslqz/4Y/wD5t/7aZRbzMCg1uLllDEQgIMjwjQ79afYK45K5ioUxyjT1LaVafZ/s9aGW5dtqSwGUDkPXr76AKpdLSjMVQjoFEnyqB4nkDF9I8MCCASWJK/yQuon7o6mjv6TOGDB3lazHd3Jy5gdHE95BB9kKRHmYmgfD3RiH7rKndrLlzm0VFYk+0NpPPWRSK6neHxCXJLMgygRIADctY90/pNSNm0AzOMuRiIbSMwAkdJioj69bTKyKh2+y/hgQCPFB/fSnC8cLaEKF1M5ToxG3tbHKKQyWa7bA1KCN9ue1Dd0DJcAIl2cj0z29fkaXu8bIJm2nvU/+6k8HiWvNC2LWm5OcAAmSZzaaxFUieBG7iAmdurEj0GkVGJca7cDMJEgQdRBMEVNY7hd54ZbdszIhGI2J1Oc+ewND9wsjQQVZTBB3BpbKdtFvLcFFPgkOH4a8zdyrtkDezmMZhoCFH2vMVb/AezWPtIrYlCxOoIbM0cg/Q7aa6ehqI+hjgWb/ALbdXNBItLoJI0Z/EdddB6Hyq18VxnxZCuWCBB5tAPwAI+PlVrngwbSIXgnYJQ9u/iHbOoMW1Ph8W4Y8/d8aLbfCbCqVFpYIgzrIkmCT5k/GucNjVI1OtOVxANOqBSQPcX7HWXUmz/DbpJKn4+z7tNBQe/B3BIGXSRPOZMj4j4z7rWnSaEe0ePw8jKyc8zAiCT0+8fxpBQH3OGP0Pxn1HzMj4U3fBXF3UkDSR9naNedT1zHqdrqQN/EPlr7XRvdXF7HqkZnWDpOkenlv7jQFAP2i4gba5FHiYEnfRefx266elBxMmd52nmOjaaL0H6iCnt0c94OGVkKgAgjwkHnB1aTMDU5poZt4ZmMZSSdxE/69N/8AKNqBjfEqfsk6DWevpypFrcrrUzxbDd33ZlYddhuGU7t0BnT0qKc1EjSPQZfV63TsCspWPaT3biyiul+3qtwZTpGbTQkdSsVM9l2s4/A9zePjsCZnXKpkEdeY+XOhHjVvPaRUuM5B2KxAjSNTUr2GwZW1isQDMKtof5mYM3+1P91V1Mm6LE/6y0jC2oTMqtduAwxziUsqfsDLl131jStrxLuiFI02iQsRpGukyIgx61AYwqXuZgVJyOrjUFMiAZ05qCsEjUbwRS93vLlo94mZV1FxSGBWACrkE8gCGP3ddZJmHKsEuArs8TDSAoeN1MB19UMSPME1vE4YX0ytkZTsIcETpoWYkH3UB4XHXVhYW4AdM2hX0cEEekxRPw/HX5E2CZ/8xfnofnVjG3AsG+GxRwl5Q1i9MBgCr6QBBGp8QBHkDUd2x7EvhP4mHe4cMCSVCqxtDeCWIOT+bWOfU2Hh1S4E760fAwdTmJysPMQY8tqkMfintQVCi1EszEmDMQAN503POhguDzkuDHii6MsCM0SQvIgTlAI3n1pxZwxAP/aLYnfwzLEzOi6acvfRvx76Lxce5iFvlFctdFpbJOUN4sqguNZJMab0N8K7OrZHe3SNNBMAmOg5cqTKXI2u4O4qG9cIdToNIJA3IECee41oh7GdvHwhWw+a7h39iPaTyUn7HUHbWhHtBxksxCn+wqFwt6JBJG/zifwoRb6UW5jccnE2uWL15Bp4GtyVsycq66Zic0RpMmq04vwfE4S81l7iqQTlJuBZUnR1BOgaPl5VvgHFr2HcCzDBmVyjCVcrMZgfWi29ib2JVrr3G71Y2UG4E10hSA6KSSIEiT51ePG5uu3zMJ5FFAfYx+JBk37D8iLrWnBA2BDA/rTzC3ALbeK0pZzCoyFIOsHMTtBiZ5jbZ+OE28QQrPbLQSZU23gAmYgFv91DmL4U9ljkkxqbbDxD3bN7tfKtcmmnH1IhqIv0JsXYQ/x7ILQSGyREQ3/dkbiBGkU1weIynJmtkMdWQgLJ5gCNI025UlbXMgZANVlCGUm2xgMrCdREkc+RrVjhDw75CqKAFG5knUSNwIJn+Yda548M2lyiU+qAuSzkgyVZTqpO8iIIJE/GksD2ffF3rXeHQAW3jdirNoPLKRr0FR+Gv3EuZAMvmw5ehol7N47u75IMyBEbEgQR8Rr5RW0qceDFJpl38GwFnuFtd0mRQFAyjQAaelC/aTBCzeCpIQiRJmOREn0+Yqf4DcZLKd57beJp5TsPgBUJxlblzFObg9lCUWQMyJ0J5lj86hJWWzXDRcbUNCjdmMAepqM7QfSlYwBazbUYi8NozKomCM7HnB2Ue8VU/ajthisWTbJ7u0pIFq2fD08TD2/wodFgknmeXrQ2CiWNgfpMe/dunij3O7Czbs2RlTMPsuvtNOkFiQOflJ8K4tdx5u4mzYRRmFtVzDQKi+GdOXMcz0qsHwLPGuoEfCi7shxK1h0azcuPbLNmkAlSCABMGQdOhpWPbQa/Urx0NscwZYddCIG0SD7opm/CcUZHc299xcGo1E8j+XnNTHDMIb694mIe4g0LIWgRvOYTzO4qRXBg7s5O2rN8D8NqmwoGB2duMJuASJIAbTL0OYwSNQCdxvFJ3uz90WxCANqCQF0XedY6kacxpRUcINCJ6akn3b0hi+aqkkjeNm5AkwOfI/lSdjoAMZwi8QzMuVZ56xrAnLJ5a++oLEcBxR1WyzCC0qJGUc/TWjE8IxdxyCsLPNoyljIMAQxnSPltSiX7mTumbRTsNNtIlYkc6dWF0VgLp+6ayrPt2WjwqY5QNPlWUbUPeQHGuGPbUIbaADxC4NQ4aB4XAhhpIB1En0qd4Lw02uH4e2NGu3HvHb/IvrpHxqE7NcSvWmyJei22oDqWT/K45HoRvRXhf4d1RdXLlYMFGgWfF4ByFFOzObtcC/EeCFgApAup7EnR02y66c+e+ahPEYO7buFVS7bb7kMCPTqPOrRNyxdG4IPIiCpO8ToQegmoniPZtyJt3bpXkAxj5n5TXDj1Hh+TJwTCXZlZWuJlGhwY69PWjHgfaM2wAQLls8p/A1B3uAQ5Fw7GIA1987Ux4k4tQloBeZ5+kzXQs8ZSqPJe5WW3w/tPhWiMyt91j+fOpnCcVVswK6dCP13qncJbDWnuXLip3eXMcrGMzKoIygn2mipizi71l7QZhcQkZWQ5swMkefI6EA1ccil0KLCxHEkXwiBHLoOUdNIqje1XE2a/eS2C0XHAABMeIjlsP0o6uvdIZihRBqzP4QBzJnkBrprQFw3s8+IPe3rgtWSSxbm7EtOQHcban4HWnKSStlxvsDVy08+IAHz1M+6nmF7O4m7rbs3W9FIn3mrGwN7B4WDZsZ2H223P+ptR7gKnMX2hvpbS5ktgPMA5iYGkxI0nnS/MRp7Y36sXhyvllcr2MxrEsuDZBpCZh+LHXqZPOkTwvGYZxcFi7bI2MbxvtVl8L7V4m5cFsW7ZJ8m/JqkbPbNVbLdtED7yGQR1gxVLWzUfhVEvSxb68lZ2+I94ty5bH8QL/EsFQVKn22UHULESo215Vxh8dbvKFAJj/uyZYDTWxcJltp7pt/smatDFcK4fjyXWFu/fTwuOe0a6+RoD7WdhrliblsF1GpKj/dA1B6geo5gdun1kJ8SfPr/py5tNKD4XHvsB/GuCEsptQxuREbXATAYdDO/oZ1Bp32pu/V7CYS2ZMS7ddyT/AKiD7linWBF9rDHKxR33Ebggueupj3qfOhvF8QdbxzZX6Z1DQCPyED3Vnnj5rRrhlxTGVi+WaDtAHwAA/D50Wdm8SRcs5YDLetf094oY/wBM1BWeIW3dVZLaq4yu4WChOzSDqoME6bA0d9gOEC1ez3wrMrQAGBUEGA8jRtdR6zvtzs3QZce7WHD4g2rqhrcAhl0ZQRzGzREcqDu0/aXvi62ye7JkZtxoA2UfZDFQY8qLfpB7KPeRsVZ1dQM1sa5lG5X+aNY1nlrvUnejLJ5U7E0RGMhTpoOlJJeggjflU3w22HBulZk5VH3j0A8z+FFnDOx1hJv43xELmWwpOg5ZsmpJPLb1qdy5CwS7O4O/iLuSyhc7tsAoJ3ZjoPfvFWJwzsChYPet3bzxGRFKp73aGb/THvox7PW7K2QMMLNoHUwQqg+agSWHnT/AAFyq4xLt2CcodM0DeAkaa9OlS5x6WJyHHB+BCzZYC2tsRItqABpr4su5Pv8AfUVJBJOoMGB06/j50R8P4gSWtv7Q67kbEe6q8xeNUGS5E6wsAmdipj8aI3bTEmTb4tdue3Qnb4H9+kY3GlzBQGdjIiCCAOTA+xrPnUc2N2ZrkwDoDr0mN8wjlrvrUHjMTJyo0/dIkT5jUQR0qxhliceqrP2oOg/AgHTUxO9QGHsKoz3CAo3J/AAak+Qprbcqs3GmPKJ+HPSlsLhhc/j4psllfZX73uHL5mspSf0XvoRKQ8Xjw+xZusvIhiJ9yqQPQGspY9scvhtYclBostl0H8oECsrLZH9n9ipgn2Q4AL6ZrzFWzACIiBvm05z15VZfE+E27pJMq2gzDcR79t6B+zrXWTuEEifLXWdZM7QKIOGcYNsvaujRDHi0YAiee+/lV5ozlzB8hNfI1i+B3k1zg/dbUAn7rToCfPTzpmmKvqxS2r22576dTAoq4XxKxdDKzeEj7QgMOqtyIrbWbQOQMt5PunK5X051yPVZocZI39UQV92gx7jXMSRoS2pb4jltNC+IvnMHbeQfhFXPxDgSPabKqajwxyO415e+qs4oqiZUSN9B760xamEukKKixgvHwLF+1k8V7IoM+yFcOTEazAHL8qY4DiD22DK0EbEGusCcO7G3dttmYgK6NBQyfsQQ4JgRofOpDF9lb1hlNwEIeZEGd8pH3q6o7YL5Gi60TVziH1m0uZbhaZZcxKOq6gkGWAmCRMHL0kV3wvH2u8LYhtAsqNIJ5LHIbaDlTXh/GLdu3ct5M11iFRh9kabdDyp5wfs8zubl8c9F/WOU8qzlJJqX9GyV+USfht+5ba4lo5fSCZ5gbn3VP8N4JfxKqcW/dhVCooGsDrJ8PoOu1ENrBO0cqkLPCz1rG8r6RNPIurAy/wBn8Xh8SGwcOrLlLPGnrBke6d664l2WvW7TOHW5lBYxIOgkwp/Kjb6k41GtcNfI0uLp+/hUynJKpIqMYvlMrluIWjh7a2nm5JZuRU6Aa7g6H41K8D7XOCLV8F50DCJH+adCPPf1qc/6Pg0tvltKFMsSNxAJ8JO0a6bVV9zHWT3isCNfATO0kg6bGDvWkWsrJacFRN9ssJf7lcRa/wANXJYLMgTox/lktPqDVbXMOHuMcygFSJM7kSNACee8Ubdme0ZsOyPLWLh8SnWAdJHu0I51Gcf7JIMQ38eLWUPbhS022JykknrInX2TXbiyuUXB/Y5Zw2y3EXwbhlvv2lkcDxKozawdPaA2MUVJdI2JFD/BrgFqVUTmOZtmJBPtdd6fJjCPaipkjSLRY/Bu3cALiAdPtj8xyrfEOB4Ei5iktWrmZg6gCRLQXzKdJlSRI0zedAAfmKlbXECuGe2pILBmI5QgBaI8vwpJjCNeH4OzkY4dVLZiszlBkq0CYHp0bzpzxjHG2qd2g7tkBWFBXzBUbQeYoWwnaPMvd3h3ts7yTmHmDyIqRw6Hu2W1/wBpw58RQGLto/eC7z5iQeYpiobYjjiFcroqny290/hUJi+JhQWQlGBlGUkQw1BEbGpfE9mu+UvhrouRvbfwXAekNofiKGuKIbaGy65XzhtwYGUggx7qTEWxwfjZv2bGLMZms3O8jbvLSsrHymARQNfXLAGraH3+X6U77DXWfAPbBAK3btsE8hct22k7/ean+F4SxmLhdxzFpNPRrzjTzWpgiEgQuEiWYAD+Y+7QDenfD4y96+iLsBzP/PLrRSllUtMYtXyG8TKLRYbaZVAECJ9oneh7HjPcW0NADnbyHIfvyqpy7Ckbtv3hDsIWfCvXqT1pHiLG44BM/kPIcqWwWMRi5A0Ayr0gR+pPw6U3wC53djsNBVY4pq/aElQ/t4RiJVZFZVlcC4Ov1e3m3Kyffr+darUAL+j1CQzkGAoHlLAHTzAG81OcU4Wl253pHjiDykDr59OWlQHYPiaW8GhuTkZypaJyOAAJHNSANRqDIouWXGa3luJ962c0eq+0p8ory9RKUZ2TK7IizwFrpypeAjQhwcw9Muhp6eCth1hbYcDXRhLHqwaC1LoFJzKYcclBJ9CoqRwmKt3fDdDE9CXX/aDr8KyWsyruvuJADxTtFiQcql0G0Lv7gNJ5UAcYN43HNzMviJKsTIMnQjr61f2L4bm0tZMOp+2ir3hHOGjweup9KqH6RuE/VXIXMUc5lLbsdc0nmZ/EVtj1DnKqRS6gdZOUgrIIMgjeeo6VY1/tNaxT4c32KIlo5o0/ifay+uUR6mqvuXW9PT9aIcFwi5cwy3EZQo8OpjUyZ9AJJPlXR4dyTNOCS7LYHvsU9wewpLSdhJOXU7/2o/w+PRfDYttdYbkDn5tstRnZ3geW0ocEJuF2NxvvvzA6DeI9KLcNYhYACgbAbD3CiU1F8K2Wotr0Gdu7jW2W0g828Q94DA13lxw1D2j6k/lbp8gI612HPM1k9TM0WGIxXieLt/4lgXBzNtvwBkt8Ke4Hj1i8chOV9ilwZTPTpPlM0srelNcdw61eEXFBPI7EejDUem3lTWqfSS4B4F/ydcT4SrK2XmCCPIiqa7QcKNi6UYabqeq1aKX72EIW6xu4c6B/tW+gbqP2I0Ute2fC1v2C66sBnQjnpOnqKeyPx4/ugU38MisOEfVwl7vwS+X+HBPtSPj8t6aY3irrZRTLKpZY8m1+AIP9R60pdw4yq8+0xWOkR+OYVrtHw42FyllJIVvCZEGOfLcj3VrBu7M5JAxhsW9s6AkHcH96U7+ti66zmWNQNIJFNw5mnWBwpuOEEa8+g5mtGrIJnh907culTV4ZAs6lg4XeGDKASDUK1vurrKmo0iQG9oBo1B6xT+5irzaNHgAgBQIEmRAA161g1OL7UNNobWrDLuDFLd5GoJnyrm3jT4gw+HKlbBXJBIn+wpOU4xbaByNYW+GfJcvNbWfEVBZvh+dd8bwmFQj6tcuXB9ouANdIjQE85kU3drbiC0RzG499aucOuFZR1f5f2/Cp8dVzwwTC36OMETZcHa5dkSARojCY93yozXgsGSyv5MrEe5FcJ/tmoXshiLVrDW1k94rLnAQkkuGHhyyWAZo0ouuuo0Jgjrpr7/wq9PLdC/UlA72sdbdkMQkk5ZVMvhAzHmdJVdPSgG9eItF/t3THop5f0j50/wC3HFmvYs2PsplTedZzP8fCP9NQGNx+Z8o2Qkf6uf6UZFckgH2GOVG9KlOBYXNkXm7Af1GKg8PLmCdxAFHPYzDZsVaHJfF/SD+cV1RBll+z4RpAA+VZSWJueI1qmIpsdh8XZkWmR7e51KsY10Ug66deVM2vMpFy2zKeqkgg89RrS/F+1C376s/eBLLA2ghADtzdwRJHIbaA9aS4ipR53DjMI5ZtwR5RWdFEza7a3sqq9u3dK/auiWPowgj4mpK12+MBXw1yDtkunX0zJPzoLsKGIGx5ev6UYdnMYHTI24/ZBrGWmxy6oVInMB2puuIs4Nv/ANt4L+Klj7hUL26wr3rSXsVcQW7TjNbVTEXPA0PJZ3E5gYA0IjWRKriWtkK/jQ+w32lHQnmK1xjDpiLLWbjHI+hIOo1BBHoRNOGCEOUgpFFcRwptOUYgkHQjZhyYeREEetHv0d8KzWhduTknRTsSp006TqesL50IX+HXLl9cINbi3GtBuUA7xvAAZvSrj4ZgUs2ktL7KKFB6xzPmTr76ubpFJElZtzBO1O+8A0EUzB+Hn+nKnBbSuWUuDZIV7yurZnemxE7mtlq5XLk1Q6IFaIpBbpG9KpcG1TdlG2AIKsAQdCD06EHcVCWlNi53JM2bkm2T9luaEnkeX/JqZueW9RvFLPeW2Ue0PEh6Muo/T0JrfBk2yIyRtFT9q7a2btyyQZ70svTK4Uj8h7jTfjuE7vD+IyzhTJmYkEb+QqR+k11d8PdXe7Z1/wBLa/NvlQ5xfEsyoHPigT5ACFHzNdu1Wc+50RNtal+zrgXYj2gR6c/yqLAqS4GQLoJMQD+FakE8L2TE3WiWAEeuRR+/Subd8Bpbcjf9aaXMWM7vGjGY5jpWrY7wFxvMfv41zZVcvN0ESP1dXH5j960/wXZhryDI6ZgxDSTOUgQYjrpUFg8QyMFO3T8xRFwni6pcRw3OCNdQeVYT8fEvJyv5EyG4v2fbD3ntFpiDPUFQ3l16Ugti4mq6jy/Siv6Qcbba9auISc9oToRqrHeecEUOPjMoBytqelEMmeUU5R+1DTCv6Nbtxr7MQVKCQ0RvIjXfejfjGMa1ba+0sqqSQTJJ5DXkSQPyoe7AOhtOwYqT5DYCSYmT6/hWu3+KIwOWTmLjMQ0ArmMeEiTsu0a9da68ae3lV6FVxYC3oOKJjUjMfXyHpXPEOGI5zjRufQ+tMb7NcCXEBkAqxG8z09CK5w+LuTBY+8VlLFOTTi+UTZJ8HwxDy3If2qyvo5w83bj/AHUAH+o//Gqobj4szK5ieX96MuxH0kYLD23F5byszA6IGEAdQ3WeVdONy21LqFFpYvCkuT+9q3Qk30rcNOvfXR5dzc/IVqrsKZQaYgswZQdNIn50W4TiXe2gHcF1nwxBAP48qDklTuR1il8Ddi4G13jfWDprUDJLiHETbdSPeOfr5UTcCxQdgQZVuhgg+siINB3F7AzFhvzok+i3hFzE32UyLKQXPQnZV8zB9AvpLAtbgWAe7Z/jzEwDpmaOc7R58zNTCcFsxPiEdWp2gAAAEACB5RsKSx5GSWYqPIST5RTJbBXiPBcImI+s21bvWXKxJMEaahesCJ6UspbpHnXTrmMnU0oluuXK3ZrBG7SkbmlUBNckVtWiuScrNkdtFYK53rsCP3rWLSZZsCkriEart0/SnCg1pjU1Q0xAXudJ3H1mucRpJHw60kDOlXB2xvoRHDOz2FxbD6wxLWjdRbYYiVa8YOhBPsdRtXfFuw2GZ4XA3GkRmR3kHYGQ+Uct9ImaluzXZ5v8ZvCzz4SQfD3jsrArMSLm3pRrhyVWI/CvXSOKysf/ALL4flib89Stoj4AA1C9p/owfCWXv2bveogzOrLlYKNyIJDADXlsd6u5RTXimGF21ctnZ0Zf6lI/OqFZ5fd9PKnPDL/hPrPxAqLxbESCYI0jzpXCXMpEHTY1nkhujQMJFw4bf4jlXNvAHMIb00/vXeHbwgzyp/wu3nuqJETOpjbWvP8AFyY7SZId/wD0al20BccsV1XKAIPPfefOo0dkFtyhGfMd2JJB5ZYgazvUvge0KjMivDqVGUgHMzNEAzry+NTdpLzKWuBQ3JFM6cpY6Fj8BtrucsUtRmlzJ0NERaWxg7aWyyLlEgHmTuY1MEiobtddtXcNNtlYG4JCkaeBl23BgD4VDdpbNw33Z0dMxmH1+B2j0qGUwd69Saag6GxnwxAjvbJ3II89/nW8daH2vWelN+K2yG7xZ5T5RzqH4hxYsCvxNYbHKpxf1Joj8ZdzOTy2HpSK1qn3D8GzsFUEk8hXRfzNkqOUXT2fxrKMLHBlCgEa86ysfzMBbkBDLzrLRI6Cf37jV4Y/gmEtWi+JVXVJ9pQQJ+6vUmqj4gLZuMbKlVkwC05QeRNdKIZGXr7Nzg/veaOPow7SPhUu2iFYM4eT1gDl6UEtZ10/L/mpbs+CLoB5/v8AA1SJZcVrtqfuof6hUgeKNfRSVAG41nyny3NBHDeHC44HLcny/elFgMeEbD8OgqZypDjGxcmKVApBetKo9cM5WzdKhdFrGArgv51rNXPJo0R1FbBpOa6LVPBQqHrpiOW1NWNIs1KTBGYk0wv4oWkLHZQT7on8vnS925Q52ovE2iq6loQD1MH5TTwLzDk+A44f2zw5Rfa2HLy5RT+32sw5+/8A0Gqt4fhDbtqh1IB189dj76eJeuLsT6HX+9e0cJZS9qsNHtN/Qa1c7R2GU5GJPKRHxqtnxlzy+B/WluFuzswbYD8CKAK4x9pTevtH/eOQOUFiah7APKn/ABfht6yzO7Wyt12gJdRjqSdQhMaHnSeEtVJQ/sOY0n3U6wnE76N/CdgT4dIkzyBiabDbSirsHwHvbhvsJS0fi+406Aa+sVMoprlATXAez2NQd5FkP99rtzNqNRCp4fcTUueGY5jD3rQHOBffr/Mo5UR4ZFA/OaUUif38qlRSHYJ3+ypf/Ev6/wAlqB8GZqjeNdh1Fo3UxFwMil4ZUghQW+yoI0HnR6dKhO2d4JgcS06904Ejmwyj01YU6QW2U1e4gDbFydxt59KHSxJJO5rLduIUbU7tWUBGc5VJiT1/LapUVHoCVGYHBtcMKJon4dgzaMkHYiY6+YpfhdpQoNsjL1EGfeKlrFqedYPVOMuhMnY1t45wAMzaeZrVFeF4WSgMmsrT82v2L39iKBft7xxr1w4cH+HbaD/Mw3J8gZ+FCuSnNzUlmMsxJJ6k60g5MR1+NdJY2ygH86VwTZbgPnSbL/xRL2F4L3l3vnHgtxE/afcfDf4UAHvDMP3duTox1Pl5UqtyunefSuFANcmaVmkFQ6tkUoppOylLxXOzQyK0ayK5mspFI3NdZq4mtTUMoUO1IXaWJ0pvdpsBpeNQ99ZdfIz8iPzqUxBqNPtVtpY/qE5X5TCPEaUyVg3rs16pyCLc6dcGt6t6U1YU+4N9v/L+tAFO8RNtr7m0CtsExJkkzqfQ9KXs7UtxXhDYbE3LDbAypmcyNJVvh8wa00AVJQ74Zhe9uKkhQSAWMAKvM69BVv8ACr2DtBUsvaGUROZZIGup3OuvvqmcMzAgkx5D960/eQASCJ1EgiR1E7ihoC6MTj7dte8uOAugmeflFQ9ztfhATFxj6I36Cqu+sGIkx0nT4Uk12ihFpL2zwswbh9cjf8/Kgr6S+Jhsr2r7PaujLkDNCssTmXkCMu/Oh/NTPjF0rbYr0KnX7LaH5wfdRQyMtLrTXi11jl8JCQSpP2tYLD4RSOHx7rMHcEGehEH5V3et5rav6yByEgCB7/lQkNsbWL7oZRmU9VJH4VMYTtXik2uBv8yI34iofujy1Hl+9Kw2yBJocU+qIDK19IfEYEX1UcgLVqB6eGsoVsBcok6/vzrdT4cPkgDS9gLsT3bx1ynlvyqOu2nn2WA6wY+Ma1epshtCJ/fypNcCgMx7jy9KdsqikMFh2uuqIJLGB0nqT5D8KtbhuDWzaW0uyj3k8z6k07xNq3nDBEDxGYKJ9J3rkClKQJCTjWKcW7VaLgb1n1jkAa5JK3Zqhwg660qDTX6zHKtjFmdqzaKpjhhXJFIjFdZrtmnaoaGdFq5Nc5prsGsyjRc0hdalLhpBzpQxoa4raajedP8AEtpUexAOtdelXmsyzPgW51tjSQaaUIr0DmNUphLuW1fbmLZj1AY0k1c32jC4o/8AlN/6WpAAmO4t9ZRGuGb6gKGG1xOhHJgdZGnteVR/e++pDs+uGtFbt24puSCqjNCeZhdWHSke0eLwz3S1jPB9qQAJ6qJmoRoNxeFT3AcZa1TEKWtsRzIKEfaHuJ0oTFwci1OUvRoNz56x+VUSHvbDgdqytu5YBytObVjuAVOuwOtCb1a3D8JavYRbPerci0LbOpBMgbyfOSJoD452avYckxnt/fUbD+YfZ/CkgIFjUfxtz3R9R+NSMVF8fJ7sf5h+BpgD1bzGInStVgpgbWlwJFcWrJJinNxIKga8jQIlsCcAEUXrGIa59pkuKFJnkCumkVumJufyn9+6sqSj0QrHvAJ0j8zTm/7NZWVCGyGbc1xOlZWVEykK2lGmnWnNtR0rKysJmqMZRXAUSNKysrLuNDa5uazOQNCa1WUSKOsIZJnXT9KdW+dZWVkiZCOIps+1ZWUn0KQxxG1R1/f4fhW6yuzR9zLOOFrrlWVld5zGmqM7TMRgr0H7S/8ApesrKAK5NN71ZWVJRmEPhNLYH2jWVlMRYX0csfrJ/wAh/Fase4ND7vnM1lZUspFOcSUC64AgBmED1NQnGv8ABb1H4isrKEIGxTtBA0rKyqEIhjB9al+zig4vDAiR31vT/WKysofQC6MTwfDliTYtEz/4afpWVlZWJsf/2Q==">
-                                    </div>
-                                    <div class="caption">
-                                        <h2>Electrician</h2>
-                                        <p>Learn everything about fixing bulbs</p>
-                                        <p><i class="icon icon-map-marker"></i> San Fernando, San Jose DT</p>
-                                    </div>
-                                    <div class="modal-footer" style="text-align: left">
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                                <span class="sr-only">80% Complete</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-4"><b>80%</b><br/><small>Completed</small></div>
-                                            <div class="col-md-4"><b>10</b><br/><small>Days Remaining</small></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
             </div>
-
-
-
-
-
             </div>
         </div>
     </div>
@@ -1152,42 +1127,42 @@
             <div class="col-md-2 col-md-offset-1 hide-sm">
                 <h2 class="h5">Company</h2>
                 <ul class="list-layout">
-                    <li><a href="http://makent.trioangle.com/terms_of_service" class="link-contrast">Terms of Service</a></li>
-                    <li><a href="http://makent.trioangle.com/privacy_policy" class="link-contrast">Privacy Policy</a></li>
-                    <li><a href="http://makent.trioangle.com/host_guarantee" class="link-contrast">Host Guarantee</a></li>
-                    <li><a href="http://makent.trioangle.com/guest_refund" class="link-contrast">Guest Refund</a></li>
-                    <li><a href="http://makent.trioangle.com/copyright_policy" class="link-contrast">Copyright Policy</a></li>
-                    <li><a href="http://makent.trioangle.com/consent_disagree" class="link-contrast">Consent Disagree</a></li>
-                    <li><a href="http://makent.trioangle.com/about_us" class="link-contrast">About Us</a></li>
+                    <li><a href="" class="link-contrast">Terms of Service</a></li>
+                    <li><a href="" class="link-contrast">Privacy Policy</a></li>
+                    <li><a href="" class="link-contrast">Host Guarantee</a></li>
+                    <li><a href="" class="link-contrast">Guest Refund</a></li>
+                    <li><a href="" class="link-contrast">Copyright Policy</a></li>
+                    <li><a href="" class="link-contrast">Consent Disagree</a></li>
+                    <li><a href="" class="link-contrast">About Us</a></li>
                 </ul>
             </div>
 
             <div class="col-md-2 hide-sm">
                 <h2 class="h5">Discover</h2>
                 <ul class="list-layout">
-                    <li><a href="http://makent.trioangle.com/invite" class="link-contrast">Travel Credit</a></li>
-                    <li><a href="http://makent.trioangle.com/trust_safety" class="link-contrast">Trust &amp; Safety</a></li>
+                    <li><a href="" class="link-contrast">Travel Credit</a></li>
+                    <li><a href="" class="link-contrast">Trust &amp; Safety</a></li>
                 </ul>
             </div>
 
             <div class="col-md-2 hide-sm">
                 <h2 class="h5">Hosting</h2>
                 <ul class="list-layout">
-                    <li><a href="http://makent.trioangle.com/why_host" class="link-contrast">Why Host</a></li>
-                    <li><a href="http://makent.trioangle.com/hospitality" class="link-contrast">Hospitality</a></li>
+                    <li><a href="" class="link-contrast">Why Host</a></li>
+                    <li><a href="" class="link-contrast">Hospitality</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="col-sm-12 space-4 space-top-4 show-sm">
             <ul class="list-layout list-inline text-center h5">
-                <li><a href="http://makent.trioangle.com/terms_of_service" class="link-contrast">Terms of Service</a></li>
-                <li><a href="http://makent.trioangle.com/privacy_policy" class="link-contrast">Privacy Policy</a></li>
-                <li><a href="http://makent.trioangle.com/host_guarantee" class="link-contrast">Host Guarantee</a></li>
-                <li><a href="http://makent.trioangle.com/guest_refund" class="link-contrast">Guest Refund</a></li>
-                <li><a href="http://makent.trioangle.com/copyright_policy" class="link-contrast">Copyright Policy</a></li>
-                <li><a href="http://makent.trioangle.com/consent_disagree" class="link-contrast">Consent Disagree</a></li>
-                <li><a href="http://makent.trioangle.com/about_us" class="link-contrast">About Us</a></li>
+                <li><a href="" class="link-contrast">Terms of Service</a></li>
+                <li><a href="" class="link-contrast">Privacy Policy</a></li>
+                <li><a href="" class="link-contrast">Host Guarantee</a></li>
+                <li><a href="" class="link-contrast">Guest Refund</a></li>
+                <li><a href="" class="link-contrast">Copyright Policy</a></li>
+                <li><a href="" class="link-contrast">Consent Disagree</a></li>
+                <li><a href="" class="link-contrast">About Us</a></li>
             </ul>
         </div>
 
@@ -1242,7 +1217,7 @@
                 </li>
             </ul>
             <div class="space-top-2 text-muted">
-                © Makent, Inc.
+                © HORO, Inc.
             </div>
         </div>
     </footer>
@@ -1254,6 +1229,7 @@
 <div id="fb-root"></div>
 
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXyRBiyRcEzHDJ8iU00zECMUP4cXBIm6A&amp;sensor=false&amp;libraries=places"></script>
+<!--
 
 <script src="http://makent.trioangle.com/js/jquery-1.11.3.js"></script>
 
@@ -1270,6 +1246,7 @@
 
 
 <script src="http://makent.trioangle.com/js/responsiveslides.min.js"></script>
+-->
 
 
 <script type="text/javascript">
@@ -1352,16 +1329,22 @@
 </script>
 <script>
     var app = angular.module('App', ['ngSanitize']);
+/*
     var APP_URL = "http:\/\/makent.trioangle.com";
+*/
     var USER_ID = 10005
     $.datepicker.setDefaults($.datepicker.regional[ "en" ])
 </script>
 
 
 
-<script src="http://makent.trioangle.com/js/common.js"></script><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+<!--
+<script src="http://makent.trioangle.com/js/common.js"></script>
+-->
 
-7c23752f8dfbd60bf83837d2c8b2dcd0ec660a9 -->
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+
+
 <div class="tooltip tooltip-bottom-middle" role="tooltip" aria-hidden="true">
     <p class="panel-body">To sign up, you must be 18 or older. Other people won’t see your birthday.</p>
 </div><div class="pac-container pac-logo" style="display: none; width: 388px; position: absolute; left: 120px; top: 60px;">
