@@ -271,3 +271,11 @@
 {"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-12-04T19:48:01.248Z"}
 {"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-04T19:48:01.249Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-12-04T19:48:01.249Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'gaurangmhatre';","timestamp":"2016-12-04T19:49:22.487Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-04T19:49:22.504Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-04T19:49:22.506Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-12-04T19:55:38.766Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-12-04T19:55:38.770Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object]","timestamp":"2016-12-04T19:55:39.192Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-04T19:55:39.231Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-04T19:55:39.234Z"}
