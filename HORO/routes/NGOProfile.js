@@ -81,7 +81,7 @@ exports.NGOview_profile = function(req,res)
     console.log("IN VIEW PROFILE FUNCTION");
 
 
-    var checkLoginQuery = "SELECT * FROM horodb.ngo_master where ngo_id=1;";
+    var checkLoginQuery = "SELECT * FROM ngo_master where ngo_id=1;";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;
@@ -130,7 +130,7 @@ exports.getAllAttendeesInArea= function(req,res){
 
     req.session.ngo_id = 1 //change after login () for NGO[]
 
-    var query = "SELECT * FROM horodb.user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = "+req.session.ngo_id+");";
+    var query = "SELECT * FROM user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = "+req.session.ngo_id+");";
 
     mysql.storeData(query, function(err, result) {
         //render on success
@@ -152,10 +152,10 @@ exports.setCourseToAttendee=function(req,res){
     var user_id  = req.param("user_id");
     var progress = req.param("progress"); //0
 
-    var searchAttendeeToCourse=  "select count(*) as count from horodb.course_progress where course_id = "+course_id+" and user_id= "+user_id+";";
+    var searchAttendeeToCourse=  "select count(*) as count from course_progress where course_id = "+course_id+" and user_id= "+user_id+";";
     console.log("Query:: "+searchAttendeeToCourse);
 
-    var RegisterAttendeeToCourse= "INSERT INTO `horodb`.`course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
+    var RegisterAttendeeToCourse= "INSERT INTO `course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
     console.log("Query:: " + RegisterAttendeeToCourse);
 
     mysql.storeData(searchAttendeeToCourse, function(err, result) {

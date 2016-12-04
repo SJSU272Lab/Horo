@@ -1208,9 +1208,13 @@
                         </div>
 
 
-                        <button class="btn btn-primary btn-large" ng-click="uploadCourse()">
-                            Save
-                        </button>
+                        <div class="alert alert-sucess" ng-show="AttendeeRegister">
+                            <strong>Attendee registered for the course!</strong>
+                        </div>
+
+                        <div class="alert alert-danger" ng-show="AttendeeAlreadyRegister">
+                            <strong>Attendee already registered for the course!</strong>
+                        </div>
 
                     </form>
                 </div>

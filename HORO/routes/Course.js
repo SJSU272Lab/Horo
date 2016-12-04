@@ -44,7 +44,7 @@ exports.get_course_page = function(req,res)
     var vals = req.param("vals");
     req.session.selectedCourse = vals;
 
-    var checkLoginQuery = "SELECT * FROM horodb.session where course_id = '" +vals.course_id+ "'";
+    var checkLoginQuery = "SELECT * FROM session where course_id = '" +vals.course_id+ "'";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;
@@ -80,7 +80,7 @@ exports.viewCoursePage = function(req,res)
     console.log("int viewCoursePage");
     var isSubscribed = false;
 
-    var checkLoginQuery = "SELECT * FROM horodb.user_master,course_progress where user_master.user_id = course_progress.user_id and user_master.username = '"+req.session.username+"' and course_progress.course_id = '"+req.session.selectedCourseSessions[0].course_id+"';";
+    var checkLoginQuery = "SELECT * FROM user_master,course_progress where user_master.user_id = course_progress.user_id and user_master.username = '"+req.session.username+"' and course_progress.course_id = '"+req.session.selectedCourseSessions[0].course_id+"';";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;
@@ -107,7 +107,7 @@ exports.subscribeSubject=function(req,res){
     var user_id  = req.session.user_id;
     var progress = req.param("progress"); //0
 
-    var RegisterAttendeeToCourse= "INSERT INTO `horodb`.`course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
+    var RegisterAttendeeToCourse= "INSERT INTO ``course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
     console.log("Query:: " + RegisterAttendeeToCourse);
 
 
