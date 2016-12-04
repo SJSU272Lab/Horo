@@ -15,6 +15,17 @@
     <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 
+    <link href="stylesheets/assets/css/font-awesome.css" rel="stylesheet">
+
+    <link href="stylesheets/assets/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/assets/css/slick.css">
+
+    <link id="switcher" href="stylesheets/assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <link href="stylesheets/assets/css/style.css" rel="stylesheet">
+
+
     <link rel='stylesheet' href='/stylesheets/Profile.css' />
 
     <!-- Loading the AngularJS file from /public/angularJS folder -->
@@ -91,6 +102,36 @@
 </head>
 
 <body class="ng-scope" ng-app="AttendeeProfile" ng-controller="AttendeeProfile" ng-init="Init()">
+
+
+<section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- LOGO -->
+                <!-- TEXT BASED LOGO -->
+                <a class="navbar-brand" href="/"><i class="fa fa-university"></i><span>HORO</span></a>
+                <!-- IMG BASED LOGO  -->
+                <!-- <a class="navbar-brand" href="index.html"><img src="stylesheets/assets/img/logo.png" alt="logo"></a> -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="course">Course</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</section>
+
+
 <div id="header" class="makent-header new ">
     <header class="header--sm show-sm" aria-hidden="true" role="banner">
         <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
@@ -231,12 +272,7 @@
                                     <input type="hidden" name="source" value="mob">
                                     <div class="row">
                                         <div class="searchbar__location-error hide" style="left:22px; top:2%;">Please set location</div>
-                                        <div class="col-sm-12">
-                                            <label for="header-location--sm">
-                                                <span class="screen-reader-only">Where to?</span>
-                                                <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-location--sm" class="input-large" value="">
-                                            </label>
-                                        </div>
+
                                     </div>
                                     <div class="row row-condensed">
                                         <div class="col-sm-6">
@@ -337,11 +373,7 @@
             <ul class="nav pull-left  list-unstyled search-form-container" id="search-form-header">
                 <li id="header-search" class="search-bar-wrapper pull-left medium-right-margin">
                     <form action="http://makent.trioangle.com/s" class="search-form ng-pristine ng-valid">
-                        <div class="search-bar">
-                            <i class="icon icon-search icon-gray h4"></i>
-                            <label class="screen-reader-only" for="header-search-form">Where to?</label>
-                            <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-search-form" class="location" value="">
-                        </div>
+
                         <div id="header-search-settings" class="panel search-settings header-menu">
                             <div class="panel-body clearfix basic-settings">
                                 <div class="setting checkin">
