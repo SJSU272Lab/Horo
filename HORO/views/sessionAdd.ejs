@@ -677,12 +677,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/Account" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
+                            <a href="#/Account" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
                                 Add Course
                             </a>
                         </li>
                         <li>
-                            <a href="/sessionland" rel="nofollow" class="no-crawl link-reset menu-item item-account">
+                            <a href="#/sessionland" rel="nofollow" class="no-crawl link-reset menu-item item-account">
                                 Add Session
                             </a>
                         </li>
@@ -1043,13 +1043,13 @@
             <ul class="subnav-list">
 
                 <li>
-                    <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="/#Profile" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
                 <li>
-                    <a href="/Account" aria-selected="false" class="subnav-item">Add Courses</a>
+                    <a href="/#Account" aria-selected="false" class="subnav-item">Add Courses</a>
                 </li>
                 <li>
-                    <a href="/sessionland" aria-selected="true" class="subnav-item">Add Session</a>
+                    <a href="/#sessionland" aria-selected="true" class="subnav-item">Add Session</a>
                 </li>
                 <li>
                     <a href="#"  aria-selected="false" class="subnav-item">Course History</a>
@@ -1061,44 +1061,8 @@
 
     <div class="page-container-responsive row-space-top-4 row-space-4" ng-controller="sessionAdd">
         <div class="row">
-            <div class="col-md-3">
-                <ul class="sidenav-list">
 
-
-                    <li>
-                        <a href="" aria-selected="false" class="hide sidenav-item">Notifications</a>
-                    </li>
-
-                    <li>
-                        <a href="" aria-selected="false" class="hide sidenav-item">Payment Methods</a>
-                    </li>
-
-                    <li>
-                        <a href="" aria-selected="true" class="sidenav-item">Payout Preferences</a>
-                    </li>
-
-                    <li>
-                        <a href="" aria-selected="false" class="sidenav-item">Transaction History</a>
-                    </li>
-
-
-                    <li>
-                        <a href="" aria-selected="false" class="hide sidenav-item">Privacy</a>
-                    </li>
-
-                    <li>
-                        <a href="" aria-selected="false" class="sidenav-item">Security</a>
-                    </li>
-
-                    <li>
-                        <a href="" aria-selected="false" class="hide sidenav-item">Settings</a>
-                    </li>
-
-                </ul><!-- <div class="space-top-4 space-4">
-  <a href="http://makent.trioangle.com/invite?r=5" class="btn btn-block">Invite Friends</a>
-</div> -->
-            </div>
-            <div class="col-md-9">
+            <div class="col-md-12">
 
                 <div id="dashboard-content">
 
@@ -1198,7 +1162,9 @@
                         <button class="btn btn-primary btn-large" ng-click="uploadSession()">
                             Save
                         </button>
-
+                        <div class="alert alert-sucess" ng-show="SessionAdded">
+                            <strong>Session added successfully!</strong>
+                        </div>
                     </form>
                 </div>
             </div>

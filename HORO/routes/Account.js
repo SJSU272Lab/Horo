@@ -78,8 +78,8 @@ exports.getAllCourseList = function(req,res){
 
     req.session.user_id = 1;
 
-    var courseNameQuery = "select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";";
-    logger.log('info', "select m.course_Id,m.course_name from horodb.course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";");
+    var courseNameQuery = "select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";";
+    logger.log('info', "select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";");
     console.log("Query:: " + courseNameQuery);
 
     mysql.fetchData(function(err,results) {
@@ -113,7 +113,7 @@ exports.setSessionDetails = function(req,res){
     var sessionLocation =req.param("sessionLocation");
     var sessionDetail = req.param("sessionDetail");
 
-    var sessionInsert = "INSERT INTO `horodb`.`session` (`course_id`, `session_title`, `session_duration`, `session_date`,`session_location`, `session_details`)VALUES ('"+courseId+"','"+sessionTitle+"','"+sessionDuration+"','" +sessionDate+"','"+sessionLocation+"','"+sessionDetail+"');";
+    var sessionInsert = "INSERT INTO `session` (`course_id`, `session_title`, `session_duration`, `session_date`,`session_location`, `session_details`)VALUES ('"+courseId+"','"+sessionTitle+"','"+sessionDuration+"','" +sessionDate+"','"+sessionLocation+"','"+sessionDetail+"');";
 
     console.log("Query:: " + sessionInsert);
     mysql.storeData(sessionInsert, function(err, result) {

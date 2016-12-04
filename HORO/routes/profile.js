@@ -197,7 +197,7 @@ exports.get_course_details = function(req,res)
 {
     console.log("In GET_COURSE_DETAILS");
 
-    var checkLoginQuery = "SELECT * FROM horodb.course_details, horodb.course_master where course_details.course_detailsid = course_master.course_id ";
+    var checkLoginQuery = "SELECT * FROM course_details, course_master where course_details.course_detailsid = course_master.course_id ";
     mysql.fetchData(function(err,results) {
         if(err) {
             throw err;

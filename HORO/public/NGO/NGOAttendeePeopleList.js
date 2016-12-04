@@ -8,6 +8,8 @@
 
 NGO.controller('NGOAttendeePeopleList', function($scope, $http,$state,$filter) {
 
+    $scope.AttendeeRegister= false;
+    $scope.AttendeeAlreadyRegister= false;
 
     $http({
         method: "POST",
@@ -76,7 +78,8 @@ NGO.controller('NGOAttendeePeopleList', function($scope, $http,$state,$filter) {
 
             if (data.statusCode === 200) {
                 console.log("Success");
-
+                $scope.AttendeeRegister = true;
+                $scope.AttendeeAlreadyRegister = false;
                 //$scope.attendeeList = data.result;
                 /* $scope.fname = data.Result[0].user_firstname;
                  $scope.lname = data.Result[0].user_lastname;
@@ -85,9 +88,13 @@ NGO.controller('NGOAttendeePeopleList', function($scope, $http,$state,$filter) {
 
             }if(data.statusCode === 501){
                 console.log("course is already registered.");
+                $scope.AttendeeRegister = false;
+                $scope.AttendeeAlreadyRegister = true;
             }
             else {
                 console.log("Failure");
+                $scope.AttendeeRegister = false;
+                $scope.AttendeeAlreadyRegister = false;
             }
 
         });
