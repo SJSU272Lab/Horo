@@ -23,7 +23,25 @@ course.controller('CourseDetails', function($scope, $http,$state) {
 
     $scope.categories = "";
     var selectedCourse;
+    $scope.sessionNotConnected = true;
+    $scope.sessionActive = false;
+    $http({
+        method : "POST",
+        url : '/getSessiondata',
+    }).success(function(data) {
 
+        if (data.username != undefined) {
+
+            $scope.sessionUserName = data.username;
+            $scope.sessionNotConnected = false;
+            $scope.sessionActive = true;
+
+        } else {
+            $scope.sessionNotConnected = true;
+            $scope.sessionActive = false;
+        }
+
+    });
     $scope.GetCourse = function()
     {
         $http({

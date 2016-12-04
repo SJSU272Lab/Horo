@@ -47,11 +47,17 @@
 <!-- END SCROLL TOP BUTTON -->
 
 <!-- Start header  -->
-<header id="mu-header">
-    <div class="container">
+<header id="mu-header" ng-controller="loginSiginup">
+    <div class="container"  >
         <ul class="nav navbar-nav navbar-right main-nav">
             <li><a href="#signup" role="button" data-toggle="modal">Sign Up</a></li>
             <li><a href="#login" role="button" data-toggle="modal">Log In</a></li>
+        </ul>
+    </div>
+    <div class="container" >
+        <ul class="nav navbar-nav navbar-right main-nav">
+
+
         </ul>
     </div>
 
@@ -163,7 +169,7 @@
                 </button>
                 <!-- LOGO -->
                 <!-- TEXT BASED LOGO -->
-                <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>HORO</span></a>
+                <a class="navbar-brand" href="index"><i class="fa fa-university"></i><span>HORO</span></a>
                 <!-- IMG BASED LOGO  -->
                 <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
             </div>
@@ -172,6 +178,8 @@
                     <li class="active"><a href="/">Home</a></li>
                     <li><a href="course">Courses</a></li>
                     <li><a href="course">About Us</a></li>
+                    <li ng-show = "sessionActive"><a href="profile">{{sessionUserName}}</a></li>
+
                     <!--<li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>-->
                 </ul>
             </div><!--/.nav-collapse -->

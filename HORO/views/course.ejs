@@ -62,22 +62,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                <div class="mu-header-area">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <div class="mu-header-top-right">
-                                <nav>
-                                    <ul class="mu-top-social-nav">
-
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -103,8 +88,8 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
+                    <li><a href="/#">Home</a></li>
+                    <li ng-show = "sessionActive"><a href="/#profile">{{sessionUserName}}</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>

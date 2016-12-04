@@ -10,9 +10,12 @@ var logger = new (winston.Logger)({
 });
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('session', { title: "Hello"});
 };
 
+exports.getSessiondata = function(req, res){
+    res.send({"statusCode" : 200, "username": req.session.username });
+};
 
 exports.signupForVolunteerAndAttendee = function(req,res)
 {
