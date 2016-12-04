@@ -1,6 +1,6 @@
 account.controller('courseAdd', function($scope, $http,$state) {
 
-
+        $scope.CourseAdded = false;
 
         $http({
             method : "POST",
@@ -31,10 +31,12 @@ account.controller('courseAdd', function($scope, $http,$state) {
             }).success(function(data) {
                 if (data.statusCode == 200) {
 
-                    console.log("Success while adding new course")
+                    console.log("Success while adding new course");
+                    $scope.CourseAdded = true;
 
                 } else {
                     console.log("Failure");
+                    $scope.CourseAdded = false;
                 }
             });
 

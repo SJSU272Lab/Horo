@@ -1,6 +1,7 @@
 account.controller('sessionAdd', function($scope, $http,$state) {
 
 
+        $scope.SessionAdded = false;
 
     $http({
         method : "POST",
@@ -32,10 +33,15 @@ account.controller('sessionAdd', function($scope, $http,$state) {
         }).success(function(data) {
             if (data.statusCode == 200) {
 
-                console.log("Success while adding new course")
+                console.log("Success while adding new course");
+                $scope.SessionAdded = true;
+
 
             } else {
                 console.log("Failure");
+
+                $scope.SessionAdded = false;
+
             }
         });
 
