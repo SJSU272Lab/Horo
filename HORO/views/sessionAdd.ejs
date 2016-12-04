@@ -19,6 +19,17 @@
 
     <!-- Loading the AngularJS file from /public/angularJS folder -->
 
+   <!-- <link rel='stylesheet' href='/stylesheets/Profile.css' />-->
+
+    <link href="stylesheets/assets/css/font-awesome.css" rel="stylesheet">
+
+    <link href="stylesheets/assets/css/bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/assets/css/slick.css">
+
+    <link id="switcher" href="stylesheets/assets/css/theme-color/default-theme.css" rel="stylesheet">
+
+    <link href="stylesheets/assets/css/style.css" rel="stylesheet">
 
     <script src="/account.js">  </script>
     <script src="/Host/sessionAdd.js">  </script>
@@ -98,6 +109,36 @@
 </head>
 
 <body class="ng-scope" ng-app="account">
+
+
+<section id="mu-menu">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- LOGO -->
+                <!-- TEXT BASED LOGO -->
+                <a class="navbar-brand" href="/"><i class="fa fa-university"></i><span>HORO</span></a>
+                <!-- IMG BASED LOGO  -->
+                <!-- <a class="navbar-brand" href="index.html"><img src="stylesheets/assets/img/logo.png" alt="logo"></a> -->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="course">Course</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</section>
+
+
 <div id="header" class="makent-header new ">
     <header class="header--sm show-sm" aria-hidden="true" role="banner">
         <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
@@ -116,8 +157,8 @@
         </div>
 
         <div class="action--sm"></div>
-        <nav role="navigation" class="nav--sm"><div class="nav-mask--sm"></div>
-            <div class="nav-content--sm panel text-white">
+        <!--<nav role="navigation" class="nav&#45;&#45;sm"><div class="nav-mask&#45;&#45;sm"></div>
+            <div class="nav-content&#45;&#45;sm panel text-white">
                 <div class="nav-header ">
                     <div class="nav-profile clearfix">
                         <div class="user-item pull-left">
@@ -172,7 +213,7 @@
                                 <li class="">
                                     <a class="link-reset menu-item" rel="nofollow" href="">
                                         Inbox
-                                        <i class="alert-count unread-count--sm fade text-center">
+                                        <i class="alert-count unread-count&#45;&#45;sm fade text-center">
                                             0
                                         </i>
                                     </a>
@@ -205,11 +246,11 @@
                                         Help
                                     </a>
                                 </li>
-                                <!--<li>
+                                &lt;!&ndash;<li>
                                   <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/invite">
                                     Invite Friends
                                   </a>
-                                </li>-->
+                                </li>&ndash;&gt;
                                 <li class="">
                                     <a class="link-reset menu-item logout" rel="nofollow" href="">
                                         Log Out
@@ -220,7 +261,7 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>-->
         <div class="search-modal-container">
             <div class="modal hide" role="dialog" id="search-modal--sm" aria-hidden="false" tabindex="-1">
                 <div class="modal-table">
@@ -238,12 +279,7 @@
                                     <input type="hidden" name="source" value="mob">
                                     <div class="row">
                                         <div class="searchbar__location-error hide" style="left:22px; top:2%;">Please set location</div>
-                                        <div class="col-sm-12">
-                                            <label for="header-location--sm">
-                                                <span class="screen-reader-only">Where to?</span>
-                                                <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-location--sm" class="input-large" value="">
-                                            </label>
-                                        </div>
+
                                     </div>
                                     <div class="row row-condensed">
                                         <div class="col-sm-6">
@@ -344,11 +380,7 @@
             <ul class="nav pull-left  list-unstyled search-form-container" id="search-form-header">
                 <li id="header-search" class="search-bar-wrapper pull-left medium-right-margin">
                     <form action="" class="search-form ng-pristine ng-valid">
-                        <div class="search-bar">
-                            <i class="icon icon-search icon-gray h4"></i>
-                            <label class="screen-reader-only" for="header-search-form">Where to?</label>
-                            <input type="text" placeholder="Where to?" autocomplete="off" name="location" id="header-search-form" class="location" value="">
-                        </div>
+
                         <div id="header-search-settings" class="panel search-settings header-menu">
                             <div class="panel-body clearfix basic-settings">
                                 <div class="setting checkin">
@@ -645,13 +677,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/sessionland" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
-                                Edit Profile
+                            <a href="/Account" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
+                                Add Course
                             </a>
                         </li>
                         <li>
-                            <a href="/Account" rel="nofollow" class="no-crawl link-reset menu-item item-account">
-                                Account
+                            <a href="/sessionland" rel="nofollow" class="no-crawl link-reset menu-item item-account">
+                                Add Session
                             </a>
                         </li>
                         <li class="business-travel hide">
@@ -1014,16 +1046,14 @@
                     <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
                 <li>
-                    <a href="/Account" aria-selected="true" class="subnav-item">Add Courses</a>
+                    <a href="/Account" aria-selected="false" class="subnav-item">Add Courses</a>
                 </li>
                 <li>
-                    <a href="/sessionland" aria-selected="false" class="subnav-item">Add Session</a>
+                    <a href="/sessionland" aria-selected="true" class="subnav-item">Add Session</a>
                 </li>
                 <li>
-                    <a href="#" ng-click="#" aria-selected="false" class="subnav-item">Course History</a>
+                    <a href="#"  aria-selected="false" class="subnav-item">Course History</a>
                 </li>
-
-
 
             </ul>
         </div>
@@ -1033,8 +1063,6 @@
         <div class="row">
             <div class="col-md-3">
                 <ul class="sidenav-list">
-
-
 
 
                     <li>
@@ -1311,7 +1339,7 @@
 
 
 <div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100%; background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)">
-    <footer class="page-container-responsive ng-scope" ng-controller="footer">
+    <footer class="page-container-responsive ng-scope" >
         <div class="row row-condensed">
 
             <div class="col-md-3 col-md-offset-1">
