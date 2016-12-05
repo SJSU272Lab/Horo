@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add attendee to course</title>
+    <title>Attendee Profile</title>
 
     <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
@@ -20,19 +20,6 @@
     <link href="stylesheets/assets/css/style.css" rel="stylesheet">
 
 
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common_ie8.css">
-
-    <![endif]-->
-    <!--[if !(IE 8)]><!-->
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common.css">
-
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/home.css">
-
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/themes.css">
-
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/pcss?css=css/dynamic.css">
-
-
     <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
@@ -40,15 +27,15 @@
     <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 
-    <link rel='stylesheet' href='/stylesheets/test.css' />
+    <link rel='stylesheet' href='/stylesheets/Profile.css' />
 
     <!-- Loading the AngularJS file from /public/angularJS folder -->
 
 
+    <script src="NGO/NGOAttendeePeopleList.js">  </script>
+    <!-- <script src="angularjs/profile.js">  </script>-->
 
 
-    <!--<div ui-view="header"></div>
-    <div ui-view="content"></div>-->
 
     <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -57,7 +44,7 @@
     <link rel="dns-prefetch" href="https://mts0.googleapis.com/">
     <link rel="dns-prefetch" href="https://mts1.googleapis.com/">
 
-    <link rel="shortcut icon" href="http://makent.trioangle.com/images/logos/favicon.ico">
+    <!--<link rel="shortcut icon" href="http://makent.trioangle.com/images/logos/favicon.ico">-->
 
     <!--[if IE]><![endif]-->
     <meta charset="utf-8">
@@ -81,10 +68,9 @@
     <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">
 
     <![endif]-->
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/host_dashboard.css">
 
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/payout_preferences.css">
-
-
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/dashboard.css">
 
 
     <style type="text/css">
@@ -92,12 +78,12 @@
         .ui-selected { background: #F39814; color: white; }
     </style>
 
-    <title>Account </title>
+    <title>Dashboard </title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-    <meta name="description" content="Account">
+    <meta name="description" content="Dashboard">
     <meta name="keywords" content="">
 
 
@@ -111,12 +97,9 @@
 
     <meta name="theme-color" content="#f5f5f5">
 
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/common.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/util.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/controls.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/places_impl.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/stats.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fmakent.trioangle.com%2Fusers%2Fpayout_preferences%2F10005&amp;4sAIzaSyBXyRBiyRcEzHDJ8iU00zECMUP4cXBIm6A&amp;callback=_xdc_._hoty9i&amp;token=62420"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/places_impl.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/stats.js">
+
+    </script>
 </head>
 
 <body class="ng-scope" ng-app="NGO">
@@ -1059,17 +1042,18 @@
 
 
                 <li>
-                    <a href="#/Profile" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="/NGOProfile" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
+                <!--  <li>
+                      <a href="#/Account" ng-click="Account()" aria-selected="false" class="subnav-item">Add Courses</a>
+                  </li>
+                  <li>
+                      <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Add Session</a>
+                  </li>-->
                 <li>
-                    <a href="#/Account" ng-click="Account()" aria-selected="true" class="subnav-item">Add Courses</a>
+                    <a href="/NGOAttendeesInArea"  aria-selected="true" class="subnav-item">NGO attendee in area</a>
                 </li>
-                <li>
-                    <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Add Session</a>
-                </li>
-                <li>
-                    <a href="#" ng-click="EditProfile()" aria-selected="false" class="subnav-item">Course History</a>
-                </li>
+
 
 
 
