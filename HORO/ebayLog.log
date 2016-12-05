@@ -1515,3 +1515,97 @@
 {"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:02:33.195Z"}
 {"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:02:33.197Z"}
 {"level":"info","message":"Valid data for: 1","timestamp":"2016-12-05T21:02:33.195Z"}
+{"level":"info","message":"select user_id,username,password,account_type from user_master where EmailId = nitingove","timestamp":"2016-12-05T21:08:52.686Z"}
+{"level":"info","message":"SQL Query::select user_id,username,password,account_type from user_master where username = 'nitingove';","timestamp":"2016-12-05T21:08:52.687Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:08:52.981Z"}
+{"level":"info","message":"Successful Login for = nitingove userId: nitingove","timestamp":"2016-12-05T21:08:53.348Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:08:53.349Z"}
+{"level":"info","message":"Session Initialized with username : nitingove","timestamp":"2016-12-05T21:08:53.348Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'nitingove';","timestamp":"2016-12-05T21:08:54.643Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:08:54.652Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:08:54.653Z"}
+{"level":"info","message":"select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 11;","timestamp":"2016-12-05T21:09:25.697Z"}
+{"level":"info","message":"SQL Query::select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 11;","timestamp":"2016-12-05T21:09:25.697Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:09:25.704Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-05T21:09:25.706Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:09:25.707Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-05T21:09:34.402Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-05T21:09:34.406Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:09:34.470Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:09:34.471Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:09:34.493Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:09:34.496Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-12-05T21:09:45.050Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-12-05T21:09:45.050Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object],[object Object]","timestamp":"2016-12-05T21:09:46.743Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-05T21:09:46.745Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:09:46.747Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-05T21:10:00.856Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-05T21:10:00.860Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:10:00.884Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:10:00.886Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:10:00.887Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:10:00.888Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM session where course_id = '18'","timestamp":"2016-12-05T21:10:02.815Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:10:02.833Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:10:02.836Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM user_master,course_progress where user_master.user_id = course_progress.user_id and user_master.username = 'nitingove' and course_progress.course_id = '18';","timestamp":"2016-12-05T21:10:03.366Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-12-05T21:10:03.402Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:10:03.403Z"}
+{"level":"info","message":"select course_id from course_master where course_name = 'Electrician Course';","timestamp":"2016-12-05T21:11:07.909Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO course_master (`course_name`, `course_category`) VALUES ('Electrician Course',1);---","timestamp":"2016-12-05T21:11:07.909Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-12-05T21:11:08.235Z"}
+{"level":"info","message":"Valid insertion in course type for: Electrician Course","timestamp":"2016-12-05T21:11:08.237Z"}
+{"level":"info","message":"SQL Query::select course_id from course_master where course_name = 'Electrician Course';","timestamp":"2016-12-05T21:11:08.237Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:11:08.238Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:11:08.245Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO `course_details`(`course_id`,`course_instid`,`course_startdate`,`course_enddate`,`course_lectures`,`course_language`,`course_details`)VALUES('23','11','2016-12-01','2016-01-01',10,'English','Learners who want to gain a practical knowledge and understanding of the electrical trade would also benefit from the concepts explained in this course.');---","timestamp":"2016-12-05T21:11:08.249Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:11:08.251Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-12-05T21:11:08.522Z"}
+{"level":"info","message":"Valid insertion in course type for: Electrician Course","timestamp":"2016-12-05T21:11:08.522Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:11:08.523Z"}
+{"level":"info","message":"select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 11;","timestamp":"2016-12-05T21:11:41.484Z"}
+{"level":"info","message":"SQL Query::select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 11;","timestamp":"2016-12-05T21:11:41.484Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-05T21:11:41.488Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-05T21:11:41.489Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:11:41.490Z"}
+{"level":"info","message":"---SQL Query ::INSERT INTO `session` (`course_id`, `session_title`, `session_duration`, `session_date`,`session_location`, `session_details`)VALUES ('23','Introduction to the Electrical Trade','2','2017-01-01','San Jose','Startup Course');---","timestamp":"2016-12-05T21:12:28.821Z"}
+{"level":"error","message":"Database Results :: [object Object]","timestamp":"2016-12-05T21:12:29.086Z"}
+{"level":"info","message":"Valid Session Inserted ","timestamp":"2016-12-05T21:12:29.087Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:12:29.087Z"}
+{"level":"info","message":"select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = undefined;","timestamp":"2016-12-05T21:25:31.104Z"}
+{"level":"info","message":"SQL Query::select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = undefined;","timestamp":"2016-12-05T21:25:31.107Z"}
+{"level":"error","message":"ERROR: ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'","timestamp":"2016-12-05T21:25:31.304Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:25:31.305Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM ngo_master where ngo_id=1;","timestamp":"2016-12-05T21:25:39.072Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T21:25:39.084Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T21:25:39.112Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:25:42.924Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:25:42.931Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:25:42.933Z"}
+{"level":"info","message":"---SQL Query ::SELECT * FROM user_master as m join user_profile as p on m.username = p.username where account_type = 'attendee' and  user_city in (select  ngo_city  from ngo_master where ngo_id = 1);---","timestamp":"2016-12-05T21:25:46.890Z"}
+{"level":"info","message":"---SQL Query ::select s.course_id, cm.course_name from session as s join course_master as cm on s.course_id = cm.course_id where s.session_location in (select  ngo_city  from ngo_master where ngo_id = undefined) group by course_id;---","timestamp":"2016-12-05T21:25:46.892Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:25:46.913Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:25:46.917Z"}
+{"level":"info","message":"Valid data for: 1","timestamp":"2016-12-05T21:25:46.914Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-12-05T21:25:46.921Z"}
+{"level":"info","message":"Invalid data up for: 1","timestamp":"2016-12-05T21:25:46.923Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:25:46.926Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:25:48.301Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:25:48.305Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:25:48.307Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:26:23.537Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:26:23.568Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:26:23.570Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:40:50.812Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:40:50.850Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:40:50.851Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:41:45.973Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:41:45.978Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:41:45.979Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:42:41.141Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:42:41.176Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:42:41.177Z"}
+{"level":"info","message":"---SQL Query ::select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = \"San Jose\" and m.account_type = \"volunteer\";---","timestamp":"2016-12-05T21:44:23.252Z"}
+{"level":"error","message":"Database Results :: [object Object],[object Object]","timestamp":"2016-12-05T21:44:23.391Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T21:44:23.392Z"}

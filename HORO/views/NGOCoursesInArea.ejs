@@ -834,8 +834,7 @@
                                 <small class="small-font">
                                     By signing up, I agree to HORO's <a href="" data-popup="true">Terms of Service</a>,
                                     <a href="" data-popup="true">Privacy Policy</a>,
-                                    <a href="" data-popup="true">Guest Refund Policy</a>,
-                                    and <a href="" data-popup="true">Host Guarantee Terms</a>.
+
                                 </small>
 
                             </div>
@@ -1094,7 +1093,7 @@
                                             <div class="toolbar-right">
                                                 <div class="form-inline" role="form">
 
-                                                    <a class="btn btn-primary filter-dates" ng-click="filterData()">Filter username</a>
+                                                    <a class="btn btn-primary filter-dates" ng-click="filterData()">Filter Instructors</a>
                                                     <input class="form-control table-search" type="text" placeholder="Search on username" ng-model="username">
 
                                                 </div>
@@ -1110,7 +1109,7 @@
                                                     <thead>
                                                     <tr>
                                                         <th class="text-left" style="">
-                                                            <div class="th-inner sortable">User Id</div>
+                                                            <div class="th-inner sortable">username</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
                                                         <th class="text-left" style="">
@@ -1121,38 +1120,38 @@
                                                             <div class="th-inner sortable">User lastname</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
+
                                                         <th class="text-left" style="">
-                                                            <div class="th-inner sortable">UserName</div>
+                                                            <div class="th-inner sortable">Course Details</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
                                                         <th class="text-left" style="">
-                                                            <div class="th-inner sortable">User City</div>
+                                                            <div class="th-inner sortable">Course Startdate</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
                                                         <th class="text-left" style="">
-                                                            <div class="th-inner sortable">Course List</div>
+                                                            <div class="th-inner sortable">Course Enddate</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
                                                         <th class="text-left" style="">
-                                                            <div class="th-inner sortable">Register</div>
+                                                            <div class="th-inner sortable">I will help</div>
                                                             <div class="fht-cell"></div>
                                                         </th>
+
 
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr ng-repeat="user in attendeeList">
-                                                        <td class="text-left" style="">{{user.user_id}}</td>
+                                                    <tr ng-repeat="user in hostList">
+                                                        <td class="text-left" style="">{{user.username}}</td>
                                                         <td class="text-left" style=""><a href="#" onclick="">{{user.user_firstname}}</a></td>
                                                         <td class="text-left" style="">{{user.user_lastname}}</td>
-                                                        <td class="text-left" style="">{{user.username}}</td>
-                                                        <td class="text-left" style="">{{user.user_city}}</td>
-                                                        <td class="text-left" style="">
-                                                            <select id="course" class="form-control input-md"  ng-model="selectedcourse_id">
-                                                                <option ng-repeat="course in coursesInArea">{{course.course_name}}</option>
-                                                            </select>
-                                                        </td>
-                                                        <td class="" style=""><button class="btn btn-success input-md" ng-click="register(user)" >Register </button></td>
+
+                                                        <td class="text-left" style="">{{user.course_details}}</td>
+                                                        <td class="text-left" style="">{{user.course_startdate | date:small}}</td>
+                                                        <td class="text-left" style="">{{user.course_enddate | date:small}}</td>
+
+                                                        <td class="" style=""><button class="btn btn-success input-md" ng-click="register(user)" >Help </button></td>
 
                                                     </tr>
 
@@ -1383,13 +1382,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-2 hide-sm">
-                <h2 class="h5">Hosting</h2>
-                <ul class="list-layout">
-                    <li><a href="" class="link-contrast">Why Host</a></li>
-                    <li><a href="" class="link-contrast">Hospitality</a></li>
-                </ul>
-            </div>
+           
         </div>
 
         <div class="col-sm-12 space-4 space-top-4 show-sm">

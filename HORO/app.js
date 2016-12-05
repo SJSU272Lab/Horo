@@ -91,6 +91,7 @@ app.post('/getAllCoursesInArea',NGOProfile.getAllCoursesInArea);
 app.post('/getAllAttendeesInArea',NGOProfile.getAllAttendeesInArea);
 app.post('/setCourseToAttendee',NGOProfile.setCourseToAttendee);
 app.post('/subscribeSubject', course1.subscribeSubject);
+app.post('/getAllCoursesWithHostsInArea',NGOProfile.getAllCoursesWithHostsInArea);
 
 //POST
 app.post('/get_course_details', index.get_course_details);

@@ -193,3 +193,23 @@ exports.setCourseToAttendee=function(req,res){
 
 
 }
+
+exports.getAllCoursesWithHostsInArea= function(req,res){
+
+    var query = 'select * from user_master as m join user_profile as  p  on m.username= p.username   join course_details as d  on m.user_id = d.course_instid where  p.user_city = "San Jose" and m.account_type = "volunteer";';
+
+    mysql.storeData(query, function(err, result) {
+        //render on success
+        if (err) {
+            console.log('Invalid data!');
+
+            res.send({"statusCode" : 401});
+        } else {
+            console.log('Valid data!');
+           
+            res.send({"statusCode" : 200,  "result" : result});
+
+        }
+    });
+}
+
