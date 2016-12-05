@@ -87,10 +87,23 @@ exports.viewCoursePage = function(req,res)
             logger.log('error','Error of user :'+username+ ' Error: '+err);
         }
         else {
-            if(results.length >0) {
-                isSubscribed = true;
-
-                response={"statusCode" : 200, "Sessions"	:   req.session.selectedCourseSessions, "Course"    :   req.session.selectedCourse, "isSubscribed" : isSubscribed};
+            if (results.length > 0) {
+                response = {
+                    "statusCode": 200,
+                    "Sessions": req.session.selectedCourseSessions,
+                    "Course": req.session.selectedCourse,
+                    "isSubscribed": true
+                };
+                res.send(response);
+            }
+            else
+            {
+                response = {
+                    "statusCode": 200,
+                    "Sessions": req.session.selectedCourseSessions,
+                    "Course": req.session.selectedCourse,
+                    "isSubscribed": false
+                };
                 res.send(response);
             }
         }
@@ -107,7 +120,7 @@ exports.subscribeSubject=function(req,res){
     var user_id  = req.session.user_id;
     var progress = req.param("progress"); //0
 
-    var RegisterAttendeeToCourse= "INSERT INTO ``course_progress`(`course_id`,`user_id`,`progress`)VALUES("+course_id+","+user_id+","+progress+");";
+    var RegisterAttendeeToCourse= "insert into horodb.course_progress(course_id, user_id, progress) VALUES("+course_id+","+user_id+",0)";
     console.log("Query:: " + RegisterAttendeeToCourse);
 
 
@@ -121,7 +134,7 @@ exports.subscribeSubject=function(req,res){
         } else {
             console.log('Valid reg!');
             logger.log('info', "Valid insertion in course type for: " + course_id);
-
+            res.send({"statusCode" : 200});
         }
     });
 
