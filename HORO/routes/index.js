@@ -10,7 +10,7 @@ var logger = new (winston.Logger)({
 });
 
 exports.index = function(req, res){
-  res.render('session', { title: "Hello"});
+  res.render('index', { title: "Hello"});
 };
 
 exports.getSessiondata = function(req, res){
