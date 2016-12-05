@@ -1651,3 +1651,38 @@
 {"level":"info","message":"SQL Query::SELECT * FROM ngo_master where ngo_id=1;","timestamp":"2016-12-05T22:09:37.312Z"}
 {"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T22:09:37.315Z"}
 {"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T22:09:37.317Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-05T22:45:14.783Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-05T22:45:14.786Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-05T22:45:14.861Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T22:45:14.863Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-05T22:45:14.864Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T22:45:14.867Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM session where course_id = '18'","timestamp":"2016-12-05T22:45:15.744Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T22:45:15.748Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T22:45:15.750Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM user_master,course_progress where user_master.user_id = course_progress.user_id and user_master.username = 'undefined' and course_progress.course_id = '18';","timestamp":"2016-12-05T22:45:16.297Z"}
+{"level":"info","message":"DB Results:","timestamp":"2016-12-05T22:45:16.300Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T22:45:16.301Z"}
+{"level":"info","message":"---SQL Query ::insert into horodb.course_progress(course_id, user_id, progress) VALUES(18,undefined,0)---","timestamp":"2016-12-05T23:04:37.201Z"}
+{"level":"info","message":"Error in getting results","timestamp":"2016-12-05T23:04:37.212Z"}
+{"level":"info","message":"Store Connection Closed","timestamp":"2016-12-05T23:04:37.215Z"}
+{"level":"info","message":"Invalid insertion in reg type for: 18","timestamp":"2016-12-05T23:04:37.213Z"}
+{"level":"info","message":"SQL Query::select user_id,username,password,account_type from user_master where username = 'nitingove';","timestamp":"2016-12-05T23:06:05.841Z"}
+{"level":"info","message":"select user_id,username,password,account_type from user_master where EmailId = nitingove","timestamp":"2016-12-05T23:06:05.840Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T23:06:05.857Z"}
+{"level":"info","message":"Successful Login for = nitingove userId: nitingove","timestamp":"2016-12-05T23:06:06.115Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T23:06:06.116Z"}
+{"level":"info","message":"Session Initialized with username : nitingove","timestamp":"2016-12-05T23:06:06.115Z"}
+{"level":"info","message":"SQL Query::select * from user_profile where username = 'nitingove';","timestamp":"2016-12-05T23:06:07.711Z"}
+{"level":"info","message":"DB Results:[object Object]","timestamp":"2016-12-05T23:06:07.715Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T23:06:07.717Z"}
+{"level":"info","message":"SELECT category_id,category_name FROM category_master","timestamp":"2016-12-05T23:06:10.355Z"}
+{"level":"info","message":"SQL Query::SELECT category_id,category_name FROM category_master;","timestamp":"2016-12-05T23:06:10.355Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object],[object Object],[object Object]","timestamp":"2016-12-05T23:06:10.359Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-05T23:06:10.361Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T23:06:10.361Z"}
+{"level":"info","message":"select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 11;","timestamp":"2016-12-05T23:06:57.662Z"}
+{"level":"info","message":"SQL Query::select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = 11;","timestamp":"2016-12-05T23:06:57.662Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-05T23:06:57.666Z"}
+{"level":"error","message":"Error of getting course category: null","timestamp":"2016-12-05T23:06:57.667Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-05T23:06:57.667Z"}
