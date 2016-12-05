@@ -120,7 +120,7 @@ exports.subscribeSubject=function(req,res){
     var user_id  = req.session.user_id;
     var progress = req.param("progress"); //0
 
-    var RegisterAttendeeToCourse= "insert into horodb.course_progress(course_id, user_id, progress) VALUES("+course_id+","+user_id+",0)";
+    var RegisterAttendeeToCourse= "insert into course_progress(course_id, user_id, progress) VALUES("+course_id+","+user_id+",0)";
     console.log("Query:: " + RegisterAttendeeToCourse);
 
 

@@ -36,6 +36,23 @@ exports.land = function(req, res) {
     });
 };
 
+exports.HostCourseStatus = function(req,res)
+{
+    //console.log("********************************here ********************************");
+    ejs.renderFile('./views/HostCourseStatus.ejs', function(err, result) {
+        // render on success
+        if (!err) {
+            res.end(result);
+            console.log("successfully rendered the signin module");
+        }
+        // render or error
+        else {
+            res.end('An error occurred');
+            console.log(err);
+        }
+    });
+}
+
 
 exports.view_profile = function(req,res)
 {
@@ -218,6 +235,35 @@ exports.get_course_details = function(req,res)
         }
     }, checkLoginQuery);
 }
+
+
+exports.get_host_added_courses = function(req,res)
+{
+    console.log("In GET_COURSE_DETAILS");
+
+    var checkLoginQuery = "select course_details.course_id, course_details.course_details, course_details.course_instid, course_details.course_language, user_master.user_id,course_details.course_duration, course_details.course_startdate, course_details.course_enddate, course_master.course_name, course_master.course_id from user_master, course_details, course_master where course_details.course_instid = user_master.user_id and course_master.course_id = course_details.course_id and user_master.username = '"+req.session.username+"'";
+    mysql.fetchData(function(err,results) {
+        if(err) {
+            throw err;
+            logger.log('error','Error of user :'+username+ ' Error: '+err);
+        }
+        else {
+            if(results.length >0) {
+
+                response={"statusCode" : 200, "Result"	:	results};
+                res.send(response);
+            }
+            else{
+                //logger.log('error', "Invalid Login for username Id: "+username +' user is not registered.');
+                json_responses = {"statusCode": 401};
+                console.log(json_responses);
+                res.send(json_responses);
+            }
+        }
+    }, checkLoginQuery);
+}
+
+
 
 
 

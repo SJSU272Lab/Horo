@@ -76,6 +76,8 @@ app.get('/', home.redirectToHome);
  app.get('/contact',contact.redirectToContact);
  app.get('/Index', index.index);
  app.get('/Profile',profile.land); //DONE
+ app.get('/HostCourseStatus', profile.HostCourseStatus);
+
 app.get('/EditProfile',editprofile.land);
 app.get('/Account',courseadd.land);
 app.get('/sessionland',courseadd.sessionland);
@@ -110,6 +112,7 @@ app.post('/setCourseDetails',courseadd.setCourseDetails);
 app.post('/get_course_details', course1.get_course_details);
 app.post('/get_course_page', course1.get_course_page);
 app.post('/viewCoursePage', course1.viewCoursePage);
+app.post('/get_host_added_courses', profile.get_host_added_courses);
 
 app.post('/getCourseStatus',attendee.getCourseStatus);
 

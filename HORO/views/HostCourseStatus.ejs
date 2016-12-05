@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>User Profile</title>
+    <title>Attendee Profile</title>
 
     <script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-
-    <!--<link rel='stylesheet' href='/stylesheets/test.css' />-->
-
-    <!-- Loading the AngularJS file from /public/angularJS folder -->
-
-   <!-- <link rel='stylesheet' href='/stylesheets/Profile.css' />-->
 
     <link href="stylesheets/assets/css/font-awesome.css" rel="stylesheet">
 
@@ -31,20 +19,32 @@
 
     <link href="stylesheets/assets/css/style.css" rel="stylesheet">
 
-    <script src="/account.js">  </script>
-    <script src="/Host/sessionAdd.js">  </script>
 
-    <!--<div ui-view="header"></div>
-    <div ui-view="content"></div>-->
+    <script	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-   <!-- <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>-->
+
+    <link rel='stylesheet' href='/stylesheets/Profile.css' />
+
+    <!-- Loading the AngularJS file from /public/angularJS folder -->
+
+    <script src="/profile.js">  </script>
+    <!--<script src="Attendee/attendeeCourseStatus.js">  </script>
+    --><!-- <script src="angularjs/profile.js">  </script>-->
+
+
+
+    <style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">.pac-container{background-color:#fff;position:absolute!important;z-index:1000;border-radius:2px;border-top:1px solid #d9d9d9;font-family:Arial,sans-serif;box-shadow:0 2px 6px rgba(0,0,0,0.3);-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden}.pac-logo:after{content:"";padding:1px 1px 1px 0;height:16px;text-align:right;display:block;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3.png);background-position:right;background-repeat:no-repeat;background-size:120px 14px}.hdpi.pac-logo:after{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/powered-by-google-on-white3_hdpi.png)}.pac-item{cursor:default;padding:0 4px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;line-height:30px;text-align:left;border-top:1px solid #e6e6e6;font-size:11px;color:#999}.pac-item:hover{background-color:#fafafa}.pac-item-selected,.pac-item-selected:hover{background-color:#ebf2fe}.pac-matched{font-weight:700}.pac-item-query{font-size:13px;padding-right:3px;color:#000}.pac-icon{width:15px;height:20px;margin-right:7px;margin-top:6px;display:inline-block;vertical-align:top;background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons.png);background-size:34px}.hdpi .pac-icon{background-image:url(https://maps.gstatic.com/mapfiles/api-3/images/autocomplete-icons_hdpi.png)}.pac-icon-search{background-position:-1px -1px}.pac-item-selected .pac-icon-search{background-position:-18px -1px}.pac-icon-marker{background-position:-1px -161px}.pac-item-selected .pac-icon-marker{background-position:-18px -161px}.pac-placeholder{color:gray}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="dns-prefetch" href="https://maps.googleapis.com/">
     <link rel="dns-prefetch" href="https://maps.gstatic.com/">
     <link rel="dns-prefetch" href="https://mts0.googleapis.com/">
     <link rel="dns-prefetch" href="https://mts1.googleapis.com/">
 
-   <!-- <link rel="shortcut icon" href="http://makent.trioangle.com/images/logos/favicon.ico">-->
+
 
     <!--[if IE]><![endif]-->
     <meta charset="utf-8">
@@ -57,23 +57,20 @@
     <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/common.css">
 
     <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/home.css">
-<!--
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/themes.css">-->
+
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/themes.css">
 
     <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/pcss?css=css/dynamic.css">
 
     <!--<![endif]-->
 
     <!--[if lt IE 9]>
-   <!-- <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">-->
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/airglyphs-ie8.css">
 
     <![endif]-->
-<!--
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/host_dashboard.css">
 
-    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/payout_preferences.css">
--->
-
-
+    <link media="all" type="text/css" rel="stylesheet" href="http://makent.trioangle.com/css/dashboard.css">
 
 
     <style type="text/css">
@@ -81,12 +78,12 @@
         .ui-selected { background: #F39814; color: white; }
     </style>
 
-    <title>Account </title>
+    <title>Dashboard </title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 
-    <meta name="description" content="Account">
+    <meta name="description" content="Dashboard">
     <meta name="keywords" content="">
 
 
@@ -100,15 +97,12 @@
 
     <meta name="theme-color" content="#f5f5f5">
 
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/common.js"></script>
-    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/util.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/controls.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/places_impl.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/stats.js">
-    </script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttp%3A%2F%2Fmakent.trioangle.com%2Fusers%2Fpayout_preferences%2F10005&amp;4sAIzaSyBXyRBiyRcEzHDJ8iU00zECMUP4cXBIm6A&amp;callback=_xdc_._hoty9i&amp;token=62420"></script>
+    <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/util.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/controls.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/places_impl.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/27/1/stats.js">
+
+    </script>
 </head>
 
-<body class="ng-scope" ng-app="account">
+<body class="ng-scope" ng-app="UserProfile" ng-controller="userprofile">
 
 
 <section id="mu-menu">
@@ -144,28 +138,28 @@
         <a href="javascript:void(0);" aria-label="Homepage" data-prevent-default="" class="link-reset burger--sm">
             <i class="icon icon-reorder icon-rausch"></i>
             <span class="screen-reader-only">
-      HORO
-    </span>
+          HORO
+        </span>
         </a>
         <div class="title--sm text-center">
             <button class="btn btn-block search-btn--sm search-modal-trigger">
                 <i class="icon icon-search icon-gray"></i>
                 <span class="search-placeholder--sm">
-              Where to?
-            </span>
+                  Where to?
+                </span>
             </button>
-        </div>
 
+        </div>
         <div class="action--sm"></div>
-        <!--<nav role="navigation" class="nav&#45;&#45;sm"><div class="nav-mask&#45;&#45;sm"></div>
-            <div class="nav-content&#45;&#45;sm panel text-white">
+        <nav role="navigation" class="nav--sm"><div class="nav-mask--sm"></div>
+            <div class="nav-content--sm panel text-white">
                 <div class="nav-header ">
                     <div class="nav-profile clearfix">
                         <div class="user-item pull-left">
                             <a href="" class="link-reset user-profile-link">
                                 <div class="media-photo media-round user-profile-image" style="background:rgba(0, 0, 0, 0) url(https://myspace.com/common/images/user.png?sz=50) no-repeat scroll 0 0 / cover">
                                 </div>
-                                Jay
+                                {{fname}}
                             </a>
                         </div>
                     </div>
@@ -213,7 +207,7 @@
                                 <li class="">
                                     <a class="link-reset menu-item" rel="nofollow" href="">
                                         Inbox
-                                        <i class="alert-count unread-count&#45;&#45;sm fade text-center">
+                                        <i class="alert-count unread-count--sm fade text-center">
                                             0
                                         </i>
                                     </a>
@@ -246,11 +240,11 @@
                                         Help
                                     </a>
                                 </li>
-                                &lt;!&ndash;<li>
+                                <!--<li>
                                   <a class="link-reset menu-item" rel="nofollow" href="http://makent.trioangle.com/invite">
                                     Invite Friends
                                   </a>
-                                </li>&ndash;&gt;
+                                </li>-->
                                 <li class="">
                                     <a class="link-reset menu-item logout" rel="nofollow" href="">
                                         Log Out
@@ -261,7 +255,7 @@
                     </div>
                 </div>
             </div>
-        </nav>-->
+        </nav>
         <div class="search-modal-container">
             <div class="modal hide" role="dialog" id="search-modal--sm" aria-hidden="false" tabindex="-1">
                 <div class="modal-table">
@@ -363,10 +357,10 @@
 
     <header class="regular-header clearfix hide-sm" id="old-header" role="banner">
 
-        <a aria-label="Homepage" href="" class="header-belo pull-left " style="background:rgba(0, 0, 0, 0) url() no-repeat scroll 0 0;">
-    <span class="screen-reader-only">
-      HORO
-    </span>
+
+        <span class="screen-reader-only">
+          HORO
+        </span>
         </a>
 
         <!--     <a aria-label="Homepage"  href="http://makent.trioangle.com" class="login-logo header-belo pull-left " >
@@ -457,12 +451,12 @@
 
                 <li class="dropdown-trigger pull-left large-right-margin hide-sm hide" data-behavior="recently-viewed__container">
                     <a class="no-crawl link-reset" href="" data-href="/history#docked-filters" data-behavior="recently-viewed__trigger">
-      <span class="show-lg recently-viewed__label">
-        Recently Viewed
-      </span>
+          <span class="show-lg recently-viewed__label">
+            Recently Viewed
+          </span>
                         <span class="hide-lg recently-viewed__label">
-        <i class="icon icon-recently-viewed icon-gray h4"></i>
-      </span>
+            <i class="icon icon-recently-viewed icon-gray h4"></i>
+          </span>
                         <i class="icon icon-caret-down icon-light-gray h5"></i>
                     </a>
                     <div class="tooltip tooltip-top-left dropdown-menu recently-viewed__dropdown" data-behavior="recently-viewed__dropdown">
@@ -490,7 +484,7 @@
                 </li>-->
             </ul>
         </div>
-        <div class="pull-right" ng-controller="editaccountprofile">
+        <div class="pull-right">
             <ul class="nav pull-left help-menu list-unstyled">
 
                 <!-- <li id="header-help-menu" class="help-menu-container pull-left large-right-margin hide-md dropdown-trigger">
@@ -523,11 +517,11 @@
               </ul>
                   </div>
                 </li> -->
-               <!-- <li class="list-your-space pull-left">
+                <!--<li class="list-your-space pull-left">
                     <a id="list-your-space" class="become" href="" style="border-left:none !important;">
-        <span id="list-your-space" class="btn btn-special list-your-space-btn">
-          Become a Host
-          </span>
+            <span id="list-your-space" class="btn btn-special list-your-space-btn">
+              Become a Host
+              </span>
                     </a>
                     <div class="panel  drop-down-menu-host js-become-a-host-dropdown hide">
                         <div class="link-reset panel-body hover-item hide js-become-a-host-lys" href="/become-a-host?from_nav=1&amp;link=2">
@@ -562,7 +556,7 @@
 
 
             <ul class="nav pull-left list-unstyled">
-               <!-- <li class="pull-left dropdown-trigger">
+                <!--<li class="pull-left dropdown-trigger">
                     <a class="link-reset trip-drop" href="">
                         <span class="trip-pos"> Trips</span>
                         <i class="trips-icon">
@@ -571,8 +565,7 @@
                     </a>
                     <div class="panel drop-down-menu-trip hide js-become-a-host-dropdown">
                         <div class="trip-width">
-                            <div class="panel-header no-border section-header-home"><strong><span>Trips</span></strong>
-                                <a href="" class="link-reset view-trips pull-right"><strong><span>View Trips</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home"><strong><span>Trips</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Trips</span></strong></a></div>
                             <div class="pull-left" style="width:100%;padding:15px 20px;">
                                 <div class="pull-left" style="padding:15px 20px 0px;">
                                     <strong>No upcoming trips</strong>
@@ -582,8 +575,7 @@
                                     <i class="icon icon-suitcase"></i>
                                 </div>
                             </div>
-                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Wishlist</span></strong>
-                                <a href="http://makent.trioangle.com/wishlists/my" class="link-reset view-trips pull-right"><strong><span>View Wishlists</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Wishlist</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Wishlists</span></strong></a></div>
                             <div class="pull-left" style="width:100%;padding:15px 20px;">
                                 <div class="pull-left" style="padding:15px 20px 0px;">
                                     <strong>No wish list created</strong>
@@ -595,9 +587,9 @@
                             </div>
                         </div>
                     </div>
-                </li>-->
-               <!-- <li id="inbox-item" class="inbox-item pull-left dropdown-trigger js-inbox-comp">
-                    <a href="http://makent.trioangle.com/inbox" rel="nofollow" class="no-crawl link-reset inbox-icon">
+                </li>
+                <li id="inbox-item" class="inbox-item pull-left dropdown-trigger js-inbox-comp">
+                    <a href="" rel="nofollow" class="no-crawl link-reset inbox-icon">
                         <span class="msg-icon1">Messages</span>
                         <i class="msg-icon">
                             <i class="alert-count text-center fade">0</i>
@@ -608,16 +600,16 @@
                         </i>
                     </a>
                     <div class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown
-                notifications-dropdown hide">
+                    notifications-dropdown hide">
                     </div>
                     <div class="panel drop-down-menu-msg hide js-become-a-host-dropdown">
                         <div class="trip-width">
-                            <div class="panel-header no-border section-header-home"><strong><span>Messages</span></strong><a href="http://makent.trioangle.com/inbox" class="link-reset view-trips pull-right"><strong><span>View Inbox</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home"><strong><span>Messages</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Inbox</span></strong></a></div>
 
-                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Notifications</span></strong><a href="http://makent.trioangle.com/dashboard" class="link-reset view-trips pull-right"><strong><span>View Dashboard</span></strong></a></div>
+                            <div class="panel-header no-border section-header-home pull-left" style="width:100%;"><strong><span>Notifications</span></strong><a href="" class="link-reset view-trips pull-right"><strong><span>View Dashboard</span></strong></a></div>
                             <div class="pull-left" style="width:100%;padding:15px 20px;">
 
-                                <p style="margin:0px;padding-top:10px !important;"> There are 3 notifications waiting for you in your <a style="color:#333;text-decoration:underline;" href="http://makent.trioangle.com/dashboard"> dashboard </a>.</p>
+                                <p style="margin:0px;padding-top:10px !important;"> There are 3 notifications waiting for you in your <a style="color:#333;text-decoration:underline;" href=""> dashboard </a>.</p>
 
                             </div>
                         </div>
@@ -635,23 +627,23 @@
             <ul class="nav pull-left list-unstyled" role="navigation">
                 <li class="user-item pull-left medium-right-margin dropdown-trigger">
                     <a class="link-reset header-avatar-trigger" id="header-avatar-trigger" href="">
-            <span class="value_name">
-        Jay
-      </span>
+                            <span class="value_name">
+                                {{fname}}
+                              </span>
                         <div class="media-photo media-round user-profile-image" style="background: rgba(0, 0, 0, 0) url(https://myspace.com/common/images/user.png?sz=50) no-repeat scroll 0 0 / cover"></div>
                         <!--<i class="icon icon-caret-down icon-light-gray h5"></i>-->
                     </a>
                     <ul class="tooltip tooltip-top-right dropdown-menu list-unstyled header-dropdown drop-down-menu-login">
                         <li>
-                            <a href="/Profile"  rel="nofollow" class="no-crawl link-reset menu-item item-dashboard">
+                            <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-dashboard">
                                 Dashboard
                             </a>
                         </li>
                         <li class="listings">
                             <a href="" rel="nofollow" class="no-crawl link-reset menu-item item-listing">
-          <span class="plural">
-            Your Listings
-          </span>
+              <span class="plural">
+                Your Listings
+              </span>
                             </a>
                         </li>
                         <li class="reservations" style="display: none;">
@@ -673,17 +665,17 @@
                             <a href="" class="no-crawl link-reset menu-item item-invite-friends">
                                 Travel Credit
                                 <span class="label label-pink label-new">
-          </span>
+              </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#/Account" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
-                                Add Course
+                            <a href="#" ng-click="EditProfile()" rel="nofollow" class="no-crawl link-reset menu-item item-user-edit">
+                                Edit Profile
                             </a>
                         </li>
                         <li>
-                            <a href="#/sessionland" rel="nofollow" class="no-crawl link-reset menu-item item-account">
-                                Add Session
+                            <a href="#" class="no-crawl link-reset menu-item item-account" ng-click="Account()" rel="nofollow">
+                                Account
                             </a>
                         </li>
                         <li class="business-travel hide">
@@ -715,23 +707,23 @@
                        <img src="images/close.png">
                      </div>-->
                         <div class="panel-body pad-25 bor-none">
-                            <!--<a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block btn-large row-space-1 btn-facebook font-normal pad-top" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">-->
-  <span class="icon-container">
-    <i class="icon icon-facebook"></i>
-  </span>
-                                <span class="text-container">
-    Log in with Facebook
-  </span>
+                            <!-- <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block btn-large row-space-1 btn-facebook font-normal pad-top" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">-->
+                            <span class="icon-container">
+        <i class="icon icon-facebook"></i>
+      </span>
+                            <span class="text-container">
+        Log in with Facebook
+      </span>
                             </a>
 
 
                             <a href="" class="btn icon-btn btn-block btn-large row-space-1 btn-google font-normal pad-top">
-  <span class="icon-container">
-    <i class="icon icon-google-plus"></i>
-  </span>
+      <span class="icon-container">
+        <i class="icon icon-google-plus"></i>
+      </span>
                                 <span class="text-container">
-    Log in with Google
-  </span>
+        Log in with Google
+      </span>
                             </a>
 
 
@@ -740,7 +732,7 @@
                                 <hr>
                             </div>
 
-                            <form method="POST" action="" accept-charset="UTF-8" class="signup-form login-form ng-pristine ng-valid" data-action="Signin" novalidate="true"><input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+                            <form method="POST" action="" accept-charset="UTF-8" class="signup-form login-form ng-pristine ng-valid" data-action="Signin" novalidate="true"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
 
                                 <input id="from" name="from" type="hidden" value="email_login">
 
@@ -799,29 +791,29 @@
                             <div class="social-buttons">
 
 
-                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook pad-23" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
-  <span class="icon-container">
-    <i class="icon icon-facebook"></i>
-  </span>
-                                    <span class="text-container">
-    Sign up with Facebook
-  </span>
+                                <!--<a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook pad-23" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
+      <span class="icon-container">-->
+                                <i class="icon icon-facebook"></i>
+                                </span>
+                                <span class="text-container">
+        Sign up with Facebook
+      </span>
                                 </a>
 
 
                                 <a href="" class="btn icon-btn btn-block row-space-1 btn-large btn-google pad-23">
-  <span class="icon-container">
-    <i class="icon icon-google-plus"></i>
-  </span>
+      <span class="icon-container">
+        <i class="icon icon-google-plus"></i>
+      </span>
                                     <span class="text-container">
-    Sign up with Google
-  </span>
+        Sign up with Google
+      </span>
                                 </a>
                             </div>
 
-                            <div class="text-center social-links hide">
-                                Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
-                            </div>
+                            <!--<div class="text-center social-links hide">
+                                Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
+                            </div>-->
 
                             <div class="signup-or-separator">
                                 <span class="h6 signup-or-separator--text">or</span>
@@ -835,19 +827,22 @@
                                 </a>    </div>
 
                             <div id="tos_outside" class="row-space-top-3">
-                                <small class="small-font">
-                                    By signing up, I agree to HORO's <a href="" data-popup="true">Terms of Service</a>, <a href="" data-popup="true">Privacy Policy</a>,
-                                    <a href="" data-popup="true">Guest Refund Policy</a>, and <a href="" data-popup="true">Host Guarantee Terms</a>.
-                                </small>
+                                <!--
+                                                                <small class="small-font">
+                                                                    By signing up, I agree to Makent's <a href="http://makent.trioangle.com/terms_of_service" data-popup="true">Terms of Service</a>, <a href="http://makent.trioangle.com/privacy_policy" data-popup="true">Privacy Policy</a>, <a href="http://makent.trioangle.com/guest_refund" data-popup="true">Guest Refund Policy</a>, and <a href="http://makent.trioangle.com/host_guarantee" data-popup="true">Host Guarantee Terms</a>.
+                                                                </small>
+                                -->
 
                             </div>
                         </div>
 
-                        <div class="panel-body">
-                            Already an HORO member?
-                            <a href="" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
-                                Log In
-                            </a></div>
+                        <!--
+                                                <div class="panel-body">
+                                                    Already an Makent member?
+                                                    <a href="http://makent.trioangle.com/login" class="modal-link link-to-login-in-signup login-btn login_popup_head" data-modal-href="/login_modal?" data-modal-type="login">
+                                                        Log In
+                                                    </a></div>
+                        -->
 
                     </div>
                 </div>
@@ -873,30 +868,30 @@
                             <div class="social-buttons hide">
 
 
-                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">
-  <span class="icon-container">
-    <i class="icon icon-facebook"></i>
-  </span>
-                                    <span class="text-container">
-    Sign up with Facebook
-  </span>
+                                <!--                                <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="fb-button fb-blue btn icon-btn btn-block row-space-1 btn-large btn-facebook" data-populate_uri="" data-redirect_uri="http://makent.trioangle.com/authenticate">-->
+                                <span class="icon-container">
+        <i class="icon icon-facebook"></i>
+      </span>
+                                <span class="text-container">
+        Sign up with Facebook
+      </span>
                                 </a>
 
 
                                 <a href="" class="btn icon-btn btn-block row-space-1 btn-large btn-google">
-  <span class="icon-container">
-    <i class="icon icon-google-plus"></i>
-  </span>
+      <span class="icon-container">
+        <i class="icon icon-google-plus"></i>
+      </span>
                                     <span class="text-container">
-    Sign up with Google
-  </span>
+        Sign up with Google
+      </span>
                                 </a>
                             </div>
 
-                            <div class="text-center social-links">
-                                Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=c84b5d52d4ac2dd20ffa6481bcb5314d&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
+                            <!--<div class="text-center social-links">
+                                Sign up with <a href="https://www.facebook.com/v2.2/dialog/oauth?client_id=563538487153778&amp;state=06ca2143b322ada09924abcf45328da2&amp;response_type=code&amp;sdk=php-sdk-5.4.0&amp;redirect_uri=http%3A%2F%2Fmakent.trioangle.com%2FfacebookAuthenticate&amp;scope=public_profile%2Cemail%2Cuser_friends" class="facebook-link-in-signup">Facebook</a> or <a href="http://makent.trioangle.com/googleLogin">Google</a>
                             </div>
-
+-->
                             <div class="signup-or-separator">
                                 <span class="h6 signup-or-separator--text">or</span>
                                 <hr>
@@ -908,7 +903,7 @@
                                     Sign up with Email
                                 </a>    </div>
 
-                            <form method="POST" action="" accept-charset="UTF-8" class="signup-form ng-pristine ng-valid" data-action="Signup" id="user_new" novalidate="true"><input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+                            <form method="POST" action="" accept-charset="UTF-8" class="signup-form ng-pristine ng-valid" data-action="Signup" id="user_new" novalidate="true"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
 
                                 <div class="signup-form-fields">
 
@@ -982,11 +977,11 @@
                                     </label> -->
 
                                     <div id="tos_outside" class="row-space-top-3 chk-box">
-                                        <small>
-                                            By signing up, I agree to HORO's <a href="" data-popup="true">Terms of Service</a>,
-                                            <a href="" data-popup="true">Privacy Policy</a>, <a href="" data-popup="true">Guest Refund Policy</a>,
-                                            and <a href="" data-popup="true">Host Guarantee Terms</a>.
-                                        </small>
+                                        <!--
+                                                                                <small>
+                                                                                    By signing up, I agree to Makent's <a href="http://makent.trioangle.com/terms_of_service" data-popup="true">Terms of Service</a>, <a href="http://makent.trioangle.com/privacy_policy" data-popup="true">Privacy Policy</a>, <a href="http://makent.trioangle.com/guest_refund" data-popup="true">Guest Refund Policy</a>, and <a href="http://makent.trioangle.com/host_guarantee" data-popup="true">Host Guarantee Terms</a>.
+                                                                                </small>
+                                        -->
 
                                     </div>
                                     <input class="btn btn-primary btn-block btn-large pad-top" type="submit" value="Sign up">
@@ -1014,7 +1009,7 @@
                 <div class="col-md-6 col-lg-5 col-center">
                     <div class="panel top-home">
 
-                        <form method="POST" action="" accept-charset="UTF-8" class="ng-pristine ng-valid"><input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
+                        <form method="POST" action="" accept-charset="UTF-8" class="ng-pristine ng-valid"><input name="_token" type="hidden" value="XdOAHAXILAsAIQMGgQNtNb9NTeZ3v9FST7EQsxvE">
                             <div id="forgot_password_container">
                                 <h3 class="panel-header panel-header-gray">
                                     Reset Password
@@ -1037,22 +1032,28 @@
         </div>
     </div>
 </div>
-<main id="site-content" role="main"  class="ng-scope"> <!--ng-controller="payout_preferences"-->
-    <div class="subnav hide-print"   ng-init="Init()">
+
+
+<main id="site-content" role="main">
+
+    <div class="subnav hide-print"  ng-init="LoadHostCourecs()">
         <div class="page-container-responsive">
             <ul class="subnav-list">
 
                 <li>
-                    <a href="/Profile"  aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
+
                 <li>
-                    <a href="/Account"  aria-selected="false" class="subnav-item">Add Courses</a>
+                    <a href="/Account" aria-selected="false" class="subnav-item">Add Courses</a>
                 </li>
+
                 <li>
-                    <a href="/sessionland" aria-selected="true" class="subnav-item">Add Session</a>
+                    <a href="/sessionland" aria-selected="false" class="subnav-item">Add Session</a>
                 </li>
+
                 <li>
-                    <a href="/HostCourseStatus" aria-selected="false" class="subnav-item">Course History</a>
+                    <a href="/HostCourseStatus" aria-selected="true" class="subnav-item">Course status</a>
                 </li>
 
 
@@ -1060,253 +1061,47 @@
         </div>
     </div>
 
-    <div class="page-container-responsive row-space-top-4 row-space-4" ng-controller="sessionAdd">
-        <div class="row">
 
-            <div class="col-md-12">
+    <div class="page-container-responsive space-top-4 space-4">
 
-                <div id="dashboard-content">
+        <div class="col-md-9">
+            <div class="container">
+                <div class="row">
+                    <ul class="thumbnails list-unstyled">
+                        <li class="col-md-3" ng-repeat="course in courseList">
+                            <div class="thumbnail" style="padding: 0">
+                                <div style="padding:4px">
+                                    <img alt="300x200" style="width: 100%" src="data:image/jpeg;base64,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">
+                                </div>
+                                <div class="caption">
+                                    <h2>{{course.course_name}}</h2>
+                                    <p>{{course.course_details}}</p>
+                                    <p><i class="icon icon-map-marker"></i>Start Date: {{course.course_startdate}}</p>
+                                    <p><i class="icon icon-map-marker"></i>End Date: {{course.course_enddate}}</p>
+                                </div>
+                                <div class="modal-footer" style="text-align: left">
 
-                    <form >
-
-                        <div class="panel row-space-4">
-                            <div class="panel-header">
-                                Required
+                                    <div class="row">
+                                        <div class="col-md-4"><b>{{course.progress}}0%</b><br/><small>Completed</small></div>
+                                        <div class="col-md-4"><b>{{course.course_lectures}}</b><br/><small>Course length: </small></div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="panel-body">
+                        </li>
 
-                                <!-- Text input-->
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_title">
-                                        Session Title
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="course_language" size="30" class="focus" name="course_title" type="text" value="" ng-model="sessionTitle">
-                                        <span class="text-danger"></span>
-                                    </div>
-                                </div>
-
-                                <!-- Text input-->
-                                 <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_start_date">
-                                        Session Date
-                                    </label>
-
-                                    <div class="col-sm-9">
-                                        <input class="form-control" type="date" ng-model="sessionDate">
-                                    </div>
-                                </div>
-
-                                <!-- Text input-->
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_Duration">
-                                        Duration
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="course_duration" size="30" class="focus" name="course_title" type="text" value="" ng-model="sessionDuration">
-                                        <span class="text-danger"></span>
-                                    </div>
-                                </div>
-
-                                <!-- Text input-->
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_Location">
-                                        Location
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="course_Location" size="30" class="focus" name="course_Location" type="text" value="" ng-model="sessionLocation">
-                                        <span class="text-danger"></span>
-                                    </div>
-                                </div>
-
-                                <!-- Text input-->
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_Details">
-                                        Details
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <input id="course_Details" size="30" class="focus" name="course_Details" type="text" value="" ng-model="sessionDetails">
-                                        <span class="text-danger"></span>
-                                    </div>
-                                </div>
-
-                                <div class="row row-condensed space-4">
-                                    <label class="text-right col-sm-3" for="course_name">
-                                        Select Course Name
-                                    </label>
-                                    <div class="col-sm-9">
-
-                                        <div class="form-group">
-
-
-                                            <select id="courseName" class="form-control" required>
-                                                <option value="">--- Select---</option>
-                                                <option data-ng-repeat="course in allCourse" value="{{course.course_Id}}">{{course.course_name}}</option>
-                                            </select>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-
-                        <button class="btn btn-primary btn-large" ng-click="uploadSession()">
-                            Save
-                        </button>
-                        <div class="alert alert-sucess" ng-show="SessionAdded">
-                            <strong>Session added successfully!</strong>
-                        </div>
-                    </form>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+    </div>
+    </div>
+
 </main>
-
-<div class="modal hide" id="payout_popup1" aria-hidden="false" style="" tabindex="-1"><div class="modal-table"><div class="modal-cell"><div id="modal-add-payout-set-address" class="modal-content">
-                <div class="panel-header">
-                    <a data-behavior="modal-close" class="panel-close" href="javascript:void(0);"></a>
-                    Add Payout Method
-                </div>
-                <div class="flash-container" id="popup1_flash-container"> </div>
-                <form class="modal-add-payout-pref ng-pristine ng-valid" method="post" id="address">
-                    <input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
-                    <div class="panel-body">
-                        <div>
-                            <label for="payout_info_payout_address1">Address <span style="color:red">*</span></label>
-                            <input type="text" autocomplete="billing address-line1" id="payout_info_payout_address1" name="address1">
-                        </div>
-                        <div>
-                            <label for="payout_info_payout_address2">Address 2 / Zone</label>
-                            <input type="text" autocomplete="billing address-line2" id="payout_info_payout_address2" name="address2">
-                        </div>
-                        <div>
-                            <label for="payout_info_payout_city">City <span style="color:red">*</span></label>
-                            <input type="text" autocomplete="billing address-level2" id="payout_info_payout_city" name="city">
-                        </div>
-                        <div>
-                            <label for="payout_info_payout_state">State / Province</label>
-                            <input type="text" autocomplete="billing address-level1" id="payout_info_payout_state" name="state">
-                        </div>
-                        <div>
-                            <label for="payout_info_payout_zip">Postal Code <span style="color:red">*</span></label>
-                            <input type="text" autocomplete="billing postal-code" id="payout_info_payout_zip" name="postal_code">
-                        </div>
-                        <div>
-                            <label for="payout_info_payout_country">Country <span style="color:red">*</span></label>
-                            <div class="select">
-                                <select autocomplete="billing country" id="payout_info_payout_country" name="country_dropdown"><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei Darussalam</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo</option><option value="CD">Congo, the Democratic Republic of the</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'Ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and Mcdonald Islands</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran, Islamic Republic of</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KP">Korea, Democratic People's Republic of</option><option value="KR">Korea, Republic of</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Lao People's Democratic Republic</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libyan Arab Jamahiriya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MK">Macedonia, the Former Yugoslav Republic of</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia, Federated States of</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PS">Palestinian Territory, Occupied</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option><option value="RW">Rwanda</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia and Montenegro</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia and the South Sandwich Islands</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syrian Arab Republic</option><option value="TW">Taiwan, Province of China</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania, United Republic of</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US" selected="selected">United States</option><option value="UM">United States Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VG">Virgin Islands, British</option><option value="VI">Virgin Islands, U.s.</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        <input type="submit" value="Next" class="btn btn-primary">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal hide" id="payout_popup2" aria-hidden="false" style="" tabindex="-1">
-
-    <div class="modal-table"><div class="modal-cell"><div id="modal-add-payout-set-address" class="modal-content">
-                <div class="panel-header">
-                    <a data-behavior="modal-close" class="panel-close" href="javascript:void(0);"></a>
-                    Add Payout Method
-                </div>
-                <div class="flash-container" id="popup2_flash-container"> </div>
-                <form class="modal-add-payout-pref ng-pristine ng-valid" id="country_options" accept-charset="UTF-8">
-                    <input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
-
-                    <input type="hidden" id="payout_info_payout2_address1" value="" name="address1">
-                    <input type="hidden" id="payout_info_payout2_address2" value="" name="address2">
-                    <input type="hidden" id="payout_info_payout2_city" value="" name="city">
-                    <input type="hidden" id="payout_info_payout2_country" value="" name="country">
-                    <input type="hidden" id="payout_info_payout2_state" value="" name="state">
-                    <input type="hidden" id="payout_info_payout2_zip" value="" name="postal_code">
-
-                    <div class="panel-body">
-                        <div>
-                            <p>Payouts for reservations are released to you the day after your guest checks in, and it takes some additional time for the money to arrive depending on your payout method.</p>
-                            <p>We can send money to people with these payout methods. Which do you prefer?</p>
-                        </div>
-                        <table id="payout_method_descriptions" class="table table-striped">
-                            <thead><tr>
-                                <th></th>
-                                <th>Payout method</th>
-                                <th>Processing time</th>
-                                <th>Additional fees</th>
-                                <th>Currency</th>
-                                <th>Details</th>
-                            </tr></thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <input type="radio" value="PayPal" name="payout_method" id="payout2_method">
-                                </td>
-                                <td class="type"><label for="payout_method">PayPal</label></td>
-                                <td>3-5 business days</td>
-                                <td>None</td>
-                                <td>EUR</td>
-                                <td>Business day processing only; weekends and banking holidays may cause delays</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="panel-footer">
-                        <input type="submit" value="Next" id="select-payout-method-submit" class="btn btn-primary">
-                    </div>
-                </form>
-
-            </div></div></div></div>
-
-<div class="modal hide" id="payout_popup3" aria-hidden="false" style="" tabindex="-1"><div class="modal-table"><div class="modal-cell"><div id="modal-add-payout-set-address" class="modal-content">
-                <div class="panel-header">
-                    <a data-behavior="modal-close" class="panel-close" href="javascript:void(0);"></a>
-                    Add Payout Method
-                </div>
-                <div class="flash-container hide" id="popup3_flash-container"><div class="alert alert-error alert-error alert-header"><a class="close alert-close" href="javascript:void(0);"></a><i class="icon alert-icon icon-alert-alt"></i>Enter Email ID</div>  </div>
-
-                <form method="post" id="payout_paypal" action="" accept-charset="UTF-8" class="ng-pristine ng-valid">
-                    <input name="_token" type="hidden" value="iDQEYFHwENJwWeNj4gyk1wb3MlHBBKvY1os3V8Dd">
-
-                    <input type="hidden" id="payout_info_payout3_address1" value="" name="address1">
-                    <input type="hidden" id="payout_info_payout3_address2" value="" name="address2">
-                    <input type="hidden" id="payout_info_payout3_city" value="" name="city">
-                    <input type="hidden" id="payout_info_payout3_country" value="" name="country">
-                    <input type="hidden" id="payout_info_payout3_state" value="" name="state">
-                    <input type="hidden" id="payout_info_payout3_zip" value="" name="postal_code">
-                    <input type="hidden" id="payout3_method" value="" name="payout_method">
-
-                    <div class="panel-body">
-
-                        PayPal Email ID
-                        <input type="text" name="paypal_email" id="paypal_email">
-                    </div>
-
-                    <div class="panel-footer">
-                        <input type="submit" value="Submit" id="modal-paypal-submit" class="btn btn-primary">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 <div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100%; background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)">
-    <footer class="page-container-responsive ng-scope" >
+    <footer class="page-container-responsive ng-scope" ng-controller="footer">
         <div class="row row-condensed">
 
             <div class="col-md-3 col-md-offset-1">
@@ -1445,14 +1240,13 @@
 
 
 <script src="http://makent.trioangle.com/js/angular.js"></script>
-<script src="host/sessionAdd.js"></script>
 
 <script src="http://makent.trioangle.com/js/angular-sanitize.js"></script>
 
 
 <script src="http://makent.trioangle.com/js/responsiveslides.min.js"></script>
-
 -->
+
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -1534,22 +1328,28 @@
 </script>
 <script>
     var app = angular.module('App', ['ngSanitize']);
-    /*var APP_URL = "http:\/\/makent.trioangle.com";*/
+    /*
+     var APP_URL = "http:\/\/makent.trioangle.com";
+     */
     var USER_ID = 10005
     $.datepicker.setDefaults($.datepicker.regional[ "en" ])
 </script>
 
+
+
 <!--
 <script src="http://makent.trioangle.com/js/common.js"></script>
 -->
+
 <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
 
-<!-- ver. 87c23752f8dfbd60bf83837d2c8b2dcd0ec660a9 -->
+
 <div class="tooltip tooltip-bottom-middle" role="tooltip" aria-hidden="true">
     <p class="panel-body">To sign up, you must be 18 or older. Other people won’t see your birthday.</p>
-</div>
+</div><div class="pac-container pac-logo" style="display: none; width: 388px; position: absolute; left: 120px; top: 60px;">
 
-<div class="pac-container pac-logo" style="display: none;"></div><div class="pac-container pac-logo" style="display: none;">
+</div><div class="pac-container pac-logo" style="display: none; width: 0px; position: absolute; left: 0px; top: 0px;">
+
 </div>
 
 </body>

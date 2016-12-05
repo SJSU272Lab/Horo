@@ -42,6 +42,18 @@ profile.controller('userprofile', function($scope, $http) {
     });
 
 
+    $scope.LoadHostCourecs = function()
+    {
+        $http({
+            method: "POST",
+            url: '/get_host_added_courses',
+        }).success(function (data) {
+            $scope.courseList = data.Result;
+
+        });
+    }
+
+
     $scope.Account = function () {
         window.location.assign("/Account");
     }
