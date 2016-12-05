@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/ebayLog.log" afterPath="$PROJECT_DIR$/HORO/ebayLog.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" afterPath="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" />
     </list>
     <ignored path="Fall16-Team4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,6 +66,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="mysqlConnector.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/routes/mysqlConnector.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -98,7 +109,6 @@
         <option value="$PROJECT_DIR$/HORO/public/NGO/NGOProfile.js" />
         <option value="$PROJECT_DIR$/HORO/ebayLog.log" />
         <option value="$PROJECT_DIR$/HORO/public/Attendee/attendeeCourseStatus.js" />
-        <option value="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" />
         <option value="$PROJECT_DIR$/HORO/public/index.js" />
         <option value="$PROJECT_DIR$/HORO/public/Course.js" />
         <option value="$PROJECT_DIR$/HORO/public/account.js" />
@@ -125,6 +135,7 @@
         <option value="$PROJECT_DIR$/HORO/views/Profile.ejs" />
         <option value="$PROJECT_DIR$/HORO/routes/Course.js" />
         <option value="$PROJECT_DIR$/HORO/app.js" />
+        <option value="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" />
       </list>
     </option>
   </component>
@@ -338,23 +349,23 @@
       <workItem from="1480835905172" duration="4608000" />
       <workItem from="1480840542812" duration="3499000" />
       <workItem from="1480877982859" duration="7321000" />
-      <workItem from="1480959665347" duration="15118000" />
+      <workItem from="1480959665347" duration="16353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124652000" />
+    <option name="totallyTimeSpent" value="125887000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20787401" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20787401" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25354332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25354332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -674,14 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/mysqlConnector.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/gallery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -794,24 +797,14 @@
             <element signature="e#515#550#0" expanded="false" />
             <element signature="e#711#1155#0" expanded="false" />
             <element signature="e#864#1151#0" expanded="false" />
-            <element signature="e#913#1021#0" expanded="false" />
-            <element signature="e#1062#1145#0" expanded="false" />
-            <element signature="e#1200#5885#0" expanded="false" />
-            <element signature="e#1206#2759#0" expanded="false" />
-            <element signature="e#2809#4256#0" expanded="false" />
-            <element signature="e#4259#5119#0" expanded="false" />
-            <element signature="e#5266#5863#0" expanded="false" />
-            <element signature="e#5284#5394#0" expanded="false" />
-            <element signature="e#5408#5857#0" expanded="false" />
-            <element signature="e#5444#5563#0" expanded="false" />
-            <element signature="e#5580#5847#0" expanded="false" />
-            <element signature="e#5935#6778#0" expanded="false" />
-            <element signature="e#6160#6757#0" expanded="false" />
-            <element signature="e#6178#6288#0" expanded="false" />
-            <element signature="e#6302#6751#0" expanded="false" />
-            <element signature="e#6338#6457#0" expanded="false" />
-            <element signature="e#6474#6741#0" expanded="false" />
-            <element signature="e#6827#6869#0" expanded="false" />
+            <element signature="e#1419#1527#0" expanded="false" />
+            <element signature="e#1568#1651#0" expanded="false" />
+            <element signature="e#1711#3264#0" expanded="false" />
+            <element signature="e#3314#4761#0" expanded="false" />
+            <element signature="e#4764#5624#0" expanded="false" />
+            <element signature="e#5789#5899#0" expanded="false" />
+            <element signature="e#6979#7246#0" expanded="false" />
+            <element signature="e#8629#8671#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -895,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="113" column="10" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/NGOProfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
@@ -948,6 +933,22 @@
             <element signature="e#6296#6466#0" expanded="false" />
             <element signature="e#6517#6719#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/mysqlConnector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="113" column="10" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
