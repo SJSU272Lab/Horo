@@ -36,6 +36,23 @@ exports.land = function(req, res) {
     });
 };
 
+exports.HostCourseStatus = function(req,res)
+{
+    //console.log("********************************here ********************************");
+    ejs.renderFile('./views/HostCourseStatus.ejs', function(err, result) {
+        // render on success
+        if (!err) {
+            res.end(result);
+            console.log("successfully rendered the signin module");
+        }
+        // render or error
+        else {
+            res.end('An error occurred');
+            console.log(err);
+        }
+    });
+}
+
 
 exports.view_profile = function(req,res)
 {
@@ -217,6 +234,12 @@ exports.get_course_details = function(req,res)
             }
         }
     }, checkLoginQuery);
+}
+
+
+exports.get_host_added_courses = function(req,res)
+{
+
 }
 
 
