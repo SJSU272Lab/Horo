@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/app.js" afterPath="$PROJECT_DIR$/HORO/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/ebayLog.log" afterPath="$PROJECT_DIR$/HORO/ebayLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/public/NGO/NGOCourseList.js" afterPath="$PROJECT_DIR$/HORO/public/NGO/NGOCourseList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/NGOProfile.js" afterPath="$PROJECT_DIR$/HORO/routes/NGOProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/views/NGOCoursesInArea.ejs" afterPath="$PROJECT_DIR$/HORO/views/NGOCoursesInArea.ejs" />
-    </list>
+    <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="" />
     <ignored path="Fall16-Team4.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NGOCoursesInArea.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NGOCoursesInArea.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HORO/views/NGOCoursesInArea.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="62">
-              <caret line="1384" column="11" selection-start-line="1384" selection-start-column="11" selection-end-line="1384" selection-end-column="11" />
+              <caret line="1384" column="0" selection-start-line="1384" selection-start-column="0" selection-end-line="1384" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -40,7 +34,7 @@
       <file leaf-file-name="NGOProfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HORO/routes/NGOProfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="389">
               <caret line="209" column="60" selection-start-line="209" selection-start-column="54" selection-end-line="209" selection-end-column="60" />
               <folding>
                 <element signature="e#28#62#0" expanded="false" />
@@ -99,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HORO/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="93" column="39" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="39" />
+            <state relative-caret-position="225">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -213,7 +207,38 @@
     </navigator>
     <panes>
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -333,18 +358,18 @@
       <workItem from="1480835905172" duration="4608000" />
       <workItem from="1480840542812" duration="3499000" />
       <workItem from="1480877982859" duration="7321000" />
-      <workItem from="1480959665347" duration="11941000" />
+      <workItem from="1480959665347" duration="12636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121475000" />
+    <option name="totallyTimeSpent" value="122170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15746972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15739386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20787401" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -909,17 +934,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="93" column="39" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/NGOProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="389">
           <caret line="209" column="60" selection-start-line="209" selection-start-column="54" selection-end-line="209" selection-end-column="60" />
           <folding>
             <element signature="e#28#62#0" expanded="false" />
@@ -965,6 +982,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/NGOCoursesInArea.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="1384" column="0" selection-start-line="1384" selection-start-column="0" selection-end-line="1384" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/public/NGO/NGOCourseList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -975,10 +1000,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/NGOCoursesInArea.ejs">
+    <entry file="file://$PROJECT_DIR$/HORO/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="1384" column="11" selection-start-line="1384" selection-start-column="11" selection-end-line="1384" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
