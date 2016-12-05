@@ -4,14 +4,10 @@
     <list default="true" id="0a2ec13a-9413-4b98-a663-1ed07dad4f41" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/ebayLog.log" afterPath="$PROJECT_DIR$/HORO/ebayLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js" afterPath="$PROJECT_DIR$/HORO/public/NGO/NGOAttendeePeopleList.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/Account.js" afterPath="$PROJECT_DIR$/HORO/routes/Account.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/Course.js" afterPath="$PROJECT_DIR$/HORO/routes/Course.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/NGOProfile.js" afterPath="$PROJECT_DIR$/HORO/routes/NGOProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/attendeeProfile.js" afterPath="$PROJECT_DIR$/HORO/routes/attendeeProfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/index.js" afterPath="$PROJECT_DIR$/HORO/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/routes/profile.js" afterPath="$PROJECT_DIR$/HORO/routes/profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs" afterPath="$PROJECT_DIR$/HORO/views/NGOAttendeesInArea.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/public/signin/signin.js" afterPath="$PROJECT_DIR$/HORO/public/signin/signin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs" afterPath="$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs" afterPath="$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HORO/views/index.ejs" afterPath="$PROJECT_DIR$/HORO/views/index.ejs" />
     </list>
     <ignored path="Fall16-Team4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +31,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="143" column="72" selection-start-line="143" selection-start-column="72" selection-end-line="143" selection-end-column="72" />
+            <state relative-caret-position="138">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="12" />
               <folding>
                 <element signature="e#147#285#0" expanded="false" />
                 <element signature="e#165#283#0" expanded="false" />
@@ -46,129 +42,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NGOProfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/NGOProfile.js">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+            <state relative-caret-position="299">
+              <caret line="88" column="79" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttendeeCourseStatus.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="59">
+              <caret line="1038" column="4" selection-start-line="1038" selection-start-column="4" selection-end-line="1053" selection-end-column="10" />
               <folding>
-                <element signature="e#28#62#0" expanded="false" />
-                <element signature="e#364#402#0" expanded="false" />
-                <element signature="e#549#584#0" expanded="false" />
-                <element signature="e#744#882#0" expanded="false" />
-                <element signature="e#762#880#0" expanded="false" />
-                <element signature="e#1430#1890#0" expanded="false" />
-                <element signature="e#1595#1886#0" expanded="false" />
-                <element signature="e#1644#1756#0" expanded="false" />
-                <element signature="e#1797#1880#0" expanded="false" />
-                <element signature="e#1940#2405#0" expanded="false" />
-                <element signature="e#2107#2401#0" expanded="false" />
-                <element signature="e#2156#2271#0" expanded="false" />
-                <element signature="e#2312#2395#0" expanded="false" />
-                <element signature="e#2615#3212#0" expanded="false" />
-                <element signature="e#2633#2743#0" expanded="false" />
-                <element signature="e#2757#3206#0" expanded="false" />
-                <element signature="e#2793#2912#0" expanded="false" />
-                <element signature="e#2929#3196#0" expanded="false" />
-                <element signature="e#3681#3856#0" expanded="false" />
-                <element signature="e#3862#4051#0" expanded="false" />
-                <element signature="e#4451#4874#0" expanded="false" />
-                <element signature="e#4498#4673#0" expanded="false" />
-                <element signature="e#4679#4868#0" expanded="false" />
+                <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/profile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="caurse.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/caurse.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/contact.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Course.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/Course.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
-              <folding>
-                <element signature="e#138#276#0" expanded="false" />
-                <element signature="e#156#274#0" expanded="false" />
-                <element signature="e#364#722#0" expanded="false" />
-                <element signature="e#431#718#0" expanded="false" />
-                <element signature="e#480#588#0" expanded="false" />
-                <element signature="e#629#712#0" expanded="false" />
-                <element signature="e#773#820#0" expanded="false" />
-                <element signature="e#1077#1739#0" expanded="false" />
-                <element signature="e#1095#1205#0" expanded="false" />
-                <element signature="e#1219#1733#0" expanded="false" />
-                <element signature="e#1255#1439#0" expanded="false" />
-                <element signature="e#1456#1723#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-detail.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/course-detail.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditProfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/EditProfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="23" column="49" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gallery.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/gallery.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HORO/routes/home.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -198,7 +109,6 @@
       <list>
         <option value="$PROJECT_DIR$/HORO/public/signup/signup.html" />
         <option value="$PROJECT_DIR$/HORO/public/signup/signup.js" />
-        <option value="$PROJECT_DIR$/HORO/public/signin/signin.js" />
         <option value="$PROJECT_DIR$/HORO/public/courseAdd.js" />
         <option value="$PROJECT_DIR$/HORO/public/host/courseAdd.js" />
         <option value="$PROJECT_DIR$/HORO/public/host/sessionAdd.js" />
@@ -213,13 +123,10 @@
         <option value="$PROJECT_DIR$/HORO/routes/mysqlConnector.js" />
         <option value="$PROJECT_DIR$/HORO/app.js" />
         <option value="$PROJECT_DIR$/HORO/public/index.js" />
-        <option value="$PROJECT_DIR$/HORO/views/index.ejs" />
         <option value="$PROJECT_DIR$/HORO/public/Course.js" />
         <option value="$PROJECT_DIR$/HORO/views/course.ejs" />
         <option value="$PROJECT_DIR$/HORO/views/course-detail.ejs" />
-        <option value="$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs" />
         <option value="$PROJECT_DIR$/HORO/views/Profile.ejs" />
-        <option value="$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs" />
         <option value="$PROJECT_DIR$/HORO/public/account.js" />
         <option value="$PROJECT_DIR$/HORO/public/Host/courseAdd.js" />
         <option value="$PROJECT_DIR$/HORO/views/Account.ejs" />
@@ -233,6 +140,10 @@
         <option value="$PROJECT_DIR$/HORO/routes/index.js" />
         <option value="$PROJECT_DIR$/HORO/routes/NGOProfile.js" />
         <option value="$PROJECT_DIR$/HORO/routes/profile.js" />
+        <option value="$PROJECT_DIR$/HORO/views/index.ejs" />
+        <option value="$PROJECT_DIR$/HORO/public/signin/signin.js" />
+        <option value="$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs" />
+        <option value="$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs" />
       </list>
     </option>
   </component>
@@ -305,6 +216,82 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Fall16-Team4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HORO" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="signin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,21 +414,21 @@
       <workItem from="1480578736990" duration="2259000" />
       <workItem from="1480835905172" duration="4608000" />
       <workItem from="1480840542812" duration="3499000" />
-      <workItem from="1480877982859" duration="6523000" />
+      <workItem from="1480877982859" duration="7321000" />
+      <workItem from="1480959665347" duration="1155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108736000" />
+    <option name="totallyTimeSpent" value="110689000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19985358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19985358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20787401" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25669292" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -454,6 +441,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20787401" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -548,20 +536,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HORO/views/EditProfile.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -694,7 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="28" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,23 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4368">
-          <caret line="1079" column="0" selection-start-line="1079" selection-start-column="0" selection-end-line="1079" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="1111" column="72" selection-start-line="1111" selection-start-column="72" selection-end-line="1111" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,39 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding>
-            <element signature="e#133#510#0" expanded="false" />
-            <element signature="e#209#466#0" expanded="false" />
-            <element signature="e#251#460#0" expanded="false" />
-            <element signature="e#275#352#0" expanded="false" />
-            <element signature="e#377#449#0" expanded="false" />
-            <element signature="e#1162#1691#0" expanded="false" />
-            <element signature="e#1178#1257#0" expanded="false" />
-            <element signature="e#1283#1681#0" expanded="false" />
-            <element signature="e#1326#1608#0" expanded="false" />
-            <element signature="e#1385#1538#0" expanded="false" />
-            <element signature="e#1614#1670#0" expanded="false" />
-            <element signature="e#1742#2448#0" expanded="false" />
-            <element signature="e#1818#1959#0" expanded="false" />
-            <element signature="e#1904#1949#0" expanded="false" />
-            <element signature="e#1985#2438#0" expanded="false" />
-            <element signature="e#2028#2365#0" expanded="false" />
-            <element signature="e#2087#2239#0" expanded="false" />
-            <element signature="e#2371#2427#0" expanded="false" />
-            <element signature="e#2493#3399#0" expanded="false" />
-            <element signature="e#2540#2616#0" expanded="false" />
-            <element signature="e#2642#3391#0" expanded="false" />
-            <element signature="e#2685#3318#0" expanded="false" />
-            <element signature="e#2744#2896#0" expanded="false" />
-            <element signature="e#3324#3380#0" expanded="false" />
-            <element signature="e#3441#4138#0" expanded="false" />
-            <element signature="e#3534#3724#0" expanded="false" />
-            <element signature="e#3620#3714#0" expanded="false" />
-            <element signature="e#3750#4129#0" expanded="false" />
-            <element signature="e#3794#4057#0" expanded="false" />
-            <element signature="e#3852#4042#0" expanded="false" />
-            <element signature="e#4063#4118#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,16 +696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="41" />
-          <folding>
-            <element signature="e#122#899#0" expanded="false" />
-            <element signature="e#169#460#0" expanded="false" />
-            <element signature="e#546#707#0" expanded="false" />
-            <element signature="e#717#895#0" expanded="false" />
-            <element signature="e#1788#1853#0" expanded="false" />
-            <element signature="e#1921#2075#0" expanded="false" />
-            <element signature="e#2081#2181#0" expanded="false" />
-            <element signature="e#2228#2279#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -791,15 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="1029" column="28" selection-start-line="1029" selection-start-column="28" selection-end-line="1029" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="87" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="1166" column="24" selection-start-line="1166" selection-start-column="24" selection-end-line="1168" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -815,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -823,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="1215" column="78" selection-start-line="1215" selection-start-column="72" selection-end-line="1215" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,26 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="35" column="27" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="27" />
-          <folding>
-            <element signature="e#45#89#0" expanded="false" />
-            <element signature="e#282#352#0" expanded="false" />
-            <element signature="e#378#816#0" expanded="false" />
-            <element signature="e#418#756#0" expanded="false" />
-            <element signature="e#567#745#0" expanded="false" />
-            <element signature="e#762#809#0" expanded="false" />
-            <element signature="e#964#1252#0" expanded="false" />
-            <element signature="e#1063#1241#0" expanded="false" />
-            <element signature="e#1258#1305#0" expanded="false" />
-            <element signature="e#1349#1400#0" expanded="false" />
-            <element signature="e#1695#1765#0" expanded="false" />
-            <element signature="e#1784#2014#0" expanded="false" />
-            <element signature="e#1872#2004#0" expanded="false" />
-            <element signature="e#2299#2489#0" expanded="false" />
-            <element signature="e#2945#3380#0" expanded="false" />
-            <element signature="e#2979#3052#0" expanded="false" />
-            <element signature="e#3066#3374#0" expanded="false" />
-            <element signature="e#3164#3235#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,19 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="36" />
-          <folding>
-            <element signature="e#116#182#0" expanded="false" />
-            <element signature="e#207#259#0" expanded="false" />
-            <element signature="e#304#1110#0" expanded="false" />
-            <element signature="e#369#789#0" expanded="false" />
-            <element signature="e#458#779#0" expanded="false" />
-            <element signature="e#814#1100#0" expanded="false" />
-            <element signature="e#856#982#0" expanded="false" />
-            <element signature="e#988#1090#0" expanded="false" />
-            <element signature="e#1148#1199#0" expanded="false" />
-            <element signature="e#1241#1296#0" expanded="false" />
-            <element signature="e#1339#1393#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="1172" column="7" selection-start-line="1172" selection-start-column="7" selection-end-line="1172" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="52" selection-start-line="0" selection-start-column="52" selection-end-line="0" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
           <caret line="107" column="114" selection-start-line="107" selection-start-column="114" selection-end-line="107" selection-end-column="114" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/Course.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="1088">
           <caret line="109" column="48" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
           <folding>
             <element signature="e#138#276#0" expanded="false" />
@@ -997,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HORO/routes/EditProfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="391">
           <caret line="23" column="49" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="49" />
           <folding />
         </state>
@@ -1011,23 +874,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/home.js">
+    <entry file="file://$PROJECT_DIR$/HORO/routes/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="143" column="72" selection-start-line="143" selection-start-column="72" selection-end-line="143" selection-end-column="72" />
-          <folding>
-            <element signature="e#147#285#0" expanded="false" />
-            <element signature="e#165#283#0" expanded="false" />
-            <element signature="e#1666#1834#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1063,11 +914,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HORO/routes/profile.js">
+    <entry file="file://$PROJECT_DIR$/HORO/routes/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="85">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="88" column="79" selection-start-line="88" selection-start-column="66" selection-end-line="88" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#147#285#0" expanded="false" />
+            <element signature="e#165#283#0" expanded="false" />
+            <element signature="e#1666#1834#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeProfile.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="1082" column="14" selection-start-line="1082" selection-start-column="14" selection-end-line="1082" selection-end-column="14" />
+          <folding>
+            <marker date="1480960721427" expanded="false" signature="66779:67214" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/public/signin/signin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HORO/views/AttendeeCourseStatus.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="1038" column="4" selection-start-line="1038" selection-start-column="4" selection-end-line="1053" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
