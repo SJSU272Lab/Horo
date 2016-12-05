@@ -156,6 +156,7 @@ course.controller('CourseDetails', function($scope, $http,$state) {
 
             if (data.statusCode === 200) {
                 console.log("Success");
+                window.location.assign("/courseDetail");
                 /* $scope.fname = data.Result[0].user_firstname;
                  $scope.lname = data.Result[0].user_lastname;
                  $scope.username = data.Result[0].username;
