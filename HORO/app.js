@@ -111,6 +111,7 @@ app.post('/setCourseDetails',courseadd.setCourseDetails);
 app.post('/get_course_details', course1.get_course_details);
 app.post('/get_course_page', course1.get_course_page);
 app.post('/viewCoursePage', course1.viewCoursePage);
+app.post('/get_host_added_courses', profile.get_host_added_courses);
 
 app.post('/getCourseStatus',attendee.getCourseStatus);
 

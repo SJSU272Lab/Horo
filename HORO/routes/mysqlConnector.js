@@ -57,7 +57,7 @@ function fetchDataWithoutPool(callback,sqlQuery){
     var connection=mysql.createConnection({
         host     : 'localhost',
         user     : 'root',
-        password : 'toor',
+        password : 'root',
         database : 'horodb',
         port	 : 3306
     });

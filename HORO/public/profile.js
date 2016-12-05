@@ -48,20 +48,7 @@ profile.controller('userprofile', function($scope, $http) {
             method: "POST",
             url: '/get_host_added_courses',
         }).success(function (data) {
-
-            if (data.statusCode === 200) {
-                console.log("Success");
-                $scope.fname = data.Result[0].user_firstname;
-                $scope.lname = data.Result[0].user_lastname;
-                $scope.username = data.Result[0].username;
-                $scope.city = data.Result[0].user_city;
-                $scope.birthdate = data.Result[0].user_birthdate;
-                $scope.gender = data.Result[0].user_gender;
-
-
-            } else {
-                console.log("Failure");
-            }
+            $scope.courseList = data.Result;
 
         });
     }

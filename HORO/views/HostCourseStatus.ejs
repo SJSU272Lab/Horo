@@ -102,7 +102,7 @@
     </script>
 </head>
 
-<body class="ng-scope" ng-app="UserProfile" ng-controller="userprofile" ng-init="LoadHostCourecs()">
+<body class="ng-scope" ng-app="UserProfile" ng-controller="userprofile">
 
 
 <section id="mu-menu">
@@ -357,7 +357,7 @@
 
     <header class="regular-header clearfix hide-sm" id="old-header" role="banner">
 
-        <a aria-label="Homepage" href="" class="header-belo pull-left " style="background:rgba(0, 0, 0, 0) url() no-repeat scroll 0 0;">
+
         <span class="screen-reader-only">
           HORO
         </span>
@@ -1036,16 +1036,24 @@
 
 <main id="site-content" role="main">
 
-    <div class="subnav hide-print"   ng-init="Init()">
+    <div class="subnav hide-print"  ng-init="LoadHostCourecs()">
         <div class="page-container-responsive">
             <ul class="subnav-list">
 
                 <li>
-                    <a href="/AttendeeProfile" aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
 
                 <li>
-                    <a href="/AttendeeCourseStatus" aria-selected="true" class="subnav-item">Course status</a>
+                    <a href="/Account" aria-selected="false" class="subnav-item">Add Courses</a>
+                </li>
+
+                <li>
+                    <a href="/sessionland" aria-selected="false" class="subnav-item">Add Session</a>
+                </li>
+
+                <li>
+                    <a href="/HostCourseStatus" aria-selected="true" class="subnav-item">Course status</a>
                 </li>
 
 
