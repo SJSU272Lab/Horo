@@ -83,7 +83,10 @@
                     <div class="modal-footer row">
 
                         <br>
-                        <div class="alert alert-danger" ng-hide="invalid_login">
+                        <div class="alert alert-danger" ng-show="invalid_login">
+                            <strong>Invalid username or Password</strong>
+                        </div>
+                        <div class="alert alert-success" ng-show="success_login">
                             <strong>Invalid username or Password</strong>
                         </div>
                     </div>

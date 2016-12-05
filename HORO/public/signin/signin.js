@@ -7,7 +7,8 @@
 indexPage.controller('signin', function($scope, $http,$state) {
 
     console.log("Inside signin");
-    $scope.invalid_login = true;
+    $scope.invalid_login = false;
+    $scope.success_login = false;
     $scope.signin = function()
     {
        $http({
@@ -21,13 +22,14 @@ indexPage.controller('signin', function($scope, $http,$state) {
 
             if (data.statusCode == 201) { //Host
                 console.log("Success");
-                $scope.invalid_login = true;
-
+                $scope.invalid_login = false;
+                $scope.success_login = true;
 
                 window.location.assign("/attendeeProfile")//for Host
-            } if(data.statusCode == 200) { //volunteer
+            }else if(data.statusCode == 200) { //volunteer
                console.log("Success");
-               $scope.invalid_login = true;
+               $scope.invalid_login = false;
+               $scope.success_login = true;
 
 
                window.location.assign("/Profile");//for Host
@@ -35,7 +37,8 @@ indexPage.controller('signin', function($scope, $http,$state) {
            else
             {
                 console.log("Failure");
-                $scope.invalid_login = false;
+                $scope.invalid_login = true;
+                $scope.success_login = false;
 
             }
 
