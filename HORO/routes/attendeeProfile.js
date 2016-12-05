@@ -103,7 +103,7 @@ exports.change_password = function(req, res)
 
 exports.getCourseStatus = function(req,res){
 
-    req.session.user_id = 2 //change after login
+    //req.session.user_id = 2 //change after login
 
     var query = 'select * from course_progress as cp join course_details cd  on cp.course_id = cd.course_Id  join course_master cm on cd .course_Id = cm.course_Id where user_id = '+req.session.user_id+';';
 
