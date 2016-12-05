@@ -76,7 +76,7 @@ exports.getCourseCategory = function(req,res){
 exports.getAllCourseList = function(req,res){
     console.log(req.session.user_id);
 
-    req.session.user_id = 1;
+    
 
     var courseNameQuery = "select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";";
     logger.log('info', "select m.course_Id,m.course_name from course_master as m join course_details as d on m.course_id = d.course_id where course_instid = "+req.session.user_id+";");
@@ -141,7 +141,7 @@ exports.setCourseDetails = function(req,res){
     var courseLectures = req.param("courseLectures");
     var courseDetails = req.param("courseDetails");
 
-    req.session.user_id = 1;//set user session
+    //req.session.user_id = 1;//set user session
 
     var insertCourseNameQuery = "INSERT INTO course_master (`course_name`, `course_category`) VALUES ('"+courseName+"',"+parseInt(courseCategory)+");";
     console.log("Query:: " + insertCourseNameQuery);
