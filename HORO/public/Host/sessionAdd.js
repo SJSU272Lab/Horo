@@ -1,4 +1,6 @@
-account.controller('sessionAdd', function($scope, $http,$state) {
+var session = angular.module('session', ['ui.router']);
+
+session.controller('sessionAdd', function($scope, $http,$state) {
 
 
         $scope.SessionAdded = false;

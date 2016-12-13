@@ -47,9 +47,13 @@ account.controller('editaccountprofile', function($scope, $http) {
     }
 
 
-    $scope.addSessions = function()
+    $scope.hostCourseStatus = function()
     {
-        window.location.assign("/sessionland")
+        window.location.assign("/HostCourseStatus")
+    }
+
+    $scope.sessionLand = function () {
+        window.location.assign("/sessionland");
     }
 
 });

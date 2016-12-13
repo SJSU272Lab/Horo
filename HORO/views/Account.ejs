@@ -1035,16 +1035,16 @@
 
 
                 <li>
-                    <a href="/Profile" aria-selected="false" class="subnav-item">Dashboard</a>
+                    <a href="/Profile" ng-click="Profile()" aria-selected="false" class="subnav-item">Dashboard</a>
                 </li>
                 <li>
                     <a href="/Account" aria-selected="true" class="subnav-item">Add Courses</a>
                 </li>
                 <li>
-                    <a href="/sessionland" aria-selected="false" class="subnav-item">Add Session</a>
+                    <a href="/sessionland" ng-click="sessionLand()" aria-selected="false" class="subnav-item">Add Session</a>
                 </li>
                 <li>
-                    <a href="/HostCourseStatus"  aria-selected="false" class="subnav-item">Course History</a>
+                    <a href="/HostCourseStatus" ng-click="hostCourseStatus()" aria-selected="false" class="subnav-item">Course History</a>
                 </li>
 
 
@@ -1293,9 +1293,9 @@
                         <input type="text" name="paypal_email" id="paypal_email">
                     </div>
 
-                    <div class="panel-footer">
+                    <!--<div class="panel-footer">
                         <input type="submit" value="Submit" id="modal-paypal-submit" class="btn btn-primary">
-                    </div>
+                    </div>-->
                 </form>
             </div>
         </div>
@@ -1303,7 +1303,7 @@
 </div>
 
 
-<div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100%; background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)">
+<!--<div id="footer" class="pull-left container-brand-dark footer-surround footer-container" style="width:100%; background-image:url(http://makent.trioangle.com/images/logos/footer_cover_image.png)">
     <footer class="page-container-responsive ng-scope" ng-controller="footer">
         <div class="row row-condensed">
 
@@ -1423,7 +1423,7 @@
             </div>
         </div>
     </footer>
-</div>
+</div>-->
 <div id="gmap-preload" class="hide"></div>
 
 <div class="ipad-interstitial-wrapper"><span data-reactid=".1"></span></div>

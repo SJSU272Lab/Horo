@@ -79,4 +79,12 @@ editprofile.controller('edituserprofile', function($scope, $http) {
         window.location.assign("/Account");
     }
 
+    $scope.hostCourseStatus = function () {
+        window.location.assign("/HostCourseStatus");
+    }
+
+    $scope.sessionLand = function () {
+        window.location.assign("/sessionland");
+    }
+
 });
