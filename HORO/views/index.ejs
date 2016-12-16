@@ -48,13 +48,13 @@
 
 <!-- Start header  -->
 <header id="mu-header" ng-controller="loginSiginup">
-    <div class="container"  >
+    <div class="container">
         <ul class="nav navbar-nav navbar-right main-nav">
             <li><a href="#signup" role="button" data-toggle="modal">Sign Up</a></li>
             <li><a href="#login" role="button" data-toggle="modal">Log In</a></li>
         </ul>
     </div>
-    <div class="container" >
+    <div class="container">
         <ul class="nav navbar-nav navbar-right main-nav">
 
 
@@ -180,8 +180,8 @@
                 <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
                     <li class="active"><a href="/">Home</a></li>
                     <li><a href="course">Courses</a></li>
-                    <li><a href="course">About Us</a></li>
-                    <li ng-show = "sessionActive"><a href="profile">{{sessionUserName}}</a></li>
+                    <li><a href= '#about-section' >About Us</a> </li>
+                    <li ng-show="sessionActive"><a href="profile">{{sessionUserName}}</a></li>
 
                     <!--<li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>-->
                 </ul>
@@ -208,18 +208,18 @@
 <!-- Start Slider -->
 <section id="mu-slider">
     <!-- Start single slider item -->
-    <div class="mu-slider-single">
+   <!-- <div class="mu-slider-single">
         <div class="mu-slider-img">
             <figure>
                 <img src="stylesheets/assets/img/slider/c1.jpg" alt="img">
             </figure>
         </div>
-        <div class="mu-slider-content">
-            <h4>Welcome To HORO</h4>
-            <span></span>
-            <h2>Learn the best from the best</h2>
-        </div>
-    </div>
+        &lt;!&ndash; <div class="mu-slider-content">
+             <h4>Welcome To HORO</h4>
+             <span></span>
+             <h2>Learn new skills.</h2>
+         </div>&ndash;&gt;
+    </div>-->
     <!-- Start single slider item -->
     <div class="mu-slider-single">
         <div class="mu-slider-img">
@@ -228,9 +228,9 @@
             </figure>
         </div>
         <div class="mu-slider-content">
-            <h4>Welcome to HORO</h4>
+            <h4>Welcome to HORO !</h4>
             <span></span>
-            <h2>Teach someone what you are best at</h2>
+            <h2>Learn ,Teach ,Contribute.</h2>
         </div>
     </div>
     <!-- Start single slider item -->
@@ -246,22 +246,21 @@
                     <div class="mu-service-single">
                         <span class="fa fa-book"></span>
                         <h3>Join a Course</h3>
-                        <p>Join a free course to acquire a new skill and get ready for your next job. Let's Go !</p>
+                        <p>Get ready for the job market.</p>
                     </div>
                     <!-- Start single service -->
                     <!-- Start single service -->
                     <div class="mu-service-single">
                         <span class="fa fa-users"></span>
                         <h3>Become a Coach</h3>
-                        <p>Contribute to the society by teaching others what you are best at. Start now !</p>
+                        <p>Help teach people in need.<br></p>
                     </div>
                     <!-- Start single service -->
                     <!-- Start single service -->
                     <div class="mu-service-single">
                         <span class="fa fa-table"></span>
                         <h3>Contribute</h3>
-                        <p>Want to volunteer for the cause ?
-                            You can start here !</p>
+                        <p>Find ways to join our mission.</p>
                     </div>
                     <!-- Start single service -->
                 </div>
@@ -282,7 +281,7 @@
                             <div class="mu-about-us-left">
                                 <!-- Start Title -->
                                 <div class="mu-title">
-                                    <h2>About Us</h2>
+                                    <h2><a id="about-section">About Us</a></h2>
                                 </div>
                                 <!-- End Title -->
                                 <p>We are an unique learning platform specially developed for homeless people and poor
@@ -313,6 +312,7 @@
         </div>
     </div>
 </section>
+
 <!-- End about us -->
 
 <!-- Start about us counter -->
@@ -385,7 +385,8 @@
                                 <div class="mu-single-feature">
                                     <span class="fa fa-book"></span>
                                     <h4>Skill Focused Courses</h4>
-                                    <h5>Our courses prepare you for the modern industry requirements by teaching you the right skills</h5>
+                                    <h5>Our courses prepare you for the modern industry requirements by teaching you the
+                                        right skills</h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
@@ -399,28 +400,32 @@
                                 <div class="mu-single-feature">
                                     <span class="fa fa-laptop"></span>
                                     <h4>In Person Training</h4>
-                                    <h5>All our trainings are classroom and hands on trainings where you get an in-person coaching fromt the coaches</h5>
+                                    <h5>All our trainings are classroom and hands on trainings where you get an
+                                        in-person coaching fromt the coaches</h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="mu-single-feature">
                                     <span class="fa fa-microphone"></span>
                                     <h4>Job Search Help</h4>
-                                    <h5>We help you find the right job for your skill set at the best place in town with the best pay</h5>
+                                    <h5>We help you find the right job for your skill set at the best place in town with
+                                        the best pay</h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="mu-single-feature">
                                     <span class="fa fa-film"></span>
                                     <h4>Video Recorded Lessons</h4>
-                                    <h5>If you miss a lesson for some reason, dont worry, you can always watch the video recorded lectures to catch up</h5>
+                                    <h5>If you miss a lesson for some reason, dont worry, you can always watch the video
+                                        recorded lectures to catch up</h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6">
                                 <div class="mu-single-feature">
                                     <span class="fa fa-certificate"></span>
                                     <h4>Professional Certificate</h4>
-                                    <h5>For every successful course you are given a professional certificate which you can proudly carry during your interviews.</h5>
+                                    <h5>For every successful course you are given a professional certificate which you
+                                        can proudly carry during your interviews.</h5>
                                 </div>
                             </div>
                         </div>
@@ -457,7 +462,8 @@
                                 </figure>
                                 <div class="mu-latest-course-single-content">
                                     <h4><a href="#">Michael Wolfhard</a></h4>
-                                    <p>This painting course is about what can be achieved with acrylic painting when you apply my 7 painting principles to your painting.</p>
+                                    <p>This painting course is about what can be achieved with acrylic painting when you
+                                        apply my 7 painting principles to your painting.</p>
                                     <div class="mu-latest-course-single-contbottom">
                                         <a class="mu-course-details" href="#">Details</a>
                                     </div>

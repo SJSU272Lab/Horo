@@ -1,0 +1,18 @@
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-16T18:27:01.480Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-16T18:27:01.946Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-16T18:27:02.567Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-16T18:27:02.592Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-16T18:27:03.819Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-16T18:27:03.824Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-16T18:27:11.310Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-16T18:27:11.315Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-16T18:27:11.759Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-16T18:27:11.762Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-16T18:27:11.764Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-16T18:27:11.767Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-16T18:36:01.970Z"}
+{"level":"info","message":"SQL Query::SELECT * FROM course_details, course_master, category_master where course_details.course_id = course_master.course_id and category_master.category_id = course_master.course_category ","timestamp":"2016-12-16T18:36:01.975Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-16T18:36:02.544Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-16T18:36:02.546Z"}
+{"level":"info","message":"DB Results:[object Object],[object Object]","timestamp":"2016-12-16T18:36:02.549Z"}
+{"level":"info","message":"\nConnection closed..","timestamp":"2016-12-16T18:36:02.551Z"}

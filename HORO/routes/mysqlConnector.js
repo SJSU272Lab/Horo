@@ -5,7 +5,7 @@ var winston = require('winston');
 var logger = new (winston.Logger)({
     transports: [
         new (winston.transports.Console)(),
-        new (winston.transports.File)({ filename: 'ebayLog.log' })
+        new (winston.transports.File)({ filename: 'horolog.log' })
     ]
 });
 
@@ -13,10 +13,10 @@ function getConnection(){
     var connection = mysql.createPool(
         {
             connectionLimit : 500, // The maximum number of connections to create at once. https://github.com/mysqljs/mysql
-            host     : 'localhost',
-            user     : 'root',
-            password : 'root',
-            database : 'horodb',
+            host     : 'us-cdbr-iron-east-04.cleardb.net',
+            user     : 'b5335de2ec3ff5',
+            password : 'f61daee5',
+            database : 'ad_bf078d2b56c081d',
             port	 : 3306
         });
     return connection;
@@ -55,10 +55,10 @@ function fetchDataWithoutPool(callback,sqlQuery){
     console.log("\nSQL Query::"+sqlQuery);
 
     var connection=mysql.createConnection({
-        host     : 'localhost',
-        user     : 'root',
-        password : 'root',
-        database : 'horodb',
+        host     : 'us-cdbr-iron-east-04.cleardb.net',
+        user     : 'b5335de2ec3ff5',
+        password : 'f61daee5',
+        database : 'ad_bf078d2b56c081d',
         port	 : 3306
     });
     connection.connect();
