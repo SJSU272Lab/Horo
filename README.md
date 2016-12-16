@@ -3,7 +3,7 @@
 ###Horo – A Unique Learning Platform for The Homeless
 (horo means training in African language)
 
-Site Link :- <a href = "horo.mybluemix.net">  horo.mybluemix.net </a>
+Site Link :- http://horo.mybluemix.net
 
 ###Abstract - 
 
@@ -34,3 +34,7 @@ Apart from this, every participant will be given a ‘certificate of accomplishm
 4.	Search available locations for classes
 
 5.	Search for job opportunities in the area
+
+
+
+
