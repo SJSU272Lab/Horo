@@ -3,6 +3,8 @@
 ###Horo – A Unique Learning Platform for The Homeless
 (horo means training in African language)
 
+Site Link :- <a href = "horo.mybluemix.net">  horo.mybluemix.net </a>
+
 ###Abstract - 
 
 There are over half a million people in USA who are homeless. And There are many more families which are living below the poverty line. We believe that Lack of professional skills and dearth of employment opportunities are two major reasons for this situation.  Though there are different online platforms like udemy, courseera, treehouse etc. which provide free and paid training online, most of the times, it is not accessible to the homeless people and poor families. This is majorly due to the lack of resources and money required to participate in the training courses. 
