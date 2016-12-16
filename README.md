@@ -1,6 +1,5 @@
-# Fall16-Team4
 
-###Horo – A Unique Learning Platform for The Homeless
+### Horo – A Unique Learning Platform for The Homeless
 (horo means training in African language)
 
 Site Link :- http://horo.mybluemix.net
