@@ -35,6 +35,20 @@ Apart from this, every participant will be given a ‘certificate of accomplishm
 
 5.	Search for job opportunities in the area
 
+**Steps to build ** -
+
+from Documents -> HORO DB scripts v4 , run script.sql in your mysql instance for creating  our tables.
+
+cd into HORO folder
+in routes/mysqlconnector.js , change username,password ,host ,db name for your mysql service instance
+
+
+**Steps to deploy :** -
+Install bluemix and Cloud Foundry command line tools
+cd to HORO  folder,
+use cf push HORO ,after setting up credentials.
+
+
 
 
 
