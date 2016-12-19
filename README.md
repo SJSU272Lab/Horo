@@ -44,6 +44,7 @@ in routes/mysqlconnector.js , change username,password ,host ,db name for your m
 
 
 **Steps to deploy :** -
+
 Install bluemix and Cloud Foundry command line tools
 cd to HORO  folder,
 use cf push HORO ,after setting up credentials.
